@@ -1,0 +1,174 @@
+|testing2
+S[0] <= g27_8bit_adder:inst2.S[0]
+S[1] <= g27_8bit_adder:inst2.S[1]
+S[2] <= g27_8bit_adder:inst2.S[2]
+S[3] <= g27_8bit_adder:inst2.S[3]
+S[4] <= g27_8bit_adder:inst2.S[4]
+S[5] <= g27_8bit_adder:inst2.S[5]
+S[6] <= g27_8bit_adder:inst2.S[6]
+S[7] <= g27_8bit_adder:inst2.S[7]
+IN[0] => g27_6bit_shift_2left:inst.A[0]
+IN[0] => g27_6bit_to_8bit_converter:inst9.A[0]
+IN[1] => g27_6bit_shift_2left:inst.A[1]
+IN[1] => g27_6bit_to_8bit_converter:inst9.A[1]
+IN[2] => g27_6bit_shift_2left:inst.A[2]
+IN[2] => g27_6bit_to_8bit_converter:inst9.A[2]
+IN[3] => g27_6bit_shift_2left:inst.A[3]
+IN[3] => g27_6bit_to_8bit_converter:inst9.A[3]
+IN[4] => g27_6bit_shift_2left:inst.A[4]
+IN[4] => g27_6bit_to_8bit_converter:inst9.A[4]
+IN[5] => g27_6bit_shift_2left:inst.A[5]
+IN[5] => g27_6bit_to_8bit_converter:inst9.A[5]
+
+
+|testing2|g27_8bit_adder:inst2
+Cout <= g27_adder:inst7.Cout
+A[0] => g27_adder:inst.A
+A[1] => g27_adder:inst1.A
+A[2] => g27_adder:inst2.A
+A[3] => g27_adder:inst3.A
+A[4] => g27_adder:inst4.A
+A[5] => g27_adder:inst5.A
+A[6] => g27_adder:inst6.A
+A[7] => g27_adder:inst7.A
+B[0] => g27_adder:inst.B
+B[1] => g27_adder:inst1.B
+B[2] => g27_adder:inst2.B
+B[3] => g27_adder:inst3.B
+B[4] => g27_adder:inst4.B
+B[5] => g27_adder:inst5.B
+B[6] => g27_adder:inst6.B
+B[7] => g27_adder:inst7.B
+Cin => g27_adder:inst.Cin
+S[0] <= g27_adder:inst.S
+S[1] <= g27_adder:inst1.S
+S[2] <= g27_adder:inst2.S
+S[3] <= g27_adder:inst3.S
+S[4] <= g27_adder:inst4.S
+S[5] <= g27_adder:inst5.S
+S[6] <= g27_adder:inst6.S
+S[7] <= g27_adder:inst7.S
+
+
+|testing2|g27_8bit_adder:inst2|g27_adder:inst7
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testing2|g27_8bit_adder:inst2|g27_adder:inst6
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testing2|g27_8bit_adder:inst2|g27_adder:inst5
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testing2|g27_8bit_adder:inst2|g27_adder:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testing2|g27_8bit_adder:inst2|g27_adder:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testing2|g27_8bit_adder:inst2|g27_adder:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testing2|g27_8bit_adder:inst2|g27_adder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testing2|g27_8bit_adder:inst2|g27_adder:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Cin => inst1.IN1
+Cin => inst3.IN0
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testing2|g27_6bit_shift_2left:inst
+S[0] <= inst1[0].DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= inst1[1].DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => S[2].DATAIN
+A[1] => S[3].DATAIN
+A[2] => S[4].DATAIN
+A[3] => S[5].DATAIN
+A[4] => S[6].DATAIN
+A[5] => S[7].DATAIN
+
+
+|testing2|g27_6bit_to_8bit_converter:inst9
+O[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+O[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+O[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+O[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+O[4] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+O[5] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
+O[6] <= inst1[0].DB_MAX_OUTPUT_PORT_TYPE
+O[7] <= inst1[1].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => O[0].DATAIN
+A[1] => O[1].DATAIN
+A[2] => O[2].DATAIN
+A[3] => O[3].DATAIN
+A[4] => O[4].DATAIN
+A[5] => O[5].DATAIN
+
+
