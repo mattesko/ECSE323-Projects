@@ -1,5 +1,6 @@
 ../Archive/**
-db/**
-incremental_db/**
-simulation/**
-output_files/**
+db/*
+incremental_db/*
+simulation/modelsim/*
+simulation/qsim/*
+output_files/*
