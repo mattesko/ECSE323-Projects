@@ -1,5 +1,5 @@
-../Archive/*
-db/*
-incremental_db/*
-simulation/*
-output_files/*
+../Archive/
+db/
+incremental_db/
+simulation/
+output_files/
