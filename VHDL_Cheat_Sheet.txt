@@ -1,0 +1,80 @@
+5 Design units in VHDL
+1) Entity
+2) Architecture
+3) Configuration
+4) Package Declaration
+5) Package body
+
+Entity -> Name plate of Design
+
+Input and output ports -> What type of ports they will be
+Say 
+    Inputs: Switch 0, Switch 1
+    Outputs: LED 0, LED 1
+
+
+Architecture -> What goes on in the circuit. the functions
+LED0 must glow when switch 0 is pressed
+LED1 must glow when switch 1 is pressed
+
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Switches_LEDs is 
+    Port     (  switch_0 : in STD_LOGIC;
+                switch_1 : in STD_LOGIC;
+                LED_0 : out STD_LOGIC;
+                LED_1 : out STD_LOGIC);
+end Switches_LEDs;
+
+architecture Behavioral of Switches_LEDs is
+begin
+    LED_0   <= switch_0; -- assignment
+    LED1    <= switch_1;
+end Behavioral;
+
+
+Can have multiple architectures for the same entity
+
+
+
+--Example of a half adder
+entity Half_Adder is 
+port    (   A, B : in BIT;
+            SUM, CARRY : out BIT);
+end Half_Adder
+
+--Architecture
+-- 3 Styles of modelling: Structural, Dataflow, Behavioral
+-- Use structural and dataflow when the internal connections are clear and straightforward, usually used for smaller designs
+-- Behavioral is described for larger designs so that the VHDL can compile
+-- we will use a combination of all 3. Build bigger designs using behavioral and connect them using structural and dataflow
+
+-------------- Structural Style
+architecture Structure_HA of Half_Adder is 
+    -- seperate design for a XOR gate
+    component XOR1
+        Port    (   P, Q : in BIT;
+                    R : out BIT);
+    end component;
+
+    --seperate design for an AND gate
+    component AND1
+        Port    (   X, Y : in BIT;
+                    Z : out BIT);
+    end component;
+
+    begin
+        X1 : XOR1 port map (A, B, SUM);
+        A1 : AND2 port map (A, B, CARRY);
+    end Structure_HA;
+----------------
+
+----------------  Dataflow style
+architecture Dataflow_HA of Half_Adder is
+    begin  
+        SUM <= A xor B;
+        CARRY <= A and B;
+    end Dataflow_HA;
