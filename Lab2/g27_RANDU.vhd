@@ -19,30 +19,43 @@ entity g27_RANDU is
 			 );
 end g27_RANDU;
 
-architecture first_adder of g27_RANDU
-	signal adder1		: std_LOGIC_VECTOR(31 downto 0);
-	signal adder2		: std_LOGIC_VECTOR(31 downto 0);
-
-	begin
-	
-		u1: lpm_ADD_SUB
-			generic map
-
-
+architecture modulo of g27_RANDU is
 	COMPONENT lpm_add_sub
-   GENERIC (LPM_WIDTH: POSITIVE;
-				LPM_DIRECTION: STRING := "UNUSED";
-				LPM_REPRESENTATION: STRING := "SIGNED";
-				LPM_PIPELINE: INTEGER := 0;
-				LPM_TYPE: STRING := "LPM_ADD_SUB";
-				LPM_HINT: STRING := "UNUSED"
-				ONE_INPUT_IS_CONSTANT: STRING := "NO";
-				MAXIMIZE_SPEED: INTEGER; 
-				USE_WYS: STRING :=	"OFF");
-   PORT (dataa, datab: IN STD_LOGIC_VECTOR(LPM_WIDTH-1 DOWNTO 0);
-      aclr, clock, cin: IN STD_LOGIC := '0';
-      clken, add_sub: IN STD_LOGIC := '1';
-      result: OUT STD_LOGIC_VECTOR(LPM_WIDTH-1 DOWNTO 0);
-      cout, overflow: OUT STD_LOGIC);
+		GENERIC (LPM_WIDTH				: POSITIVE 	:= 32;
+					LPM_REPRESENTATION	: STRING		:= "UNSIGNED";
+					LPM_PIPELINE			: INTEGER 	:= 0;
+					LPM_TYPE					: STRING 	:= "LPM_ADD_SUB");
+		PORT (dataa, datab		: IN STD_LOGIC_VECTOR(LPM_WIDTH-1 DOWNTO 0);
+				aclr, clock, cin	: IN STD_LOGIC 	:= '0';
+				clken, add_sub		: IN STD_LOGIC 	:= '1';
+				result				: OUT STD_LOGIC_VECTOR(LPM_WIDTH-1 DOWNTO 0));
 	END COMPONENT;
+	
+	signal adder_out_1		: std_LOGIC_VECTOR(31 downto 0);
+	signal shift_left_16		: std_LOGIC_VECTOR(31 downto 0);
+	signal shift_left_1		: std_LOGIC_VECTOR(31 downto 0);
+	signal zero					: std_LOGIC_VECTOR(31 downto 0); -- by default, all bits are set to 0, maybe?
+	
+	begin
+		shift_left_16 <= (seed(15 downto 0) & zero(15 downto 0));
+		shift_left_1  <= (seed(30 downto 0) & zero(0));
+		
+		adder_inst1: lpm_ADD_SUB
+			generic map (LPM_WIDTH				=> POSITIVE 	:= 32,
+					LPM_REPRESENTATION	=> STRING		:= "UNSIGNED",
+					LPM_TYPE					=> STRING 	:= "LPM_ADD_SUB",
+					LPM_HINT					=> STRING 	:= "UNUSED")
+			port map (	dataa  => shift_left_16,
+							datab  => shift_left_1,
+							result => adder_out_1);
+							
+		adder_inst2: lpm_ADD_SUB
+			port map (  dataa  => adder_out_1,
+							datab  => seed,
+							result => rand);
+							
+		zero <= (31 downto 0 => '0');
+	end modulo;
+
+
 	
