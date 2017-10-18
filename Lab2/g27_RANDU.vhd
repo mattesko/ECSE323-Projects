@@ -13,13 +13,13 @@ use ieee.std_logic_1164.all;
 library lpm;
 use lpm.lpm_components.all;
 
-entity g27_RANDU is
-	port ( seed			: in std_logic_vector(31 downto 0);
-			 rand 		: out std_logic_vector(31 downto 0)
+ENTITY g27_RANDU IS
+	PORT ( seed			: IN std_logic_vector(31 DOWNTO 0);
+			 rand 		: OUT std_logic_vector(31 DOWNTO 0)
 			 );
-end g27_RANDU;
+END g27_RANDU;
 
-architecture modulo of g27_RANDU is
+ARCHITECTURE modulo of g27_RANDU is
 	COMPONENT lpm_add_sub
 		GENERIC (LPM_WIDTH				: POSITIVE 	:= 32;
 					LPM_REPRESENTATION	: STRING		:= "UNSIGNED";
@@ -31,31 +31,31 @@ architecture modulo of g27_RANDU is
 				result				: OUT STD_LOGIC_VECTOR(LPM_WIDTH-1 DOWNTO 0));
 	END COMPONENT;
 	
-	signal adder_out_1		: std_LOGIC_VECTOR(31 downto 0);
-	signal shift_left_16		: std_LOGIC_VECTOR(31 downto 0);
-	signal shift_left_1		: std_LOGIC_VECTOR(31 downto 0);
-	signal zero					: std_LOGIC_VECTOR(31 downto 0); -- by default, all bits are set to 0, maybe?
+	SIGNAL adder_out_1 : std_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL shift_left_16 : std_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL shift_left_1	: std_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL zero	: std_LOGIC_VECTOR(31 DOWNTO 0); -- by default, all bits are set to 0, maybe?
 	
 	begin
-		shift_left_16 <= (seed(15 downto 0) & zero(15 downto 0));
-		shift_left_1  <= (seed(30 downto 0) & zero(0));
+		shift_left_16 <= (seed(15 DOWNTO 0) & zero(15 DOWNTO 0));
+		shift_left_1  <= (seed(30 DOWNTO 0) & zero(0));
 		
-		adder_inst1: lpm_ADD_SUB
-			generic map (LPM_WIDTH				=> POSITIVE 	:= 32,
+		adder_inst1: lpm_add_sub
+			GENERIC MAP (LPM_WIDTH				=> POSITIVE 	:= 32,
 					LPM_REPRESENTATION	=> STRING		:= "UNSIGNED",
 					LPM_TYPE					=> STRING 	:= "LPM_ADD_SUB",
 					LPM_HINT					=> STRING 	:= "UNUSED")
-			port map (	dataa  => shift_left_16,
+			PORT MAP (	dataa  => shift_left_16,
 							datab  => shift_left_1,
 							result => adder_out_1);
 							
-		adder_inst2: lpm_ADD_SUB
-			port map (  dataa  => adder_out_1,
+		adder_inst2: lpm_add_sub
+			PORT MAP (  dataa  => adder_out_1,
 							datab  => seed,
 							result => rand);
 							
-		zero <= (31 downto 0 => '0');
-	end modulo;
+		zero <= (31 DOWNTO 0 => '0');
+	END modulo;
 
 
 	
