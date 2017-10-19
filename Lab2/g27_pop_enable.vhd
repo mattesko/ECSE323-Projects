@@ -16,7 +16,7 @@ use lpm.lpm_components.all;
 ENTITY g27_pop_enable IS 
     PORT ( 
         clk : IN STD_LOGIC;
-        N : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+        N : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
         P_EN : OUT STD_LOGIC_VECTOR(51 DOWNTO 0));
     END g27_pop_enable;
 
@@ -24,8 +24,8 @@ ARCHITECTURE architecture_pop_enable OF g27_pop_enable IS
     BEGIN
    crc_table : lpm_rom
        GENERIC MAP (
-			  LPM_WIDTHAD => 7,
-           LPM_NUMWORDS => 128, -- sets the number of words stored in the ROM
+			  LPM_WIDTHAD => 6,
+           LPM_NUMWORDS => 64, -- sets the number of words stored in the ROM
            LPM_OUTDATA => "UNREGISTERED", -- no register on the output
            LPM_ADDRESS_CONTROL => "REGISTERED", -- register on the input
            LPM_FILE => "crc_rom.mif", -- the ascii file containing the ROM data
