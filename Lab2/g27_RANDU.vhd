@@ -15,8 +15,8 @@ use lpm.lpm_components.all;
 
 ENTITY g27_RANDU IS
 	PORT ( 
-		seed : IN std_logic_vector(31 DOWNTO 0);
-		rand : OUT std_logic_vector(31 DOWNTO 0));
+		seed : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+		rand : OUT STD_LOGIC_VECTOR(31 DOWNTO 0));
 END g27_RANDU;
 
 ARCHITECTURE architecture_RANDU OF g27_RANDU IS
@@ -34,22 +34,17 @@ ARCHITECTURE architecture_RANDU OF g27_RANDU IS
 			result : OUT STD_LOGIC_VECTOR(LPM_WIDTH-1 DOWNTO 0));
 	END COMPONENT;
 	
-	SIGNAL adder_out_1 : std_LOGIC_VECTOR(31 DOWNTO 0);
-	SIGNAL shift_left_16 : std_LOGIC_VECTOR(31 DOWNTO 0);
-	SIGNAL shift_left_1	: std_LOGIC_VECTOR(31 DOWNTO 0);
-	SIGNAL zero	: std_LOGIC_VECTOR(31 DOWNTO 0); -- by default, all bits are set to 0, maybe?
+	SIGNAL adder_out_1 : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL shift_left_16 : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL shift_left_1	: STD_LOGIC_VECTOR(31 DOWNTO 0);
+	SIGNAL zero	: STD_LOGIC_VECTOR(31 DOWNTO 0); -- by default, all bits are set to 0, maybe?
 	
 	BEGIN
 		shift_left_16 <= (seed(15 DOWNTO 0) & zero(15 DOWNTO 0));
 		shift_left_1  <= (seed(30 DOWNTO 0) & zero(0));
 		
 		adder_inst1: lpm_add_sub
-			GENERIC MAP (
-				LPM_WIDTH => POSITIVE := 32,
-				LPM_REPRESENTATION => STRING := "UNSIGNED",
-				LPM_TYPE => STRING := "LPM_ADD_SUB",
-				LPM_HINT => STRING := "UNUSED");
-			PORT MAP (	
+			PORT MAP (
 				dataa => shift_left_16,
 				datab => shift_left_1,
 				result => adder_out_1);
