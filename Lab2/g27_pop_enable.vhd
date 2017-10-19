@@ -15,6 +15,7 @@ use lpm.lpm_components.all;
 
 ENTITY g27_pop_enable IS 
     PORT ( 
+        clk : IN STD_LOGIC;
         N : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
         P_EN : OUT STD_LOGIC_VECTOR(51 DOWNTO 0));
     END g27_pop_enable;
@@ -28,8 +29,7 @@ ARCHITECTURE architecture_pop_enable OF g27_pop_enable IS
 			q : IN STD_LOGIC_VECTOR(51 DOWNTO 0));
 	END COMPONENT;
 	
-	SIGNAL clk ;
-	BEGIN
+    BEGIN
 	
    crc_table : lpm_rom
        GENERIC MAP (

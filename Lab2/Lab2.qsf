@@ -50,7 +50,6 @@ set_global_assignment -name BDF_FILE g27_RANDU_Schematic.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name VECTOR_WAVEFORM_FILE g27_RANDU_2.vwf
@@ -58,3 +57,4 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE g27_RANDU_3.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE g27_RANDU_4.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE g27_RANDU_5.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "P:/DSD/DSD-Labs-and-Project/Lab2/g27_RANDU_5.vwf"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
