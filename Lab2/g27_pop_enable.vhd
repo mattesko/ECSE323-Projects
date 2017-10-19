@@ -19,3 +19,28 @@ ENTITY g27_pop_enable IS
         P_EN : OUT STD_LOGIC_VECTOR(51 DOWNTO 0));
     END g27_pop_enable;
 
+ARCHITECTURE architecture_pop_enable OF g27_pop_enable IS
+	-- lpm_add_sub component paramter and port declarations
+	COMPONENT lpm_rom
+		PORT (
+			inclock : IN STD_LOGIC;
+			address : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
+			q : IN STD_LOGIC_VECTOR(51 DOWNTO 0));
+	END COMPONENT;
+	
+	SIGNAL clk ;
+	BEGIN
+	
+   crc_table : lpm_rom
+       GENERIC MAP (
+           lpm_widthad => 7, -- sets width of the ROM address bus
+           lpm_numwords => 128, -- sets the number of words stored in the ROM
+           lpm_outdata => "UNREGISTERED", -- no register on the output
+           lpm_address_control => "REGISTERED", -- register on the input
+           lpm_file => "crc_rom.mif", -- the ascii file containing the ROM data
+           lpm_width => 8) -- the width of the word stored in each ROM location
+       PORT MAP (
+           inclock => clk,
+           address => N,
+           q => P_EN);
+	END architecture_pop_enable;
