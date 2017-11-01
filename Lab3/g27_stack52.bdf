@@ -328,62 +328,140 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 544 128 688 198))
 )
 (symbol
-	(rect 104 336 280 416)
-	(text "g27_pop_enable" (rect 5 0 84 12)(font "Arial" ))
-	(text "inst5" (rect 8 64 31 76)(font "Arial" ))
+	(rect -272 529 -128 609)
+	(text "lpm_mux0" (rect 43 0 113 16)(font "Arial" (font_size 10)))
+	(text "inst8" (rect 8 64 31 76)(font "Arial" ))
 	(port
-		(pt 0 32)
+		(pt 0 40)
 		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 27 35 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
+		(text "data1x[51..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "data1x[51..0]" (rect 4 26 78 40)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 64 40)(line_width 3))
 	)
 	(port
-		(pt 0 48)
+		(pt 0 56)
 		(input)
-		(text "N[6..0]" (rect 0 0 34 12)(font "Arial" ))
-		(text "N[6..0]" (rect 21 43 55 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "data0x[51..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "data0x[51..0]" (rect 4 42 78 56)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 64 56)(line_width 3))
 	)
 	(port
-		(pt 176 32)
+		(pt 72 80)
+		(input)
+		(text "sel" (rect 0 0 14 16)(font "Arial" (font_size 8))(vertical))
+		(text "sel" (rect 65 51 79 67)(font "Arial" (font_size 8))(vertical))
+		(line (pt 72 80)(pt 72 68))
+	)
+	(port
+		(pt 144 48)
 		(output)
-		(text "P_EN[51..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "P_EN[51..0]" (rect 105 27 165 39)(font "Arial" ))
-		(line (pt 176 32)(pt 160 32)(line_width 3))
+		(text "result[51..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "result[51..0]" (rect 84 34 151 48)(font "Arial" (font_size 8)))
+		(line (pt 144 48)(pt 80 48)(line_width 3))
+	)
+	(parameter
+		"LPM_PIPELINE"
+		""
+		""
+	)
+	(parameter
+		"LPM_SIZE"
+		"52"
+		""
+	)
+	(parameter
+		"LPM_WIDTH"
+		"6"
+		""
+	)
+	(parameter
+		"LPM_WIDTHS"
+		"CEIL(LOG2(LPM_SIZE))"
+		""
 	)
 	(drawing
-		(rectangle (rect 16 16 160 64))
+		(line (pt 64 24)(pt 64 72))
+		(line (pt 64 24)(pt 80 32))
+		(line (pt 64 72)(pt 80 64))
+		(line (pt 80 32)(pt 80 64))
+		(line (pt 0 0)(pt 146 0))
+		(line (pt 146 0)(pt 146 82))
+		(line (pt 0 82)(pt 146 82))
+		(line (pt 0 0)(pt 0 82))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
 	)
+	(annotation_block (parameter)(rect -128 456 112 529))
 )
 (symbol
-	(rect 112 640 288 720)
-	(text "g27_pop_enable" (rect 5 0 84 12)(font "Arial" ))
-	(text "inst6" (rect 8 64 31 76)(font "Arial" ))
+	(rect -280 217 -136 297)
+	(text "lpm_mux0" (rect 43 0 113 16)(font "Arial" (font_size 10)))
+	(text "inst9" (rect 8 64 31 76)(font "Arial" ))
 	(port
-		(pt 0 32)
+		(pt 0 40)
 		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 27 35 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
+		(text "data1x[51..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "data1x[51..0]" (rect 4 26 78 40)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 64 40)(line_width 3))
 	)
 	(port
-		(pt 0 48)
+		(pt 0 56)
 		(input)
-		(text "N[6..0]" (rect 0 0 34 12)(font "Arial" ))
-		(text "N[6..0]" (rect 21 43 55 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "data0x[51..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "data0x[51..0]" (rect 4 42 78 56)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 64 56)(line_width 3))
 	)
 	(port
-		(pt 176 32)
+		(pt 72 80)
+		(input)
+		(text "sel" (rect 0 0 14 16)(font "Arial" (font_size 8))(vertical))
+		(text "sel" (rect 65 51 79 67)(font "Arial" (font_size 8))(vertical))
+		(line (pt 72 80)(pt 72 68))
+	)
+	(port
+		(pt 144 48)
 		(output)
-		(text "P_EN[51..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "P_EN[51..0]" (rect 105 27 165 39)(font "Arial" ))
-		(line (pt 176 32)(pt 160 32)(line_width 3))
+		(text "result[51..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "result[51..0]" (rect 84 34 151 48)(font "Arial" (font_size 8)))
+		(line (pt 144 48)(pt 80 48)(line_width 3))
+	)
+	(parameter
+		"LPM_PIPELINE"
+		""
+		""
+	)
+	(parameter
+		"LPM_SIZE"
+		"52"
+		""
+	)
+	(parameter
+		"LPM_WIDTH"
+		"6"
+		""
+	)
+	(parameter
+		"LPM_WIDTHS"
+		"CEIL(LOG2(LPM_SIZE))"
+		""
 	)
 	(drawing
-		(rectangle (rect 16 16 160 64))
+		(line (pt 64 24)(pt 64 72))
+		(line (pt 64 24)(pt 80 32))
+		(line (pt 64 72)(pt 80 64))
+		(line (pt 80 32)(pt 80 64))
+		(line (pt 0 0)(pt 146 0))
+		(line (pt 146 0)(pt 146 82))
+		(line (pt 0 82)(pt 146 82))
+		(line (pt 0 0)(pt 0 82))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
 	)
+	(annotation_block (parameter)(rect -136 144 104 217))
 )
 (connector
 	(pt 224 272)

@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 136 112 304 128)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 20 12)(font "Arial" ))
+	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 136 136 304 152)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "N[6..0]" (rect 5 0 40 12)(font "Arial" ))
+	(text "N[6..0]" (rect 5 0 39 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -68,9 +68,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 224 168 400 248)
+	(rect 216 208 392 288)
 	(text "g27_pop_enable" (rect 5 0 84 12)(font "Arial" ))
-	(text "inst" (rect 8 64 25 76)(font "Arial" ))
+	(text "inst1" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -81,8 +81,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "N[6..0]" (rect 0 0 34 12)(font "Arial" ))
-		(text "N[6..0]" (rect 21 43 55 55)(font "Arial" ))
+		(text "N[5..0]" (rect 0 0 34 12)(font "Arial" ))
+		(text "N[5..0]" (rect 21 43 55 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
