@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY Lab3
+set_global_assignment -name TOP_LEVEL_ENTITY g27_stack52
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:52:05  NOVEMBER 01, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -51,3 +51,7 @@ set_global_assignment -name BDF_FILE ../Lab2/g27_lab_pop_enable.bdf
 set_global_assignment -name VHDL_FILE ../Lab2/g27_pop_enable.vhd
 set_global_assignment -name BDF_FILE g27_stack52.bdf
 set_global_assignment -name QIP_FILE lpm_mux0.qip
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
