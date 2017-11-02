@@ -16,9 +16,11 @@
 component lpm_mux0
 	PORT
 	(
-		data0x		: IN STD_LOGIC_VECTOR (51 DOWNTO 0);
-		data1x		: IN STD_LOGIC_VECTOR (51 DOWNTO 0);
-		sel		: IN STD_LOGIC ;
-		result		: OUT STD_LOGIC_VECTOR (51 DOWNTO 0)
+		data0x		: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
+		data1x		: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
+		data2x		: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
+		data3x		: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
+		sel		: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
+		result		: OUT STD_LOGIC_VECTOR (5 DOWNTO 0)
 	);
 end component;
