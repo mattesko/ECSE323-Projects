@@ -61,3 +61,4 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Matthew/Documents/GitHub/DSD-Labs-and-Project/Lab3/g27_stack52.vwf"
 set_global_assignment -name QIP_FILE lpm_mux1.qip
 set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name QIP_FILE lpm_mux2.qip
