@@ -2053,7 +2053,12 @@ TRANSITION_LIST("ENABLE")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 100.0;
+		NODE
+		{
+			REPEAT = 10;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+		}
 	}
 }
 

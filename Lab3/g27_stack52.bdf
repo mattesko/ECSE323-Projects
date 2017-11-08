@@ -12164,12 +12164,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "ZERO[5..0]" (rect 88 -208 144 -196)(font "Arial" ))
-	(pt 216 -192)
-	(pt 80 -192)
-	(bus)
-)
-(connector
 	(text "P_EN[51..0]" (rect 401 -40 461 -28)(font "Arial" ))
 	(pt 376 -24)
 	(pt 456 -24)
@@ -12420,6 +12414,12 @@ applicable agreement for further details.
 	(text "EMPTY" (rect -349 -240 -313 -228)(font "Arial" ))
 	(pt -344 -224)
 	(pt -352 -224)
+)
+(connector
+	(text "ZERO[5..0]" (rect 88 -208 144 -196)(font "Arial" ))
+	(pt 216 -192)
+	(pt 80 -192)
+	(bus)
 )
 (text "Top of Stack" (rect 640 344 711 358)(font "Arial" (font_size 8)))
 (text "MODE = 10 : PUSH" (rect 80 464 185 478)(font "Arial" (font_size 8)))
