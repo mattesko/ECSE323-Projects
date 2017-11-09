@@ -51,6 +51,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 160 544 336 560)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "FLOOR[3..0]" (rect 90 0 153 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 1104 256 1152 288)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
@@ -429,7 +445,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS855>>" (rect 241 410 253 528)(font "Arial" )(vertical)(invisible))
 	(pt 232 440)
 	(pt 232 424)
 )
@@ -446,6 +461,12 @@ applicable agreement for further details.
 	(text "1" (rect 160 408 165 420)(font "Arial" ))
 	(pt 144 424)
 	(pt 184 424)
+)
+(connector
+	(text "0,C[8..6]" (rect 94 536 137 548)(font "Arial" ))
+	(pt 160 552)
+	(pt 72 552)
+	(bus)
 )
 (text "(SHIFT_RIGHT(C, 6) * 5) = SHIFT_LEFT((SHIFT_RIGHT(C,6), 3) + SHIFT_LEFT((SHIFT_RIGHT(C,6), 2) + (SHIFT_RIGHT(C,6) = E                                         " (rect 368 128 1222 142)(font "Arial" (font_size 8)))
 (text "5 * Input = A*4 + A = C[8..0]              " (rect 208 168 413 182)(font "Arial" (font_size 8)))
