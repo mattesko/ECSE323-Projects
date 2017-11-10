@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab3
-Fri Nov 10 14:30:51 2017
+Fri Nov 10 14:50:19 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -135,12 +135,12 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
 127. Parameter Settings for User Entity Instance: g27_stack52:inst13|LPM_FF:inst71
 128. Parameter Settings for User Entity Instance: g27_stack52:inst13|BUSMUX:inst69
 129. Parameter Settings for User Entity Instance: g27_stack52:inst13|LPM_MUX:inst22
-130. Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst14|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component
-131. Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
-132. Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst14|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
-133. Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst15|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component
-134. Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
-135. Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst15|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
+130. Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst16|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component
+131. Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
+132. Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst16|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
+133. Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst17|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component
+134. Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
+135. Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst17|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
 136. Elapsed Time Per Partition
 137. Analysis & Synthesis Messages
 
@@ -168,16 +168,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 10 14:30:51 2017           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 10 14:50:19 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab3                                            ;
 ; Top-level Entity Name              ; g27_test_bed                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 690                                             ;
-;     Total combinational functions  ; 690                                             ;
+; Total logic elements               ; 691                                             ;
+;     Total combinational functions  ; 691                                             ;
 ;     Dedicated logic registers      ; 372                                             ;
 ; Total registers                    ; 372                                             ;
-; Total pins                         ; 52                                              ;
+; Total pins                         ; 104                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 3,328                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -281,70 +281,71 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                         ;
-+---------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path            ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                    ; Library ;
-+---------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
-; ../Modulo 13/g27_Modulo_13.bdf              ; yes             ; User Block Diagram/Schematic File  ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Modulo 13/g27_Modulo_13.bdf              ;         ;
-; ../Modulo 13/g27_adder.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Modulo 13/g27_adder.bdf                  ;         ;
-; ../Modulo 13/g27_8bit_adder.bdf             ; yes             ; User Block Diagram/Schematic File  ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Modulo 13/g27_8bit_adder.bdf             ;         ;
-; lpm_mux0.vhd                                ; yes             ; User Wizard-Generated File         ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_mux0.vhd                        ;         ;
-; ../Lab2/g27_pop_enable.vhd                  ; yes             ; User VHDL File                     ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab2/g27_pop_enable.vhd                  ;         ;
-; g27_stack52.bdf                             ; yes             ; User Block Diagram/Schematic File  ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_stack52.bdf                     ;         ;
-; lpm_counter0.vhd                            ; yes             ; User Wizard-Generated File         ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_counter0.vhd                    ;         ;
-; lpm_compare0.vhd                            ; yes             ; User Wizard-Generated File         ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare0.vhd                    ;         ;
-; lpm_compare1.vhd                            ; yes             ; User Wizard-Generated File         ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare1.vhd                    ;         ;
-; ../Lab2/g27_7_segment_decoder_Schematic.bdf ; yes             ; User Block Diagram/Schematic File  ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab2/g27_7_segment_decoder_Schematic.bdf ;         ;
-; g27_single_pulse_generator.bdf              ; yes             ; User Block Diagram/Schematic File  ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_single_pulse_generator.bdf      ;         ;
-; lpm_counter1.vhd                            ; yes             ; User Wizard-Generated File         ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_counter1.vhd                    ;         ;
-; lpm_compare2.vhd                            ; yes             ; User Wizard-Generated File         ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare2.vhd                    ;         ;
-; g27_test_bed.bdf                            ; yes             ; User Block Diagram/Schematic File  ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_test_bed.bdf                    ;         ;
-; g27_single_pulse_generator_test.bdf         ; yes             ; User Block Diagram/Schematic File  ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_single_pulse_generator_test.bdf ;         ;
-; lpm_comparetest.vhd                         ; yes             ; User Wizard-Generated File         ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_comparetest.vhd                 ;         ;
-; lpm_compare4.vhd                            ; yes             ; User Wizard-Generated File         ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare4.vhd                    ;         ;
-; lpm_compare.tdf                             ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.tdf                                                               ;         ;
-; comptree.inc                                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/comptree.inc                                                                  ;         ;
-; altshift.inc                                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                                                                  ;         ;
-; aglobal130.inc                              ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                                ;         ;
-; db/cmpr_49j.tdf                             ; yes             ; Auto-Generated Megafunction        ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/cmpr_49j.tdf                     ;         ;
-; lpm_counter.tdf                             ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf                                                               ;         ;
-; lpm_constant.inc                            ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc                                                              ;         ;
-; lpm_decode.inc                              ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                                ;         ;
-; lpm_add_sub.inc                             ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                               ;         ;
-; cmpconst.inc                                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cmpconst.inc                                                                  ;         ;
-; lpm_compare.inc                             ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.inc                                                               ;         ;
-; lpm_counter.inc                             ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.inc                                                               ;         ;
-; dffeea.inc                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffeea.inc                                                                    ;         ;
-; alt_counter_stratix.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_counter_stratix.inc                                                       ;         ;
-; db/cntr_e4i.tdf                             ; yes             ; Auto-Generated Megafunction        ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/cntr_e4i.tdf                     ;         ;
-; db/cmpr_mmi.tdf                             ; yes             ; Auto-Generated Megafunction        ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/cmpr_mmi.tdf                     ;         ;
-; db/cntr_b6j.tdf                             ; yes             ; Auto-Generated Megafunction        ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/cntr_b6j.tdf                     ;         ;
-; db/cmpr_i7j.tdf                             ; yes             ; Auto-Generated Megafunction        ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/cmpr_i7j.tdf                     ;         ;
-; lpm_ff.tdf                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_ff.tdf                                                                    ;         ;
-; lpm_constant.tdf                            ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.tdf                                                              ;         ;
-; lpm_rom.tdf                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_rom.tdf                                                                   ;         ;
-; altrom.inc                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                    ;         ;
-; altrom.tdf                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.tdf                                                                    ;         ;
-; memmodes.inc                                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/memmodes.inc                                                                ;         ;
-; lpm_mux.inc                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                   ;         ;
-; altsyncram.inc                              ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.inc                                                                ;         ;
-; altsyncram.tdf                              ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                ;         ;
-; stratix_ram_block.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                         ;         ;
-; a_rdenreg.inc                               ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                 ;         ;
-; altram.inc                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                    ;         ;
-; altdpram.inc                                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                  ;         ;
-; db/altsyncram_t601.tdf                      ; yes             ; Auto-Generated Megafunction        ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/altsyncram_t601.tdf              ;         ;
-; lpm_mux.tdf                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf                                                                   ;         ;
-; muxlut.inc                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc                                                                    ;         ;
-; bypassff.inc                                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                                                                  ;         ;
-; db/mux_83e.tdf                              ; yes             ; Auto-Generated Megafunction        ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/mux_83e.tdf                      ;         ;
-; busmux.tdf                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/busmux.tdf                                                                    ;         ;
-; db/mux_qmc.tdf                              ; yes             ; Auto-Generated Megafunction        ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/mux_qmc.tdf                      ;         ;
-; db/mux_koc.tdf                              ; yes             ; Auto-Generated Megafunction        ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/mux_koc.tdf                      ;         ;
-; g27_7_segment_decoder.vhd                   ; yes             ; Auto-Found VHDL File               ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_7_segment_decoder.vhd           ;         ;
-; db/cmpr_39j.tdf                             ; yes             ; Auto-Generated Megafunction        ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/cmpr_39j.tdf                     ;         ;
-+---------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                             ;
++---------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path            ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                                    ; Library ;
++---------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../Modulo 13/g27_Modulo_13.bdf              ; yes             ; User Block Diagram/Schematic File      ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Modulo 13/g27_Modulo_13.bdf              ;         ;
+; ../Modulo 13/g27_adder.bdf                  ; yes             ; User Block Diagram/Schematic File      ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Modulo 13/g27_adder.bdf                  ;         ;
+; ../Modulo 13/g27_8bit_adder.bdf             ; yes             ; User Block Diagram/Schematic File      ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Modulo 13/g27_8bit_adder.bdf             ;         ;
+; lpm_mux0.vhd                                ; yes             ; User Wizard-Generated File             ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_mux0.vhd                        ;         ;
+; ../Lab2/g27_pop_enable.vhd                  ; yes             ; User VHDL File                         ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab2/g27_pop_enable.vhd                  ;         ;
+; g27_stack52.bdf                             ; yes             ; User Block Diagram/Schematic File      ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_stack52.bdf                     ;         ;
+; lpm_counter0.vhd                            ; yes             ; User Wizard-Generated File             ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_counter0.vhd                    ;         ;
+; lpm_compare0.vhd                            ; yes             ; User Wizard-Generated File             ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare0.vhd                    ;         ;
+; lpm_compare1.vhd                            ; yes             ; User Wizard-Generated File             ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare1.vhd                    ;         ;
+; ../Lab2/g27_7_segment_decoder_Schematic.bdf ; yes             ; User Block Diagram/Schematic File      ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab2/g27_7_segment_decoder_Schematic.bdf ;         ;
+; g27_single_pulse_generator.bdf              ; yes             ; User Block Diagram/Schematic File      ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_single_pulse_generator.bdf      ;         ;
+; lpm_counter1.vhd                            ; yes             ; User Wizard-Generated File             ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_counter1.vhd                    ;         ;
+; lpm_compare2.vhd                            ; yes             ; User Wizard-Generated File             ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare2.vhd                    ;         ;
+; g27_test_bed.bdf                            ; yes             ; User Block Diagram/Schematic File      ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_test_bed.bdf                    ;         ;
+; g27_single_pulse_generator_test.bdf         ; yes             ; User Block Diagram/Schematic File      ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_single_pulse_generator_test.bdf ;         ;
+; lpm_comparetest.vhd                         ; yes             ; User Wizard-Generated File             ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_comparetest.vhd                 ;         ;
+; lpm_compare4.vhd                            ; yes             ; User Wizard-Generated File             ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare4.vhd                    ;         ;
+; lpm_compare.tdf                             ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.tdf                                                               ;         ;
+; comptree.inc                                ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/comptree.inc                                                                  ;         ;
+; altshift.inc                                ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                                                                  ;         ;
+; aglobal130.inc                              ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                                ;         ;
+; db/cmpr_49j.tdf                             ; yes             ; Auto-Generated Megafunction            ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/cmpr_49j.tdf                     ;         ;
+; lpm_counter.tdf                             ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf                                                               ;         ;
+; lpm_constant.inc                            ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc                                                              ;         ;
+; lpm_decode.inc                              ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                                ;         ;
+; lpm_add_sub.inc                             ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                               ;         ;
+; cmpconst.inc                                ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cmpconst.inc                                                                  ;         ;
+; lpm_compare.inc                             ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.inc                                                               ;         ;
+; lpm_counter.inc                             ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.inc                                                               ;         ;
+; dffeea.inc                                  ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffeea.inc                                                                    ;         ;
+; alt_counter_stratix.inc                     ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_counter_stratix.inc                                                       ;         ;
+; db/cntr_e4i.tdf                             ; yes             ; Auto-Generated Megafunction            ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/cntr_e4i.tdf                     ;         ;
+; db/cmpr_mmi.tdf                             ; yes             ; Auto-Generated Megafunction            ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/cmpr_mmi.tdf                     ;         ;
+; db/cntr_b6j.tdf                             ; yes             ; Auto-Generated Megafunction            ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/cntr_b6j.tdf                     ;         ;
+; db/cmpr_i7j.tdf                             ; yes             ; Auto-Generated Megafunction            ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/cmpr_i7j.tdf                     ;         ;
+; lpm_ff.tdf                                  ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_ff.tdf                                                                    ;         ;
+; lpm_constant.tdf                            ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.tdf                                                              ;         ;
+; lpm_rom.tdf                                 ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_rom.tdf                                                                   ;         ;
+; altrom.inc                                  ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                    ;         ;
+; altrom.tdf                                  ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.tdf                                                                    ;         ;
+; memmodes.inc                                ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/memmodes.inc                                                                ;         ;
+; lpm_mux.inc                                 ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                   ;         ;
+; altsyncram.inc                              ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.inc                                                                ;         ;
+; altsyncram.tdf                              ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                ;         ;
+; stratix_ram_block.inc                       ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                         ;         ;
+; a_rdenreg.inc                               ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                 ;         ;
+; altram.inc                                  ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                    ;         ;
+; altdpram.inc                                ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                  ;         ;
+; db/altsyncram_t601.tdf                      ; yes             ; Auto-Generated Megafunction            ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/altsyncram_t601.tdf              ;         ;
+; ../Lab2/crc_rom.mif                         ; yes             ; Auto-Found Memory Initialization File  ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab2/crc_rom.mif                         ;         ;
+; lpm_mux.tdf                                 ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf                                                                   ;         ;
+; muxlut.inc                                  ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc                                                                    ;         ;
+; bypassff.inc                                ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                                                                  ;         ;
+; db/mux_83e.tdf                              ; yes             ; Auto-Generated Megafunction            ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/mux_83e.tdf                      ;         ;
+; busmux.tdf                                  ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/busmux.tdf                                                                    ;         ;
+; db/mux_qmc.tdf                              ; yes             ; Auto-Generated Megafunction            ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/mux_qmc.tdf                      ;         ;
+; db/mux_koc.tdf                              ; yes             ; Auto-Generated Megafunction            ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/mux_koc.tdf                      ;         ;
+; g27_7_segment_decoder.vhd                   ; yes             ; Auto-Found VHDL File                   ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_7_segment_decoder.vhd           ;         ;
+; db/cmpr_39j.tdf                             ; yes             ; Auto-Generated Megafunction            ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/db/cmpr_39j.tdf                     ;         ;
++---------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -352,29 +353,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 690   ;
+; Estimated Total logic elements              ; 691   ;
 ;                                             ;       ;
-; Total combinational functions               ; 690   ;
+; Total combinational functions               ; 691   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 273   ;
+;     -- 4 input functions                    ; 274   ;
 ;     -- 3 input functions                    ; 343   ;
 ;     -- <=2 input functions                  ; 74    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 635   ;
+;     -- normal mode                          ; 636   ;
 ;     -- arithmetic mode                      ; 55    ;
 ;                                             ;       ;
 ; Total registers                             ; 372   ;
 ;     -- Dedicated logic registers            ; 372   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 52    ;
+; I/O pins                                    ; 104   ;
 ; Total memory bits                           ; 3328  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; CLK   ;
 ; Maximum fan-out                             ; 424   ;
-; Total fan-out                               ; 4591  ;
-; Average fan-out                             ; 3.94  ;
+; Total fan-out                               ; 4647  ;
+; Average fan-out                             ; 3.81  ;
 +---------------------------------------------+-------+
 
 
@@ -383,7 +384,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                      ; Library Name ;
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g27_test_bed                                      ; 690 (3)           ; 372 (0)      ; 3328        ; 0            ; 0       ; 0         ; 52   ; 0            ; |g27_test_bed                                                                                                                            ; work         ;
+; |g27_test_bed                                      ; 691 (3)           ; 372 (0)      ; 3328        ; 0            ; 0       ; 0         ; 104  ; 0            ; |g27_test_bed                                                                                                                            ; work         ;
 ;    |g27_7_segment_decoder_Schematic:inst2|         ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_test_bed|g27_7_segment_decoder_Schematic:inst2                                                                                      ; work         ;
 ;       |g27_7_segment_decoder:inst|                 ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_test_bed|g27_7_segment_decoder_Schematic:inst2|g27_7_segment_decoder:inst                                                           ; work         ;
 ;    |g27_7_segment_decoder_Schematic:inst3|         ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_test_bed|g27_7_segment_decoder_Schematic:inst3                                                                                      ; work         ;
@@ -414,7 +415,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |lpm_counter1:inst2|                         ; 26 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_test_bed|g27_single_pulse_generator:inst6|lpm_counter1:inst2                                                                        ; work         ;
 ;          |lpm_counter:LPM_COUNTER_component|       ; 26 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_test_bed|g27_single_pulse_generator:inst6|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component                                      ; work         ;
 ;             |cntr_e4i:auto_generated|              ; 26 (26)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_test_bed|g27_single_pulse_generator:inst6|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated              ; work         ;
-;    |g27_stack52:inst13|                            ; 582 (4)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_test_bed|g27_stack52:inst13                                                                                                         ; work         ;
+;    |g27_stack52:inst13|                            ; 583 (5)           ; 318 (0)      ; 3328        ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_test_bed|g27_stack52:inst13                                                                                                         ; work         ;
 ;       |busmux:inst101|                             ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_test_bed|g27_stack52:inst13|busmux:inst101                                                                                          ; work         ;
 ;          |lpm_mux:$00000|                          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_test_bed|g27_stack52:inst13|busmux:inst101|lpm_mux:$00000                                                                           ; work         ;
 ;             |mux_qmc:auto_generated|               ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_test_bed|g27_stack52:inst13|busmux:inst101|lpm_mux:$00000|mux_qmc:auto_generated                                                    ; work         ;
@@ -670,12 +671,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_stack52:inst13|lpm_compare1:inst125                      ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare1.vhd    ;
 ; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_stack52:inst13|lpm_mux0:inst128                          ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_mux0.vhd        ;
 ; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_test_bed|g27_stack52:inst13|lpm_compare0:instcompare0                 ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare0.vhd    ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_single_pulse_generator_test:inst14|lpm_comparetest:inst1 ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_comparetest.vhd ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_single_pulse_generator_test:inst14|lpm_counter1:inst2    ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_counter1.vhd    ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_single_pulse_generator_test:inst14|lpm_compare4:inst12   ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare4.vhd    ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_single_pulse_generator_test:inst15|lpm_comparetest:inst1 ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_comparetest.vhd ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_single_pulse_generator_test:inst15|lpm_counter1:inst2    ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_counter1.vhd    ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_single_pulse_generator_test:inst15|lpm_compare4:inst12   ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare4.vhd    ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_single_pulse_generator_test:inst16|lpm_comparetest:inst1 ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_comparetest.vhd ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_single_pulse_generator_test:inst16|lpm_counter1:inst2    ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_counter1.vhd    ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_single_pulse_generator_test:inst16|lpm_compare4:inst12   ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare4.vhd    ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_single_pulse_generator_test:inst17|lpm_comparetest:inst1 ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_comparetest.vhd ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_single_pulse_generator_test:inst17|lpm_counter1:inst2    ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_counter1.vhd    ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |g27_test_bed|g27_single_pulse_generator_test:inst17|lpm_compare4:inst12   ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare4.vhd    ;
 +--------+--------------+---------+--------------+--------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
 
 
@@ -684,10 +685,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+
 ; Register name                                                                                                                     ; Reason for Removal                    ;
 +-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+
-; g27_single_pulse_generator_test:inst15|inst                                                                                       ; Stuck at GND due to stuck port clock  ;
-; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[0..25] ; Stuck at GND due to stuck port aclear ;
-; g27_single_pulse_generator_test:inst14|inst                                                                                       ; Stuck at GND due to stuck port clock  ;
-; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[0..25] ; Stuck at GND due to stuck port aclear ;
+; g27_single_pulse_generator_test:inst17|inst                                                                                       ; Stuck at GND due to stuck port clock  ;
+; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[0..25] ; Stuck at GND due to stuck port aclear ;
+; g27_single_pulse_generator_test:inst16|inst                                                                                       ; Stuck at GND due to stuck port clock  ;
+; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[0..25] ; Stuck at GND due to stuck port aclear ;
 ; Total Number of Removed Registers = 54                                                                                            ;                                       ;
 +-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+
 
@@ -697,56 +698,56 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 ; Register name                               ; Reason for Removal      ; Registers Removed due to This Register                                                                                          ;
 +---------------------------------------------+-------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-; g27_single_pulse_generator_test:inst15|inst ; Stuck at GND            ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[25], ;
-;                                             ; due to stuck port clock ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[23], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[22], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[21], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[20], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[19], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[18], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[17], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[16], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[15], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[14], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[13], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[12], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[11], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[10], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[9],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[8],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[7],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[6],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[5],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[4],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[3],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[2],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[1],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[0]   ;
-; g27_single_pulse_generator_test:inst14|inst ; Stuck at GND            ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[25], ;
-;                                             ; due to stuck port clock ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[23], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[22], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[21], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[20], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[19], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[18], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[17], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[16], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[15], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[14], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[13], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[12], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[11], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[10], ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[9],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[8],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[7],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[6],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[5],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[4],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[3],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[2],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[1],  ;
-;                                             ;                         ; g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[0]   ;
+; g27_single_pulse_generator_test:inst17|inst ; Stuck at GND            ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[25], ;
+;                                             ; due to stuck port clock ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[23], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[22], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[21], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[20], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[19], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[18], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[17], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[16], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[15], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[14], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[13], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[12], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[11], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[10], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[9],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[8],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[7],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[6],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[5],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[4],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[3],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[2],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[1],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[0]   ;
+; g27_single_pulse_generator_test:inst16|inst ; Stuck at GND            ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[25], ;
+;                                             ; due to stuck port clock ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[23], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[22], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[21], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[20], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[19], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[18], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[17], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[16], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[15], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[14], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[13], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[12], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[11], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[10], ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[9],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[8],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[7],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[6],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[5],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[4],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[3],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[2],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[1],  ;
+;                                             ;                         ; g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated|safe_q[0]   ;
 +---------------------------------------------+-------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -2566,7 +2567,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst14|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component ;
+; Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst16|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component ;
 +------------------------+------------+-------------------------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value      ; Type                                                                                                  ;
 +------------------------+------------+-------------------------------------------------------------------------------------------------------+
@@ -2590,7 +2591,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst14|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component ;
+; Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst16|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component ;
 +------------------------+-------------+---------------------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value       ; Type                                                                                              ;
 +------------------------+-------------+---------------------------------------------------------------------------------------------------+
@@ -2617,7 +2618,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst14|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component ;
+; Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst16|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component ;
 +------------------------+------------+-----------------------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value      ; Type                                                                                                ;
 +------------------------+------------+-----------------------------------------------------------------------------------------------------+
@@ -2641,7 +2642,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst15|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component ;
+; Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst17|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component ;
 +------------------------+------------+-------------------------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value      ; Type                                                                                                  ;
 +------------------------+------------+-------------------------------------------------------------------------------------------------------+
@@ -2665,7 +2666,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst15|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component ;
+; Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst17|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component ;
 +------------------------+-------------+---------------------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value       ; Type                                                                                              ;
 +------------------------+-------------+---------------------------------------------------------------------------------------------------+
@@ -2692,7 +2693,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst15|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component ;
+; Parameter Settings for User Entity Instance: g27_single_pulse_generator_test:inst17|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component ;
 +------------------------+------------+-----------------------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value      ; Type                                                                                                ;
 +------------------------+------------+-----------------------------------------------------------------------------------------------------+
@@ -2730,7 +2731,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 10 14:30:40 2017
+    Info: Processing started: Fri Nov 10 14:50:10 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3
 Warning (125092): Tcl Script File output_files/lpm_compare0.qip not found
     Info (125063): set_global_assignment -name QIP_FILE output_files/lpm_compare0.qip
@@ -2799,8 +2800,8 @@ Warning (12019): Can't analyze file -- file g28_debounce2mill.bdf is missing
 Info (12021): Found 1 design units, including 1 entities, in source file g27_debounce2mill.bdf
     Info (12023): Found entity 1: g27_debounce2mill
 Info (12127): Elaborating entity "g27_test_bed" for the top level hierarchy
-Warning (275013): Port "CLK" of type g27_single_pulse_generator_test and instance "inst14" is missing source signal
-Warning (275013): Port "CLK" of type g27_single_pulse_generator_test and instance "inst15" is missing source signal
+Warning (275013): Port "CLK" of type g27_single_pulse_generator_test and instance "inst16" is missing source signal
+Warning (275013): Port "CLK" of type g27_single_pulse_generator_test and instance "inst17" is missing source signal
 Info (12128): Elaborating entity "g27_single_pulse_generator" for hierarchy "g27_single_pulse_generator:inst5"
 Info (12128): Elaborating entity "lpm_compare2" for hierarchy "g27_single_pulse_generator:inst5|lpm_compare2:inst15"
 Info (12128): Elaborating entity "lpm_compare" for hierarchy "g27_single_pulse_generator:inst5|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component"
@@ -3606,85 +3607,138 @@ Warning (12125): Using design file g27_7_segment_decoder.vhd, which is not speci
     Info (12022): Found design unit 1: g27_7_segment_decoder-architecture_7_segment_decoder
     Info (12023): Found entity 1: g27_7_segment_decoder
 Info (12128): Elaborating entity "g27_7_segment_decoder" for hierarchy "g27_7_segment_decoder_Schematic:inst2|g27_7_segment_decoder:inst"
-Info (12128): Elaborating entity "g27_single_pulse_generator_test" for hierarchy "g27_single_pulse_generator_test:inst14"
-Info (12128): Elaborating entity "lpm_comparetest" for hierarchy "g27_single_pulse_generator_test:inst14|lpm_comparetest:inst1"
-Info (12128): Elaborating entity "lpm_compare" for hierarchy "g27_single_pulse_generator_test:inst14|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component"
-Info (12130): Elaborated megafunction instantiation "g27_single_pulse_generator_test:inst14|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component"
-Info (12133): Instantiated megafunction "g27_single_pulse_generator_test:inst14|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component" with the following parameter:
+Info (12128): Elaborating entity "g27_single_pulse_generator_test" for hierarchy "g27_single_pulse_generator_test:inst16"
+Info (12128): Elaborating entity "lpm_comparetest" for hierarchy "g27_single_pulse_generator_test:inst16|lpm_comparetest:inst1"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "g27_single_pulse_generator_test:inst16|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component"
+Info (12130): Elaborated megafunction instantiation "g27_single_pulse_generator_test:inst16|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component"
+Info (12133): Instantiated megafunction "g27_single_pulse_generator_test:inst16|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component" with the following parameter:
     Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=YES"
     Info (12134): Parameter "lpm_representation" = "UNSIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
     Info (12134): Parameter "lpm_width" = "25"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_39j.tdf
     Info (12023): Found entity 1: cmpr_39j
-Info (12128): Elaborating entity "cmpr_39j" for hierarchy "g27_single_pulse_generator_test:inst14|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component|cmpr_39j:auto_generated"
+Info (12128): Elaborating entity "cmpr_39j" for hierarchy "g27_single_pulse_generator_test:inst16|lpm_comparetest:inst1|lpm_compare:LPM_COMPARE_component|cmpr_39j:auto_generated"
+Warning (13044): Always-enabled tri-state buffer(s) removed
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[51]" to the node "P_EN[51]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[50]" to the node "P_EN[50]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[49]" to the node "P_EN[49]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[48]" to the node "P_EN[48]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[47]" to the node "P_EN[47]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[46]" to the node "P_EN[46]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[45]" to the node "P_EN[45]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[44]" to the node "P_EN[44]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[43]" to the node "P_EN[43]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[42]" to the node "P_EN[42]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[41]" to the node "P_EN[41]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[40]" to the node "P_EN[40]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[39]" to the node "P_EN[39]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[38]" to the node "P_EN[38]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[37]" to the node "P_EN[37]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[36]" to the node "P_EN[36]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[35]" to the node "P_EN[35]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[34]" to the node "P_EN[34]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[33]" to the node "P_EN[33]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[32]" to the node "P_EN[32]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[31]" to the node "P_EN[31]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[30]" to the node "P_EN[30]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[29]" to the node "P_EN[29]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[28]" to the node "P_EN[28]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[27]" to the node "P_EN[27]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[26]" to the node "P_EN[26]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[25]" to the node "P_EN[25]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[24]" to the node "P_EN[24]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[23]" to the node "P_EN[23]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[22]" to the node "P_EN[22]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[21]" to the node "P_EN[21]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[20]" to the node "P_EN[20]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[19]" to the node "P_EN[19]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[18]" to the node "P_EN[18]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[17]" to the node "P_EN[17]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[16]" to the node "P_EN[16]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[15]" to the node "P_EN[15]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[14]" to the node "P_EN[14]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[13]" to the node "P_EN[13]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[12]" to the node "P_EN[12]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[11]" to the node "P_EN[11]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[10]" to the node "P_EN[10]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[9]" to the node "P_EN[9]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[8]" to the node "P_EN[8]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[7]" to the node "P_EN[7]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[6]" to the node "P_EN[6]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[5]" to the node "P_EN[5]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[4]" to the node "P_EN[4]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[3]" to the node "P_EN[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[2]" to the node "P_EN[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[1]" to the node "P_EN[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[0]" to the node "P_EN[0]" into a wire
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[51]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[50]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[49]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[48]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[47]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[46]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[45]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[44]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[43]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[42]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[41]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[40]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[39]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[38]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[37]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[36]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[35]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[34]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[33]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[32]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[31]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[30]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[29]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[28]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[27]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[26]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[25]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[24]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[23]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[22]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[21]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[20]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[19]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[18]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[17]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[16]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[15]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[14]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[13]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[12]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[11]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[10]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[9]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[8]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[7]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[6]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[5]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[4]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[3]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[2]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[1]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[0]" feeding internal logic into a wire
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[51]" to the node "g27_stack52:inst13|lpm_ff:inst118|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[50]" to the node "g27_stack52:inst13|lpm_ff:inst117|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[49]" to the node "g27_stack52:inst13|lpm_ff:inst114|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[48]" to the node "g27_stack52:inst13|lpm_ff:inst113|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[47]" to the node "g27_stack52:inst13|lpm_ff:inst110|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[46]" to the node "g27_stack52:inst13|lpm_ff:inst109|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[45]" to the node "g27_stack52:inst13|lpm_ff:inst106|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[44]" to the node "g27_stack52:inst13|lpm_ff:inst105|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[43]" to the node "g27_stack52:inst13|lpm_ff:inst102|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[42]" to the node "g27_stack52:inst13|lpm_ff:inst100|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[41]" to the node "g27_stack52:inst13|lpm_ff:inst99|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[40]" to the node "g27_stack52:inst13|lpm_ff:inst96|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[39]" to the node "g27_stack52:inst13|lpm_ff:inst95|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[38]" to the node "g27_stack52:inst13|lpm_ff:inst92|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[37]" to the node "g27_stack52:inst13|lpm_ff:inst91|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[36]" to the node "g27_stack52:inst13|lpm_ff:inst88|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[35]" to the node "g27_stack52:inst13|lpm_ff:inst87|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[34]" to the node "g27_stack52:inst13|lpm_ff:inst84|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[33]" to the node "g27_stack52:inst13|lpm_ff:inst83|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[32]" to the node "g27_stack52:inst13|lpm_ff:inst80|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[31]" to the node "g27_stack52:inst13|lpm_ff:inst79|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[30]" to the node "g27_stack52:inst13|lpm_ff:inst76|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[29]" to the node "g27_stack52:inst13|lpm_ff:inst75|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[28]" to the node "g27_stack52:inst13|lpm_ff:inst72|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[27]" to the node "g27_stack52:inst13|lpm_ff:inst71|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[26]" to the node "g27_stack52:inst13|lpm_ff:inst68|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[25]" to the node "g27_stack52:inst13|lpm_ff:inst67|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[24]" to the node "g27_stack52:inst13|lpm_ff:inst64|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[23]" to the node "g27_stack52:inst13|lpm_ff:inst63|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[22]" to the node "g27_stack52:inst13|lpm_ff:inst60|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[21]" to the node "g27_stack52:inst13|lpm_ff:inst58|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[20]" to the node "g27_stack52:inst13|lpm_ff:inst56|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[19]" to the node "g27_stack52:inst13|lpm_ff:inst54|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[18]" to the node "g27_stack52:inst13|lpm_ff:inst52|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[17]" to the node "g27_stack52:inst13|lpm_ff:inst50|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[16]" to the node "g27_stack52:inst13|lpm_ff:inst48|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[15]" to the node "g27_stack52:inst13|lpm_ff:inst46|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[14]" to the node "g27_stack52:inst13|lpm_ff:inst44|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[13]" to the node "g27_stack52:inst13|lpm_ff:inst42|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[12]" to the node "g27_stack52:inst13|lpm_ff:inst40|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[11]" to the node "g27_stack52:inst13|lpm_ff:inst38|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[10]" to the node "g27_stack52:inst13|lpm_ff:inst37|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[9]" to the node "g27_stack52:inst13|lpm_ff:inst34|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[8]" to the node "g27_stack52:inst13|lpm_ff:inst32|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[7]" to the node "g27_stack52:inst13|lpm_ff:inst16|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[6]" to the node "g27_stack52:inst13|lpm_ff:inst23|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[5]" to the node "g27_stack52:inst13|lpm_ff:inst30|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[4]" to the node "g27_stack52:inst13|lpm_ff:inst20|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[3]" to the node "g27_stack52:inst13|lpm_ff:inst5|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[2]" to the node "g27_stack52:inst13|lpm_ff:inst18|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[1]" to the node "g27_stack52:inst13|lpm_ff:inst11|dffs[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "g27_stack52:inst13|g27_pop_enable:inst13|lpm_rom:crc_table|otri[0]" to the node "g27_stack52:inst13|lpm_ff:inst|dffs[5]" into an OR gate
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "FLOOR[3]" is stuck at GND
     Warning (13410): Pin "SEGMENT_2[1]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 794 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 847 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 41 output pins
-    Info (21061): Implemented 690 logic cells
+    Info (21059): Implemented 93 output pins
+    Info (21061): Implemented 691 logic cells
     Info (21064): Implemented 52 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 272 warnings
-    Info: Peak virtual memory: 607 megabytes
-    Info: Processing ended: Fri Nov 10 14:30:51 2017
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:11
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 325 warnings
+    Info: Peak virtual memory: 591 megabytes
+    Info: Processing ended: Fri Nov 10 14:50:19 2017
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:09
 
 

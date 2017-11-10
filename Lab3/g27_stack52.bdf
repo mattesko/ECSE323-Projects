@@ -9363,6 +9363,70 @@ applicable agreement for further details.
 		(arc (pt 31 36)(pt 31 12)(rect 19 12 44 37))
 	)
 )
+(symbol
+	(rect 24 -488 88 -440)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 37 26 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
+(symbol
+	(rect 24 -328 88 -280)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst14" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
 (connector
 	(text "POP_ENABLE_INPUT[5..0]" (rect 80 -24 215 -12)(font "Arial" ))
 	(pt 80 -8)
@@ -12350,11 +12414,6 @@ applicable agreement for further details.
 	(pt -264 -328)
 )
 (connector
-	(text "MOD[0]" (rect 0 -296 37 -284)(font "Arial" ))
-	(pt -8 -280)
-	(pt 24 -280)
-)
-(connector
 	(pt -96 -312)
 	(pt -80 -312)
 )
@@ -12377,11 +12436,6 @@ applicable agreement for further details.
 (connector
 	(pt -80 -272)
 	(pt -80 -248)
-)
-(connector
-	(text "MOD[1]" (rect 3 -488 40 -476)(font "Arial" ))
-	(pt -8 -472)
-	(pt 24 -472)
 )
 (connector
 	(pt -96 -496)
@@ -12492,6 +12546,46 @@ applicable agreement for further details.
 (connector
 	(pt -208 -432)
 	(pt -208 -408)
+)
+(connector
+	(text "MOD[1]" (rect 99 -480 136 -468)(font "Arial" ))
+	(pt 88 -464)
+	(pt 120 -464)
+)
+(connector
+	(text "MOD[0]" (rect 96 -320 133 -308)(font "Arial" ))
+	(pt 88 -304)
+	(pt 120 -304)
+)
+(connector
+	(pt -8 -280)
+	(pt 24 -280)
+)
+(connector
+	(pt 24 -280)
+	(pt 24 -296)
+)
+(connector
+	(pt -16 -312)
+	(pt -16 -320)
+)
+(connector
+	(pt 24 -472)
+	(pt -8 -472)
+)
+(connector
+	(pt 24 -456)
+	(pt 0 -456)
+)
+(connector
+	(text "ENABLE" (rect -16 -476 -4 -434)(font "Arial" )(vertical))
+	(pt 0 -456)
+	(pt 0 -424)
+)
+(connector
+	(text "ENABLE" (rect -6 -328 36 -316)(font "Arial" ))
+	(pt 24 -312)
+	(pt -16 -312)
 )
 (text "Top of Stack" (rect 640 344 711 358)(font "Arial" (font_size 8)))
 (text "MODE = 10 : PUSH" (rect 80 464 185 478)(font "Arial" (font_size 8)))
