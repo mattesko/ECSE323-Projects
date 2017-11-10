@@ -21,99 +21,118 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 528 -48 696 -32)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "ADDR[5..0]" (rect 5 0 62 12)(font "Arial" ))
-	(pt 168 8)
+	(rect 528 -48 704 -32)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "ADDR[5..0]" (rect 9 0 66 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 472 -32 528 -16))
 )
 (pin
 	(input)
-	(rect 528 -16 696 0)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "ENABLE" (rect 5 0 47 12)(font "Arial" ))
-	(pt 168 8)
+	(rect 528 -16 704 0)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "ENABLE" (rect 9 0 51 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
-	(rect 528 16 696 32)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "RST" (rect 5 0 26 12)(font "Arial" ))
-	(pt 168 8)
+	(rect 528 16 704 32)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "RST" (rect 9 0 30 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
-	(rect 528 48 696 64)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
-	(pt 168 8)
+	(rect 528 48 704 64)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "CLK" (rect 9 0 30 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 472 64 528 80))
 )
 (pin
 	(input)
-	(rect 528 -112 696 -96)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "DATA[5..0]" (rect 5 0 59 12)(font "Arial" ))
-	(pt 168 8)
+	(rect 528 -112 704 -96)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "DATA[5..0]" (rect 9 0 63 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
-	(rect 528 -80 696 -64)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MODE[1..0]" (rect 5 0 62 12)(font "Arial" ))
-	(pt 168 8)
+	(rect 528 -80 704 -64)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "MODE[1..0]" (rect 9 0 66 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 472 -64 528 -48))
+)
+(pin
+	(output)
+	(rect 728 -144 904 -128)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "INIT" (rect 90 0 111 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (pin
 	(output)
@@ -146,6 +165,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 904 -64 960 -48))
 )
 (pin
 	(output)
@@ -162,10 +182,11 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 904 0 960 16))
 )
 (pin
 	(output)
-	(rect 728 56 904 72)
+	(rect 728 48 904 64)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "PUSH" (rect 90 0 120 12)(font "Arial" ))
 	(pt 0 8)
@@ -178,10 +199,11 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 904 64 960 80))
 )
 (pin
 	(output)
-	(rect 728 88 904 104)
+	(rect 728 80 904 96)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "POP" (rect 90 0 112 12)(font "Arial" ))
 	(pt 0 8)
@@ -194,6 +216,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 904 96 960 112))
 )
 (pin
 	(output)
@@ -210,6 +233,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 904 -32 960 -16))
 )
 (pin
 	(output)
@@ -293,7 +317,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 728 24 904 40)
+	(rect 728 16 904 32)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "P_EN[51..0]" (rect 90 0 150 12)(font "Arial" ))
 	(pt 0 8)
@@ -410,7 +434,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -460,7 +484,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -506,7 +530,7 @@ applicable agreement for further details.
 		(pt 64 40)
 		(output)
 		(text "OUT" (rect 48 31 65 43)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 31 65 43)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 31 62 43)(font "Courier New" (bold))(invisible))
 		(line (pt 46 40)(pt 64 40))
 	)
 	(drawing
@@ -532,7 +556,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -564,7 +588,7 @@ applicable agreement for further details.
 		(pt 176 32)
 		(output)
 		(text "P_EN[51..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "P_EN[51..0]" (rect 105 27 165 39)(font "Arial" ))
+		(text "P_EN[51..0]" (rect 105 27 155 39)(font "Arial" ))
 		(line (pt 176 32)(pt 160 32)(line_width 3))
 	)
 	(drawing
@@ -593,7 +617,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -618,7 +642,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -648,7 +672,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 752 760 896)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst18" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst18" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -716,7 +740,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -754,7 +778,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 936 760 1080)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst5" (rect 3 133 26 145)(font "Arial" ))
+	(text "inst5" (rect 3 133 30 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -822,7 +846,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -860,7 +884,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 408 440 496)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst2" (rect 3 77 26 89)(font "Arial" ))
+	(text "inst2" (rect 3 77 30 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -886,7 +910,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -908,7 +932,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 592 440 680)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst3" (rect 3 77 26 89)(font "Arial" ))
+	(text "inst3" (rect 3 77 30 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -934,7 +958,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -956,7 +980,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 960 440 1048)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst4" (rect 3 77 26 89)(font "Arial" ))
+	(text "inst4" (rect 3 77 30 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -982,7 +1006,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -1004,7 +1028,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 776 440 864)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst6" (rect 3 77 26 89)(font "Arial" ))
+	(text "inst6" (rect 3 77 30 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -1030,7 +1054,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -1064,7 +1088,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -1110,7 +1134,7 @@ applicable agreement for further details.
 		(pt 64 40)
 		(output)
 		(text "OUT" (rect 48 31 65 43)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 31 65 43)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 31 62 43)(font "Courier New" (bold))(invisible))
 		(line (pt 46 40)(pt 64 40))
 	)
 	(drawing
@@ -1124,7 +1148,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 568 760 712)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst11" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst11" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -1192,7 +1216,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1230,7 +1254,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 1120 760 1264)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst20" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst20" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -1298,7 +1322,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1348,7 +1372,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -1417,7 +1441,7 @@ applicable agreement for further details.
 		(pt 112 56)
 		(output)
 		(text "result[LPM_WIDTH-1..0]" (rect 75 41 208 55)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 41 113 55)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 41 107 55)(font "Arial" (font_size 8)))
 		(line (pt 68 56)(pt 112 56)(line_width 3))
 	)
 	(parameter
@@ -1455,7 +1479,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 1328 440 1416)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst24" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst24" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -1481,7 +1505,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -1503,7 +1527,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 1696 440 1784)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst25" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst25" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -1529,7 +1553,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -1551,7 +1575,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 1512 440 1600)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst28" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst28" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -1577,7 +1601,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -1599,7 +1623,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 1880 440 1968)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst31" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst31" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -1625,7 +1649,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -1647,7 +1671,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 1304 760 1448)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst30" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst30" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -1715,7 +1739,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1753,7 +1777,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 1488 760 1632)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst23" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst23" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -1821,7 +1845,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1859,7 +1883,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 1672 760 1816)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst16" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst16" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -1927,7 +1951,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -1965,7 +1989,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 1856 760 2000)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst32" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst32" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -2033,7 +2057,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2071,7 +2095,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 2064 440 2152)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst33" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst33" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -2097,7 +2121,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -2119,7 +2143,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 2040 760 2184)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst34" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst34" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -2187,7 +2211,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2225,7 +2249,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 2248 440 2336)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst35" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst35" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -2251,7 +2275,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -2273,7 +2297,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 2224 760 2368)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst37" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst37" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -2341,7 +2365,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2379,7 +2403,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 1144 440 1232)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "mux4" (rect 3 77 30 89)(font "Arial" ))
+	(text "mux4" (rect 3 77 33 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -2405,7 +2429,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -2427,7 +2451,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 2432 440 2520)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst36" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst36" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -2453,7 +2477,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -2475,7 +2499,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 2408 760 2552)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst38" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst38" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -2543,7 +2567,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2581,7 +2605,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 2616 440 2704)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst39" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst39" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -2607,7 +2631,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -2629,7 +2653,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 2592 760 2736)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst40" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst40" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -2697,7 +2721,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2735,7 +2759,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 2800 440 2888)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst41" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst41" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -2761,7 +2785,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -2783,7 +2807,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 2776 760 2920)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst42" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst42" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -2851,7 +2875,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -2889,7 +2913,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 2984 440 3072)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst43" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst43" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -2915,7 +2939,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -2937,7 +2961,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 2960 760 3104)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst44" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst44" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -3005,7 +3029,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3043,7 +3067,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 3168 440 3256)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst45" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst45" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -3069,7 +3093,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -3091,7 +3115,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 3352 440 3440)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst47" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst47" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -3117,7 +3141,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -3139,7 +3163,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 3536 440 3624)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst49" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst49" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -3165,7 +3189,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -3187,7 +3211,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 3720 440 3808)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst51" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst51" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -3213,7 +3237,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -3235,7 +3259,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 3144 760 3288)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst46" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst46" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -3303,7 +3327,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3341,7 +3365,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 3328 760 3472)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst48" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst48" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -3409,7 +3433,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3447,7 +3471,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 3512 760 3656)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst50" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst50" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -3515,7 +3539,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3553,7 +3577,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 3696 760 3840)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst52" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst52" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -3621,7 +3645,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3659,7 +3683,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 3904 440 3992)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst53" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst53" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -3685,7 +3709,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -3707,7 +3731,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 4088 440 4176)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst55" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst55" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -3733,7 +3757,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -3755,7 +3779,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 4272 440 4360)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst57" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst57" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -3781,7 +3805,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -3803,7 +3827,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 4456 440 4544)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst59" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst59" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -3829,7 +3853,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -3851,7 +3875,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 3880 760 4024)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst54" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst54" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -3919,7 +3943,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -3957,7 +3981,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 4064 760 4208)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst56" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst56" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -4025,7 +4049,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4063,7 +4087,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 4248 760 4392)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst58" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst58" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -4131,7 +4155,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4169,7 +4193,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 4432 760 4576)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst60" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst60" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -4237,7 +4261,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4275,7 +4299,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 4640 440 4728)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst61" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst61" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -4301,7 +4325,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -4323,7 +4347,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 4824 440 4912)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst62" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst62" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -4349,7 +4373,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -4371,7 +4395,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 4616 760 4760)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst63" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst63" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -4439,7 +4463,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4477,7 +4501,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 4800 760 4944)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst64" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst64" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -4545,7 +4569,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4583,7 +4607,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 5008 440 5096)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst65" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst65" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -4609,7 +4633,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -4631,7 +4655,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 5192 440 5280)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst66" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst66" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -4657,7 +4681,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -4679,7 +4703,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 4984 760 5128)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst67" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst67" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -4747,7 +4771,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4785,7 +4809,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 5168 760 5312)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst68" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst68" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -4853,7 +4877,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -4891,7 +4915,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 5376 440 5464)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst69" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst69" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -4917,7 +4941,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -4939,7 +4963,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 5560 440 5648)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst70" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst70" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -4965,7 +4989,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -4987,7 +5011,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 5352 760 5496)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst71" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst71" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -5055,7 +5079,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -5093,7 +5117,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 5536 760 5680)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst72" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst72" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -5161,7 +5185,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -5199,7 +5223,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 5744 440 5832)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst73" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst73" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -5225,7 +5249,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5247,7 +5271,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 5928 440 6016)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst74" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst74" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -5273,7 +5297,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5295,7 +5319,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 5720 760 5864)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst75" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst75" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -5363,7 +5387,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -5401,7 +5425,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 5904 760 6048)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst76" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst76" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -5469,7 +5493,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -5507,7 +5531,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 6112 440 6200)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst77" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst77" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -5533,7 +5557,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5555,7 +5579,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 6296 440 6384)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst78" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst78" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -5581,7 +5605,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5603,7 +5627,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 6088 760 6232)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst79" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst79" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -5671,7 +5695,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -5709,7 +5733,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 6272 760 6416)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst80" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst80" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -5777,7 +5801,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -5815,7 +5839,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 6480 440 6568)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst81" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst81" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -5841,7 +5865,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5863,7 +5887,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 6664 440 6752)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst82" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst82" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -5889,7 +5913,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -5911,7 +5935,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 6456 760 6600)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst83" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst83" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -5979,7 +6003,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -6017,7 +6041,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 6640 760 6784)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst84" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst84" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -6085,7 +6109,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -6123,7 +6147,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 6848 440 6936)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst85" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst85" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -6149,7 +6173,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6171,7 +6195,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 7032 440 7120)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst86" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst86" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -6197,7 +6221,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6219,7 +6243,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 6824 760 6968)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst87" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst87" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -6287,7 +6311,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -6325,7 +6349,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 7008 760 7152)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst88" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst88" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -6393,7 +6417,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -6431,7 +6455,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 7216 440 7304)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst89" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst89" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -6457,7 +6481,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6479,7 +6503,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 7400 440 7488)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst90" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst90" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -6505,7 +6529,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6527,7 +6551,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 7192 760 7336)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst91" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst91" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -6595,7 +6619,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -6633,7 +6657,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 7376 760 7520)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst92" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst92" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -6701,7 +6725,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -6739,7 +6763,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 7584 440 7672)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst93" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst93" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -6765,7 +6789,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6787,7 +6811,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 7768 440 7856)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst94" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst94" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -6813,7 +6837,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -6835,7 +6859,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 7560 760 7704)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst95" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst95" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -6903,7 +6927,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -6941,7 +6965,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 7744 760 7888)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst96" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst96" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -7009,7 +7033,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -7047,7 +7071,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 7952 440 8040)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst97" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst97" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -7073,7 +7097,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7095,7 +7119,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 8136 440 8224)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst98" (rect 3 77 32 89)(font "Arial" ))
+	(text "inst98" (rect 3 77 37 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -7121,7 +7145,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7143,7 +7167,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 7928 760 8072)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst99" (rect 3 133 32 145)(font "Arial" ))
+	(text "inst99" (rect 3 133 37 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -7211,7 +7235,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -7249,7 +7273,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 8112 760 8256)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst100" (rect 3 133 38 145)(font "Arial" ))
+	(text "inst100" (rect 3 133 44 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -7317,7 +7341,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -7355,7 +7379,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 8320 440 8408)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst101" (rect 3 77 38 89)(font "Arial" ))
+	(text "inst101" (rect 3 77 44 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -7381,7 +7405,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7403,7 +7427,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 8504 440 8592)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst103" (rect 3 77 38 89)(font "Arial" ))
+	(text "inst103" (rect 3 77 44 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -7429,7 +7453,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7451,7 +7475,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 8688 440 8776)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst104" (rect 3 77 38 89)(font "Arial" ))
+	(text "inst104" (rect 3 77 44 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -7477,7 +7501,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7499,7 +7523,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 8872 440 8960)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst107" (rect 3 77 38 89)(font "Arial" ))
+	(text "inst107" (rect 3 77 44 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -7525,7 +7549,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7547,7 +7571,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 9056 440 9144)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst108" (rect 3 77 38 89)(font "Arial" ))
+	(text "inst108" (rect 3 77 44 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -7573,7 +7597,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7595,7 +7619,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 9240 440 9328)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst111" (rect 3 77 38 89)(font "Arial" ))
+	(text "inst111" (rect 3 77 44 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -7621,7 +7645,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7643,7 +7667,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 9424 440 9512)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst112" (rect 3 77 38 89)(font "Arial" ))
+	(text "inst112" (rect 3 77 44 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -7669,7 +7693,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7691,7 +7715,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 9608 440 9696)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst115" (rect 3 77 38 89)(font "Arial" ))
+	(text "inst115" (rect 3 77 44 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -7717,7 +7741,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7739,7 +7763,7 @@ applicable agreement for further details.
 (symbol
 	(rect 328 9792 440 9880)
 	(text "BUSMUX" (rect 28 0 91 16)(font "Arial" (font_size 10)))
-	(text "inst116" (rect 3 77 38 89)(font "Arial" ))
+	(text "inst116" (rect 3 77 44 91)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 64)
 		(input)
@@ -7765,7 +7789,7 @@ applicable agreement for further details.
 		(pt 112 48)
 		(output)
 		(text "result[WIDTH-1..0]" (rect 75 35 177 49)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 113 49)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 107 49)(font "Arial" (font_size 8)))
 		(line (pt 68 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
@@ -7787,7 +7811,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 8296 760 8440)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst102" (rect 3 133 38 145)(font "Arial" ))
+	(text "inst102" (rect 3 133 44 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -7855,7 +7879,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -7893,7 +7917,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 8480 760 8624)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst105" (rect 3 133 38 145)(font "Arial" ))
+	(text "inst105" (rect 3 133 44 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -7961,7 +7985,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -7999,7 +8023,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 8664 760 8808)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst106" (rect 3 133 38 145)(font "Arial" ))
+	(text "inst106" (rect 3 133 44 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -8067,7 +8091,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -8105,7 +8129,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 8848 760 8992)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst109" (rect 3 133 38 145)(font "Arial" ))
+	(text "inst109" (rect 3 133 44 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -8173,7 +8197,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -8211,7 +8235,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 9032 760 9176)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst110" (rect 3 133 38 145)(font "Arial" ))
+	(text "inst110" (rect 3 133 44 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -8279,7 +8303,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -8317,7 +8341,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 9216 760 9360)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst113" (rect 3 133 38 145)(font "Arial" ))
+	(text "inst113" (rect 3 133 44 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -8385,7 +8409,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -8423,7 +8447,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 9400 760 9544)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst114" (rect 3 133 38 145)(font "Arial" ))
+	(text "inst114" (rect 3 133 44 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -8491,7 +8515,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -8529,7 +8553,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 9584 760 9728)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst117" (rect 3 133 38 145)(font "Arial" ))
+	(text "inst117" (rect 3 133 44 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -8597,7 +8621,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -8635,7 +8659,7 @@ applicable agreement for further details.
 (symbol
 	(rect 584 9768 760 9912)
 	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "inst118" (rect 3 133 38 145)(font "Arial" ))
+	(text "inst118" (rect 3 133 44 147)(font "Arial" (font_size 8)))
 	(port
 		(pt 0 104)
 		(input)
@@ -8703,7 +8727,7 @@ applicable agreement for further details.
 		(pt 176 88)
 		(output)
 		(text "q[LPM_WIDTH-1..0]" (rect 144 81 252 95)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 95)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 155 95)(font "Arial" (font_size 8)))
 		(line (pt 160 88)(pt 176 88)(line_width 3))
 	)
 	(parameter
@@ -8737,41 +8761,6 @@ applicable agreement for further details.
 		(line (pt 24 88)(pt 16 96))
 	)
 	(annotation_block (parameter)(rect 808 9744 952 9814))
-)
-(symbol
-	(rect 1616 -112 1744 -16)
-	(text "lpm_compare0" (rect 22 0 122 16)(font "Arial" (font_size 10)))
-	(text "inst123" (rect 8 80 43 92)(font "Arial" ))
-	(port
-		(pt 0 48)
-		(input)
-		(text "dataa[5..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
-		(text "dataa[5..0]" (rect 20 41 80 55)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 128 56)
-		(output)
-		(text "aeb" (rect 0 0 21 14)(font "Arial" (font_size 8)))
-		(text "aeb" (rect 91 49 112 63)(font "Arial" (font_size 8)))
-		(line (pt 128 56)(pt 112 56))
-	)
-	(drawing
-		(text "datab[]=0" (rect 20 57 73 71)(font "Arial" (font_size 8)))
-		(text "compare" (rect 76 26 118 38)(font "Arial" ))
-		(line (pt 16 16)(pt 16 80))
-		(line (pt 16 16)(pt 112 16))
-		(line (pt 16 80)(pt 112 80))
-		(line (pt 112 16)(pt 112 80))
-		(line (pt 0 0)(pt 129 0))
-		(line (pt 129 0)(pt 129 98))
-		(line (pt 0 98)(pt 129 98))
-		(line (pt 0 0)(pt 0 98))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-	)
 )
 (symbol
 	(rect 1616 8 1744 104)
@@ -8891,7 +8880,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 48 24)(pt 64 24))
 	)
 	(drawing
@@ -8996,7 +8985,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 43 24)(pt 64 24))
 	)
 	(drawing
@@ -9035,7 +9024,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 43 24)(pt 64 24))
 	)
 	(drawing
@@ -9074,7 +9063,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 43 24)(pt 64 24))
 	)
 	(drawing
@@ -9106,7 +9095,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -9138,7 +9127,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 48 24)(pt 64 24))
 	)
 	(drawing
@@ -9171,7 +9160,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
 		(line (pt 48 24)(pt 64 24))
 	)
 	(drawing
@@ -9197,7 +9186,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -9222,7 +9211,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -9247,7 +9236,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -9272,7 +9261,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -9297,7 +9286,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -9322,7 +9311,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -9330,6 +9319,41 @@ applicable agreement for further details.
 		(line (pt 13 7)(pt 31 16))
 		(line (pt 13 25)(pt 31 16))
 		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 1616 -112 1744 -16)
+	(text "lpm_compare0" (rect 22 0 122 16)(font "Arial" (font_size 10)))
+	(text "instcompare0" (rect 8 80 74 92)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "dataa[5..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "dataa[5..0]" (rect 20 41 80 55)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 128 56)
+		(output)
+		(text "aeb" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "aeb" (rect 91 49 112 63)(font "Arial" (font_size 8)))
+		(line (pt 128 56)(pt 112 56))
+	)
+	(drawing
+		(text "datab[]=0" (rect 20 57 73 71)(font "Arial" (font_size 8)))
+		(text "compare" (rect 76 26 118 38)(font "Arial" ))
+		(line (pt 16 16)(pt 16 80))
+		(line (pt 16 16)(pt 112 16))
+		(line (pt 16 80)(pt 112 80))
+		(line (pt 112 16)(pt 112 80))
+		(line (pt 0 0)(pt 129 0))
+		(line (pt 129 0)(pt 129 98))
+		(line (pt 0 98)(pt 129 98))
+		(line (pt 0 0)(pt 0 98))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
 	)
 )
 (connector
@@ -12424,7 +12448,7 @@ applicable agreement for further details.
 (text "Top of Stack" (rect 640 344 711 358)(font "Arial" (font_size 8)))
 (text "MODE = 10 : PUSH" (rect 80 464 185 478)(font "Arial" (font_size 8)))
 (text "MODE = 11 : POP" (rect 80 480 176 494)(font "Arial" (font_size 8)))
-(text "INPUTS AND OUTPUTS" (rect 552 -152 681 -138)(font "Arial" (font_size 8)))
+(text "INPUTS AND OUTPUTS" (rect 552 -184 681 -170)(font "Arial" (font_size 8)))
 (text "PUSH AND POP VARIABLES" (rect -288 -184 -127 -170)(font "Arial" (font_size 8)))
 (text "POP_ENABLE INPUT MUX AND RESULTS" (rect 104 -288 335 -274)(font "Arial" (font_size 8)))
 (text "COUNTER" (rect 968 -152 1024 -138)(font "Arial" (font_size 8)))
@@ -12432,7 +12456,7 @@ applicable agreement for further details.
 (text "MODE = 00 : NOP" (rect 80 432 177 446)(font "Arial" (font_size 8)))
 (text "EMPTY AND FULL CONDITIONS" (rect 1512 -152 1690 -138)(font "Arial" (font_size 8)))
 (text "VALUE OUTPUT MUX" (rect -304 128 -183 142)(font "Arial" (font_size 8)))
-(rectangle (rect 512 -136 936 112))
+(rectangle (rect 512 -168 936 112))
 (rectangle (rect -320 -168 48 112))
 (rectangle (rect 64 -272 496 112))
 (rectangle (rect 952 -136 1472 112))

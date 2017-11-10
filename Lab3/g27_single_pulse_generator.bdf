@@ -276,8 +276,8 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 424 448 552 544)
-	(text "lpm_compare2" (rect 22 0 122 16)(font "Arial" (font_size 10)))
-	(text "inst6" (rect 8 80 31 92)(font "Arial" ))
+	(text "lpm_compare4" (rect 22 0 122 16)(font "Arial" (font_size 10)))
+	(text "inst12" (rect 8 80 37 92)(font "Arial" ))
 	(port
 		(pt 0 48)
 		(input)
@@ -308,11 +308,6 @@ applicable agreement for further details.
 		(line (pt 0 0)(pt 0 0))
 		(line (pt 0 0)(pt 0 0))
 	)
-)
-(connector
-	(text "CLK" (rect 156 400 177 412)(font "Arial" ))
-	(pt 208 416)
-	(pt 144 416)
 )
 (connector
 	(text "BTN_IN" (rect 152 384 190 396)(font "Arial" ))
@@ -404,14 +399,19 @@ applicable agreement for further details.
 	(pt 272 488)
 )
 (connector
-	(text "CLK" (rect 368 168 389 180)(font "Arial" ))
-	(pt 360 184)
-	(pt 440 184)
-)
-(connector
 	(text "COUNTER_OUT[24..0]" (rect 591 176 705 188)(font "Arial" ))
 	(pt 584 192)
 	(pt 720 192)
 	(bus)
+)
+(connector
+	(text "CLK" (rect 288 168 309 180)(font "Arial" ))
+	(pt 280 184)
+	(pt 440 184)
+)
+(connector
+	(text "CLK" (rect 56 400 77 412)(font "Arial" ))
+	(pt 48 416)
+	(pt 208 416)
 )
 (junction (pt 424 400))

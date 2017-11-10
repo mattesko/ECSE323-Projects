@@ -31,8 +31,8 @@ ARCHITECTURE architecture_7_segment_decoder OF g27_7_segment_decoder IS
         WITH xcode SELECT
             segments_out <=
                 "1000000" WHEN "00000", -- code = 0,  mode = 0
-                "1111001" WHEN "00010", -- code = 1,  mode = 0
-                "0100100" WHEN "00100", -- code = 2,  mode = 0
+                "1111100" WHEN "00010", -- code = 1,  mode = 0
+                "0100010" WHEN "00100", -- code = 2,  mode = 0
                 "0110000" WHEN "00110", -- code = 3,  mode = 0
                 "0011001" WHEN "01000", -- code = 4,  mode = 0
                 "0010010" WHEN "01010", -- code = 5,  mode = 0
@@ -47,7 +47,7 @@ ARCHITECTURE architecture_7_segment_decoder OF g27_7_segment_decoder IS
                 "0000110" WHEN "11100", -- code = 14, mode = 0
                 "0001110" WHEN "11110", -- code = 15, mode = 0
                 "0001000" WHEN "00001", -- code = 0,  mode = 1
-                "0100100" WHEN "00011", -- code = 1,  mode = 1
+                "0100010" WHEN "00011", -- code = 1,  mode = 1
                 "0110000" WHEN "00101", -- code = 2,  mode = 1
                 "0011001" WHEN "00111", -- code = 3,  mode = 1
                 "0010010" WHEN "01001", -- code = 4,  mode = 1
