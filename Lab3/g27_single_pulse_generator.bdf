@@ -276,8 +276,8 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 720 144 848 240)
-	(text "lpm_compare2" (rect 22 0 122 16)(font "Arial" (font_size 10)))
-	(text "inst3" (rect 8 80 31 92)(font "Arial" ))
+	(text "lpm_comparetest" (rect 14 0 132 16)(font "Arial" (font_size 10)))
+	(text "inst14" (rect 8 80 37 92)(font "Arial" ))
 	(port
 		(pt 0 48)
 		(input)
@@ -293,7 +293,7 @@ applicable agreement for further details.
 		(line (pt 128 56)(pt 112 56))
 	)
 	(drawing
-		(text "datab[]=3000000" (rect 20 57 115 71)(font "Arial" (font_size 8)))
+		(text "datab[]=10" (rect 20 57 80 71)(font "Arial" (font_size 8)))
 		(text "compare" (rect 76 26 118 38)(font "Arial" ))
 		(line (pt 16 16)(pt 16 80))
 		(line (pt 16 16)(pt 112 16))
