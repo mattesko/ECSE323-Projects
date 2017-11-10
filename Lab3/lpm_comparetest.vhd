@@ -4,7 +4,7 @@
 -- MODULE: LPM_COMPARE 
 
 -- ============================================================
--- File Name: lpm_compare2.vhd
+-- File Name: lpm_comparetest.vhd
 -- Megafunction Name(s):
 -- 			LPM_COMPARE
 --
@@ -39,16 +39,16 @@ USE ieee.std_logic_1164.all;
 LIBRARY lpm;
 USE lpm.all;
 
-ENTITY lpm_compare2 IS
+ENTITY lpm_comparetest IS
 	PORT
 	(
 		dataa		: IN STD_LOGIC_VECTOR (24 DOWNTO 0);
 		aeb		: OUT STD_LOGIC 
 	);
-END lpm_compare2;
+END lpm_comparetest;
 
 
-ARCHITECTURE SYN OF lpm_compare2 IS
+ARCHITECTURE SYN OF lpm_comparetest IS
 
 	SIGNAL sub_wire0	: STD_LOGIC ;
 	SIGNAL sub_wire1_bv	: BIT_VECTOR (24 DOWNTO 0);
@@ -71,7 +71,7 @@ ARCHITECTURE SYN OF lpm_compare2 IS
 	END COMPONENT;
 
 BEGIN
-	sub_wire1_bv(24 DOWNTO 0) <= "0001011011100011011000000";
+	sub_wire1_bv(24 DOWNTO 0) <= "0000000000000000000001010";
 	sub_wire1    <= To_stdlogicvector(sub_wire1_bv);
 	aeb    <= sub_wire0;
 
@@ -104,7 +104,7 @@ END SYN;
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
--- Retrieval info: PRIVATE: PortBValue NUMERIC "3000000"
+-- Retrieval info: PRIVATE: PortBValue NUMERIC "10"
 -- Retrieval info: PRIVATE: Radix NUMERIC "10"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: SignedCompare NUMERIC "0"
@@ -121,11 +121,11 @@ END SYN;
 -- Retrieval info: USED_PORT: aeb 0 0 0 0 OUTPUT NODEFVAL "aeb"
 -- Retrieval info: USED_PORT: dataa 0 0 25 0 INPUT NODEFVAL "dataa[24..0]"
 -- Retrieval info: CONNECT: @dataa 0 0 25 0 dataa 0 0 25 0
--- Retrieval info: CONNECT: @datab 0 0 25 0 3000000 0 0 25 0
+-- Retrieval info: CONNECT: @datab 0 0 25 0 10 0 0 25 0
 -- Retrieval info: CONNECT: aeb 0 0 0 0 @aeb 0 0 0 0
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare2.vhd TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare2.inc FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare2.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare2.bsf TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare2_inst.vhd FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_comparetest.vhd TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_comparetest.inc FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_comparetest.cmp TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_comparetest.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_comparetest_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm

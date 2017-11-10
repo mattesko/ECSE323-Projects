@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 0 0 128 96)
-	(text "lpm_compare2" (rect 22 0 122 16)(font "Arial" (font_size 10)))
+	(text "lpm_comparetest" (rect 14 0 132 16)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 48)
@@ -38,7 +38,7 @@ applicable agreement for further details.
 		(line (pt 128 56)(pt 112 56))
 	)
 	(drawing
-		(text "datab[]=3000000" (rect 20 57 119 127)(font "Arial" (font_size 8)))
+		(text "datab[]=10" (rect 20 57 89 127)(font "Arial" (font_size 8)))
 		(text "compare" (rect 76 26 186 63)(font "Arial" ))
 		(line (pt 16 16)(pt 16 80))
 		(line (pt 16 16)(pt 112 16))
