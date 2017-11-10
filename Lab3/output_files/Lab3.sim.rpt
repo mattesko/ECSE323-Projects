@@ -1,5 +1,5 @@
 Simulator report for Lab3
-Fri Nov 10 15:04:15 2017
+Fri Nov 10 18:18:28 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Simulator Summary
   3. Simulator Settings
   4. Simulation Waveforms
-  5. |g27_stack52|g27_pop_enable:inst13|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_t601:auto_generated|ALTSYNCRAM
+  5. |g27_stack52|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_qp14:auto_generated|ALTSYNCRAM
   6. Coverage Summary
   7. Complete 1/0-Value Coverage
   8. Missing 1-Value Coverage
@@ -46,33 +46,33 @@ applicable agreement for further details.
 +------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                                                                                       ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------+
-; Option                                                                                     ; Setting                                                                                                     ; Default Value ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                                                                                                  ; Timing        ;
-; Start time                                                                                 ; 0 ns                                                                                                        ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                                                                                                         ;               ;
-; Vector input source                                                                        ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_stack52.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                                                                                          ; On            ;
-; Check outputs                                                                              ; Off                                                                                                         ; Off           ;
-; Report simulation coverage                                                                 ; On                                                                                                          ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                                                                                          ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                                                                                          ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                                                                                          ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                                                                                         ; Off           ;
-; Detect glitches                                                                            ; Off                                                                                                         ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                                                                                         ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                                                                                         ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                                         ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                                                                                         ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                                          ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                                  ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                                         ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                                         ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                                        ; Auto          ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                       ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                     ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                  ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                        ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                         ;               ;
+; Vector input source                                                                        ; C:/Users/Matthew/Documents/GitHub/DSD-Labs-and-Project/Lab3/g27_stack52.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                          ; On            ;
+; Check outputs                                                                              ; Off                                                                         ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                          ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                          ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                          ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                         ; Off           ;
+; Detect glitches                                                                            ; Off                                                                         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                         ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                        ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+---------------+
 
 
 +----------------------+
@@ -82,9 +82,9 @@ Waveform report data cannot be output to ASCII.
 Please use Quartus II 64-Bit to view the waveform report data.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; |g27_stack52|g27_pop_enable:inst13|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_t601:auto_generated|ALTSYNCRAM ;
-+---------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; |g27_stack52|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_qp14:auto_generated|ALTSYNCRAM ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
 
 
@@ -132,15 +132,13 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 10 15:04:15 2017
+    Info: Processing started: Fri Nov 10 18:18:27 2017
 Info: Command: quartus_sim --simulation_results_format=VWF Lab3 -c Lab3
-Warning (125092): Tcl Script File output_files/lpm_compare0.qip not found
-    Info (125063): set_global_assignment -name QIP_FILE output_files/lpm_compare0.qip
 Warning (125092): Tcl Script File output_files/lpm_compare4.qip not found
     Info (125063): set_global_assignment -name QIP_FILE output_files/lpm_compare4.qip
 Warning (125092): Tcl Script File output_files/lpm_compareASS.qip not found
     Info (125063): set_global_assignment -name QIP_FILE output_files/lpm_compareASS.qip
-Info (324025): Using vector source file "D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_stack52.vwf"
+Info (324025): Using vector source file "C:/Users/Matthew/Documents/GitHub/DSD-Labs-and-Project/Lab3/g27_stack52.vwf"
 Warning (328017): Wrong node type for node "P_EN[51]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
 Error (328001): Can't simulate mismatched node types
 Warning (328017): Wrong node type for node "P_EN[50]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
@@ -245,10 +243,10 @@ Warning (328017): Wrong node type for node "P_EN[1]" in vector source file. Desi
 Error (328001): Can't simulate mismatched node types
 Warning (328017): Wrong node type for node "P_EN[0]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
 Error (328001): Can't simulate mismatched node types
-Error: Quartus II 64-Bit Simulator was unsuccessful. 52 errors, 55 warnings
-    Error: Peak virtual memory: 386 megabytes
-    Error: Processing ended: Fri Nov 10 15:04:15 2017
-    Error: Elapsed time: 00:00:00
-    Error: Total CPU time (on all processors): 00:00:01
+Error: Quartus II 64-Bit Simulator was unsuccessful. 52 errors, 54 warnings
+    Error: Peak virtual memory: 435 megabytes
+    Error: Processing ended: Fri Nov 10 18:18:28 2017
+    Error: Elapsed time: 00:00:01
+    Error: Total CPU time (on all processors): 00:00:02
 
 
