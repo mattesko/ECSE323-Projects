@@ -110,7 +110,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -139,7 +139,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -171,7 +171,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -293,7 +293,7 @@ applicable agreement for further details.
 		(line (pt 128 56)(pt 112 56))
 	)
 	(drawing
-		(text "datab[]=3000000" (rect 20 57 115 71)(font "Arial" (font_size 8)))
+		(text "datab[]=5000000" (rect 20 57 115 71)(font "Arial" (font_size 8)))
 		(text "compare" (rect 76 26 118 38)(font "Arial" ))
 		(line (pt 16 16)(pt 16 80))
 		(line (pt 16 16)(pt 112 16))
@@ -339,11 +339,6 @@ applicable agreement for further details.
 	(pt 576 400)
 )
 (connector
-	(text "RESET" (rect 856 184 891 196)(font "Arial" ))
-	(pt 848 200)
-	(pt 920 200)
-)
-(connector
 	(text "RESET" (rect 152 416 187 428)(font "Arial" ))
 	(pt 208 432)
 	(pt 144 432)
@@ -351,20 +346,6 @@ applicable agreement for further details.
 (connector
 	(pt 576 416)
 	(pt 568 416)
-)
-(connector
-	(pt 568 416)
-	(pt 568 504)
-)
-(connector
-	(pt 568 504)
-	(pt 552 504)
-)
-(connector
-	(text "COUNTER_OUT[24..0]" (rect 320 480 434 492)(font "Arial" ))
-	(pt 424 496)
-	(pt 344 496)
-	(bus)
 )
 (connector
 	(text "SINGLE_PULSE_GEN" (rect 680 392 790 404)(font "Arial" ))
@@ -399,12 +380,6 @@ applicable agreement for further details.
 	(pt 272 488)
 )
 (connector
-	(text "COUNTER_OUT[24..0]" (rect 591 176 705 188)(font "Arial" ))
-	(pt 584 192)
-	(pt 720 192)
-	(bus)
-)
-(connector
 	(text "CLK" (rect 288 168 309 180)(font "Arial" ))
 	(pt 280 184)
 	(pt 440 184)
@@ -413,5 +388,30 @@ applicable agreement for further details.
 	(text "CLK" (rect 56 400 77 412)(font "Arial" ))
 	(pt 48 416)
 	(pt 208 416)
+)
+(connector
+	(text "RESET" (rect 864 184 899 196)(font "Arial" ))
+	(pt 848 200)
+	(pt 928 200)
+)
+(connector
+	(text "COUNTER_OUT[24..0]" (rect 599 176 713 188)(font "Arial" ))
+	(pt 584 192)
+	(pt 720 192)
+	(bus)
+)
+(connector
+	(pt 568 416)
+	(pt 568 504)
+)
+(connector
+	(pt 552 504)
+	(pt 568 504)
+)
+(connector
+	(text "COUNTER_OUT[24..0]" (rect 320 480 434 492)(font "Arial" ))
+	(pt 424 496)
+	(pt 352 496)
+	(bus)
 )
 (junction (pt 424 400))

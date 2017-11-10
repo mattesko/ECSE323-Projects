@@ -4,7 +4,7 @@
 -- MODULE: LPM_COMPARE 
 
 -- ============================================================
--- File Name: lpm_compare2.vhd
+-- File Name: lpm_compare0.vhd
 -- Megafunction Name(s):
 -- 			LPM_COMPARE
 --
@@ -39,20 +39,20 @@ USE ieee.std_logic_1164.all;
 LIBRARY lpm;
 USE lpm.all;
 
-ENTITY lpm_compare2 IS
+ENTITY lpm_compare0 IS
 	PORT
 	(
-		dataa		: IN STD_LOGIC_VECTOR (24 DOWNTO 0);
+		dataa		: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
 		aeb		: OUT STD_LOGIC 
 	);
-END lpm_compare2;
+END lpm_compare0;
 
 
-ARCHITECTURE SYN OF lpm_compare2 IS
+ARCHITECTURE SYN OF lpm_compare0 IS
 
 	SIGNAL sub_wire0	: STD_LOGIC ;
-	SIGNAL sub_wire1_bv	: BIT_VECTOR (24 DOWNTO 0);
-	SIGNAL sub_wire1	: STD_LOGIC_VECTOR (24 DOWNTO 0);
+	SIGNAL sub_wire1_bv	: BIT_VECTOR (5 DOWNTO 0);
+	SIGNAL sub_wire1	: STD_LOGIC_VECTOR (5 DOWNTO 0);
 
 
 
@@ -65,13 +65,13 @@ ARCHITECTURE SYN OF lpm_compare2 IS
 	);
 	PORT (
 			aeb	: OUT STD_LOGIC ;
-			dataa	: IN STD_LOGIC_VECTOR (24 DOWNTO 0);
-			datab	: IN STD_LOGIC_VECTOR (24 DOWNTO 0)
+			dataa	: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
+			datab	: IN STD_LOGIC_VECTOR (5 DOWNTO 0)
 	);
 	END COMPONENT;
 
 BEGIN
-	sub_wire1_bv(24 DOWNTO 0) <= "0010011000100101101000000";
+	sub_wire1_bv(5 DOWNTO 0) <= "000000";
 	sub_wire1    <= To_stdlogicvector(sub_wire1_bv);
 	aeb    <= sub_wire0;
 
@@ -80,7 +80,7 @@ BEGIN
 		lpm_hint => "ONE_INPUT_IS_CONSTANT=YES",
 		lpm_representation => "UNSIGNED",
 		lpm_type => "LPM_COMPARE",
-		lpm_width => 25
+		lpm_width => 6
 	)
 	PORT MAP (
 		dataa => dataa,
@@ -104,28 +104,28 @@ END SYN;
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
--- Retrieval info: PRIVATE: PortBValue NUMERIC "5000000"
+-- Retrieval info: PRIVATE: PortBValue NUMERIC "0"
 -- Retrieval info: PRIVATE: Radix NUMERIC "10"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: SignedCompare NUMERIC "0"
 -- Retrieval info: PRIVATE: aclr NUMERIC "0"
 -- Retrieval info: PRIVATE: clken NUMERIC "0"
 -- Retrieval info: PRIVATE: isPortBConstant NUMERIC "1"
--- Retrieval info: PRIVATE: nBit NUMERIC "25"
+-- Retrieval info: PRIVATE: nBit NUMERIC "6"
 -- Retrieval info: PRIVATE: new_diagram STRING "1"
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: CONSTANT: LPM_HINT STRING "ONE_INPUT_IS_CONSTANT=YES"
 -- Retrieval info: CONSTANT: LPM_REPRESENTATION STRING "UNSIGNED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COMPARE"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "25"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "6"
 -- Retrieval info: USED_PORT: aeb 0 0 0 0 OUTPUT NODEFVAL "aeb"
--- Retrieval info: USED_PORT: dataa 0 0 25 0 INPUT NODEFVAL "dataa[24..0]"
--- Retrieval info: CONNECT: @dataa 0 0 25 0 dataa 0 0 25 0
--- Retrieval info: CONNECT: @datab 0 0 25 0 5000000 0 0 25 0
+-- Retrieval info: USED_PORT: dataa 0 0 6 0 INPUT NODEFVAL "dataa[5..0]"
+-- Retrieval info: CONNECT: @dataa 0 0 6 0 dataa 0 0 6 0
+-- Retrieval info: CONNECT: @datab 0 0 6 0 0 0 0 6 0
 -- Retrieval info: CONNECT: aeb 0 0 0 0 @aeb 0 0 0 0
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare2.vhd TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare2.inc FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare2.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare2.bsf TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare2_inst.vhd FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.vhd TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.inc FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.cmp TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare0_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm
