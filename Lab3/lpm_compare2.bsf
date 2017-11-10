@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "dataa[24..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
-		(text "dataa[24..0]" (rect 20 41 75 54)(font "Arial" (font_size 8)))
+		(text "dataa[25..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "dataa[25..0]" (rect 20 41 75 54)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
@@ -38,7 +38,7 @@ applicable agreement for further details.
 		(line (pt 128 56)(pt 112 56))
 	)
 	(drawing
-		(text "datab[]=8000000" (rect 20 57 119 127)(font "Arial" (font_size 8)))
+		(text "datab[]=20000000" (rect 20 57 125 127)(font "Arial" (font_size 8)))
 		(text "compare" (rect 76 26 186 63)(font "Arial" ))
 		(line (pt 16 16)(pt 16 80))
 		(line (pt 16 16)(pt 112 16))

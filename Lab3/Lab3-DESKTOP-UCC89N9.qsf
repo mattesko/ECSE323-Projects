@@ -77,6 +77,20 @@ set_location_assignment PIN_L22 -to MODE[0]
 set_location_assignment PIN_L1 -to CLK
 set_location_assignment PIN_T21 -to BTN_IN
 set_location_assignment PIN_R21 -to RST_IN
+set_location_assignment PIN_J2 -to 7_SEGMENT_1[0]
+set_location_assignment PIN_E2 -to 7_SEGMENT_1[6]
+set_location_assignment PIN_F1 -to 7_SEGMENT_1[5]
+set_location_assignment PIN_F2 -to 7_SEGMENT_1[4]
+set_location_assignment PIN_H1 -to 7_SEGMENT_1[3]
+set_location_assignment PIN_H2 -to 7_SEGMENT_1[2]
+set_location_assignment PIN_J1 -to 7_SEGMENT_1[1]
+set_location_assignment PIN_D1 -to 7_SEGMENT_2[6]
+set_location_assignment PIN_D2 -to 7_SEGMENT_2[5]
+set_location_assignment PIN_G3 -to 7_SEGMENT_2[4]
+set_location_assignment PIN_H4 -to 7_SEGMENT_2[3]
+set_location_assignment PIN_H5 -to 7_SEGMENT_2[2]
+set_location_assignment PIN_H6 -to 7_SEGMENT_2[1]
+set_location_assignment PIN_E1 -to 7_SEGMENT_2[0]
 set_location_assignment PIN_M2 -to ADDR[5]
 set_location_assignment PIN_U11 -to ADDR[4]
 set_location_assignment PIN_U12 -to ADDR[3]
@@ -87,11 +101,20 @@ set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE output_files/g27_stack52_testbed.stp
 set_global_assignment -name SIGNALTAP_FILE output_files/g27_stack52_testbed.stp
 set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/g27_stack52_testbed.vwf
+set_location_assignment PIN_N22 -to O[0]
+set_location_assignment PIN_G6 -to O[1]
+set_location_assignment PIN_C2 -to O[2]
+set_location_assignment PIN_C1 -to O[3]
+set_location_assignment PIN_E3 -to O[4]
+set_location_assignment PIN_E4 -to O[5]
+set_location_assignment PIN_D3 -to O[6]
 set_global_assignment -name BDF_FILE g27_test_bed.bdf
 set_location_assignment PIN_U22 -to BTN_OUT
-set_location_assignment PIN_U21 -to RST_OUT
-set_location_assignment PIN_R20 -to EMPTY
-set_location_assignment PIN_R19 -to FULL
+set_location_assignment PIN_R20 -to RST_OUT
+set_location_assignment PIN_V22 -to EMPTY
+set_location_assignment PIN_V21 -to FULL
+set_location_assignment PIN_U21 -to PUSH
+set_location_assignment PIN_R19 -to POP
 set_location_assignment PIN_T18 -to NUM[0]
 set_location_assignment PIN_V19 -to NUM[1]
 set_location_assignment PIN_Y18 -to NUM[2]
@@ -106,35 +129,11 @@ set_global_assignment -name QIP_FILE output_files/lpm_compareASS.qip
 set_global_assignment -name BDF_FILE g27_test_bed_test.bdf
 set_global_assignment -name BDF_FILE g27_single_pulse_generator_test.bdf
 set_global_assignment -name QIP_FILE lpm_comparetest.qip
-set_global_assignment -name SLD_FILE "P:/DSD_Labs/DSD-Labs-and-Project/Lab3/output_files/g27_stack52_testbed_auto_stripped.stp"
-set_global_assignment -name QIP_FILE lpm_compare4.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/g27_test_bed.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE g27_test_bed.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE g27_test_bed_test.vwf
-set_location_assignment PIN_G5 -to SEGMENT_1[0]
-set_location_assignment PIN_D3 -to SEGMENT_1[6]
-set_location_assignment PIN_E4 -to SEGMENT_1[5]
-set_location_assignment PIN_E3 -to SEGMENT_1[4]
-set_location_assignment PIN_C1 -to SEGMENT_1[3]
-set_location_assignment PIN_C2 -to SEGMENT_1[2]
-set_location_assignment PIN_G6 -to SEGMENT_1[1]
-set_location_assignment PIN_D4 -to SEGMENT_2[6]
-set_location_assignment PIN_F3 -to SEGMENT_2[5]
-set_location_assignment PIN_L8 -to SEGMENT_2[4]
-set_location_assignment PIN_J4 -to SEGMENT_2[3]
-set_location_assignment PIN_D6 -to SEGMENT_2[2]
-set_location_assignment PIN_D5 -to SEGMENT_2[1]
-set_location_assignment PIN_F4 -to SEGMENT_2[0]
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name BDF_FILE g28_debounce2mill.bdf
-set_global_assignment -name BDF_FILE g27_debounce2mill.bdf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_test_bed.vwf"
-set_location_assignment PIN_Y21 -to VALUE[5]
-set_location_assignment PIN_Y22 -to VALUE[4]
-set_location_assignment PIN_W21 -to VALUE[3]
-set_location_assignment PIN_W22 -to VALUE[2]
-set_location_assignment PIN_V21 -to VALUE[1]
-set_location_assignment PIN_V22 -to VALUE[0]
+set_global_assignment -name SLD_FILE "P:/DSD_Labs/DSD-Labs-and-Project/Lab3/output_files/g27_stack52_testbed_auto_stripped.stp"
+set_global_assignment -name QIP_FILE lpm_compare4.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/g27_test_bed.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/output_files/g27_test_bed.vwf"

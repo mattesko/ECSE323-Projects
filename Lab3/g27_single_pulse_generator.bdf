@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -112 232 64 248)
+	(rect 64 56 240 72)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "BTN_IN" (rect 9 0 47 12)(font "Arial" ))
 	(pt 176 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -112 264 64 280)
+	(rect 64 88 240 104)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "CLK" (rect 9 0 30 12)(font "Arial" ))
 	(pt 176 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 96 232 272 248)
+	(rect 256 -8 432 8)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "SINGLE_PULSE_GEN" (rect 90 0 200 12)(font "Arial" ))
 	(pt 0 8)
@@ -110,7 +110,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -139,7 +139,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -171,7 +171,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -182,7 +182,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 296 232 328 248)
+	(rect 88 128 120 144)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
 	(text "inst9" (rect 3 5 26 17)(font "Arial" )(invisible))
 	(port
@@ -217,8 +217,8 @@ applicable agreement for further details.
 	(port
 		(pt 144 40)
 		(output)
-		(text "q[24..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
-		(text "q[24..0]" (rect 89 33 131 47)(font "Arial" (font_size 8)))
+		(text "q[25..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "q[25..0]" (rect 89 33 131 47)(font "Arial" (font_size 8)))
 		(line (pt 144 40)(pt 128 40)(line_width 3))
 	)
 	(drawing
@@ -246,8 +246,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "dataa[24..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
-		(text "dataa[24..0]" (rect 20 41 87 55)(font "Arial" (font_size 8)))
+		(text "dataa[25..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "dataa[25..0]" (rect 20 41 87 55)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
@@ -281,8 +281,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "dataa[24..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
-		(text "dataa[24..0]" (rect 20 41 87 55)(font "Arial" (font_size 8)))
+		(text "dataa[25..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "dataa[25..0]" (rect 20 41 87 55)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
@@ -293,7 +293,7 @@ applicable agreement for further details.
 		(line (pt 128 56)(pt 112 56))
 	)
 	(drawing
-		(text "datab[]=8000000" (rect 20 57 115 71)(font "Arial" (font_size 8)))
+		(text "datab[]=20000000" (rect 20 57 122 71)(font "Arial" (font_size 8)))
 		(text "compare" (rect 76 26 118 38)(font "Arial" ))
 		(line (pt 16 16)(pt 16 80))
 		(line (pt 16 16)(pt 112 16))
@@ -353,6 +353,15 @@ applicable agreement for further details.
 	(pt 752 408)
 )
 (connector
+	(pt 104 192)
+	(pt 104 144)
+)
+(connector
+	(text "VCC" (rect 117 176 140 188)(font "Arial" ))
+	(pt 104 192)
+	(pt 152 192)
+)
+(connector
 	(pt 240 456)
 	(pt 240 488)
 )
@@ -386,12 +395,6 @@ applicable agreement for further details.
 	(pt 928 200)
 )
 (connector
-	(text "COUNTER_OUT[24..0]" (rect 599 176 713 188)(font "Arial" ))
-	(pt 584 192)
-	(pt 720 192)
-	(bus)
-)
-(connector
 	(pt 568 416)
 	(pt 568 504)
 )
@@ -400,18 +403,15 @@ applicable agreement for further details.
 	(pt 568 504)
 )
 (connector
-	(text "COUNTER_OUT[24..0]" (rect 320 480 434 492)(font "Arial" ))
-	(pt 424 496)
-	(pt 352 496)
+	(text "COUNTER_OUT[25..0]" (rect 599 176 713 188)(font "Arial" ))
+	(pt 584 192)
+	(pt 720 192)
 	(bus)
 )
 (connector
-	(pt 312 296)
-	(pt 312 248)
-)
-(connector
-	(text "VCC" (rect 325 280 348 292)(font "Arial" ))
-	(pt 312 296)
-	(pt 360 296)
+	(text "COUNTER_OUT[25..0]" (rect 320 480 434 492)(font "Arial" ))
+	(pt 424 496)
+	(pt 352 496)
+	(bus)
 )
 (junction (pt 424 400))

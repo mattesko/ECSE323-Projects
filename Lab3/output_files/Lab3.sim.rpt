@@ -1,0 +1,254 @@
+Simulator report for Lab3
+Fri Nov 10 03:49:42 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |g27_stack52|g27_pop_enable:inst13|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_t601:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------+
+; Simulator Summary ;
++------+------------+
+; Type ; Value      ;
++------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                                       ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                                     ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                                  ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                                        ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                                         ;               ;
+; Vector input source                                                                        ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_stack52.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                                          ; On            ;
+; Check outputs                                                                              ; Off                                                                                                         ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                                          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                                          ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                                          ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                                          ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                                         ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                                         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                                         ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                                         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                                         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                                         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                                          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                                  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                                         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                                         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                                        ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; |g27_stack52|g27_pop_enable:inst13|lpm_rom:crc_table|altrom:srom|altsyncram:rom_block|altsyncram_t601:auto_generated|ALTSYNCRAM ;
++---------------------------------------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++------------------+
+; Coverage Summary ;
++------+-----------+
+; Type ; Value     ;
++------+-----------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Nov 10 03:49:42 2017
+Info: Command: quartus_sim --simulation_results_format=VWF Lab3 -c Lab3
+Warning (125092): Tcl Script File output_files/lpm_compare0.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE output_files/lpm_compare0.qip
+Warning (125092): Tcl Script File output_files/lpm_compare4.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE output_files/lpm_compare4.qip
+Warning (125092): Tcl Script File output_files/lpm_compareASS.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE output_files/lpm_compareASS.qip
+Info (324025): Using vector source file "E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_stack52.vwf"
+Warning (328017): Wrong node type for node "P_EN[51]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[50]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[49]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[48]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[47]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[46]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[45]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[44]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[43]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[42]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[41]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[40]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[39]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[38]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[37]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[36]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[35]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[34]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[33]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[32]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[31]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[30]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[29]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[28]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[27]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[26]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[25]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[24]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[23]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[22]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[21]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[20]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[19]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[18]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[17]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[16]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[15]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[14]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[13]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[12]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[11]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[10]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[9]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[8]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[7]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[6]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[5]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[4]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[3]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[2]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[1]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Warning (328017): Wrong node type for node "P_EN[0]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
+Error (328001): Can't simulate mismatched node types
+Error: Quartus II 64-Bit Simulator was unsuccessful. 52 errors, 55 warnings
+    Error: Peak virtual memory: 386 megabytes
+    Error: Processing ended: Fri Nov 10 03:49:42 2017
+    Error: Elapsed time: 00:00:00
+    Error: Total CPU time (on all processors): 00:00:01
+
+
