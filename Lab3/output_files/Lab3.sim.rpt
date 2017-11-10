@@ -1,5 +1,5 @@
 Simulator report for Lab3
-Fri Nov 10 03:49:42 2017
+Fri Nov 10 15:04:15 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -54,7 +54,7 @@ applicable agreement for further details.
 ; Simulation mode                                                                            ; Functional                                                                                                  ; Timing        ;
 ; Start time                                                                                 ; 0 ns                                                                                                        ; 0 ns          ;
 ; Simulation results format                                                                  ; VWF                                                                                                         ;               ;
-; Vector input source                                                                        ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_stack52.vwf ;               ;
+; Vector input source                                                                        ; D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_stack52.vwf ;               ;
 ; Add pins automatically to simulation output waveforms                                      ; On                                                                                                          ; On            ;
 ; Check outputs                                                                              ; Off                                                                                                         ; Off           ;
 ; Report simulation coverage                                                                 ; On                                                                                                          ; On            ;
@@ -132,7 +132,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 10 03:49:42 2017
+    Info: Processing started: Fri Nov 10 15:04:15 2017
 Info: Command: quartus_sim --simulation_results_format=VWF Lab3 -c Lab3
 Warning (125092): Tcl Script File output_files/lpm_compare0.qip not found
     Info (125063): set_global_assignment -name QIP_FILE output_files/lpm_compare0.qip
@@ -140,7 +140,7 @@ Warning (125092): Tcl Script File output_files/lpm_compare4.qip not found
     Info (125063): set_global_assignment -name QIP_FILE output_files/lpm_compare4.qip
 Warning (125092): Tcl Script File output_files/lpm_compareASS.qip not found
     Info (125063): set_global_assignment -name QIP_FILE output_files/lpm_compareASS.qip
-Info (324025): Using vector source file "E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_stack52.vwf"
+Info (324025): Using vector source file "D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/g27_stack52.vwf"
 Warning (328017): Wrong node type for node "P_EN[51]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
 Error (328001): Can't simulate mismatched node types
 Warning (328017): Wrong node type for node "P_EN[50]" in vector source file. Design node is of type Output, but signal in vector source file is of type Input.
@@ -247,7 +247,7 @@ Warning (328017): Wrong node type for node "P_EN[0]" in vector source file. Desi
 Error (328001): Can't simulate mismatched node types
 Error: Quartus II 64-Bit Simulator was unsuccessful. 52 errors, 55 warnings
     Error: Peak virtual memory: 386 megabytes
-    Error: Processing ended: Fri Nov 10 03:49:42 2017
+    Error: Processing ended: Fri Nov 10 15:04:15 2017
     Error: Elapsed time: 00:00:00
     Error: Total CPU time (on all processors): 00:00:01
 

@@ -149,6 +149,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 904 -96 960 -80))
 )
 (pin
 	(output)
@@ -564,35 +565,6 @@ applicable agreement for further details.
 		(line (pt 13 7)(pt 31 16))
 		(line (pt 13 25)(pt 31 16))
 		(circle (rect 31 12 39 20))
-	)
-)
-(symbol
-	(rect 200 -56 376 24)
-	(text "g27_pop_enable" (rect 5 0 84 12)(font "Arial" ))
-	(text "inst13" (rect 8 64 37 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 27 35 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "N[5..0]" (rect 0 0 34 12)(font "Arial" ))
-		(text "N[5..0]" (rect 21 43 55 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 176 32)
-		(output)
-		(text "P_EN[51..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "P_EN[51..0]" (rect 105 27 165 39)(font "Arial" ))
-		(line (pt 176 32)(pt 160 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 160 64))
 	)
 )
 (symbol
@@ -9427,16 +9399,27 @@ applicable agreement for further details.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
 	)
 )
-(connector
-	(text "POP_ENABLE_INPUT[5..0]" (rect 80 -24 215 -12)(font "Arial" ))
-	(pt 80 -8)
-	(pt 200 -8)
-	(bus)
-)
-(connector
-	(text "CLK" (rect 144 -40 165 -28)(font "Arial" ))
-	(pt 80 -24)
-	(pt 200 -24)
+(symbol
+	(rect 192 -56 376 24)
+	(text "p_enable" (rect 5 0 48 12)(font "Arial" ))
+	(text "inst122" (rect 8 64 43 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "addr[5..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "addr[5..0]" (rect 21 27 68 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "p_en[51..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "p_en[51..0]" (rect 117 27 172 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 64))
+	)
 )
 (connector
 	(pt -157 -88)
@@ -12548,16 +12531,6 @@ applicable agreement for further details.
 	(pt -208 -408)
 )
 (connector
-	(text "MOD[1]" (rect 99 -480 136 -468)(font "Arial" ))
-	(pt 88 -464)
-	(pt 120 -464)
-)
-(connector
-	(text "MOD[0]" (rect 96 -320 133 -308)(font "Arial" ))
-	(pt 88 -304)
-	(pt 120 -304)
-)
-(connector
 	(pt -8 -280)
 	(pt 24 -280)
 )
@@ -12586,6 +12559,22 @@ applicable agreement for further details.
 	(text "ENABLE" (rect -6 -328 36 -316)(font "Arial" ))
 	(pt 24 -312)
 	(pt -16 -312)
+)
+(connector
+	(text "MOD[1]" (rect 99 -480 136 -468)(font "Arial" ))
+	(pt 88 -464)
+	(pt 120 -464)
+)
+(connector
+	(text "MOD[0]" (rect 112 -320 149 -308)(font "Arial" ))
+	(pt 88 -304)
+	(pt 136 -304)
+)
+(connector
+	(text "POP_ENABLE_INPUT[5..0]" (rect 80 -40 215 -28)(font "Arial" ))
+	(pt 80 -24)
+	(pt 192 -24)
+	(bus)
 )
 (text "Top of Stack" (rect 640 344 711 358)(font "Arial" (font_size 8)))
 (text "MODE = 10 : PUSH" (rect 80 464 185 478)(font "Arial" (font_size 8)))

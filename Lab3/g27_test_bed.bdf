@@ -342,9 +342,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 648 352 845 368)
+	(rect 648 352 839 368)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "STACK_OUT0[51..0]" (rect 90 0 191 12)(font "Arial" ))
+	(text "STACK_OUT0[5..0]" (rect 90 0 185 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -358,9 +358,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 648 368 845 384)
+	(rect 648 368 839 384)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "STACK_OUT1[51..0]" (rect 90 0 191 12)(font "Arial" ))
+	(text "STACK_OUT1[5..0]" (rect 90 0 185 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -374,9 +374,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 648 384 845 400)
+	(rect 648 384 839 400)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "STACK_OUT2[51..0]" (rect 90 0 191 12)(font "Arial" ))
+	(text "STACK_OUT2[5..0]" (rect 90 0 185 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -390,9 +390,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 648 400 845 416)
+	(rect 648 400 839 416)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "STACK_OUT3[51..0]" (rect 90 0 191 12)(font "Arial" ))
+	(text "STACK_OUT3[5..0]" (rect 90 0 185 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -406,9 +406,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 648 416 851 432)
+	(rect 648 416 845 432)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "STACK_OUT51[51..0]" (rect 90 0 197 12)(font "Arial" ))
+	(text "STACK_OUT51[5..0]" (rect 90 0 191 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -745,64 +745,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 696 576 912 672)
-	(text "g27_single_pulse_generator_test" (rect 5 0 194 14)(font "Arial" (font_size 8)))
-	(text "inst16" (rect 8 80 37 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "BTN_IN" (rect 0 0 41 14)(font "Arial" (font_size 8)))
-		(text "BTN_IN" (rect 21 27 62 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 216 32)
-		(output)
-		(text "SINGLE_PULSE_GEN" (rect 0 0 119 14)(font "Arial" (font_size 8)))
-		(text "SINGLE_PULSE_GEN" (rect 76 27 195 41)(font "Arial" (font_size 8)))
-		(line (pt 216 32)(pt 200 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 200 80))
-	)
-)
-(symbol
-	(rect 696 448 912 544)
-	(text "g27_single_pulse_generator_test" (rect 5 0 194 14)(font "Arial" (font_size 8)))
-	(text "inst17" (rect 8 80 37 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "BTN_IN" (rect 0 0 41 14)(font "Arial" (font_size 8)))
-		(text "BTN_IN" (rect 21 27 62 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 216 32)
-		(output)
-		(text "SINGLE_PULSE_GEN" (rect 0 0 119 14)(font "Arial" (font_size 8)))
-		(text "SINGLE_PULSE_GEN" (rect 76 27 195 41)(font "Arial" (font_size 8)))
-		(line (pt 216 32)(pt 200 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 200 80))
-	)
-)
-(symbol
 	(rect 8 216 224 312)
 	(text "g27_single_pulse_generator" (rect 5 0 166 14)(font "Arial" (font_size 8)))
 	(text "inst5" (rect 8 80 31 92)(font "Arial" ))
@@ -832,9 +774,67 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 0 344 216 440)
+	(rect 8 336 224 432)
 	(text "g27_single_pulse_generator" (rect 5 0 166 14)(font "Arial" (font_size 8)))
 	(text "inst6" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "BTN_IN" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "BTN_IN" (rect 21 27 62 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "SINGLE_PULSE_GEN" (rect 0 0 119 14)(font "Arial" (font_size 8)))
+		(text "SINGLE_PULSE_GEN" (rect 76 27 195 41)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 200 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 80))
+	)
+)
+(symbol
+	(rect 536 776 752 872)
+	(text "g27_single_pulse_generator_test" (rect 5 0 194 14)(font "Arial" (font_size 8)))
+	(text "inst16" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "BTN_IN" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "BTN_IN" (rect 21 27 62 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "SINGLE_PULSE_GEN" (rect 0 0 119 14)(font "Arial" (font_size 8)))
+		(text "SINGLE_PULSE_GEN" (rect 76 27 195 41)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 200 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 80))
+	)
+)
+(symbol
+	(rect 536 656 752 752)
+	(text "g27_single_pulse_generator_test" (rect 5 0 194 14)(font "Arial" (font_size 8)))
+	(text "inst17" (rect 8 80 37 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1050,29 +1050,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "CLK" (rect -32 376 -11 388)(font "Arial" ))
-	(pt -40 392)
-	(pt 0 392)
-)
-(connector
-	(pt -32 376)
-	(pt 0 376)
-)
-(connector
-	(pt 248 264)
-	(pt 248 336)
-)
-(connector
-	(text "<<__$DEF_ALIAS66>>" (rect 233 317 245 429)(font "Arial" )(vertical)(invisible))
-	(pt 248 336)
-	(pt 248 376)
-)
-(connector
-	(text "<<__$DEF_ALIAS1423>>" (rect 186 360 309 372)(font "Arial" )(invisible))
-	(pt 216 376)
-	(pt 248 376)
-)
-(connector
 	(pt 560 360)
 	(pt 648 360)
 	(bus)
@@ -1096,6 +1073,37 @@ applicable agreement for further details.
 	(pt 560 424)
 	(pt 648 424)
 	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS1423>>" (rect 186 352 309 364)(font "Arial" )(invisible))
+	(pt 248 368)
+	(pt 224 368)
+)
+(connector
+	(pt -24 376)
+	(pt -24 368)
+)
+(connector
+	(pt -32 376)
+	(pt -24 376)
+)
+(connector
+	(pt -24 368)
+	(pt 8 368)
+)
+(connector
+	(text "CLK" (rect -24 368 -3 380)(font "Arial" ))
+	(pt -32 384)
+	(pt 8 384)
+)
+(connector
+	(pt 248 264)
+	(pt 248 336)
+)
+(connector
+	(text "<<__$DEF_ALIAS66>>" (rect 233 317 245 429)(font "Arial" )(vertical)(invisible))
+	(pt 248 336)
+	(pt 248 368)
 )
 (junction (pt 248 336))
 (junction (pt 264 248))
