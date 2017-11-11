@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 64 56 240 72)
+	(rect 8 184 184 200)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "BTN_IN" (rect 9 0 47 12)(font "Arial" ))
 	(pt 176 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 64 88 240 104)
+	(rect 8 216 184 232)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "CLK" (rect 9 0 30 12)(font "Arial" ))
 	(pt 176 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 264 72 440 88)
+	(rect 208 200 384 216)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "SINGLE_PULSE_GEN" (rect 90 0 200 12)(font "Arial" ))
 	(pt 0 8)
@@ -182,7 +182,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 88 128 120 144)
+	(rect 32 256 64 272)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
 	(text "inst9" (rect 3 5 26 17)(font "Arial" )(invisible))
 	(port
@@ -197,7 +197,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 440 152 584 248)
+	(rect 520 208 664 304)
 	(text "lpm_counter1" (rect 34 0 126 16)(font "Arial" (font_size 10)))
 	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -240,6 +240,41 @@ applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 800 200 928 296)
+	(text "lpm_compare2" (rect 22 0 122 16)(font "Arial" (font_size 10)))
+	(text "inst15" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "dataa[25..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "dataa[25..0]" (rect 20 41 87 55)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 128 56)
+		(output)
+		(text "aeb" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "aeb" (rect 91 49 112 63)(font "Arial" (font_size 8)))
+		(line (pt 128 56)(pt 112 56))
+	)
+	(drawing
+		(text "datab[]=20000000" (rect 20 57 122 71)(font "Arial" (font_size 8)))
+		(text "compare" (rect 76 26 118 38)(font "Arial" ))
+		(line (pt 16 16)(pt 16 80))
+		(line (pt 16 16)(pt 112 16))
+		(line (pt 16 80)(pt 112 80))
+		(line (pt 112 16)(pt 112 80))
+		(line (pt 0 0)(pt 129 0))
+		(line (pt 129 0)(pt 129 98))
+		(line (pt 0 98)(pt 129 98))
+		(line (pt 0 0)(pt 0 98))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+	)
+)
+(symbol
 	(rect 424 448 552 544)
 	(text "lpm_compare4" (rect 22 0 122 16)(font "Arial" (font_size 10)))
 	(text "inst12" (rect 8 80 37 92)(font "Arial" ))
@@ -274,41 +309,6 @@ applicable agreement for further details.
 		(line (pt 0 0)(pt 0 0))
 	)
 )
-(symbol
-	(rect 720 144 848 240)
-	(text "lpm_compare2" (rect 22 0 122 16)(font "Arial" (font_size 10)))
-	(text "inst6" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 48)
-		(input)
-		(text "dataa[25..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
-		(text "dataa[25..0]" (rect 20 41 87 55)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 128 56)
-		(output)
-		(text "aeb" (rect 0 0 21 14)(font "Arial" (font_size 8)))
-		(text "aeb" (rect 91 49 112 63)(font "Arial" (font_size 8)))
-		(line (pt 128 56)(pt 112 56))
-	)
-	(drawing
-		(text "datab[]=20000000" (rect 20 57 122 71)(font "Arial" (font_size 8)))
-		(text "compare" (rect 76 26 118 38)(font "Arial" ))
-		(line (pt 16 16)(pt 16 80))
-		(line (pt 16 16)(pt 112 16))
-		(line (pt 16 80)(pt 112 80))
-		(line (pt 112 16)(pt 112 80))
-		(line (pt 0 0)(pt 129 0))
-		(line (pt 129 0)(pt 129 98))
-		(line (pt 0 98)(pt 129 98))
-		(line (pt 0 0)(pt 0 98))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-	)
-)
 (connector
 	(text "BTN_IN" (rect 152 384 190 396)(font "Arial" ))
 	(pt 208 400)
@@ -321,14 +321,6 @@ applicable agreement for further details.
 (connector
 	(pt 424 336)
 	(pt 424 400)
-)
-(connector
-	(pt 496 336)
-	(pt 520 336)
-)
-(connector
-	(pt 520 336)
-	(pt 520 248)
 )
 (connector
 	(pt 272 400)
@@ -353,15 +345,6 @@ applicable agreement for further details.
 	(pt 752 408)
 )
 (connector
-	(pt 104 192)
-	(pt 104 144)
-)
-(connector
-	(text "VCC" (rect 117 176 140 188)(font "Arial" ))
-	(pt 104 192)
-	(pt 152 192)
-)
-(connector
 	(pt 240 456)
 	(pt 240 488)
 )
@@ -380,19 +363,9 @@ applicable agreement for further details.
 	(pt 272 488)
 )
 (connector
-	(text "CLK" (rect 288 168 309 180)(font "Arial" ))
-	(pt 280 184)
-	(pt 440 184)
-)
-(connector
 	(text "CLK" (rect 56 400 77 412)(font "Arial" ))
 	(pt 48 416)
 	(pt 208 416)
-)
-(connector
-	(text "RESET" (rect 864 184 899 196)(font "Arial" ))
-	(pt 848 200)
-	(pt 928 200)
 )
 (connector
 	(pt 568 416)
@@ -409,9 +382,36 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "COUNTER_OUT[25..0]" (rect 599 176 713 188)(font "Arial" ))
-	(pt 584 192)
-	(pt 720 192)
+	(pt 496 336)
+	(pt 600 336)
+)
+(connector
+	(pt 600 336)
+	(pt 600 304)
+)
+(connector
+	(text "RESET" (rect 944 240 979 252)(font "Arial" ))
+	(pt 928 256)
+	(pt 1008 256)
+)
+(connector
+	(text "COUNTER_OUT[25..0]" (rect 679 232 793 244)(font "Arial" ))
+	(pt 664 248)
+	(pt 800 248)
 	(bus)
+)
+(connector
+	(text "CLK" (rect 448 224 469 236)(font "Arial" ))
+	(pt 520 240)
+	(pt 440 240)
+)
+(connector
+	(pt 48 320)
+	(pt 48 272)
+)
+(connector
+	(text "VCC" (rect 61 304 84 316)(font "Arial" ))
+	(pt 48 320)
+	(pt 96 320)
 )
 (junction (pt 424 400))
