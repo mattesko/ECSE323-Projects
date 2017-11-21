@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\OneDrive - McGill University\Undergrad\2017 Fall\ECSE 323\Labs\DSD-Labs-and-Project\Lab4\simulation\qsim
+vg27_dealer
+Z1 !s100 b?5TLjQj5M[FbU>SXkJGJ2
+Z2 IjO9N?59DY?TSAJT[4joag2
+Z3 VQ>LD`ZLK=oc086MQ<6iQ[1
+Z4 dD:\OneDrive - McGill University\Undergrad\2017 Fall\ECSE 323\Labs\DSD-Labs-and-Project\Lab4\simulation\qsim
+Z5 w1511303118
+Z6 8lab4.vo
+Z7 Flab4.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|lab4.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1511303119.496000
+Z12 !s107 lab4.vo|
+!s101 -O0
+vg27_dealer_vlg_check_tst
+!i10b 1
+Z13 !s100 S@Eka_5GEW4mJ4<BIoJ[W3
+Z14 IR:B<J=5c54Hil1TQZ7fh93
+Z15 V:[zTS9YFc`X5QK]Gz5NNk2
+R4
+Z16 w1511303117
+Z17 8lab4.vt
+Z18 Flab4.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z19 !s108 1511303119.583000
+Z20 !s107 lab4.vt|
+Z21 !s90 -work|work|lab4.vt|
+!s101 -O0
+R10
+vg27_dealer_vlg_sample_tst
+!i10b 1
+Z22 !s100 MPm?2iTebkU9XI?HH[bgn3
+Z23 IaCaL^]gdMgYbl3W7H619W1
+Z24 VFN^F<LFmZ?[11jY:FVI:F1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vg27_dealer_vlg_vec_tst
+!i10b 1
+Z25 !s100 XO@AmU=K[RTg_WXc4fN7E1
+Z26 IN^Gfhh3=zOe1AckR]F]hz2
+Z27 Vf4^^Mo5P>e^hS8:[I?;Vd1
+R4
+R16
+R17
+R18
+Z28 L0 185
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

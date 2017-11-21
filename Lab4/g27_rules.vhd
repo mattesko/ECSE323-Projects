@@ -10,9 +10,7 @@
 
 library ieee; -- allows use of the std_logic_vectory type
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all
-library lpm;
-use lpm.lpm_components.all;
+use ieee.numeric_std.all;
 
 
 ENTITY g27_rules IS
