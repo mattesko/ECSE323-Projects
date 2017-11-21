@@ -28,12 +28,32 @@ ARCHITECTURE architecture_rules OF g27_rules IS
     
     -- 2 bits for suit, 4 for face_value
     SIGNAL face_value : UNSIGNED(3 DOWNTO 0);
-    SIGNAL x : STD_LOGIC_VECTOR(3 DOWNTO 0);
-    SIGNAL sum : STD_LOGIC_VECTOR(3 DOWNTO 0);
 
-    -- convert output x to unsigned
-    face_value <= UNSIGNED(x);
+    SIGNAL suit : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL modulo_output : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL current_total : UNSIGNED(3 DOWNTO 0);
+    SIGNAL sum : UNSIGNED(3 DOWNTO 0);
 
+    -- convert output modulo_output to unsigned number
+    face_value <= UNSIGNED(modulo_output) + 1;
+
+    -- convert current amount to unsigned
+    current_total <= UNSIGNED(play_pile_top_card)
+    sum <= current_total + face_value
+
+    -- rule 'if-statement'
+    rule : PROCESS(legal_play, sum)
+    BEGIN
+
+        IF sum > 21 THEN
+            legal_play <= 1;
+        ELSE THEN
+            legal_play <= 0;
+        END IF;
+
+    END PROCESS;
+
+    -- modulo component for architecture
     COMPONENT g27_modulo_13
 	    PORT
         (
@@ -43,17 +63,15 @@ ARCHITECTURE architecture_rules OF g27_rules IS
 	    );
     END COMPONENT;
     
+    -- begin architecture
     BEGIN
 
     modulo_inst : g27_modulo_13
     PORT MAP
     (
         A => card_to_play, 
-		FLOOR => ,
-		O => x
+		FLOOR => suit,
+		O => modulo_output
     );
 
-
-    
-
-	END architecture_rules;
+END architecture_rules;
