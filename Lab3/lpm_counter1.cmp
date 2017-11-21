@@ -18,6 +18,6 @@ component lpm_counter1
 	(
 		aclr		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
-		q		: OUT STD_LOGIC_VECTOR (24 DOWNTO 0)
+		q		: OUT STD_LOGIC_VECTOR (25 DOWNTO 0)
 	);
 end component;
