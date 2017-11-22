@@ -53,7 +53,6 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab4/deal_schematic.vwf"
 set_global_assignment -name VHDL_FILE g27_rules.vhd
 set_global_assignment -name VHDL_FILE ../Lab2/g27_RANDU.vhd
 set_global_assignment -name VHDL_FILE ../Lab2/g27_7_segment_decoder.vhd
@@ -70,4 +69,7 @@ set_global_assignment -name SOURCE_FILE db/lab4.cmp.rdb
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE //campus.mcgill.ca/emf/cpe/mlesko/Desktop/g27_rules.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE //campus.mcgill.ca/emf/cpe/mlesko/Desktop/g27_rules.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE //campus.mcgill.ca/emf/cpe/mlesko/Desktop/g27_rules.vwf

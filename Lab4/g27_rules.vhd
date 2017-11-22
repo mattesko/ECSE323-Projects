@@ -15,7 +15,7 @@ use ieee.numeric_std.all;
 ENTITY g27_rules IS
     PORT
     (
-		  -- MSB used to store if an ace is 11 in current_sum, 1: if ace=11, 0 if ace=0, 5 bits used for current_sum
+		  -- MSB used to store if an ace is 11 in current_sum, 1: if ace=11, 0 if ace=1, 5 bits used for current_sum
         play_pile_top_card : in std_logic_vector(5 DOWNTO 0);
         card_to_play : in std_logic_vector(5 DOWNTO 0);
         legal_play : out std_logic
@@ -34,9 +34,9 @@ ARCHITECTURE architecture_rules OF g27_rules IS
     SIGNAL new_sum : UNSIGNED(4 DOWNTO 0);
 
 	 -- STD_LOGIC signals
+	 SIGNAL modulo_input : STD_LOGIC_VECTOR(5 DOWNTO 0);
     SIGNAL suit : STD_LOGIC_VECTOR(3 DOWNTO 0);
     SIGNAL modulo_output : STD_LOGIC_VECTOR(3 DOWNTO 0);
-	 SIGNAL ace_bit : STD_LOGIC;
 	 SIGNAL legal_play_signal : STD_LOGIC; -- used as buffer for legal_play port
 	 
     -- MODULO13 component
@@ -52,50 +52,38 @@ ARCHITECTURE architecture_rules OF g27_rules IS
     -- ===========================
 	 -- BEGIN ARCHITECTURE BEHAVIOR
 	 -- ===========================
-    BEGIN
+    BEGIN 
 	 
-	 -- use MSB of play_pile_top_card as ace_bit signal
-	 --ace_bit <= play_pile_top_card(5);
+	 -- Subtract one from face_value and pass result through modulo13
+	 modulo_input <= ("00" & STD_LOGIC_VECTOR( UNSIGNED(card_to_play(3 DOWNTO 0)) - 1 ));
 	 
-	 -- convert output modulo_output to unsigned number and add 1
+	 -- Conversion of STD_LOGIC_VECTOR to UNSIGNED
     face_value <= UNSIGNED(modulo_output) + 1;
-
-    -- convert play_pile_top_card value to unsigned
     current_sum <= UNSIGNED(play_pile_top_card(4 DOWNTO 0));
 
     modulo_inst : g27_modulo_13
     PORT MAP
     (
-      A => card_to_play, 
+      A => modulo_input, 
 		FLOOR => suit,
 		O => modulo_output
     );
 					 
 	-- All additions and legal_play checking are done under here
-	ADDITIONS_AND_COMPARISONS: PROCESS (face_value, new_sum, ace_bit, current_sum, legal_play_signal)
+	ADDITIONS_AND_COMPARISONS: PROCESS (face_value, new_sum, current_sum, legal_play_signal)
 	BEGIN
 		-- If we bust but we have an ace in our hand, decrease hand by 10
 		IF (play_pile_top_card(5) = '1' and ((current_sum + face_value) > 21)) then
 			new_sum <= current_sum + face_value - 10;
-			--ace_bit <= '0';
-			IF (new_sum <= 21) then
-				legal_play_signal <= '0';
-			ELSE 
-				legal_play_signal <= '1';
-			END IF;
-		-- If we got an ace and it can count as 11, add 10 to hand
-		--ELSIF (face_value = 1 and (current_sum + face_value) <= 11) then
-			--new_sum <= current_sum + face_value + 10;
-			--ace_bit <= '1';
-		-- Else by default just add face_value to current_sum
 		ELSE
 			new_sum <= current_sum + face_value;
-			IF (new_sum <= 21) then
+		END IF;
+		
+		IF (new_sum <= 21) then
 				legal_play_signal <= '0';
 			ELSE 
 				legal_play_signal <= '1';
 			END IF;
-		END IF;
 	END PROCESS;
 	
 	-- Output legal_play_signal
