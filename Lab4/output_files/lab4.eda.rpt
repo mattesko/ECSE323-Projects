@@ -1,5 +1,5 @@
 EDA Netlist Writer report for lab4
-Tue Nov 21 17:25:18 2017
+Wed Nov 22 13:25:29 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Nov 21 17:25:18 2017 ;
+; EDA Netlist Writer Status ; Successful - Wed Nov 22 13:25:29 2017 ;
 ; Revision Name             ; lab4                                  ;
-; Top-level Entity Name     ; g27_dealer                            ;
+; Top-level Entity Name     ; deal_schematic                        ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -80,13 +80,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 21 17:25:17 2017
+    Info: Processing started: Wed Nov 22 13:25:28 2017
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog lab4 -c lab4
-Info (119006): Selected device EP2C20F484C7 for design "lab4"
 Info (204019): Generated file lab4.vo in folder "D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab4/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 428 megabytes
-    Info: Processing ended: Tue Nov 21 17:25:18 2017
+    Info: Processing ended: Wed Nov 22 13:25:29 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

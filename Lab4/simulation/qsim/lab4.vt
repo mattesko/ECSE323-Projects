@@ -18,15 +18,15 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/21/2017 17:25:17"
+// Generated on "11/22/2017 13:25:28"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    g27_dealer
+// Verilog Self-Checking Test Bench (with test vectors) for design :    deal_schematic
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module g27_dealer_vlg_sample_tst(
+module deal_schematic_vlg_sample_tst(
 	clk,
 	rand_lt_num,
 	request_deal,
@@ -60,7 +60,7 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module g27_dealer_vlg_check_tst (
+module deal_schematic_vlg_check_tst (
 	rand_enable,
 	stack_enable,
 	sampler_rx
@@ -182,7 +182,7 @@ $finish;
 end 
 endmodule
 
-module g27_dealer_vlg_vec_tst();
+module deal_schematic_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
@@ -196,7 +196,7 @@ wire stack_enable;
 wire sampler;                             
 
 // assign statements (if any)                          
-g27_dealer i1 (
+deal_schematic i1 (
 // port map - connection between master ports and signals/registers   
 	.clk(clk),
 	.rand_enable(rand_enable),
@@ -217,28 +217,143 @@ end
 // request_deal
 initial
 begin
-	request_deal = 1'b1;
-	# 60000;
-	repeat(7)
-	begin
-		request_deal = 1'b0;
-		request_deal = #60000 1'b1;
-		# 60000;
-	end
 	request_deal = 1'b0;
+	request_deal = #20000 1'b1;
+	request_deal = #40000 1'b0;
+	request_deal = #20000 1'b1;
+	request_deal = #20000 1'b0;
 	request_deal = #60000 1'b1;
+	request_deal = #20000 1'b0;
+	request_deal = #20000 1'b1;
+	request_deal = #60000 1'b0;
+	request_deal = #20000 1'b1;
+	request_deal = #40000 1'b0;
+	request_deal = #60000 1'b1;
+	request_deal = #60000 1'b0;
+	request_deal = #40000 1'b1;
+	request_deal = #20000 1'b0;
+	request_deal = #80000 1'b1;
+	request_deal = #60000 1'b0;
+	request_deal = #20000 1'b1;
+	request_deal = #80000 1'b0;
+	request_deal = #100000 1'b1;
+	request_deal = #20000 1'b0;
+	request_deal = #20000 1'b1;
+	request_deal = #40000 1'b0;
+	request_deal = #20000 1'b1;
 end 
 
 // rand_lt_num
 initial
 begin
-	repeat(12)
-	begin
-		rand_lt_num = 1'b0;
-		rand_lt_num = #40000 1'b1;
-		# 40000;
-	end
 	rand_lt_num = 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #55000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #15000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #25000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #10000 1'b1;
+	rand_lt_num = #15000 1'b0;
+	rand_lt_num = #20000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #10000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #30000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #15000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #10000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #15000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #10000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #30000 1'b0;
+	rand_lt_num = #10000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #15000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #20000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #15000 1'b0;
+	rand_lt_num = #15000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #10000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #10000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #10000 1'b1;
+	rand_lt_num = #20000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #15000 1'b1;
+	rand_lt_num = #15000 1'b0;
+	rand_lt_num = #10000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #10000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #15000 1'b1;
+	rand_lt_num = #30000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #15000 1'b1;
+	rand_lt_num = #15000 1'b0;
+	rand_lt_num = #10000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #25000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #10000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #10000 1'b0;
+	rand_lt_num = #5000 1'b1;
+	rand_lt_num = #5000 1'b0;
+	rand_lt_num = #5000 1'b1;
 end 
 
 // reset
@@ -247,7 +362,7 @@ begin
 	reset = 1'b0;
 end 
 
-g27_dealer_vlg_sample_tst tb_sample (
+deal_schematic_vlg_sample_tst tb_sample (
 	.clk(clk),
 	.rand_lt_num(rand_lt_num),
 	.request_deal(request_deal),
@@ -255,7 +370,7 @@ g27_dealer_vlg_sample_tst tb_sample (
 	.sampler_tx(sampler)
 );
 
-g27_dealer_vlg_check_tst tb_out(
+deal_schematic_vlg_check_tst tb_out(
 	.rand_enable(rand_enable),
 	.stack_enable(stack_enable),
 	.sampler_rx(sampler)

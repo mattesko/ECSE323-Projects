@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "11/21/2017 17:25:18"
+// DATE "11/22/2017 13:25:29"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -28,19 +28,28 @@
 
 `timescale 1 ps/ 1 ps
 
-module g27_dealer (
+module deal_schematic (
+	rand_enable,
 	request_deal,
 	rand_lt_num,
 	reset,
 	clk,
-	rand_enable,
 	stack_enable);
+output 	rand_enable;
 input 	request_deal;
 input 	rand_lt_num;
 input 	reset;
 input 	clk;
-output 	rand_enable;
 output 	stack_enable;
+
+// Design Ports Information
+// rand_enable	=>  Location: PIN_F3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// stack_enable	=>  Location: PIN_D1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// request_deal	=>  Location: PIN_D2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// rand_lt_num	=>  Location: PIN_G5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// clk	=>  Location: PIN_M1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// reset	=>  Location: PIN_M2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+
 
 wire gnd;
 wire vcc;
@@ -54,17 +63,20 @@ tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
 wire \clk~combout ;
+wire \clk~clkctrl_outclk ;
 wire \request_deal~combout ;
 wire \rand_lt_num~combout ;
-wire \Selector0~0_combout ;
+wire \inst|state~7_combout ;
 wire \reset~combout ;
-wire \state.s0~regout ;
-wire \Selector1~0_combout ;
-wire \state.s1~regout ;
-wire \state~7_combout ;
-wire \state.s2~regout ;
+wire \reset~clkctrl_outclk ;
+wire \inst|state.s2~regout ;
+wire \inst|Selector0~0_combout ;
+wire \inst|state.s0~regout ;
+wire \inst|Selector1~0_combout ;
+wire \inst|state.s1~regout ;
 
 
+// Location: PIN_M1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \clk~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -100,6 +112,20 @@ defparam \clk~I .output_register_mode = "none";
 defparam \clk~I .output_sync_reset = "none";
 // synopsys translate_on
 
+// Location: CLKCTRL_G3
+cycloneii_clkctrl \clk~clkctrl (
+	.ena(vcc),
+	.inclk({gnd,gnd,gnd,\clk~combout }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\clk~clkctrl_outclk ));
+// synopsys translate_off
+defparam \clk~clkctrl .clock_type = "global clock";
+defparam \clk~clkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: PIN_D2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \request_deal~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -135,6 +161,7 @@ defparam \request_deal~I .output_register_mode = "none";
 defparam \request_deal~I .output_sync_reset = "none";
 // synopsys translate_on
 
+// Location: PIN_G5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \rand_lt_num~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -170,22 +197,24 @@ defparam \rand_lt_num~I .output_register_mode = "none";
 defparam \rand_lt_num~I .output_sync_reset = "none";
 // synopsys translate_on
 
-cycloneii_lcell_comb \Selector0~0 (
+// Location: LCCOMB_X1_Y22_N26
+cycloneii_lcell_comb \inst|state~7 (
 // Equation(s):
-// \Selector0~0_combout  = (!\state.s2~regout  & ((\request_deal~combout ) # (\state.s0~regout )))
+// \inst|state~7_combout  = (\rand_lt_num~combout  & \inst|state.s1~regout )
 
-	.dataa(\state.s2~regout ),
+	.dataa(vcc),
 	.datab(vcc),
-	.datac(\request_deal~combout ),
-	.datad(\state.s0~regout ),
+	.datac(\rand_lt_num~combout ),
+	.datad(\inst|state.s1~regout ),
 	.cin(gnd),
-	.combout(\Selector0~0_combout ),
+	.combout(\inst|state~7_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Selector0~0 .lut_mask = 16'h5550;
-defparam \Selector0~0 .sum_lutc_input = "datac";
+defparam \inst|state~7 .lut_mask = 16'hF000;
+defparam \inst|state~7 .sum_lutc_input = "datac";
 // synopsys translate_on
 
+// Location: PIN_M2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \reset~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -221,76 +250,95 @@ defparam \reset~I .output_register_mode = "none";
 defparam \reset~I .output_sync_reset = "none";
 // synopsys translate_on
 
-cycloneii_lcell_ff \state.s0 (
-	.clk(\clk~combout ),
-	.datain(\Selector0~0_combout ),
+// Location: CLKCTRL_G1
+cycloneii_clkctrl \reset~clkctrl (
+	.ena(vcc),
+	.inclk({gnd,gnd,gnd,\reset~combout }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\reset~clkctrl_outclk ));
+// synopsys translate_off
+defparam \reset~clkctrl .clock_type = "global clock";
+defparam \reset~clkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: LCFF_X1_Y22_N27
+cycloneii_lcell_ff \inst|state.s2 (
+	.clk(\clk~clkctrl_outclk ),
+	.datain(\inst|state~7_combout ),
 	.sdata(gnd),
-	.aclr(\reset~combout ),
+	.aclr(\reset~clkctrl_outclk ),
 	.sclr(gnd),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.regout(\state.s0~regout ));
+	.regout(\inst|state.s2~regout ));
 
-cycloneii_lcell_comb \Selector1~0 (
+// Location: LCCOMB_X1_Y22_N0
+cycloneii_lcell_comb \inst|Selector0~0 (
 // Equation(s):
-// \Selector1~0_combout  = (\state.s1~regout  & (((\request_deal~combout  & !\state.s0~regout )) # (!\rand_lt_num~combout ))) # (!\state.s1~regout  & (\request_deal~combout  & ((!\state.s0~regout ))))
+// \inst|Selector0~0_combout  = (!\inst|state.s2~regout  & ((\request_deal~combout ) # (\inst|state.s0~regout )))
 
-	.dataa(\state.s1~regout ),
+	.dataa(vcc),
 	.datab(\request_deal~combout ),
-	.datac(\rand_lt_num~combout ),
-	.datad(\state.s0~regout ),
+	.datac(\inst|state.s0~regout ),
+	.datad(\inst|state.s2~regout ),
 	.cin(gnd),
-	.combout(\Selector1~0_combout ),
+	.combout(\inst|Selector0~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \Selector1~0 .lut_mask = 16'h0ACE;
-defparam \Selector1~0 .sum_lutc_input = "datac";
+defparam \inst|Selector0~0 .lut_mask = 16'h00FC;
+defparam \inst|Selector0~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_lcell_ff \state.s1 (
-	.clk(\clk~combout ),
-	.datain(\Selector1~0_combout ),
+// Location: LCFF_X1_Y22_N1
+cycloneii_lcell_ff \inst|state.s0 (
+	.clk(\clk~clkctrl_outclk ),
+	.datain(\inst|Selector0~0_combout ),
 	.sdata(gnd),
-	.aclr(\reset~combout ),
+	.aclr(\reset~clkctrl_outclk ),
 	.sclr(gnd),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.regout(\state.s1~regout ));
+	.regout(\inst|state.s0~regout ));
 
-cycloneii_lcell_comb \state~7 (
+// Location: LCCOMB_X1_Y22_N28
+cycloneii_lcell_comb \inst|Selector1~0 (
 // Equation(s):
-// \state~7_combout  = (\state.s1~regout  & \rand_lt_num~combout )
+// \inst|Selector1~0_combout  = (\rand_lt_num~combout  & (\request_deal~combout  & ((!\inst|state.s0~regout )))) # (!\rand_lt_num~combout  & ((\inst|state.s1~regout ) # ((\request_deal~combout  & !\inst|state.s0~regout ))))
 
-	.dataa(\state.s1~regout ),
-	.datab(\rand_lt_num~combout ),
-	.datac(vcc),
-	.datad(vcc),
+	.dataa(\rand_lt_num~combout ),
+	.datab(\request_deal~combout ),
+	.datac(\inst|state.s1~regout ),
+	.datad(\inst|state.s0~regout ),
 	.cin(gnd),
-	.combout(\state~7_combout ),
+	.combout(\inst|Selector1~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \state~7 .lut_mask = 16'h8888;
-defparam \state~7 .sum_lutc_input = "datac";
+defparam \inst|Selector1~0 .lut_mask = 16'h50DC;
+defparam \inst|Selector1~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneii_lcell_ff \state.s2 (
-	.clk(\clk~combout ),
-	.datain(\state~7_combout ),
+// Location: LCFF_X1_Y22_N29
+cycloneii_lcell_ff \inst|state.s1 (
+	.clk(\clk~clkctrl_outclk ),
+	.datain(\inst|Selector1~0_combout ),
 	.sdata(gnd),
-	.aclr(\reset~combout ),
+	.aclr(\reset~clkctrl_outclk ),
 	.sclr(gnd),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.regout(\state.s2~regout ));
+	.regout(\inst|state.s1~regout ));
 
+// Location: PIN_F3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \rand_enable~I (
-	.datain(\state.s1~regout ),
+	.datain(\inst|state.s1~regout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -324,8 +372,9 @@ defparam \rand_enable~I .output_register_mode = "none";
 defparam \rand_enable~I .output_sync_reset = "none";
 // synopsys translate_on
 
+// Location: PIN_D1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \stack_enable~I (
-	.datain(\state.s2~regout ),
+	.datain(\inst|state.s2~regout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
