@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C20F484C7
-set_global_assignment -name TOP_LEVEL_ENTITY g27_7_segment_decoder
+set_global_assignment -name TOP_LEVEL_ENTITY g27_rules
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:42:43  NOVEMBER 21, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -54,6 +54,7 @@ set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab4/deal_schematic.vwf"
+set_global_assignment -name VHDL_FILE g27_rules.vhd
 set_global_assignment -name VHDL_FILE ../Lab2/g27_RANDU.vhd
 set_global_assignment -name VHDL_FILE ../Lab2/g27_7_segment_decoder.vhd
 set_global_assignment -name BDF_FILE ../Archive/Lab1/g27_comp7.bdf
