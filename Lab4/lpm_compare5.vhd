@@ -44,7 +44,7 @@ ENTITY lpm_compare5 IS
 	(
 		dataa		: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
 		datab		: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
-		agb		: OUT STD_LOGIC 
+		aleb		: OUT STD_LOGIC 
 	);
 END lpm_compare5;
 
@@ -62,14 +62,14 @@ ARCHITECTURE SYN OF lpm_compare5 IS
 		lpm_width		: NATURAL
 	);
 	PORT (
-			agb	: OUT STD_LOGIC ;
+			aleb	: OUT STD_LOGIC ;
 			dataa	: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
 			datab	: IN STD_LOGIC_VECTOR (5 DOWNTO 0)
 	);
 	END COMPONENT;
 
 BEGIN
-	agb    <= sub_wire0;
+	aleb    <= sub_wire0;
 
 	LPM_COMPARE_component : LPM_COMPARE
 	GENERIC MAP (
@@ -80,7 +80,7 @@ BEGIN
 	PORT MAP (
 		dataa => dataa,
 		datab => datab,
-		agb => sub_wire0
+		aleb => sub_wire0
 	);
 
 
@@ -92,8 +92,8 @@ END SYN;
 -- ============================================================
 -- Retrieval info: PRIVATE: AeqB NUMERIC "0"
 -- Retrieval info: PRIVATE: AgeB NUMERIC "0"
--- Retrieval info: PRIVATE: AgtB NUMERIC "1"
--- Retrieval info: PRIVATE: AleB NUMERIC "0"
+-- Retrieval info: PRIVATE: AgtB NUMERIC "0"
+-- Retrieval info: PRIVATE: AleB NUMERIC "1"
 -- Retrieval info: PRIVATE: AltB NUMERIC "0"
 -- Retrieval info: PRIVATE: AneB NUMERIC "0"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
@@ -112,12 +112,12 @@ END SYN;
 -- Retrieval info: CONSTANT: LPM_REPRESENTATION STRING "UNSIGNED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COMPARE"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "6"
--- Retrieval info: USED_PORT: agb 0 0 0 0 OUTPUT NODEFVAL "agb"
+-- Retrieval info: USED_PORT: aleb 0 0 0 0 OUTPUT NODEFVAL "aleb"
 -- Retrieval info: USED_PORT: dataa 0 0 6 0 INPUT NODEFVAL "dataa[5..0]"
 -- Retrieval info: USED_PORT: datab 0 0 6 0 INPUT NODEFVAL "datab[5..0]"
 -- Retrieval info: CONNECT: @dataa 0 0 6 0 dataa 0 0 6 0
 -- Retrieval info: CONNECT: @datab 0 0 6 0 datab 0 0 6 0
--- Retrieval info: CONNECT: agb 0 0 0 0 @agb 0 0 0 0
+-- Retrieval info: CONNECT: aleb 0 0 0 0 @aleb 0 0 0 0
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare5.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare5.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_compare5.cmp TRUE
