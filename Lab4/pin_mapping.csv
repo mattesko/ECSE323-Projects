@@ -1,0 +1,65 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+# File: P:\DSD_Labs\DSD-Labs-and-Project\Lab4\pin_mapping.csv
+# Generated on: Thu Nov 23 13:57:40 2017
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Differential Pair
+MODE[1],Unknown,PIN_L21,5,B5_N1,,,,
+MODE[0],Unknown,PIN_L22,5,B5_N1,,,,
+CLK,Unknown,PIN_L1,2,B2_N1,,,,
+BTN_IN,Unknown,PIN_T21,6,B6_N0,,,,
+RST_IN,Unknown,PIN_R21,6,B6_N0,,,,
+ADDR[5],Unknown,PIN_M2,1,B1_N0,,,,
+ADDR[4],Unknown,PIN_U11,8,B8_N0,,,,
+ADDR[3],Unknown,PIN_U12,8,B8_N0,,,,
+ADDR[2],Unknown,PIN_W12,7,B7_N1,,,,
+ADDR[1],Unknown,PIN_V12,7,B7_N1,,,,
+ADDR[0],Unknown,PIN_M22,6,B6_N0,,,,
+BTN_OUT,Unknown,PIN_U22,6,B6_N1,,,,
+RST_OUT,Unknown,PIN_U21,6,B6_N1,,,,
+EMPTY,Unknown,PIN_R20,6,B6_N0,,,,
+FULL,Unknown,PIN_R19,6,B6_N0,,,,
+NUM[0],Unknown,PIN_T18,6,B6_N1,,,,
+NUM[1],Unknown,PIN_V19,6,B6_N1,,,,
+NUM[2],Unknown,PIN_Y18,6,B6_N1,,,,
+NUM[3],Unknown,PIN_U18,6,B6_N1,,,,
+NUM[4],Unknown,PIN_R18,6,B6_N0,,,,
+NUM[5],Unknown,PIN_R17,6,B6_N1,,,,
+SEGMENT_1[0],Unknown,PIN_G5,2,B2_N0,,,,
+SEGMENT_1[6],Unknown,PIN_D3,2,B2_N0,,,,
+SEGMENT_1[5],Unknown,PIN_E4,2,B2_N0,,,,
+SEGMENT_1[4],Unknown,PIN_E3,2,B2_N0,,,,
+SEGMENT_1[3],Unknown,PIN_C1,2,B2_N0,,,,
+SEGMENT_1[2],Unknown,PIN_C2,2,B2_N0,,,,
+SEGMENT_1[1],Unknown,PIN_G6,2,B2_N0,,,,
+SEGMENT_2[6],Unknown,PIN_D4,2,B2_N0,,,,
+SEGMENT_2[5],Unknown,PIN_F3,2,B2_N0,,,,
+SEGMENT_2[4],Unknown,PIN_L8,2,B2_N1,,,,
+SEGMENT_2[3],Unknown,PIN_J4,2,B2_N1,,,,
+SEGMENT_2[2],Unknown,PIN_D6,2,B2_N0,,,,
+SEGMENT_2[1],Unknown,PIN_D5,2,B2_N0,,,,
+SEGMENT_2[0],Unknown,PIN_F4,2,B2_N0,,,,
+VALUE[5],Unknown,PIN_Y21,6,B6_N1,,,,
+VALUE[4],Unknown,PIN_Y22,6,B6_N1,,,,
+VALUE[3],Unknown,PIN_W21,6,B6_N1,,,,
+VALUE[2],Unknown,PIN_W22,6,B6_N1,,,,
+VALUE[1],Unknown,PIN_V21,6,B6_N1,,,,
+VALUE[0],Unknown,PIN_V22,6,B6_N1,,,,
+O[4],Unknown,,,,,,,
+O[5],Unknown,,,,,,,
+O[6],Unknown,,,,,,,
