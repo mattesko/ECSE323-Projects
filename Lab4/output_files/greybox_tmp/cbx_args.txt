@@ -1,11 +1,7 @@
-LPM_SIZE=4
-LPM_TYPE=LPM_MUX
+LPM_REPRESENTATION=UNSIGNED
+LPM_TYPE=LPM_COMPARE
 LPM_WIDTH=6
-LPM_WIDTHS=2
 DEVICE_FAMILY="Cyclone II"
-data
-data
-data
-data
-sel
-result
+dataa
+datab
+aleb

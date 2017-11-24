@@ -1,16 +1,16 @@
-Fitter Status : Successful - Fri Nov 24 16:04:15 2017
+Fitter Status : Successful - Fri Nov 24 18:09:12 2017
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : lab4
 Top-level Entity Name : g27_dealer_testbed
 Family : Cyclone II
 Device : EP2C20F484C7
 Timing Models : Final
-Total logic elements : 1,984 / 18,752 ( 11 % )
-    Total combinational functions : 1,346 / 18,752 ( 7 % )
-    Dedicated logic registers : 1,423 / 18,752 ( 8 % )
-Total registers : 1423
-Total pins : 178 / 315 ( 57 % )
+Total logic elements : 2,520 / 18,752 ( 13 % )
+    Total combinational functions : 1,497 / 18,752 ( 8 % )
+    Dedicated logic registers : 1,929 / 18,752 ( 10 % )
+Total registers : 1929
+Total pins : 185 / 315 ( 59 % )
 Total virtual pins : 0
-Total memory bits : 7,680 / 239,616 ( 3 % )
+Total memory bits : 13,056 / 239,616 ( 5 % )
 Embedded Multiplier 9-bit elements : 0 / 52 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
