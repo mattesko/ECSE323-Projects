@@ -1,13 +1,13 @@
-Partition Merge Status : Successful - Fri Nov 24 15:13:42 2017
+Partition Merge Status : Successful - Fri Nov 24 15:37:00 2017
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : lab4
 Top-level Entity Name : g27_dealer_testbed
 Family : Cyclone II
-Total logic elements : 1,364
-    Total combinational functions : 1,164
+Total logic elements : 1,374
+    Total combinational functions : 1,174
     Dedicated logic registers : 809
 Total registers : 809
-Total pins : 164
+Total pins : 178
 Total virtual pins : 0
 Total memory bits : 1,152
 Embedded Multiplier 9-bit elements : 0

@@ -89,9 +89,9 @@ ARCHITECTURE architecture_rules OF g27_rules IS
 		END IF;
 		
 		IF (new_sum <= 21) then
-				legal_play_signal <= '0';
-			ELSE 
 				legal_play_signal <= '1';
+			ELSE 
+				legal_play_signal <= '0';
 			END IF;
 	END PROCESS;
 	

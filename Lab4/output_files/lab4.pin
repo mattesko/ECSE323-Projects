@@ -74,20 +74,20 @@ GND*                         : A3        :        :                   :         
 GND*                         : A4        :        :                   :         : 3         :                
 GND*                         : A5        :        :                   :         : 3         :                
 GND*                         : A6        :        :                   :         : 3         :                
-POP_ENABLE[26]               : A7        : output : 3.3-V LVTTL       :         : 3         : N              
-POP_ENABLE[44]               : A8        : output : 3.3-V LVTTL       :         : 3         : N              
-POP_ENABLE[42]               : A9        : output : 3.3-V LVTTL       :         : 3         : N              
-POP_ENABLE[23]               : A10       : output : 3.3-V LVTTL       :         : 3         : N              
-VALUE[4]                     : A11       : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[14]               : A7        : output : 3.3-V LVTTL       :         : 3         : N              
+RANDUOUT[4]                  : A8        : output : 3.3-V LVTTL       :         : 3         : N              
+VALUE[0]                     : A9        : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[39]               : A10       : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[24]               : A11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : A12       :        :                   :         : 4         :                
-POP_ENABLE[21]               : A13       : output : 3.3-V LVTTL       :         : 4         : N              
-POP_ENABLE[30]               : A14       : output : 3.3-V LVTTL       :         : 4         : N              
-FULL                         : A15       : output : 3.3-V LVTTL       :         : 4         : N              
-POP                          : A16       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[11]                     : A17       : output : 3.3-V LVTTL       :         : 4         : N              
-RANDUOUT[21]                 : A18       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[12]                     : A19       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[21]                     : A20       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[26]               : A13       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[44]               : A14       : output : 3.3-V LVTTL       :         : 4         : N              
+RAND[25]                     : A15       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[1]                : A16       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[32]               : A17       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : A18       :        :                   :         : 4         :                
+RAND[30]                     : A19       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : A20       :        :                   :         : 4         :                
 VCCIO4                       : A21       : power  :                   : 3.3V    : 4         :                
 GND                          : A22       : gnd    :                   :         :           :                
 VCCIO1                       : AA1       : power  :                   : 3.3V    : 1         :                
@@ -97,16 +97,16 @@ GND*                         : AA4       :        :                   :         
 GND*                         : AA5       :        :                   :         : 8         :                
 GND*                         : AA6       :        :                   :         : 8         :                
 GND*                         : AA7       :        :                   :         : 8         :                
-OUT51[2]                     : AA8       : output : 3.3-V LVTTL       :         : 8         : N              
-POP_ENABLE[13]               : AA9       : output : 3.3-V LVTTL       :         : 8         : N              
-OUT1[4]                      : AA10      : output : 3.3-V LVTTL       :         : 8         : N              
-OUT1[0]                      : AA11      : output : 3.3-V LVTTL       :         : 8         : N              
-OUT0[2]                      : AA12      : output : 3.3-V LVTTL       :         : 7         : N              
-VALUE[1]                     : AA13      : output : 3.3-V LVTTL       :         : 7         : N              
-POP_ENABLE[0]                : AA14      : output : 3.3-V LVTTL       :         : 7         : N              
-STACK_ENABLE                 : AA15      : output : 3.3-V LVTTL       :         : 7         : N              
-GND*                         : AA16      :        :                   :         : 7         :                
-GND*                         : AA17      :        :                   :         : 7         :                
+RAND[3]                      : AA8       : output : 3.3-V LVTTL       :         : 8         : N              
+RAND[20]                     : AA9       : output : 3.3-V LVTTL       :         : 8         : N              
+RAND[12]                     : AA10      : output : 3.3-V LVTTL       :         : 8         : N              
+RAND[7]                      : AA11      : output : 3.3-V LVTTL       :         : 8         : N              
+RAND[23]                     : AA12      : output : 3.3-V LVTTL       :         : 7         : N              
+RANDUOUT[15]                 : AA13      : output : 3.3-V LVTTL       :         : 7         : N              
+OUT1[2]                      : AA14      : output : 3.3-V LVTTL       :         : 7         : N              
+RANDUOUT[10]                 : AA15      : output : 3.3-V LVTTL       :         : 7         : N              
+POP_ENABLE[0]                : AA16      : output : 3.3-V LVTTL       :         : 7         : N              
+RANDUOUT[20]                 : AA17      : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AA18      :        :                   :         : 7         :                
 GND*                         : AA19      :        :                   :         : 7         :                
 GND*                         : AA20      :        :                   :         : 7         :                
@@ -117,43 +117,43 @@ VCCIO8                       : AB2       : power  :                   : 3.3V    
 GND*                         : AB3       :        :                   :         : 8         :                
 GND*                         : AB4       :        :                   :         : 8         :                
 GND*                         : AB5       :        :                   :         : 8         :                
-RANDUOUT[2]                  : AB6       : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AB6       :        :                   :         : 8         :                
 GND*                         : AB7       :        :                   :         : 8         :                
-POP_ENABLE[8]                : AB8       : output : 3.3-V LVTTL       :         : 8         : N              
-POP_ENABLE[7]                : AB9       : output : 3.3-V LVTTL       :         : 8         : N              
-POP_ENABLE[25]               : AB10      : output : 3.3-V LVTTL       :         : 8         : N              
-OUT1[5]                      : AB11      : output : 3.3-V LVTTL       :         : 8         : N              
-POP_ENABLE[41]               : AB12      : output : 3.3-V LVTTL       :         : 7         : N              
-POP_ENABLE[35]               : AB13      : output : 3.3-V LVTTL       :         : 7         : N              
-OUT0[5]                      : AB14      : output : 3.3-V LVTTL       :         : 7         : N              
-OUT1[3]                      : AB15      : output : 3.3-V LVTTL       :         : 7         : N              
-POP_ENABLE[24]               : AB16      : output : 3.3-V LVTTL       :         : 7         : N              
-GND*                         : AB17      :        :                   :         : 7         :                
+RAND[22]                     : AB8       : output : 3.3-V LVTTL       :         : 8         : N              
+RAND[17]                     : AB9       : output : 3.3-V LVTTL       :         : 8         : N              
+RAND[31]                     : AB10      : output : 3.3-V LVTTL       :         : 8         : N              
+VALUE[1]                     : AB11      : output : 3.3-V LVTTL       :         : 8         : N              
+RAND_ENABLE                  : AB12      : output : 3.3-V LVTTL       :         : 7         : N              
+POP_ENABLE[16]               : AB13      : output : 3.3-V LVTTL       :         : 7         : N              
+POP_ENABLE[2]                : AB14      : output : 3.3-V LVTTL       :         : 7         : N              
+OUT51[4]                     : AB15      : output : 3.3-V LVTTL       :         : 7         : N              
+RANDUOUT[24]                 : AB16      : output : 3.3-V LVTTL       :         : 7         : N              
+RANDUOUT[18]                 : AB17      : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AB18      :        :                   :         : 7         :                
 GND*                         : AB19      :        :                   :         : 7         :                
-RAND[29]                     : AB20      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AB20      :        :                   :         : 7         :                
 VCCIO7                       : AB21      : power  :                   : 3.3V    : 7         :                
 GND                          : AB22      : gnd    :                   :         :           :                
 VCCIO2                       : B1        : power  :                   : 3.3V    : 2         :                
 GND                          : B2        : gnd    :                   :         :           :                
 GND*                         : B3        :        :                   :         : 3         :                
 GND*                         : B4        :        :                   :         : 3         :                
-RAND[2]                      : B5        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : B5        :        :                   :         : 3         :                
 GND*                         : B6        :        :                   :         : 3         :                
-ADDR[5]                      : B7        : output : 3.3-V LVTTL       :         : 3         : N              
-POP_ENABLE[47]               : B8        : output : 3.3-V LVTTL       :         : 3         : N              
-POP_ENABLE[6]                : B9        : output : 3.3-V LVTTL       :         : 3         : N              
-POP_ENABLE[10]               : B10       : output : 3.3-V LVTTL       :         : 3         : N              
-POP_ENABLE[19]               : B11       : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[25]               : B7        : output : 3.3-V LVTTL       :         : 3         : N              
+RAND[4]                      : B8        : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[40]               : B9        : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[7]                : B10       : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[12]               : B11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : B12       :        :                   :         : 4         :                
-VALUE[0]                     : B13       : output : 3.3-V LVTTL       :         : 4         : N              
-POP_ENABLE[32]               : B14       : output : 3.3-V LVTTL       :         : 4         : N              
-ADDR[0]                      : B15       : output : 3.3-V LVTTL       :         : 4         : N              
-POP_ENABLE[22]               : B16       : output : 3.3-V LVTTL       :         : 4         : N              
-RANDUOUT[7]                  : B17       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[4]                      : B18       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[19]                     : B19       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[10]                     : B20       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[42]               : B13       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[18]               : B14       : output : 3.3-V LVTTL       :         : 4         : N              
+ADDR[1]                      : B15       : output : 3.3-V LVTTL       :         : 4         : N              
+INIT                         : B16       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[33]               : B17       : output : 3.3-V LVTTL       :         : 4         : N              
+RANDUOUT[28]                 : B18       : output : 3.3-V LVTTL       :         : 4         : N              
+ADDR[5]                      : B19       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : B20       :        :                   :         : 4         :                
 GND                          : B21       : gnd    :                   :         :           :                
 VCCIO5                       : B22       : power  :                   : 3.3V    : 5         :                
 GND*                         : C1        :        :                   :         : 2         :                
@@ -162,136 +162,136 @@ GND*                         : C2        :        :                   :         
 ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C4        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND                          : C5        : gnd    :                   :         :           :                
 VCCIO3                       : C6        : power  :                   : 3.3V    : 3         :                
-GND*                         : C7        :        :                   :         : 3         :                
+POP_ENABLE[43]               : C7        : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : C8        : gnd    :                   :         :           :                
-GND*                         : C9        :        :                   :         : 3         :                
-POP_ENABLE[17]               : C10       : output : 3.3-V LVTTL       :         : 3         : N              
+RAND[24]                     : C9        : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[19]               : C10       : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : C11       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : C12       : power  :                   : 3.3V    : 4         :                
-INIT                         : C13       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[14]                     : C14       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[11]               : C13       : output : 3.3-V LVTTL       :         : 4         : N              
+OUT51[1]                     : C14       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : C15       : gnd    :                   :         :           :                
-RAND[20]                     : C16       : output : 3.3-V LVTTL       :         : 4         : N              
-RANDUOUT[8]                  : C17       : output : 3.3-V LVTTL       :         : 4         : N              
-RANDUOUT[29]                 : C18       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[24]                     : C19       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[5]                  : C20       : output : 3.3-V LVTTL       :         : 5         : N              
-RAND[17]                     : C21       : output : 3.3-V LVTTL       :         : 5         : N              
-RAND[23]                     : C22       : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : D1        :        :                   :         : 2         :                
-GND*                         : D2        :        :                   :         : 2         :                
+RANDUOUT[29]                 : C16       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : C17       :        :                   :         : 4         :                
+GND*                         : C18       :        :                   :         : 4         :                
+GND*                         : C19       :        :                   :         : 5         :                
+GND*                         : C20       :        :                   :         : 5         :                
+GND*                         : C21       :        :                   :         : 5         :                
+GND*                         : C22       :        :                   :         : 5         :                
+SEGMENT_2[6]                 : D1        : output : 3.3-V LVTTL       :         : 2         : Y              
+SEGMENT_2[5]                 : D2        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : D3        :        :                   :         : 2         :                
 GND*                         : D4        :        :                   :         : 2         :                
 GND*                         : D5        :        :                   :         : 2         :                
 GND*                         : D6        :        :                   :         : 2         :                
-POP_ENABLE[46]               : D7        : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : D8        :        :                   :         : 3         :                
-POP_ENABLE[29]               : D9        : output : 3.3-V LVTTL       :         : 3         : N              
+RAND[15]                     : D7        : output : 3.3-V LVTTL       :         : 3         : N              
+RAND[5]                      : D8        : output : 3.3-V LVTTL       :         : 3         : N              
+RAND[13]                     : D9        : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : D10       : gnd    :                   :         :           :                
-POP_ENABLE[15]               : D11       : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[17]               : D11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : D12       :        :                   :         : 3         :                
 GND                          : D13       : gnd    :                   :         :           :                
-RAND[7]                      : D14       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[5]                      : D15       : output : 3.3-V LVTTL       :         : 4         : N              
-RANDUOUT[13]                 : D16       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[34]               : D14       : output : 3.3-V LVTTL       :         : 4         : N              
+RANDUOUT[25]                 : D15       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[30]               : D16       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : D17       : power  :                   : 3.3V    : 4         :                
 GND                          : D18       : gnd    :                   :         :           :                
-RANDUOUT[14]                 : D19       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[4]                  : D20       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[25]                 : D21       : output : 3.3-V LVTTL       :         : 5         : N              
-RAND[16]                     : D22       : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : E1        :        :                   :         : 2         :                
-POP_ENABLE[1]                : E2        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : D19       :        :                   :         : 5         :                
+GND*                         : D20       :        :                   :         : 5         :                
+POP_ENABLE[23]               : D21       : output : 3.3-V LVTTL       :         : 5         : N              
+POP_ENABLE[47]               : D22       : output : 3.3-V LVTTL       :         : 5         : N              
+SEGMENT_2[0]                 : E1        : output : 3.3-V LVTTL       :         : 2         : Y              
+SEGMENT_1[6]                 : E2        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : E3        :        :                   :         : 2         :                
 GND*                         : E4        :        :                   :         : 2         :                
 VCCD_PLL3                    : E5        : power  :                   : 1.2V    :           :                
 VCCA_PLL3                    : E6        : power  :                   : 1.2V    :           :                
-GND*                         : E7        :        :                   :         : 3         :                
-GND*                         : E8        :        :                   :         : 3         :                
-POP_ENABLE[43]               : E9        : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[13]               : E7        : output : 3.3-V LVTTL       :         : 3         : N              
+RANDUOUT[6]                  : E8        : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[21]               : E9        : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : E10       : power  :                   : 3.3V    : 3         :                
-POP_ENABLE[33]               : E11       : output : 3.3-V LVTTL       :         : 3         : N              
+RANDUOUT[5]                  : E11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : E12       :        :                   :         : 3         :                
 VCCIO4                       : E13       : power  :                   : 3.3V    : 4         :                
-RAND[9]                      : E14       : output : 3.3-V LVTTL       :         : 4         : N              
-RANDUOUT[15]                 : E15       : output : 3.3-V LVTTL       :         : 4         : N              
+OUT0[1]                      : E14       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[48]               : E15       : output : 3.3-V LVTTL       :         : 4         : N              
 GNDA_PLL2                    : E16       : gnd    :                   :         :           :                
 GND_PLL2                     : E17       : gnd    :                   :         :           :                
-RANDUOUT[12]                 : E18       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[16]                 : E19       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[24]                 : E20       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[22]                 : E21       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[17]                 : E22       : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : F1        :        :                   :         : 2         :                
-GND*                         : F2        :        :                   :         : 2         :                
-GND*                         : F3        :        :                   :         : 2         :                
-GND*                         : F4        :        :                   :         : 2         :                
+GND*                         : E18       :        :                   :         : 5         :                
+GND*                         : E19       :        :                   :         : 5         :                
+POP_ENABLE[20]               : E20       : output : 3.3-V LVTTL       :         : 5         : N              
+RAND[28]                     : E21       : output : 3.3-V LVTTL       :         : 5         : N              
+ADDR[3]                      : E22       : output : 3.3-V LVTTL       :         : 5         : N              
+SEGMENT_1[5]                 : F1        : output : 3.3-V LVTTL       :         : 2         : Y              
+SEGMENT_1[4]                 : F2        : output : 3.3-V LVTTL       :         : 2         : Y              
+RAND[16]                     : F3        : output : 3.3-V LVTTL       :         : 2         : N              
+RANDUOUT[3]                  : F4        : output : 3.3-V LVTTL       :         : 2         : N              
 GND_PLL3                     : F5        : gnd    :                   :         :           :                
 GND_PLL3                     : F6        : gnd    :                   :         :           :                
 GNDA_PLL3                    : F7        : gnd    :                   :         :           :                
-GND*                         : F8        :        :                   :         : 3         :                
-RAND[30]                     : F9        : output : 3.3-V LVTTL       :         : 3         : N              
-POP_ENABLE[45]               : F10       : output : 3.3-V LVTTL       :         : 3         : N              
-POP_ENABLE[9]                : F11       : output : 3.3-V LVTTL       :         : 3         : N              
-POP_ENABLE[5]                : F12       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[13]                     : F13       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[25]                     : F14       : output : 3.3-V LVTTL       :         : 4         : N              
-RANDUOUT[6]                  : F15       : output : 3.3-V LVTTL       :         : 4         : N              
+RAND[21]                     : F8        : output : 3.3-V LVTTL       :         : 3         : N              
+VALUE[3]                     : F9        : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[8]                : F10       : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[10]               : F11       : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[3]                : F12       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[41]               : F13       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[49]               : F14       : output : 3.3-V LVTTL       :         : 4         : N              
+FULL                         : F15       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCA_PLL2                    : F16       : power  :                   : 1.2V    :           :                
 VCCD_PLL2                    : F17       : power  :                   : 1.2V    :           :                
 GND_PLL2                     : F18       : gnd    :                   :         :           :                
 GND                          : F19       : gnd    :                   :         :           :                
-RAND[18]                     : F20       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[23]                 : F21       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[18]                 : F22       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : F20       :        :                   :         : 5         :                
+POP_ENABLE[27]               : F21       : output : 3.3-V LVTTL       :         : 5         : N              
+RANDUOUT[26]                 : F22       : output : 3.3-V LVTTL       :         : 5         : N              
 NC                           : G1        :        :                   :         :           :                
 NC                           : G2        :        :                   :         :           :                
-GND*                         : G3        :        :                   :         : 2         :                
+SEGMENT_2[4]                 : G3        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND                          : G4        : gnd    :                   :         :           :                
-GND*                         : G5        :        :                   :         : 2         :                
+RAND[8]                      : G5        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : G6        :        :                   :         : 2         :                
-GND*                         : G7        :        :                   :         : 3         :                
-GND*                         : G8        :        :                   :         : 3         :                
+POP_ENABLE[38]               : G7        : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[6]                : G8        : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : G9        : power  :                   : 3.3V    : 3         :                
 GND                          : G10       : gnd    :                   :         :           :                
-POP_ENABLE[14]               : G11       : output : 3.3-V LVTTL       :         : 3         : N              
-POP_ENABLE[36]               : G12       : output : 3.3-V LVTTL       :         : 4         : N              
+RAND[26]                     : G11       : output : 3.3-V LVTTL       :         : 3         : N              
+POP_ENABLE[35]               : G12       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO4                       : G14       : power  :                   : 3.3V    : 4         :                
-RAND[3]                      : G15       : output : 3.3-V LVTTL       :         : 4         : N              
-RANDUOUT[9]                  : G16       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[6]                      : G17       : output : 3.3-V LVTTL       :         : 5         : N              
-RAND[15]                     : G18       : output : 3.3-V LVTTL       :         : 5         : N              
+POP_ENABLE[28]               : G15       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[46]               : G16       : output : 3.3-V LVTTL       :         : 4         : N              
+POP_ENABLE[45]               : G17       : output : 3.3-V LVTTL       :         : 5         : N              
+POP_ENABLE[50]               : G18       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : G19       : power  :                   : 3.3V    : 5         :                
-RAND[22]                     : G20       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[27]                 : G21       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[20]                 : G22       : output : 3.3-V LVTTL       :         : 5         : N              
-POP_ENABLE[28]               : H1        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : H2        :        :                   :         : 2         :                
-POP_ENABLE[16]               : H3        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : H4        :        :                   :         : 2         :                
-GND*                         : H5        :        :                   :         : 2         :                
-GND*                         : H6        :        :                   :         : 2         :                
-GND*                         : H7        :        :                   :         : 3         :                
-GND*                         : H8        :        :                   :         : 3         :                
-POP_ENABLE[11]               : H9        : output : 3.3-V LVTTL       :         : 3         : N              
-POP_ENABLE[49]               : H10       : output : 3.3-V LVTTL       :         : 3         : N              
-VALUE[2]                     : H11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : G20       :        :                   :         : 5         :                
+ADDR[4]                      : G21       : output : 3.3-V LVTTL       :         : 5         : N              
+STACK_ENABLE                 : G22       : output : 3.3-V LVTTL       :         : 5         : N              
+SEGMENT_1[3]                 : H1        : output : 3.3-V LVTTL       :         : 2         : Y              
+SEGMENT_1[2]                 : H2        : output : 3.3-V LVTTL       :         : 2         : Y              
+RANDUOUT[7]                  : H3        : output : 3.3-V LVTTL       :         : 2         : N              
+SEGMENT_2[3]                 : H4        : output : 3.3-V LVTTL       :         : 2         : Y              
+SEGMENT_2[2]                 : H5        : output : 3.3-V LVTTL       :         : 2         : Y              
+SEGMENT_2[1]                 : H6        : output : 3.3-V LVTTL       :         : 2         : Y              
+POP_ENABLE[22]               : H7        : output : 3.3-V LVTTL       :         : 3         : N              
+RANDUOUT[31]                 : H8        : output : 3.3-V LVTTL       :         : 3         : N              
+ADDR[2]                      : H9        : output : 3.3-V LVTTL       :         : 3         : N              
+RAND[27]                     : H10       : output : 3.3-V LVTTL       :         : 3         : N              
+ADDR[0]                      : H11       : output : 3.3-V LVTTL       :         : 3         : N              
 POP_ENABLE[31]               : H12       : output : 3.3-V LVTTL       :         : 4         : N              
-RANDUOUT[10]                 : H13       : output : 3.3-V LVTTL       :         : 4         : N              
-RANDUOUT[31]                 : H14       : output : 3.3-V LVTTL       :         : 4         : N              
-RANDUOUT[3]                  : H15       : output : 3.3-V LVTTL       :         : 4         : N              
-RANDUOUT[26]                 : H16       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[19]                 : H17       : output : 3.3-V LVTTL       :         : 5         : N              
-RAND[31]                     : H18       : output : 3.3-V LVTTL       :         : 5         : N              
-ADDR[2]                      : H19       : output : 3.3-V LVTTL       :         : 5         : N              
+POP_ENABLE[51]               : H13       : output : 3.3-V LVTTL       :         : 4         : N              
+RANDUOUT[22]                 : H14       : output : 3.3-V LVTTL       :         : 4         : N              
+RANDUOUT[27]                 : H15       : output : 3.3-V LVTTL       :         : 4         : N              
+OUT51[5]                     : H16       : output : 3.3-V LVTTL       :         : 5         : N              
+POP_ENABLE[9]                : H17       : output : 3.3-V LVTTL       :         : 5         : N              
+POP_ENABLE[15]               : H18       : output : 3.3-V LVTTL       :         : 5         : N              
+OUT0[3]                      : H19       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : H20       : gnd    :                   :         :           :                
 NC                           : H21       :        :                   :         :           :                
 NC                           : H22       :        :                   :         :           :                
-OUT51[4]                     : J1        : output : 3.3-V LVTTL       :         : 2         : N              
-POP_ENABLE[12]               : J2        : output : 3.3-V LVTTL       :         : 2         : N              
+SEGMENT_1[1]                 : J1        : output : 3.3-V LVTTL       :         : 2         : Y              
+SEGMENT_1[0]                 : J2        : output : 3.3-V LVTTL       :         : 2         : Y              
 NC                           : J3        :        :                   :         :           :                
-POP_ENABLE[20]               : J4        : output : 3.3-V LVTTL       :         : 2         : N              
+VALUE[4]                     : J4        : output : 3.3-V LVTTL       :         : 2         : N              
 NC                           : J5        :        :                   :         :           :                
 NC                           : J6        :        :                   :         :           :                
 VCCIO2                       : J7        : power  :                   : 3.3V    : 2         :                
@@ -301,15 +301,15 @@ VCCINT                       : J10       : power  :                   : 1.2V    
 VCCINT                       : J11       : power  :                   : 1.2V    :           :                
 VCCINT                       : J12       : power  :                   : 1.2V    :           :                
 VCCINT                       : J13       : power  :                   : 1.2V    :           :                
-RANDUOUT[11]                 : J14       : output : 3.3-V LVTTL       :         : 4         : N              
-RAND[8]                      : J15       : output : 3.3-V LVTTL       :         : 5         : N              
+POP_ENABLE[29]               : J14       : output : 3.3-V LVTTL       :         : 4         : N              
+OUT51[2]                     : J15       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : J16       : power  :                   : 3.3V    : 5         :                
-RANDUOUT[30]                 : J17       : output : 3.3-V LVTTL       :         : 5         : N              
-RANDUOUT[1]                  : J18       : output : 3.3-V LVTTL       :         : 5         : N              
-RAND[1]                      : J19       : output : 3.3-V LVTTL       :         : 5         : N              
-RAND[27]                     : J20       : output : 3.3-V LVTTL       :         : 5         : N              
-ADDR[1]                      : J21       : output : 3.3-V LVTTL       :         : 5         : N              
-RAND[26]                     : J22       : output : 3.3-V LVTTL       :         : 5         : N              
+OUT51[0]                     : J17       : output : 3.3-V LVTTL       :         : 5         : N              
+RAND[29]                     : J18       : output : 3.3-V LVTTL       :         : 5         : N              
+OUT0[4]                      : J19       : output : 3.3-V LVTTL       :         : 5         : N              
+OUT0[5]                      : J20       : output : 3.3-V LVTTL       :         : 5         : N              
+OUT0[0]                      : J21       : output : 3.3-V LVTTL       :         : 5         : N              
+RANDUOUT[30]                 : J22       : output : 3.3-V LVTTL       :         : 5         : N              
 nCE                          : K1        :        :                   :         : 2         :                
 altera_reserved_tck          : K2        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND                          : K3        : gnd    :                   :         :           :                
@@ -329,9 +329,9 @@ GND                          : K16       : gnd    :                   :         
 NC                           : K17       :        :                   :         :           :                
 NC                           : K18       :        :                   :         :           :                
 GND                          : K19       : gnd    :                   :         :           :                
-RANDUOUT[28]                 : K20       : output : 3.3-V LVTTL       :         : 5         : N              
-RAND[28]                     : K21       : output : 3.3-V LVTTL       :         : 5         : N              
-EMPTY                        : K22       : output : 3.3-V LVTTL       :         : 5         : N              
+POP_ENABLE[37]               : K20       : output : 3.3-V LVTTL       :         : 5         : N              
+RANDUOUT[23]                 : K21       : output : 3.3-V LVTTL       :         : 5         : N              
+OUT1[0]                      : K22       : output : 3.3-V LVTTL       :         : 5         : N              
 CLK                          : L1        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND+                         : L2        :        :                   :         : 2         :                
 VCCIO2                       : L3        : power  :                   : 3.3V    : 2         :                
@@ -339,7 +339,7 @@ nCONFIG                      : L4        :        :                   :         
 altera_reserved_tdo          : L5        : output : 3.3-V LVTTL       :         : 2         : N              
 DCLK                         : L6        :        :                   :         : 2         :                
 NC                           : L7        :        :                   :         :           :                
-POP_ENABLE[27]               : L8        : output : 3.3-V LVTTL       :         : 2         : N              
+RANDUOUT[8]                  : L8        : output : 3.3-V LVTTL       :         : 2         : N              
 VCCINT                       : L9        : power  :                   : 1.2V    :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -349,8 +349,8 @@ VCCINT                       : L14       : power  :                   : 1.2V    
 NC                           : L15       :        :                   :         :           :                
 NC                           : L16       :        :                   :         :           :                
 NC                           : L17       :        :                   :         :           :                
-RAND_ENABLE                  : L18       : output : 3.3-V LVTTL       :         : 5         : N              
-ADDR[3]                      : L19       : output : 3.3-V LVTTL       :         : 5         : N              
+OUT1[4]                      : L18       : output : 3.3-V LVTTL       :         : 5         : N              
+OUT1[1]                      : L19       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : L20       : power  :                   : 3.3V    : 5         :                
 MODE[1]                      : L21       : input  : 3.3-V LVTTL       :         : 5         : Y              
 MODE[0]                      : L22       : input  : 3.3-V LVTTL       :         : 5         : Y              
@@ -358,8 +358,8 @@ GND+                         : M1        :        :                   :         
 GND+                         : M2        :        :                   :         : 1         :                
 VCCIO1                       : M3        : power  :                   : 3.3V    : 1         :                
 GND                          : M4        : gnd    :                   :         :           :                
-POP_ENABLE[50]               : M5        : output : 3.3-V LVTTL       :         : 1         : N              
-OUT51[1]                     : M6        : output : 3.3-V LVTTL       :         : 1         : N              
+RAND[19]                     : M5        : output : 3.3-V LVTTL       :         : 1         : N              
+VALUE[5]                     : M6        : output : 3.3-V LVTTL       :         : 1         : N              
 NC                           : M7        :        :                   :         :           :                
 NC                           : M8        :        :                   :         :           :                
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
@@ -371,17 +371,17 @@ VCCINT                       : M14       : power  :                   : 1.2V    
 NC                           : M15       :        :                   :         :           :                
 NC                           : M16       :        :                   :         :           :                
 MSEL0                        : M17       :        :                   :         : 6         :                
-OUT1[2]                      : M18       : output : 3.3-V LVTTL       :         : 6         : N              
-OUT0[3]                      : M19       : output : 3.3-V LVTTL       :         : 6         : N              
+EMPTY                        : M18       : output : 3.3-V LVTTL       :         : 6         : N              
+RANDUOUT[14]                 : M19       : output : 3.3-V LVTTL       :         : 6         : N              
 VCCIO6                       : M20       : power  :                   : 3.3V    : 6         :                
 GND+                         : M21       :        :                   :         : 6         :                
 GND+                         : M22       :        :                   :         : 6         :                
-OUT51[3]                     : N1        : output : 3.3-V LVTTL       :         : 1         : N              
-OUT51[0]                     : N2        : output : 3.3-V LVTTL       :         : 1         : N              
+RANDUOUT[9]                  : N1        : output : 3.3-V LVTTL       :         : 1         : N              
+RANDUOUT[11]                 : N2        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : N3        :        :                   :         : 1         :                
 GND*                         : N4        :        :                   :         : 1         :                
 NC                           : N5        :        :                   :         :           :                
-POP_ENABLE[3]                : N6        : output : 3.3-V LVTTL       :         : 1         : N              
+RAND[1]                      : N6        : output : 3.3-V LVTTL       :         : 1         : N              
 GND                          : N7        : gnd    :                   :         :           :                
 NC                           : N8        :        :                   :         :           :                
 VCCINT                       : N9        : power  :                   : 1.2V    :           :                
@@ -390,16 +390,16 @@ GND                          : N11       : gnd    :                   :         
 GND                          : N12       : gnd    :                   :         :           :                
 GND                          : N13       : gnd    :                   :         :           :                
 VCCINT                       : N14       : power  :                   : 1.2V    :           :                
-POP_ENABLE[38]               : N15       : output : 3.3-V LVTTL       :         : 6         : N              
+POP                          : N15       : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : N16       : gnd    :                   :         :           :                
 MSEL1                        : N17       :        :                   :         : 6         :                
 CONF_DONE                    : N18       :        :                   :         : 6         :                
 GND                          : N19       : gnd    :                   :         :           :                
 nSTATUS                      : N20       :        :                   :         : 6         :                
-POP_ENABLE[39]               : N21       : output : 3.3-V LVTTL       :         : 6         : N              
-OUT1[1]                      : N22       : output : 3.3-V LVTTL       :         : 6         : N              
+RANDUOUT[16]                 : N21       : output : 3.3-V LVTTL       :         : 6         : N              
+RANDUOUT[13]                 : N22       : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : P1        :        :                   :         : 1         :                
-GND*                         : P2        :        :                   :         : 1         :                
+RANDUOUT[1]                  : P2        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : P3        :        :                   :         : 1         :                
 NC                           : P4        :        :                   :         :           :                
 GND*                         : P5        :        :                   :         : 1         :                
@@ -412,10 +412,10 @@ VCCINT                       : P11       : power  :                   : 1.2V    
 VCCINT                       : P12       : power  :                   : 1.2V    :           :                
 VCCINT                       : P13       : power  :                   : 1.2V    :           :                
 NC                           : P14       :        :                   :         :           :                
-POP_ENABLE[37]               : P15       : output : 3.3-V LVTTL       :         : 6         : N              
+POP_ENABLE[5]                : P15       : output : 3.3-V LVTTL       :         : 6         : N              
 VCCIO6                       : P16       : power  :                   : 3.3V    : 6         :                
-GND*                         : P17       :        :                   :         : 6         :                
-POP_ENABLE[2]                : P18       : output : 3.3-V LVTTL       :         : 6         : N              
+OUT0[2]                      : P17       : output : 3.3-V LVTTL       :         : 6         : N              
+RANDUOUT[21]                 : P18       : output : 3.3-V LVTTL       :         : 6         : N              
 NC                           : P19       :        :                   :         :           :                
 NC                           : P20       :        :                   :         :           :                
 NC                           : P21       :        :                   :         :           :                
@@ -428,32 +428,32 @@ GND*                         : R5        :        :                   :         
 GND*                         : R6        :        :                   :         : 1         :                
 GND*                         : R7        :        :                   :         : 1         :                
 GND*                         : R8        :        :                   :         : 1         :                
-POP_ENABLE[48]               : R9        : output : 3.3-V LVTTL       :         : 8         : N              
-GND*                         : R10       :        :                   :         : 8         :                
-POP_ENABLE[18]               : R11       : output : 3.3-V LVTTL       :         : 8         : N              
-POP_ENABLE[40]               : R12       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : R9        :        :                   :         : 8         :                
+RAND[0]                      : R10       : output : 3.3-V LVTTL       :         : 8         : N              
+RAND[9]                      : R11       : output : 3.3-V LVTTL       :         : 8         : N              
+OUT51[3]                     : R12       : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : R13       :        :                   :         : 7         :                
 GND*                         : R14       :        :                   :         : 7         :                
 GND*                         : R15       :        :                   :         : 7         :                
 GND*                         : R16       :        :                   :         : 7         :                
 NUM[5]                       : R17       : output : 3.3-V LVTTL       :         : 6         : Y              
 NUM[4]                       : R18       : output : 3.3-V LVTTL       :         : 6         : Y              
-GND*                         : R19       :        :                   :         : 6         :                
-POP_ENABLE[34]               : R20       : output : 3.3-V LVTTL       :         : 6         : N              
+OUT1[3]                      : R19       : output : 3.3-V LVTTL       :         : 6         : N              
+RANDUOUT[17]                 : R20       : output : 3.3-V LVTTL       :         : 6         : N              
 RST                          : R21       : input  : 3.3-V LVTTL       :         : 6         : Y              
-VALUE[5]                     : R22       : output : 3.3-V LVTTL       :         : 6         : N              
+RANDUOUT[12]                 : R22       : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : T1        :        :                   :         : 1         :                
 GND*                         : T2        :        :                   :         : 1         :                
 GND*                         : T3        :        :                   :         : 1         :                
 VCCIO1                       : T4        : power  :                   : 3.3V    : 1         :                
 GND*                         : T5        :        :                   :         : 1         :                
-GND*                         : T6        :        :                   :         : 1         :                
+RAND[2]                      : T6        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : T7        :        :                   :         : 8         :                
-GND*                         : T8        :        :                   :         : 8         :                
+RANDUOUT[0]                  : T8        : output : 3.3-V LVTTL       :         : 8         : N              
 VCCIO8                       : T9        : power  :                   : 3.3V    : 8         :                
 GND                          : T10       : gnd    :                   :         :           :                
-OUT51[5]                     : T11       : output : 3.3-V LVTTL       :         : 8         : N              
-VALUE[3]                     : T12       : output : 3.3-V LVTTL       :         : 7         : N              
+RAND[18]                     : T11       : output : 3.3-V LVTTL       :         : 8         : N              
+POP_ENABLE[4]                : T12       : output : 3.3-V LVTTL       :         : 7         : N              
 GND                          : T13       : gnd    :                   :         :           :                
 VCCIO7                       : T14       : power  :                   : 3.3V    : 7         :                
 GND*                         : T15       :        :                   :         : 7         :                
@@ -472,17 +472,17 @@ GND_PLL1                     : U5        : gnd    :                   :         
 VCCD_PLL1                    : U6        : power  :                   : 1.2V    :           :                
 VCCA_PLL1                    : U7        : power  :                   : 1.2V    :           :                
 GND*                         : U8        :        :                   :         : 8         :                
-GND*                         : U9        :        :                   :         : 8         :                
-GND*                         : U10       :        :                   :         : 8         :                
+RAND[10]                     : U9        : output : 3.3-V LVTTL       :         : 8         : N              
+RAND[14]                     : U10       : output : 3.3-V LVTTL       :         : 8         : N              
 GND+                         : U11       :        :                   :         : 8         :                
 GND+                         : U12       :        :                   :         : 8         :                
-OUT0[1]                      : U13       : output : 3.3-V LVTTL       :         : 7         : N              
+OUT1[5]                      : U13       : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : U14       :        :                   :         : 7         :                
-RAND[0]                      : U15       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : U15       :        :                   :         : 7         :                
 VCCA_PLL4                    : U16       : power  :                   : 1.2V    :           :                
 VCCD_PLL4                    : U17       : power  :                   : 1.2V    :           :                
 NUM[3]                       : U18       : output : 3.3-V LVTTL       :         : 6         : Y              
-GND*                         : U19       :        :                   :         : 6         :                
+RANDUOUT[2]                  : U19       : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : U20       :        :                   :         : 6         :                
 GND*                         : U21       :        :                   :         : 6         :                
 GND*                         : U22       :        :                   :         : 6         :                
@@ -496,7 +496,7 @@ GNDA_PLL1                    : V7        : gnd    :                   :         
 GND*                         : V8        :        :                   :         : 8         :                
 GND*                         : V9        :        :                   :         : 8         :                
 VCCIO8                       : V10       : power  :                   : 3.3V    : 8         :                
-POP_ENABLE[4]                : V11       : output : 3.3-V LVTTL       :         : 8         : N              
+RAND[11]                     : V11       : output : 3.3-V LVTTL       :         : 8         : N              
 GND+                         : V12       :        :                   :         : 7         :                
 VCCIO7                       : V13       : power  :                   : 3.3V    : 7         :                
 GND*                         : V14       :        :                   :         : 7         :                
@@ -518,10 +518,10 @@ GND*                         : W7        :        :                   :         
 GND*                         : W8        :        :                   :         : 8         :                
 GND*                         : W9        :        :                   :         : 8         :                
 GND                          : W10       : gnd    :                   :         :           :                
-OUT0[4]                      : W11       : output : 3.3-V LVTTL       :         : 8         : N              
+RAND[6]                      : W11       : output : 3.3-V LVTTL       :         : 8         : N              
 GND+                         : W12       :        :                   :         : 7         :                
 GND                          : W13       : gnd    :                   :         :           :                
-GND*                         : W14       :        :                   :         : 7         :                
+RANDUOUT[19]                 : W14       : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : W15       :        :                   :         : 7         :                
 GND*                         : W16       :        :                   :         : 7         :                
 VCCIO7                       : W17       : power  :                   : 3.3V    : 7         :                
@@ -531,7 +531,7 @@ GND                          : W19       : gnd    :                   :         
 GND*                         : W21       :        :                   :         : 6         :                
 GND*                         : W22       :        :                   :         : 6         :                
 GND*                         : Y1        :        :                   :         : 1         :                
-RANDUOUT[0]                  : Y2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : Y2        :        :                   :         : 1         :                
 GND*                         : Y3        :        :                   :         : 1         :                
 GND*                         : Y4        :        :                   :         : 1         :                
 GND*                         : Y5        :        :                   :         : 8         :                
@@ -539,14 +539,14 @@ GND*                         : Y6        :        :                   :         
 GND*                         : Y7        :        :                   :         : 8         :                
 GND                          : Y8        : gnd    :                   :         :           :                
 GND*                         : Y9        :        :                   :         : 8         :                
-POP_ENABLE[51]               : Y10       : output : 3.3-V LVTTL       :         : 8         : N              
+VALUE[2]                     : Y10       : output : 3.3-V LVTTL       :         : 8         : N              
 VCCIO8                       : Y11       : power  :                   : 3.3V    : 8         :                
 VCCIO7                       : Y12       : power  :                   : 3.3V    : 7         :                
-OUT0[0]                      : Y13       : output : 3.3-V LVTTL       :         : 7         : N              
+POP_ENABLE[36]               : Y13       : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : Y14       :        :                   :         : 7         :                
 GND                          : Y15       : gnd    :                   :         :           :                
 GND*                         : Y16       :        :                   :         : 7         :                
-ADDR[4]                      : Y17       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : Y17       :        :                   :         : 7         :                
 NUM[2]                       : Y18       : output : 3.3-V LVTTL       :         : 6         : Y              
 GND*                         : Y19       :        :                   :         : 6         :                
 GND*                         : Y20       :        :                   :         : 6         :                
