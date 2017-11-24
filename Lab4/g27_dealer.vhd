@@ -26,7 +26,7 @@ ENTITY g27_dealer IS
     END g27_dealer;
 
 ARCHITECTURE architecture_dealer OF g27_dealer IS 
-TYPE state_type is (s0, s1, s2);    -- State declaration
+TYPE state_type is (s0, s1, s2, s3);    -- State declaration
     SIGNAL state : state_type;      -- Init signal that uses the different states
     
 BEGIN 
@@ -39,25 +39,33 @@ BEGIN
             ELSIF rising_edge(clk) THEN -- Triggered at rising edge of clock
 
                 CASE state IS 
-                
-                    WHEN s0 =>        -- Initial/Reset state
+                    
+                    WHEN s0 =>        -- Initial
+                    -- IF request_deal is low, making sure FSM is going into the right states at the beginning
+                    IF (request_deal = '0') THEN
+                        state       <= s1;
+                    ELSE
+                        state       <= s0;
+                    END IF;
+
+                    WHEN s1 =>        -- Waiting for a REQUEST_DEAL signal
                         -- IF request_deal is high
                         IF (request_deal = '1') THEN
-                            state       <= s1;
-                        ELSE
-                            state       <= s0;
-                        END IF;
-                    
-                    WHEN s1 =>        -- Sends out RAND_ENABLE
-                        -- IF output of RANDU is greater or equal to NUM
-                        IF (rand_lt_num = '1') THEN
                             state       <= s2;
                         ELSE
                             state       <= s1;
                         END IF;
+                    
+                    WHEN s2 =>        -- Sends out RAND_ENABLE
+                        -- IF output of RANDU is greater or equal to NUM
+                        IF (rand_lt_num = '1') THEN
+                            state       <= s3;
+                        ELSE
+                            state       <= s2;
+                        END IF;
 
-                    WHEN s2 =>        -- Sends out STACK_ENABLE
-                        state <= s0;  -- Go back to state s0 when done
+                    WHEN s3 =>        -- Sends out STACK_ENABLE
+                        state <= s1;  -- Go back to state s0 when done
 
                     WHEN others =>
                         state <= s0;
@@ -74,14 +82,18 @@ BEGIN
             CASE state is
 
                 WHEN s0 => 
+                rand_enable     <= '0';
+                stack_enable    <= '0';
+
+                WHEN s1 => 
                     rand_enable     <= '0';
                     stack_enable    <= '0';
 
-                WHEN s1 =>                        
+                WHEN s2 =>                        
                     rand_enable     <= '1';
                     stack_enable    <= '0';
 
-                WHEN s2 =>
+                WHEN s3 =>
                     rand_enable     <= '0';
                     stack_enable    <= '1';
 
