@@ -1,5 +1,5 @@
 EDA Netlist Writer report for lab4
-Fri Nov 24 14:38:37 2017
+Fri Nov 24 15:00:07 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Nov 24 14:38:37 2017 ;
+; EDA Netlist Writer Status ; Successful - Fri Nov 24 15:00:07 2017 ;
 ; Revision Name             ; lab4                                  ;
 ; Top-level Entity Name     ; g27_dealer_testbed                    ;
 ; Family                    ; Cyclone II                            ;
@@ -80,7 +80,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 24 14:38:36 2017
+    Info: Processing started: Fri Nov 24 15:00:06 2017
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog lab4 -c lab4
 Warning (125092): Tcl Script File ../Lab3/lpm_add_sub0.qip not found
     Info (125063): set_global_assignment -name QIP_FILE ../Lab3/lpm_add_sub0.qip
@@ -88,7 +88,7 @@ Info (119006): Selected device EP2C20F484C7 for design "lab4"
 Info (204019): Generated file lab4.vo in folder "D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab4/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 431 megabytes
-    Info: Processing ended: Fri Nov 24 14:38:37 2017
+    Info: Processing ended: Fri Nov 24 15:00:07 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

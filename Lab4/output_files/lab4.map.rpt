@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab4
-Fri Nov 24 14:38:29 2017
+Fri Nov 24 14:57:38 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -166,13 +166,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 24 14:38:29 2017           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 24 14:57:38 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; lab4                                            ;
 ; Top-level Entity Name              ; g27_dealer_testbed                              ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 738                                             ;
-;     Total combinational functions  ; 738                                             ;
+; Total logic elements               ; 735                                             ;
+;     Total combinational functions  ; 735                                             ;
 ;     Dedicated logic registers      ; 351                                             ;
 ; Total registers                    ; 351                                             ;
 ; Total pins                         ; 166                                             ;
@@ -348,16 +348,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 738   ;
+; Estimated Total logic elements              ; 735   ;
 ;                                             ;       ;
-; Total combinational functions               ; 738   ;
+; Total combinational functions               ; 735   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 287   ;
-;     -- 3 input functions                    ; 407   ;
-;     -- <=2 input functions                  ; 44    ;
+;     -- 4 input functions                    ; 288   ;
+;     -- 3 input functions                    ; 412   ;
+;     -- <=2 input functions                  ; 35    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 685   ;
+;     -- normal mode                          ; 682   ;
 ;     -- arithmetic mode                      ; 53    ;
 ;                                             ;       ;
 ; Total registers                             ; 351   ;
@@ -368,8 +368,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; CLK   ;
 ; Maximum fan-out                             ; 351   ;
-; Total fan-out                               ; 4468  ;
-; Average fan-out                             ; 3.56  ;
+; Total fan-out                               ; 4469  ;
+; Average fan-out                             ; 3.57  ;
 +---------------------------------------------+-------+
 
 
@@ -378,14 +378,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                      ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------+--------------+
-; |g27_dealer_testbed                          ; 738 (1)           ; 351 (0)      ; 0           ; 0            ; 0       ; 0         ; 166  ; 0            ; |g27_dealer_testbed                                                                                                      ; work         ;
+; |g27_dealer_testbed                          ; 735 (1)           ; 351 (0)      ; 0           ; 0            ; 0       ; 0         ; 166  ; 0            ; |g27_dealer_testbed                                                                                                      ; work         ;
 ;    |g27_RANDU:inst4|                         ; 45 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_RANDU:inst4                                                                                      ; work         ;
 ;       |lpm_add_sub:adder_inst1|              ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_RANDU:inst4|lpm_add_sub:adder_inst1                                                              ; work         ;
 ;          |add_sub_ule:auto_generated|        ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_RANDU:inst4|lpm_add_sub:adder_inst1|add_sub_ule:auto_generated                                   ; work         ;
 ;       |lpm_add_sub:adder_inst2|              ; 29 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_RANDU:inst4|lpm_add_sub:adder_inst2                                                              ; work         ;
 ;          |add_sub_ule:auto_generated|        ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_RANDU:inst4|lpm_add_sub:adder_inst2|add_sub_ule:auto_generated                                   ; work         ;
 ;    |g27_dealer:inst6|                        ; 4 (4)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_dealer:inst6                                                                                     ; work         ;
-;    |g27_stack52:inst|                        ; 670 (4)           ; 318 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst                                                                                     ; work         ;
+;    |g27_stack52:inst|                        ; 667 (5)           ; 318 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst                                                                                     ; work         ;
 ;       |busmux:inst101|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|busmux:inst101                                                                      ; work         ;
 ;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|busmux:inst101|lpm_mux:$00000                                                       ; work         ;
 ;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|busmux:inst101|lpm_mux:$00000|mux_qmc:auto_generated                                ; work         ;
@@ -542,9 +542,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |busmux:mux4|                          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|busmux:mux4                                                                         ; work         ;
 ;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|busmux:mux4|lpm_mux:$00000                                                          ; work         ;
 ;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|busmux:mux4|lpm_mux:$00000|mux_qmc:auto_generated                                   ; work         ;
-;       |lpm_compare0:instcompare0|            ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_compare0:instcompare0                                                           ; work         ;
-;          |lpm_compare:LPM_COMPARE_component| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_compare0:instcompare0|lpm_compare:LPM_COMPARE_component                         ; work         ;
-;             |cmpr_mmi:auto_generated|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_compare0:instcompare0|lpm_compare:LPM_COMPARE_component|cmpr_mmi:auto_generated ; work         ;
+;       |lpm_compare0:instcompare0|            ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_compare0:instcompare0                                                           ; work         ;
+;          |lpm_compare:LPM_COMPARE_component| ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_compare0:instcompare0|lpm_compare:LPM_COMPARE_component                         ; work         ;
+;             |cmpr_mmi:auto_generated|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_compare0:instcompare0|lpm_compare:LPM_COMPARE_component|cmpr_mmi:auto_generated ; work         ;
 ;       |lpm_compare1:inst125|                 ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_compare1:inst125                                                                ; work         ;
 ;          |lpm_compare:LPM_COMPARE_component| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_compare1:inst125|lpm_compare:LPM_COMPARE_component                              ; work         ;
 ;             |cmpr_i7j:auto_generated|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_compare1:inst125|lpm_compare:LPM_COMPARE_component|cmpr_i7j:auto_generated      ; work         ;
@@ -606,12 +606,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |lpm_mux0:inst27|                      ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_mux0:inst27                                                                     ; work         ;
 ;          |lpm_mux:LPM_MUX_component|         ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_mux0:inst27|lpm_mux:LPM_MUX_component                                           ; work         ;
 ;             |mux_83e:auto_generated|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_mux0:inst27|lpm_mux:LPM_MUX_component|mux_83e:auto_generated                    ; work         ;
-;       |lpm_mux1:inst29|                      ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_mux1:inst29                                                                     ; work         ;
-;          |lpm_mux:LPM_MUX_component|         ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_mux1:inst29|lpm_mux:LPM_MUX_component                                           ; work         ;
-;             |mux_53e:auto_generated|         ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_mux1:inst29|lpm_mux:LPM_MUX_component|mux_53e:auto_generated                    ; work         ;
+;       |lpm_mux1:inst29|                      ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_mux1:inst29                                                                     ; work         ;
+;          |lpm_mux:LPM_MUX_component|         ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_mux1:inst29|lpm_mux:LPM_MUX_component                                           ; work         ;
+;             |mux_53e:auto_generated|         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_mux1:inst29|lpm_mux:LPM_MUX_component|mux_53e:auto_generated                    ; work         ;
 ;       |lpm_mux:inst22|                       ; 249 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_mux:inst22                                                                      ; work         ;
 ;          |mux_koc:auto_generated|            ; 249 (249)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|lpm_mux:inst22|mux_koc:auto_generated                                               ; work         ;
-;       |p_enable:inst13|                      ; 81 (81)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|p_enable:inst13                                                                     ; work         ;
+;       |p_enable:inst13|                      ; 79 (79)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|g27_stack52:inst|p_enable:inst13                                                                     ; work         ;
 ;    |lpm_add_sub0:inst7|                      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|lpm_add_sub0:inst7                                                                                   ; work         ;
 ;       |lpm_add_sub:LPM_ADD_SUB_component|    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|lpm_add_sub0:inst7|lpm_add_sub:LPM_ADD_SUB_component                                                 ; work         ;
 ;          |add_sub_voh:auto_generated|        ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_dealer_testbed|lpm_add_sub0:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_voh:auto_generated                      ; work         ;
@@ -2634,7 +2634,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 24 14:38:21 2017
+    Info: Processing started: Fri Nov 24 14:57:30 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab4 -c lab4
 Warning (125092): Tcl Script File ../Lab3/lpm_add_sub0.qip not found
     Info (125063): set_global_assignment -name QIP_FILE ../Lab3/lpm_add_sub0.qip
@@ -3560,13 +3560,13 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "REQUEST_IN"
     Warning (15610): No output dependent on input pin "BTN_IN"
-Info (21057): Implemented 933 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 930 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 158 output pins
-    Info (21061): Implemented 767 logic cells
+    Info (21061): Implemented 764 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 227 warnings
-    Info: Peak virtual memory: 597 megabytes
-    Info: Processing ended: Fri Nov 24 14:38:29 2017
+    Info: Peak virtual memory: 600 megabytes
+    Info: Processing ended: Fri Nov 24 14:57:38 2017
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:08
 
