@@ -16,21 +16,22 @@ use ieee.numeric_std.all;
 ENTITY g27_computer_player_FSM IS
     PORT
     (
-        computer_turn               : in  std_logic;
-        computer_illegal_play       : in  std_logic;
-        value_over_player           : in  std_logic;
+        new_card_value              : in  std_logic_vector (3 downto 0); -- card value will always be 10 or under 10 <= 2^4 = 16
+        current_sum                 : in  std_logic_vector (4 downto 0); -- sum will always be 32 or under 32 <= 2^5 = 32
+        turn	                    : in  std_logic;
+        new_hand                    : in  std_logic;
         clk                         : in  std_logic;
         reset                       : in  std_logic;
         request_deal                : out std_logic;
-        computer_win_and_new_game   : out std_logic_vector(1 downto 0);
-        shuffle                     : out std_logic;
-        end_game                    : out std_logic
+        computer_sum                : out std_logic_vector (4 downto 0); -- sum will always be 32 or under 32 <= 2^5 = 32;
+        turn_finish                 : out std_logic_vector (1 downto 0)
     );
     END g27_computer_player_FSM;
 
 ARCHITECTURE architecture_computer_player_FSM OF g27_computer_player_FSM IS 
-TYPE state_type is (s0, s1, s2, s3, s4, s5);    -- State declaration
-    SIGNAL state : state_type;          -- Init signal that uses the different states
+TYPE state_type is (s0, s1, s2);    -- State declaration
+    SIGNAL current_sum_temp         : std_logic_vector (4 downto 0);
+    SIGNAL state                    : state_type;          -- Init signal that uses the different states
     
 BEGIN 
 
@@ -43,42 +44,29 @@ BEGIN
 
                 CASE state IS 
                     
-                    WHEN s0 =>        -- Initial, wait for computer turn
+                    WHEN s0 =>        -- Initial/idle state, wait for computer turn
                     -- IF request_deal is low, making sure FSM is going into the right states at the beginning
-                    IF (computer_turn = '1') THEN
+                    IF (turn = '1') THEN
                         state       <= s1;
                     ELSE
                         state       <= s0;
                     END IF;
 
                     WHEN s1 =>        -- Sends a request_deal signal
-                        -- IF request_deal is high
-                        IF (computer_illegal_play = '1') AND (value_over_player = '1') THEN
-                            state       <= s2;  -- player wins
-                        ELSIF (computer_illegal_play = '0') AND (value_over_player = '1') THEN
-                            state       <= s3;  -- dealer wins
+                        -- Add new card value to current computer sum
+                        current_sum_temp <= ("0" & new_card_value) + current_sum;
+
+                        IF (current_sum_temp <= 16) THEN
+                            state       <= s1; -- continue drawing a card
                         ELSE
-                            state       <= s1;
+                            state       <= s2; -- stop drawing cards
                         END IF;
-                    
-                    WHEN s2 =>        -- Computer loses, sends also a new game signal to record the win/lose status
-                            state       <= s4;
-
-                    WHEN s3 =>        -- Computer wins, sends also a new game signal to record the win/lose status
-                        state           <= s4;
-
-                    WHEN s4 =>        -- check score, if player or computer has 3 wins, ends game
-                        IF (check_score = '1') THEN
-                            state       <= s5; -- ends game
+                
+                    WHEN s2 =>        -- remains in this state if new_hand isn't high
+                        IF (new_hand = '1') THEN
+                            state       <= s0; -- start new hand
                         ELSE
-                            state       <= s0; -- start new round
-                        END IF;
-
-                    WHEN s5 =>
-                        IF (reset = '1') THEN
-                            state       <= s0; -- start new game
-                        ELSE
-                            state       <= s5; -- wait for reset 
+                            state       <= s2; -- wait for new_hand 
                         END IF;
 
                     WHEN others =>
@@ -95,25 +83,25 @@ BEGIN
 
             CASE state is
 
-                WHEN s0 => 
-                rand_enable     <= '0';
-                stack_enable    <= '0';
+                WHEN s0 =>                      -- Idle state
+                    request_deal                    <= '0';
+                    turn_finish                     <= '0';
+                    computer_sum                    <= "00000";
+                
 
-                WHEN s1 => 
-                    rand_enable     <= '0';
-                    stack_enable    <= '0';
+                WHEN s1 =>                      -- Request deal
+                    request_deal                    <= '1';
+                    turn_finish                     <= '0';
+                    computer_sum                    <= current_sum_temp; -- outputs new computer sum
 
-                WHEN s2 =>                        
-                    rand_enable     <= '1';
-                    stack_enable    <= '0';
-
-                WHEN s3 =>
-                    rand_enable     <= '0';
-                    stack_enable    <= '1';
+                WHEN s2 =>                      -- Computer loses                      
+                    request_deal                    <= '0';
+                    turn_finish                     <= '1';
 
                 WHEN others =>
-                    rand_enable     <= '0';
-                    stack_enable    <= '0';
+                    request_deal                    <= '0';
+                    turn_finish                     <= '0';
+                    computer_sum                    <= "00000";
 
             END CASE;
         
