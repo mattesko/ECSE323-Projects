@@ -8,17 +8,20 @@
 --         Romain Nith 260571471, romain.nith@mail.mcgill.ca
 -- Date: 21/11/17
 
-library ieee; -- allows use of the std_logic_vectory type
+library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 ENTITY g27_rules IS
     PORT
     (
-		  -- MSB used to store if an ace is 11 in current_sum, 1: if ace=11, 0 if ace=1, 5 bits used for current_sum
-        play_pile_top_card : in std_logic_vector(5 DOWNTO 0);
-        card_to_play : in std_logic_vector(5 DOWNTO 0);
-        legal_play : out std_logic
+	-- MSB used to store if an ace is 11 in current_sum, 1: if ace=11, 0 if ace=1, 5 bits used for current_sum
+        play_pile_top_card : in std_logic_vector (5 DOWNTO 0);
+    	card_to_play : in std_logic_vector (5 DOWNTO 0);
+		clk : in std_logic;
+        legal_play : out std_logic;
+		ace_11 : out std_logic;
+		sum_output : out std_logic (4 DOWNTO 0)
     );
     END g27_rules;
 
@@ -30,21 +33,22 @@ ARCHITECTURE architecture_rules OF g27_rules IS
 	 
 	 -- UNSIGNED signals
     SIGNAL face_value : UNSIGNED(3 DOWNTO 0);
-	 SIGNAL face_value_buffer : UNSIGNED(3 DOWNTO 0);
+    SIGNAL face_value_buffer : UNSIGNED(3 DOWNTO 0);
     SIGNAL current_sum : UNSIGNED(4 DOWNTO 0);
     SIGNAL new_sum : UNSIGNED(4 DOWNTO 0);
 
 	 -- STD_LOGIC signals
-	 SIGNAL modulo_input : STD_LOGIC_VECTOR(5 DOWNTO 0);
+    SIGNAL modulo_input : STD_LOGIC_VECTOR(5 DOWNTO 0);
     SIGNAL suit : STD_LOGIC_VECTOR(3 DOWNTO 0);
     SIGNAL modulo_output : STD_LOGIC_VECTOR(3 DOWNTO 0);
-	 SIGNAL legal_play_signal : STD_LOGIC; -- used as buffer for legal_play port
+    SIGNAL legal_play_signal : STD_LOGIC; -- used as buffer for legal_play port
+    SIGNAL ace_11_signal : STD_LOGIC;
 	 
     -- MODULO13 component
     COMPONENT g27_modulo_13
 	    PORT
         (
-          A : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
+          	A : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
 		    FLOOR : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 		    O : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
 	    );
@@ -65,37 +69,45 @@ ARCHITECTURE architecture_rules OF g27_rules IS
     modulo_inst : g27_modulo_13
     PORT MAP
     (
-      A => modulo_input, 
+      	A => modulo_input, 
 		FLOOR => suit,
 		O => modulo_output
     );
 					 
 	-- All additions and legal_play checking are done under here
-	ADDITIONS_AND_COMPARISONS: PROCESS (face_value, new_sum, current_sum, legal_play_signal)
+	ADDITIONS_AND_COMPARISONS: PROCESS (current_sum)
 	BEGIN
+		IF rising_edge(clk) THEN
+			-- If face_value >= 11, then make it 10
+			IF (face_value >= 11) then
+				face_value_buffer <= to_unsigned(10, 4);
+			ELSE
+				face_value_buffer <= face_value;
+			END IF;
 		
-		-- If face_value >= 11, then make it 10
-		IF (face_value >= 11) then
-			face_value_buffer <= to_unsigned(10, 4);
-		ELSE
-			face_value_buffer <= face_value;
-		END IF;
+			IF (play_pile_top_card(5) = '1') then
+				ace_11_signal <= '1';
+			END IF;
 		
-		-- If we bust but we have an ace in our hand, decrease hand by 10
-		IF (play_pile_top_card(5) = '1' and ((current_sum + face_value_buffer) > 21)) then
-			new_sum <= current_sum + face_value_buffer - 10;
-		ELSE
-			new_sum <= current_sum + face_value_buffer;
-		END IF;
+			-- If we bust but we have an ace in our hand, decrease hand by 10
+			IF (play_pile_top_card(5) = '1' and ((current_sum + face_value_buffer) > 21)) then
+				new_sum <= current_sum + face_value_buffer - 10;
+				ace_11_signal <= '0';
+			ELSE
+				new_sum <= current_sum + face_value_buffer;
+			END IF;
 		
-		IF (new_sum <= 21) then
+			IF (new_sum <= 21) then
 				legal_play_signal <= '1';
 			ELSE 
 				legal_play_signal <= '0';
 			END IF;
+		END IF;
 	END PROCESS;
 	
-	-- Output legal_play_signal
+	-- Output legal_play_signal and ace_11
 	legal_play <= legal_play_signal;
+	ace_11 <= ace_11_signal;
+	sum_output <= to_unsigned(new_sum, 5);
 	
 END architecture_rules;
