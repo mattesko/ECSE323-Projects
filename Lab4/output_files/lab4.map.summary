@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Nov 24 22:29:31 2017
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Successful - Fri Dec 01 13:16:26 2017
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : lab4
-Top-level Entity Name : g27_rules_schematic
+Top-level Entity Name : g27_dealer_testbed
 Family : Cyclone II
-Total logic elements : 11
-    Total combinational functions : 11
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 13
+Total logic elements : 829
+    Total combinational functions : 829
+    Dedicated logic registers : 406
+Total registers : 406
+Total pins : 185
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

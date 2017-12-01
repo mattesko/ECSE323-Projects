@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C20F484C7
-set_global_assignment -name TOP_LEVEL_ENTITY g27_rules_schematic
+set_global_assignment -name TOP_LEVEL_ENTITY g27_dealer_testbed
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:42:43  NOVEMBER 21, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -133,8 +133,8 @@ set_global_assignment -name QIP_FILE output_files/lpm_mux1.qip
 set_global_assignment -name QIP_FILE output_files/lpm_mux10.qip
 set_global_assignment -name BDF_FILE g27_rules_schematic.bdf
 set_global_assignment -name SLD_FILE "D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab4/output_files/stp1_auto_stripped.stp"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab4/g27_rules.vwf"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab4/g27_rules.vwf"
