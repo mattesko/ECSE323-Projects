@@ -16,12 +16,12 @@ ENTITY g27_rules IS
     PORT
     (
 	-- MSB used to store if an ace is 11 in current_sum, 1: if ace=11, 0 if ace=1, 5 bits used for current_sum
-        play_pile_top_card : in std_logic_vector (5 DOWNTO 0);
+      play_pile_top_card : in std_logic_vector (5 DOWNTO 0);
     	card_to_play : in std_logic_vector (5 DOWNTO 0);
 		clk : in std_logic;
-        legal_play : out std_logic;
+      legal_play : out std_logic;
 		ace_11 : out std_logic;
-		sum_output : out std_logic (4 DOWNTO 0)
+		sum_output : out std_logic_vector (4 DOWNTO 0)
     );
     END g27_rules;
 
@@ -108,6 +108,6 @@ ARCHITECTURE architecture_rules OF g27_rules IS
 	-- Output legal_play_signal and ace_11
 	legal_play <= legal_play_signal;
 	ace_11 <= ace_11_signal;
-	sum_output <= to_unsigned(new_sum, 5);
+	sum_output <= std_logic_vector(new_sum);
 	
 END architecture_rules;

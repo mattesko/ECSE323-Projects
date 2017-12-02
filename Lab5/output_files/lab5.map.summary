@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Failed - Fri Dec 01 17:55:54 2017
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Failed - Fri Dec 01 18:16:10 2017
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : lab5
-Top-level Entity Name : g27_modulo
+Top-level Entity Name : g27_value_suit_extract
 Family : Cyclone II
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge
