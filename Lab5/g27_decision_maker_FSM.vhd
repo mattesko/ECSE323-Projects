@@ -25,17 +25,17 @@ ENTITY g27_decision_maker_FSM IS
 		player_legal_play : in std_logic;
 		player_hand : in std_logic_vector(4 DOWNTO 0);
 		computer_hand : in std_logic_vector(4 DOWNTO 0);
-		count_increment : in std_logic;
-		player_counter : out std_logic;
-		computer_counter : out std_logic
+		player_wins : out std_logic_vector(1 DOWNTO 0);
+		computer_wins : out std_logic_vector(1 DOWNTO 0)
 	);
    END g27_decision_maker_FSM;
 
 ARCHITECTURE architecture_g27_decision_maker_FSM OF g27_decision_maker_FSM IS 
-TYPE state_type is (s0, s1);    -- State declaration
+TYPE state_type is (s0, s1, s2);    -- State declaration
     SIGNAL state : state_type;          -- Init signal that uses the different states
 	 SIGNAL player_hand_buffer : unsigned(4 downto 0);
 	 SIGNAL computer_hand_buffer : unsigned(4 downto 0);
+	 SIGNAL updated : std_logic;
 
     
 BEGIN 
@@ -59,9 +59,22 @@ BEGIN
 						WHEN s1 => -- player has a legal hand state
 							IF (reset = '1') THEN
 								state <= s0;
+							ELSIF (updated = '1') THEN
+								state <= s2;
 							ELSE
 								state <= s1;
 							END IF;
+							
+						WHEN s2 => 
+							IF (reset = '1') THEN
+								state <= s0;
+							ELSIF (enable_decision = '1') THEN
+								state <= s1;
+								
+							ELSE 
+								state <= s2;
+							END IF;
+							
 					END CASE;
 				END IF;
         END PROCESS;
@@ -75,10 +88,8 @@ BEGIN
             CASE state is
 
 					WHEN s0 =>
-						player_w <= '0';
-						computer_w <= '0';
-						p_wins := 0;
-						c_wins := 0;
+						p_wins := to_unsigned(0, 2);
+						c_wins := to_unsigned(0, 2);
 
                WHEN s1 =>
 						IF (computer_legal_play = '1' and player_legal_play = '1') THEN
@@ -86,21 +97,29 @@ BEGIN
 							computer_hand_buffer <= unsigned(computer_hand);
 							
 							IF (player_hand_buffer <= computer_hand_buffer) THEN
-								c_wins := c_wins + 1;
+								c_wins := c_wins + to_unsigned(0, 1);
 							ELSIF (player_hand_buffer > computer_hand_buffer) THEN
-								p_wins := p_wins + 1;
+								p_wins := p_wins + to_unsigned(0, 1);
 							END IF;
 						
 						ELSIF (player_legal_play = '0') THEN
-							c_wins := c_wins + 1;
+							c_wins := c_wins + to_unsigned(0, 1);
 						
 						ELSIF (computer_legal_play = '0') THEN
-							p_wins := p_wins + 1;
+							p_wins := p_wins + to_unsigned(0, 1);
 						END IF;
+						updated <= '1';
+						
+					WHEN s2 =>
+						IF (p_wins >= 3 or c_wins >= 3) THEN
+							p_wins := to_unsigned(0, 2);
+							c_wins := to_unsigned(0, 2);
+						ELSE
+							updated <= '0';
+						END IF;	
 					END CASE;
+					
+				player_wins <= std_logic_vector(p_wins);
+				computer_wins <= std_logic_vector(c_wins);
         END PROCESS;
-		  
-		  player_counter <= std_logic_vector(p_wins);
-		  computer_counter <= std_logic_vector(c_wins);
-
 END architecture_g27_decision_maker_FSM;
