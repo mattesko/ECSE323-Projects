@@ -1,5 +1,5 @@
 EDA Netlist Writer report for lab5
-Fri Dec 01 16:56:26 2017
+Fri Dec 01 21:09:23 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Dec 01 16:56:26 2017 ;
+; EDA Netlist Writer Status ; Successful - Fri Dec 01 21:09:23 2017 ;
 ; Revision Name             ; lab5                                  ;
-; Top-level Entity Name     ; g27_modulo                            ;
+; Top-level Entity Name     ; rand_modulo_test                      ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Dec 01 16:56:25 2017
+    Info: Processing started: Fri Dec 01 21:09:22 2017
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog lab5 -c lab5
 Info (119004): Automatically selected device EP2C5T144C6 for design lab5
 Info (204019): Generated file lab5.vo in folder "D:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab5/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 428 megabytes
-    Info: Processing ended: Fri Dec 01 16:56:26 2017
+    Info: Processing ended: Fri Dec 01 21:09:23 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
