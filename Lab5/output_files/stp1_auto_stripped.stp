@@ -1,0 +1,367 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP2C(15|20) (0x020B30DD)" sof_file="">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2017/12/02 19:00:18  #0">
+      <clock name="CLK" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="CARD_TO_PLAY[0]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[1]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[2]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[3]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[4]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[5]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[0]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[1]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[2]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[3]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[4]" tap_mode="classic"/>
+          <wire name="COMPUTER_LP" tap_mode="classic"/>
+          <wire name="COMPUTER_WINS[0]" tap_mode="classic"/>
+          <wire name="COMPUTER_WINS[1]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[0]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[1]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[2]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[3]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[4]" tap_mode="classic"/>
+          <wire name="DEALER_REQUEST" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[0]" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[1]" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[2]" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[3]" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[4]" tap_mode="classic"/>
+          <wire name="PLAYER_LP" tap_mode="classic"/>
+          <wire name="CLK~clkctrl" tap_mode="probeonly"/>
+          <wire name="ENABLE" tap_mode="probeonly"/>
+          <wire name="ENABLE~_wirecell" tap_mode="probeonly"/>
+          <wire name="HOLD" tap_mode="probeonly"/>
+          <wire name="MODE[0]" tap_mode="probeonly"/>
+          <wire name="MODE[1]" tap_mode="probeonly"/>
+          <wire name="NEW_HAND" tap_mode="probeonly"/>
+          <wire name="NEW_HAND~_wirecell" tap_mode="probeonly"/>
+          <wire name="PLAYER_START" tap_mode="probeonly"/>
+          <wire name="PLAYER_START~_wirecell" tap_mode="probeonly"/>
+          <wire name="RESET" tap_mode="probeonly"/>
+          <wire name="inst14" tap_mode="probeonly"/>
+          <wire name="inst17" tap_mode="probeonly"/>
+          <wire name="inst24" tap_mode="probeonly"/>
+          <wire name="inst4" tap_mode="probeonly"/>
+          <wire name="~GND" tap_mode="probeonly"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="CARD_TO_PLAY[0]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[1]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[2]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[3]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[4]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[5]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[0]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[1]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[2]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[3]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[4]" tap_mode="classic"/>
+          <wire name="COMPUTER_LP" tap_mode="classic"/>
+          <wire name="COMPUTER_WINS[0]" tap_mode="classic"/>
+          <wire name="COMPUTER_WINS[1]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[0]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[1]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[2]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[3]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[4]" tap_mode="classic"/>
+          <wire name="DEALER_REQUEST" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[0]" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[1]" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[2]" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[3]" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[4]" tap_mode="classic"/>
+          <wire name="PLAYER_LP" tap_mode="classic"/>
+          <wire name="CLK~clkctrl" tap_mode="probeonly"/>
+          <wire name="ENABLE" tap_mode="probeonly"/>
+          <wire name="ENABLE~_wirecell" tap_mode="probeonly"/>
+          <wire name="HOLD" tap_mode="probeonly"/>
+          <wire name="MODE[0]" tap_mode="probeonly"/>
+          <wire name="MODE[1]" tap_mode="probeonly"/>
+          <wire name="NEW_HAND" tap_mode="probeonly"/>
+          <wire name="NEW_HAND~_wirecell" tap_mode="probeonly"/>
+          <wire name="PLAYER_START" tap_mode="probeonly"/>
+          <wire name="PLAYER_START~_wirecell" tap_mode="probeonly"/>
+          <wire name="RESET" tap_mode="probeonly"/>
+          <wire name="inst14" tap_mode="probeonly"/>
+          <wire name="inst17" tap_mode="probeonly"/>
+          <wire name="inst24" tap_mode="probeonly"/>
+          <wire name="inst4" tap_mode="probeonly"/>
+          <wire name="~GND" tap_mode="probeonly"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="CARD_TO_PLAY[0]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[1]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[2]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[3]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[4]" tap_mode="classic"/>
+          <wire name="CARD_TO_PLAY[5]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[0]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[1]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[2]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[3]" tap_mode="classic"/>
+          <wire name="COMPUTER_HAND[4]" tap_mode="classic"/>
+          <wire name="COMPUTER_LP" tap_mode="classic"/>
+          <wire name="COMPUTER_WINS[0]" tap_mode="classic"/>
+          <wire name="COMPUTER_WINS[1]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[0]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[1]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[2]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[3]" tap_mode="classic"/>
+          <wire name="DEALER_HAND[4]" tap_mode="classic"/>
+          <wire name="DEALER_REQUEST" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[0]" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[1]" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[2]" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[3]" tap_mode="classic"/>
+          <wire name="PLAYER_HAND[4]" tap_mode="classic"/>
+          <wire name="PLAYER_LP" tap_mode="classic"/>
+          <wire name="CLK~clkctrl" tap_mode="probeonly"/>
+          <wire name="ENABLE" tap_mode="probeonly"/>
+          <wire name="ENABLE~_wirecell" tap_mode="probeonly"/>
+          <wire name="HOLD" tap_mode="probeonly"/>
+          <wire name="MODE[0]" tap_mode="probeonly"/>
+          <wire name="MODE[1]" tap_mode="probeonly"/>
+          <wire name="NEW_HAND" tap_mode="probeonly"/>
+          <wire name="NEW_HAND~_wirecell" tap_mode="probeonly"/>
+          <wire name="PLAYER_START" tap_mode="probeonly"/>
+          <wire name="PLAYER_START~_wirecell" tap_mode="probeonly"/>
+          <wire name="RESET" tap_mode="probeonly"/>
+          <wire name="inst14" tap_mode="probeonly"/>
+          <wire name="inst17" tap_mode="probeonly"/>
+          <wire name="inst24" tap_mode="probeonly"/>
+          <wire name="inst4" tap_mode="probeonly"/>
+          <wire name="~GND" tap_mode="probeonly"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <unified_setup_data_view>
+          <node data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CLK~clkctrl" storage_index="26" tap_mode="probeonly" trigger_index="26" type="combinatorial"/>
+          <node data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="ENABLE" storage_index="27" tap_mode="probeonly" trigger_index="27" type="input pin"/>
+          <node data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="ENABLE~_wirecell" storage_index="28" tap_mode="probeonly" trigger_index="28" type="combinatorial"/>
+          <node data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="HOLD" storage_index="29" tap_mode="probeonly" trigger_index="29" type="input pin"/>
+          <node data_index="40" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="inst4" storage_index="40" tap_mode="probeonly" trigger_index="40" type="combinatorial"/>
+          <node data_index="37" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="inst14" storage_index="37" tap_mode="probeonly" trigger_index="37" type="combinatorial"/>
+          <node data_index="38" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="inst17" storage_index="38" tap_mode="probeonly" trigger_index="38" type="combinatorial"/>
+          <node data_index="39" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="inst24" storage_index="39" tap_mode="probeonly" trigger_index="39" type="combinatorial"/>
+          <node data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="MODE[0]" storage_index="30" tap_mode="probeonly" trigger_index="30" type="input pin"/>
+          <node data_index="31" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="MODE[1]" storage_index="31" tap_mode="probeonly" trigger_index="31" type="input pin"/>
+          <node data_index="32" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="NEW_HAND" storage_index="32" tap_mode="probeonly" trigger_index="32" type="input pin"/>
+          <node data_index="33" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="NEW_HAND~_wirecell" storage_index="33" tap_mode="probeonly" trigger_index="33" type="combinatorial"/>
+          <node data_index="34" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_START" storage_index="34" tap_mode="probeonly" trigger_index="34" type="input pin"/>
+          <node data_index="35" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_START~_wirecell" storage_index="35" tap_mode="probeonly" trigger_index="35" type="combinatorial"/>
+          <node data_index="36" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RESET" storage_index="36" tap_mode="probeonly" trigger_index="36" type="input pin"/>
+          <node data_index="41" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="~GND" storage_index="41" tap_mode="probeonly" trigger_index="41" type="combinatorial"/>
+          <node name="CARD_TO_PLAY" order="msb_to_lsb" radix="unsigned_dec" type="combinatorial">
+            <node data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[5]" storage_index="5" tap_mode="classic" trigger_index="5" type="combinatorial"/>
+            <node data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[4]" storage_index="4" tap_mode="classic" trigger_index="4" type="combinatorial"/>
+            <node data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[3]" storage_index="3" tap_mode="classic" trigger_index="3" type="combinatorial"/>
+            <node data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[2]" storage_index="2" tap_mode="classic" trigger_index="2" type="combinatorial"/>
+            <node data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[1]" storage_index="1" tap_mode="classic" trigger_index="1" type="combinatorial"/>
+            <node data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[0]" storage_index="0" tap_mode="classic" trigger_index="0" type="combinatorial"/>
+          </node>
+          <node name="COMPUTER_HAND" order="msb_to_lsb" type="output pin">
+            <node data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[4]" storage_index="10" tap_mode="classic" trigger_index="10" type="output pin"/>
+            <node data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[3]" storage_index="9" tap_mode="classic" trigger_index="9" type="output pin"/>
+            <node data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[2]" storage_index="8" tap_mode="classic" trigger_index="8" type="output pin"/>
+            <node data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[1]" storage_index="7" tap_mode="classic" trigger_index="7" type="output pin"/>
+            <node data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[0]" storage_index="6" tap_mode="classic" trigger_index="6" type="output pin"/>
+          </node>
+          <node data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_LP" storage_index="11" tap_mode="classic" trigger_index="11" type="combinatorial"/>
+          <node name="COMPUTER_WINS" order="msb_to_lsb" state="collapse" type="output pin">
+            <node data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_WINS[1]" storage_index="13" tap_mode="classic" trigger_index="13" type="output pin"/>
+            <node data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_WINS[0]" storage_index="12" tap_mode="classic" trigger_index="12" type="output pin"/>
+          </node>
+          <node name="DEALER_HAND" order="msb_to_lsb" state="collapse" type="combinatorial">
+            <node data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[4]" storage_index="18" tap_mode="classic" trigger_index="18" type="combinatorial"/>
+            <node data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[3]" storage_index="17" tap_mode="classic" trigger_index="17" type="combinatorial"/>
+            <node data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[2]" storage_index="16" tap_mode="classic" trigger_index="16" type="combinatorial"/>
+            <node data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[1]" storage_index="15" tap_mode="classic" trigger_index="15" type="combinatorial"/>
+            <node data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[0]" storage_index="14" tap_mode="classic" trigger_index="14" type="combinatorial"/>
+          </node>
+          <node data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_REQUEST" storage_index="19" tap_mode="classic" trigger_index="19" type="combinatorial"/>
+          <node name="PLAYER_HAND" order="msb_to_lsb" type="output pin">
+            <node data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[4]" storage_index="24" tap_mode="classic" trigger_index="24" type="output pin"/>
+            <node data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[3]" storage_index="23" tap_mode="classic" trigger_index="23" type="output pin"/>
+            <node data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[2]" storage_index="22" tap_mode="classic" trigger_index="22" type="output pin"/>
+            <node data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[1]" storage_index="21" tap_mode="classic" trigger_index="21" type="output pin"/>
+            <node data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[0]" storage_index="20" tap_mode="classic" trigger_index="20" type="output pin"/>
+          </node>
+          <node data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_LP" storage_index="25" tap_mode="classic" trigger_index="25" type="combinatorial"/>
+        </unified_setup_data_view>
+        <data_view>
+          <net data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CLK~clkctrl" storage_index="26" tap_mode="probeonly" trigger_index="26" type="combinatorial"/>
+          <net data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="ENABLE" storage_index="27" tap_mode="probeonly" trigger_index="27" type="input pin"/>
+          <net data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="ENABLE~_wirecell" storage_index="28" tap_mode="probeonly" trigger_index="28" type="combinatorial"/>
+          <net data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="HOLD" storage_index="29" tap_mode="probeonly" trigger_index="29" type="input pin"/>
+          <net data_index="40" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="inst4" storage_index="40" tap_mode="probeonly" trigger_index="40" type="combinatorial"/>
+          <net data_index="37" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="inst14" storage_index="37" tap_mode="probeonly" trigger_index="37" type="combinatorial"/>
+          <net data_index="38" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="inst17" storage_index="38" tap_mode="probeonly" trigger_index="38" type="combinatorial"/>
+          <net data_index="39" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="inst24" storage_index="39" tap_mode="probeonly" trigger_index="39" type="combinatorial"/>
+          <net data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="MODE[0]" storage_index="30" tap_mode="probeonly" trigger_index="30" type="input pin"/>
+          <net data_index="31" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="MODE[1]" storage_index="31" tap_mode="probeonly" trigger_index="31" type="input pin"/>
+          <net data_index="32" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="NEW_HAND" storage_index="32" tap_mode="probeonly" trigger_index="32" type="input pin"/>
+          <net data_index="33" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="NEW_HAND~_wirecell" storage_index="33" tap_mode="probeonly" trigger_index="33" type="combinatorial"/>
+          <net data_index="34" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_START" storage_index="34" tap_mode="probeonly" trigger_index="34" type="input pin"/>
+          <net data_index="35" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_START~_wirecell" storage_index="35" tap_mode="probeonly" trigger_index="35" type="combinatorial"/>
+          <net data_index="36" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RESET" storage_index="36" tap_mode="probeonly" trigger_index="36" type="input pin"/>
+          <net data_index="41" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="~GND" storage_index="41" tap_mode="probeonly" trigger_index="41" type="combinatorial"/>
+          <bus name="CARD_TO_PLAY" order="msb_to_lsb" radix="unsigned_dec" type="combinatorial">
+            <net data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[5]" storage_index="5" tap_mode="classic" trigger_index="5" type="combinatorial"/>
+            <net data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[4]" storage_index="4" tap_mode="classic" trigger_index="4" type="combinatorial"/>
+            <net data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[3]" storage_index="3" tap_mode="classic" trigger_index="3" type="combinatorial"/>
+            <net data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[2]" storage_index="2" tap_mode="classic" trigger_index="2" type="combinatorial"/>
+            <net data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[1]" storage_index="1" tap_mode="classic" trigger_index="1" type="combinatorial"/>
+            <net data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[0]" storage_index="0" tap_mode="classic" trigger_index="0" type="combinatorial"/>
+          </bus>
+          <bus name="COMPUTER_HAND" order="msb_to_lsb" type="output pin">
+            <net data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[4]" storage_index="10" tap_mode="classic" trigger_index="10" type="output pin"/>
+            <net data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[3]" storage_index="9" tap_mode="classic" trigger_index="9" type="output pin"/>
+            <net data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[2]" storage_index="8" tap_mode="classic" trigger_index="8" type="output pin"/>
+            <net data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[1]" storage_index="7" tap_mode="classic" trigger_index="7" type="output pin"/>
+            <net data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[0]" storage_index="6" tap_mode="classic" trigger_index="6" type="output pin"/>
+          </bus>
+          <net data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_LP" storage_index="11" tap_mode="classic" trigger_index="11" type="combinatorial"/>
+          <bus name="COMPUTER_WINS" order="msb_to_lsb" state="collapse" type="output pin">
+            <net data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_WINS[1]" storage_index="13" tap_mode="classic" trigger_index="13" type="output pin"/>
+            <net data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_WINS[0]" storage_index="12" tap_mode="classic" trigger_index="12" type="output pin"/>
+          </bus>
+          <bus name="DEALER_HAND" order="msb_to_lsb" state="collapse" type="combinatorial">
+            <net data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[4]" storage_index="18" tap_mode="classic" trigger_index="18" type="combinatorial"/>
+            <net data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[3]" storage_index="17" tap_mode="classic" trigger_index="17" type="combinatorial"/>
+            <net data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[2]" storage_index="16" tap_mode="classic" trigger_index="16" type="combinatorial"/>
+            <net data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[1]" storage_index="15" tap_mode="classic" trigger_index="15" type="combinatorial"/>
+            <net data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[0]" storage_index="14" tap_mode="classic" trigger_index="14" type="combinatorial"/>
+          </bus>
+          <net data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_REQUEST" storage_index="19" tap_mode="classic" trigger_index="19" type="combinatorial"/>
+          <bus name="PLAYER_HAND" order="msb_to_lsb" type="output pin">
+            <net data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[4]" storage_index="24" tap_mode="classic" trigger_index="24" type="output pin"/>
+            <net data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[3]" storage_index="23" tap_mode="classic" trigger_index="23" type="output pin"/>
+            <net data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[2]" storage_index="22" tap_mode="classic" trigger_index="22" type="output pin"/>
+            <net data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[1]" storage_index="21" tap_mode="classic" trigger_index="21" type="output pin"/>
+            <net data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[0]" storage_index="20" tap_mode="classic" trigger_index="20" type="output pin"/>
+          </bus>
+          <net data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_LP" storage_index="25" tap_mode="classic" trigger_index="25" type="combinatorial"/>
+        </data_view>
+        <setup_view>
+          <net data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CLK~clkctrl" storage_index="26" tap_mode="probeonly" trigger_index="26" type="combinatorial"/>
+          <net data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="ENABLE" storage_index="27" tap_mode="probeonly" trigger_index="27" type="input pin"/>
+          <net data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="ENABLE~_wirecell" storage_index="28" tap_mode="probeonly" trigger_index="28" type="combinatorial"/>
+          <net data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="HOLD" storage_index="29" tap_mode="probeonly" trigger_index="29" type="input pin"/>
+          <net data_index="40" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="inst4" storage_index="40" tap_mode="probeonly" trigger_index="40" type="combinatorial"/>
+          <net data_index="37" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="inst14" storage_index="37" tap_mode="probeonly" trigger_index="37" type="combinatorial"/>
+          <net data_index="38" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="inst17" storage_index="38" tap_mode="probeonly" trigger_index="38" type="combinatorial"/>
+          <net data_index="39" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="inst24" storage_index="39" tap_mode="probeonly" trigger_index="39" type="combinatorial"/>
+          <net data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="MODE[0]" storage_index="30" tap_mode="probeonly" trigger_index="30" type="input pin"/>
+          <net data_index="31" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="MODE[1]" storage_index="31" tap_mode="probeonly" trigger_index="31" type="input pin"/>
+          <net data_index="32" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="NEW_HAND" storage_index="32" tap_mode="probeonly" trigger_index="32" type="input pin"/>
+          <net data_index="33" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="NEW_HAND~_wirecell" storage_index="33" tap_mode="probeonly" trigger_index="33" type="combinatorial"/>
+          <net data_index="34" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_START" storage_index="34" tap_mode="probeonly" trigger_index="34" type="input pin"/>
+          <net data_index="35" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_START~_wirecell" storage_index="35" tap_mode="probeonly" trigger_index="35" type="combinatorial"/>
+          <net data_index="36" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RESET" storage_index="36" tap_mode="probeonly" trigger_index="36" type="input pin"/>
+          <net data_index="41" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="~GND" storage_index="41" tap_mode="probeonly" trigger_index="41" type="combinatorial"/>
+          <bus name="CARD_TO_PLAY" order="msb_to_lsb" radix="unsigned_dec" type="combinatorial">
+            <net data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[5]" storage_index="5" tap_mode="classic" trigger_index="5" type="combinatorial"/>
+            <net data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[4]" storage_index="4" tap_mode="classic" trigger_index="4" type="combinatorial"/>
+            <net data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[3]" storage_index="3" tap_mode="classic" trigger_index="3" type="combinatorial"/>
+            <net data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[2]" storage_index="2" tap_mode="classic" trigger_index="2" type="combinatorial"/>
+            <net data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[1]" storage_index="1" tap_mode="classic" trigger_index="1" type="combinatorial"/>
+            <net data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[0]" storage_index="0" tap_mode="classic" trigger_index="0" type="combinatorial"/>
+          </bus>
+          <bus name="COMPUTER_HAND" order="msb_to_lsb" type="output pin">
+            <net data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[4]" storage_index="10" tap_mode="classic" trigger_index="10" type="output pin"/>
+            <net data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[3]" storage_index="9" tap_mode="classic" trigger_index="9" type="output pin"/>
+            <net data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[2]" storage_index="8" tap_mode="classic" trigger_index="8" type="output pin"/>
+            <net data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[1]" storage_index="7" tap_mode="classic" trigger_index="7" type="output pin"/>
+            <net data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[0]" storage_index="6" tap_mode="classic" trigger_index="6" type="output pin"/>
+          </bus>
+          <net data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_LP" storage_index="11" tap_mode="classic" trigger_index="11" type="combinatorial"/>
+          <bus name="COMPUTER_WINS" order="msb_to_lsb" state="collapse" type="output pin">
+            <net data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_WINS[1]" storage_index="13" tap_mode="classic" trigger_index="13" type="output pin"/>
+            <net data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_WINS[0]" storage_index="12" tap_mode="classic" trigger_index="12" type="output pin"/>
+          </bus>
+          <bus name="DEALER_HAND" order="msb_to_lsb" state="collapse" type="combinatorial">
+            <net data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[4]" storage_index="18" tap_mode="classic" trigger_index="18" type="combinatorial"/>
+            <net data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[3]" storage_index="17" tap_mode="classic" trigger_index="17" type="combinatorial"/>
+            <net data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[2]" storage_index="16" tap_mode="classic" trigger_index="16" type="combinatorial"/>
+            <net data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[1]" storage_index="15" tap_mode="classic" trigger_index="15" type="combinatorial"/>
+            <net data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_HAND[0]" storage_index="14" tap_mode="classic" trigger_index="14" type="combinatorial"/>
+          </bus>
+          <net data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_REQUEST" storage_index="19" tap_mode="classic" trigger_index="19" type="combinatorial"/>
+          <bus name="PLAYER_HAND" order="msb_to_lsb" type="output pin">
+            <net data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[4]" storage_index="24" tap_mode="classic" trigger_index="24" type="output pin"/>
+            <net data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[3]" storage_index="23" tap_mode="classic" trigger_index="23" type="output pin"/>
+            <net data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[2]" storage_index="22" tap_mode="classic" trigger_index="22" type="output pin"/>
+            <net data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[1]" storage_index="21" tap_mode="classic" trigger_index="21" type="output pin"/>
+            <net data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[0]" storage_index="20" tap_mode="classic" trigger_index="20" type="output pin"/>
+          </bus>
+          <net data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_LP" storage_index="25" tap_mode="classic" trigger_index="25" type="combinatorial"/>
+        </setup_view>
+        <trigger_in_editor/>
+        <trigger_out_editor/>
+      </presentation>
+      <trigger CRC="FF19C0C2" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2017/12/02 19:00:18  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic"><power_up enabled="yes">
+            </power_up><op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>111111111111111111111111111111111111111111
+            <pwr_up_transitional>111111111111111111111111111111111111111111</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: 2017/12/02 19:03:00  #0" power_up_mode="false" sample_depth="128" trigger_position="16">000000000001001111001111010100001010100000000000000001001111001111010100001010100000000000000001000100100100110100001010100000000000000001000100100100110100001010100000000000000001001010101010110100001010100000000000000001001010101010110100001010100000000000000000000001100001100100001010100000000000000000000001100001100100001010100000000000000000001101101101100100001010100000000000000000001101101101100100001010100000000000000000000111100111100100001010100000000000000000000111100111100100001010100000000000000001001000001000010100001010100000000000000001001000001000010100001010100000000000000001000010000010010100001010100000000000000001000010000010010100001010100000000000000001001110001110010100001010100000000000000001001110001110010100001010100000000000000001000101000101010100001010100000000000000001000101000101010100001010100000000000000001001011001011010100001010100000000000000001001011001011010100001010100000000000000001000000100000110100001010100000000000000001000000100000110100001010100000000000000001001100101100110100001010100000000000000001001100101100110100001010100000000000000000000110100110100100001010100000000000000000000110100110100100001010100000000000000000001001101001100100001010100000000000000000001001101001100100001010100000000000000000000011100011100100001010100000000000000000000011100011100100001010100000000000000000001111101111100100001010100000000000000000001111101111100100001010100000000000000001000100000100010100001010100000000000000001000100000100010100001010100000000000000001001010001010010100001010100000000000000001001010001010010100001010100000000000000001000001000001010100001010100000000000000001000001000001010100001010100000000000000001001101001101010100001010100000000000000001001101001101010100001010100000000000000001000111000111010100001010100000000000000001000111000111010100001010100000000000000001001000101000110100001010100000000000000001001000101000110100001010100000000000000001000010100010110100001010100000000000000001000010100010110100001010100000000000000000001110101110100100001010100000000000000000001110101110100100001010100000000000000000000101100101100100001010100000000000000000000101100101100100001010100000000000000000001011101011100100001010100000000000000000001011101011100100001010100000000000000001000000000000010100001010100000000000000001000000000000010100001010100000000000000001001100001100010100001010100000000000000001001100001100010100001010100000000000000001000110000110010100001010100000000000000001000110000110010100001010100000000000000001001001001001010100001010100000000000000001001001001001010100001010100000000000000001000011000011010100001010100000000000000001000011000011010100001010100000000000000001001111001111010100001010100000000000000001001111001111010100001010100000000000000001000100100100110100001010100000000000000001000100100100110100001010100000000000000001001010101010110100001010100000000000000001001010101010110100001010100000000000000000000001100001100100001010100000000000000000000001100001100100001010100000000000000000001101101101100100001010100000000000000000001101101101100100001010100000000000000000000111100111100100001010100000000000000000000111100111100100001010100000000000000001001000001000010100001010100000000000000001001000001000010100001010100000000000000001000010000010010100001010100000000000000001000010000010010100001010100000000000000001001110001110010100001010100000000000000001001110001110010100001010100000000000000001000101000101010100001010100000000000000001000101000101010100001010100000000000000001001011001011010100001010100000000000000001001011001011010100001010100000000000000001000000100000110100001010100000000000000001000000100000110100001010100000000000000001001100101100110100001010100000000000000001001100101100110100001010100000000000000000000110100110100100001010100000000000000000000110100110100100001010100000000000000000001001101001100100001010100000000000000000001001101001100100001010100000000000000000000011100011100100001010100000000000000000000011100011100100001010100000000000000000001111101111100100001010100000000000000000001111101111100100001010100000000000000001000100000100010100001010100000000000000001000100000100010100001010100000000000000001001010001010010100001010100000000000000001001010001010010100001010100000000000000001000001000001010100001010100000000000000001000001000001010100001010100000000000000001001101001101010100001010100000000000000001001101001101010100001010100000000000000001000111000111010100001010100000000000000001000111000111010100001010100000000000000001001000101000110100001010100000000000000001001000101000110100001010100000000000000001000010100010110100001010100000000000000001000010100010110100001010100000000000000000001110101110100100001010100000000000000000001110101110100100001010100000000000000000000101100101100100001010100000000000000000000101100101100100001010100000000000000000001011101011100100001010100000000000000000001011101011100100001010100000000000000001000000000000010100001010100000000000000001000000000000010100001010100000000000000001001100001100010100001010100000000000000001001100001100010100001010100000000000000001000110000110010100001010100000000000000001000110000110010100001010100000000000000001001001001001010100001010100000000000000001001001001001010100001010100000000000000001000011000011010100001010100000000000000001000011000011010100001010100000</data>
+          <extradata>1111111111111111T111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="5"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="130944"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+    <single attribute="hierarchy widget height" value="167"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <multi attribute="frame size" size="2" value="2053,825"/>
+    <multi attribute="jtag widget size" size="2" value="398,139"/>
+  </global_info>
+</session>
