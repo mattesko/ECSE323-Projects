@@ -17,7 +17,7 @@ ENTITY g27_modulo IS
     (
         input_num           : in  std_logic_vector (5 downto 0);
         input_modulo        : in  std_logic_vector (5 downto 0);
-		  clk						 : in  std_logic;
+		clk				    : in  std_logic;
         output_modulo       : out std_logic_vector (5 downto 0)
     );
     END g27_modulo;
@@ -26,7 +26,7 @@ ARCHITECTURE modulo_architecture OF g27_modulo IS
 
     SIGNAL input_num_arith       : INTEGER;
     SIGNAL input_modulo_arith    : INTEGER;
-    SIGNAL output_modulo_arith	: INTEGER;
+    SIGNAL output_modulo_arith	 : INTEGER;
 
     BEGIN
 			input_num_arith <= to_integer(unsigned(input_num));

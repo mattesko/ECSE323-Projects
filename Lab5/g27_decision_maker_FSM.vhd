@@ -17,25 +17,25 @@ use ieee.numeric_std.all;
 ENTITY g27_decision_maker_FSM IS
    PORT
 	(
-		reset : in std_logic;
-		clk : in std_logic;
-		player_start : in std_logic;
-		enable_decision : in std_logic;
+		reset 				: in std_logic;
+		clk 				: in std_logic;
+		player_start 		: in std_logic;
+		enable_decision 	: in std_logic;
 		computer_legal_play : in std_logic;
-		player_legal_play : in std_logic;
-		player_hand : in std_logic_vector(4 DOWNTO 0);
-		computer_hand : in std_logic_vector(4 DOWNTO 0);
-		player_wins : out std_logic_vector(1 DOWNTO 0);
-		computer_wins : out std_logic_vector(1 DOWNTO 0)
+		player_legal_play	: in std_logic;
+		player_hand 		: in std_logic_vector(4 DOWNTO 0);
+		computer_hand 		: in std_logic_vector(4 DOWNTO 0);
+		player_wins 		: out std_logic_vector(1 DOWNTO 0);
+		computer_wins 		: out std_logic_vector(1 DOWNTO 0)
 	);
    END g27_decision_maker_FSM;
 
 ARCHITECTURE architecture_g27_decision_maker_FSM OF g27_decision_maker_FSM IS 
-TYPE state_type is (s0, s1, s2);    -- State declaration
+TYPE state_type is (s0, s1, s2);   		-- State declaration
     SIGNAL state : state_type;          -- Init signal that uses the different states
-	 SIGNAL player_hand_buffer : unsigned(4 downto 0);
-	 SIGNAL computer_hand_buffer : unsigned(4 downto 0);
-	 SIGNAL updated : std_logic;
+	SIGNAL player_hand_buffer 		: unsigned(4 downto 0);
+	SIGNAL computer_hand_buffer 	: unsigned(4 downto 0);
+	SIGNAL updated 					: std_logic;
 
     
 BEGIN 
@@ -91,9 +91,9 @@ BEGIN
 						p_wins := to_unsigned(0, 2);
 						c_wins := to_unsigned(0, 2);
 
-               WHEN s1 =>
+              		WHEN s1 =>
 						IF (computer_legal_play = '1' and player_legal_play = '1') THEN
-							player_hand_buffer <= unsigned(player_hand);
+							player_hand_buffer   <= unsigned(player_hand);
 							computer_hand_buffer <= unsigned(computer_hand);
 							
 							IF (player_hand_buffer <= computer_hand_buffer) THEN

@@ -18,7 +18,7 @@ ENTITY g27_computer_player_FSM IS
     PORT
     (
         current_sum                 : in  std_logic_vector (4 downto 0); -- sum will always be 32 or under 32 <= 2^5 = 32
-        turn	                     : in  std_logic;
+        turn	                    : in  std_logic;
         new_hand                    : in  std_logic;
         clk                         : in  std_logic;
         reset                       : in  std_logic;
@@ -29,7 +29,7 @@ ENTITY g27_computer_player_FSM IS
     END g27_computer_player_FSM;
 
 ARCHITECTURE architecture_computer_player_FSM OF g27_computer_player_FSM IS 
-TYPE state_type is (s0, s1, s2);    -- State declaration
+TYPE state_type is (s0, s1, s2, s3, s4);    -- State declaration
     SIGNAL current_sum_buffer       : unsigned (4 downto 0);
     SIGNAL state                    : state_type;          -- Init signal that uses the different states
     

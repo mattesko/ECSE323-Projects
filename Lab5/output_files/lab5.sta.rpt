@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for lab5
-Sat Dec 02 19:02:43 2017
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Mon Dec 04 17:24:32 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
 ---------------------
@@ -57,17 +57,17 @@ applicable agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------------+
-; TimeQuest Timing Analyzer Summary                                                      ;
-+--------------------+-------------------------------------------------------------------+
-; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
-; Revision Name      ; lab5                                                              ;
-; Device Family      ; Cyclone II                                                        ;
-; Device Name        ; EP2C20F484C7                                                      ;
-; Timing Models      ; Final                                                             ;
-; Delay Model        ; Combined                                                          ;
-; Rise/Fall Delays   ; Unavailable                                                       ;
-+--------------------+-------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                       ;
++--------------------+--------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version ;
+; Revision Name      ; lab5                                                               ;
+; Device Family      ; Cyclone II                                                         ;
+; Device Name        ; EP2C20F484C7                                                       ;
+; Timing Models      ; Final                                                              ;
+; Delay Model        ; Combined                                                           ;
+; Rise/Fall Delays   ; Unavailable                                                        ;
++--------------------+--------------------------------------------------------------------+
 
 
 +------------------------------------------+
@@ -149,10 +149,10 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; MODE[0]    ; INIT        ; 8.499 ;       ;       ; 8.499 ;
-; MODE[0]    ; POP         ; 7.919 ;       ;       ; 7.919 ;
-; MODE[1]    ; INIT        ;       ; 8.281 ; 8.281 ;       ;
-; MODE[1]    ; POP         ; 8.011 ;       ;       ; 8.011 ;
+; MODE[0]    ; INIT        ; 8.264 ;       ;       ; 8.264 ;
+; MODE[0]    ; POP         ; 7.917 ;       ;       ; 7.917 ;
+; MODE[1]    ; INIT        ;       ; 7.840 ; 7.840 ;       ;
+; MODE[1]    ; POP         ; 8.468 ;       ;       ; 8.468 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -161,10 +161,10 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; MODE[0]    ; INIT        ; 8.499 ;       ;       ; 8.499 ;
-; MODE[0]    ; POP         ; 7.919 ;       ;       ; 7.919 ;
-; MODE[1]    ; INIT        ;       ; 8.281 ; 8.281 ;       ;
-; MODE[1]    ; POP         ; 8.011 ;       ;       ; 8.011 ;
+; MODE[0]    ; INIT        ; 8.264 ;       ;       ; 8.264 ;
+; MODE[0]    ; POP         ; 7.917 ;       ;       ; 7.917 ;
+; MODE[1]    ; INIT        ;       ; 7.840 ; 7.840 ;       ;
+; MODE[1]    ; POP         ; 8.468 ;       ;       ; 8.468 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -215,10 +215,10 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; MODE[0]    ; INIT        ; 3.904 ;       ;       ; 3.904 ;
-; MODE[0]    ; POP         ; 3.668 ;       ;       ; 3.668 ;
-; MODE[1]    ; INIT        ;       ; 3.821 ; 3.821 ;       ;
-; MODE[1]    ; POP         ; 3.709 ;       ;       ; 3.709 ;
+; MODE[0]    ; INIT        ; 3.775 ;       ;       ; 3.775 ;
+; MODE[0]    ; POP         ; 3.661 ;       ;       ; 3.661 ;
+; MODE[1]    ; INIT        ;       ; 3.596 ; 3.596 ;       ;
+; MODE[1]    ; POP         ; 3.828 ;       ;       ; 3.828 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -227,10 +227,10 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; MODE[0]    ; INIT        ; 3.904 ;       ;       ; 3.904 ;
-; MODE[0]    ; POP         ; 3.668 ;       ;       ; 3.668 ;
-; MODE[1]    ; INIT        ;       ; 3.821 ; 3.821 ;       ;
-; MODE[1]    ; POP         ; 3.709 ;       ;       ; 3.709 ;
+; MODE[0]    ; INIT        ; 3.775 ;       ;       ; 3.775 ;
+; MODE[0]    ; POP         ; 3.661 ;       ;       ; 3.661 ;
+; MODE[1]    ; INIT        ;       ; 3.596 ; 3.596 ;       ;
+; MODE[1]    ; POP         ; 3.828 ;       ;       ; 3.828 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -251,10 +251,10 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; MODE[0]    ; INIT        ; 8.499 ;       ;       ; 8.499 ;
-; MODE[0]    ; POP         ; 7.919 ;       ;       ; 7.919 ;
-; MODE[1]    ; INIT        ;       ; 8.281 ; 8.281 ;       ;
-; MODE[1]    ; POP         ; 8.011 ;       ;       ; 8.011 ;
+; MODE[0]    ; INIT        ; 8.264 ;       ;       ; 8.264 ;
+; MODE[0]    ; POP         ; 7.917 ;       ;       ; 7.917 ;
+; MODE[1]    ; INIT        ;       ; 7.840 ; 7.840 ;       ;
+; MODE[1]    ; POP         ; 8.468 ;       ;       ; 8.468 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -263,10 +263,10 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; MODE[0]    ; INIT        ; 3.904 ;       ;       ; 3.904 ;
-; MODE[0]    ; POP         ; 3.668 ;       ;       ; 3.668 ;
-; MODE[1]    ; INIT        ;       ; 3.821 ; 3.821 ;       ;
-; MODE[1]    ; POP         ; 3.709 ;       ;       ; 3.709 ;
+; MODE[0]    ; INIT        ; 3.775 ;       ;       ; 3.775 ;
+; MODE[0]    ; POP         ; 3.661 ;       ;       ; 3.661 ;
+; MODE[1]    ; INIT        ;       ; 3.596 ; 3.596 ;       ;
+; MODE[1]    ; POP         ; 3.828 ;       ;       ; 3.828 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -294,11 +294,11 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
-; Unconstrained Clocks            ; 1     ; 1    ;
+; Unconstrained Clocks            ; 2     ; 2    ;
 ; Unconstrained Input Ports       ; 7     ; 7    ;
-; Unconstrained Input Port Paths  ; 1009  ; 1009 ;
-; Unconstrained Output Ports      ; 38    ; 38   ;
-; Unconstrained Output Port Paths ; 156   ; 156  ;
+; Unconstrained Input Port Paths  ; 1011  ; 1011 ;
+; Unconstrained Output Ports      ; 42    ; 42   ;
+; Unconstrained Output Port Paths ; 184   ; 184  ;
 +---------------------------------+-------+------+
 
 
@@ -309,19 +309,33 @@ Warning (125092): Tcl Script File lpm_counter_player.qip not found
     Info (125063): set_global_assignment -name QIP_FILE lpm_counter_player.qip
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Dec 02 19:02:40 2017
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Mon Dec 04 17:24:26 2017
 Info: Command: quartus_sta lab5 -c lab5
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 6 combinational loops as latches.
 Info (332164): Evaluating HDL-embedded SDC commands
     Info (332165): Entity sld_jtag_hub
         Info (332166): create_clock -name altera_reserved_tck [get_ports {altera_reserved_tck}] -period 10MHz   
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab5.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "inst3|Selector4~0|combout"
+    Warning (332126): Node "inst3|Selector4~0|datad"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "inst3|Selector5~0|combout"
+    Warning (332126): Node "inst3|Selector5~0|datad"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "inst3|Selector2~0|combout"
+    Warning (332126): Node "inst3|Selector2~0|dataa"
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "inst3|Selector3~0|combout"
+    Warning (332126): Node "inst3|Selector3~0|datad"
 Warning (332060): Node: CLK was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: g27_decision_maker_FSM:inst3|state.s1 was determined to be a clock but was found without an associated clock assignment.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Info (332140): No fmax paths to report
@@ -336,6 +350,7 @@ Info (332146): Worst-case minimum pulse width slack is 97.531
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Warning (332060): Node: CLK was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: g27_decision_maker_FSM:inst3|state.s1 was determined to be a clock but was found without an associated clock assignment.
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
@@ -347,10 +362,10 @@ Info (332146): Worst-case minimum pulse width slack is 97.778
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 549 megabytes
-    Info: Processing ended: Sat Dec 02 19:02:43 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 498 megabytes
+    Info: Processing ended: Mon Dec 04 17:24:32 2017
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:01
 
 
