@@ -16,3 +16,7 @@ Lab4/output_files/*
 Lab5/db/*
 Lab5/incremental_db/*
 Lab5/*.bak
+Lab5/output_files/lab5.done
+Lab5/output_files/lab5.flow.rpt
+Lab5/output_files/lab5.map.rpt
+Lab5/output_files/lab5.map.summary
