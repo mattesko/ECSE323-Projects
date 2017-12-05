@@ -92,7 +92,7 @@ BEGIN
 				END IF;
         END PROCESS;
 
-    output_process : PROCESS(state)
+    output_process : PROCESS(clk)
 			variable p_wins : unsigned(1 downto 0);
 			variable c_wins : unsigned(1 downto 0);
         BEGIN

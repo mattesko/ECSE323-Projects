@@ -19,10 +19,10 @@ ENTITY g27_computer_player_FSM IS
     (
         clk                         : in  std_logic;
         reset                       : in  std_logic;
-        turn	                    : in  std_logic;
+        computer_start	            : in  std_logic;
         current_sum                 : in  std_logic_vector (4 downto 0); -- sum will always be 32 or under 32 <= 2^5 = 32
         request_deal                : out std_logic;
-        turn_finish                 : out std_logic
+        computer_end                : out std_logic
     );
     END g27_computer_player_FSM;
 
@@ -37,13 +37,13 @@ BEGIN
             IF (reset = '1') THEN   -- Triggered when reset is high
                 state <= s0;
 
-            ELSIF rising_edge(clk) THEN -- Triggered at rising edge of clock and it is the computer's turn
+            ELSIF rising_edge(clk) THEN -- Triggered at rising edge of clock and it is the computer's computer_start
 
                 CASE state IS 
                     
-                    WHEN s0 =>        -- Initial/idle state, wait for computer turn
+                    WHEN s0 =>        -- Initial/idle state, wait for computer computer_start
                     -- IF request_deal is low, making sure FSM is going into the right states at the beginning
-                    IF (turn = '1') THEN
+                    IF (computer_start = '1') THEN
                         state       <= s1;
                     ELSE
                         state       <= s0;
@@ -59,7 +59,7 @@ BEGIN
                             state       <= s3; -- stop drawing cards and advance to s2
                         END IF;
 
-                    WHEN s3 =>        -- Ends computer turn and go to idle state until new roun
+                    WHEN s3 =>        -- Ends computer computer_start and go to idle state until new roun
                         state        <= s0;
 
                     WHEN others =>
@@ -71,31 +71,31 @@ BEGIN
 
         END PROCESS;
 
-    output_process : PROCESS(state)
+    output_process : PROCESS(clk)
         BEGIN
 
             CASE state is
 
                 WHEN s0 =>                      -- Idle state
                     request_deal                    <= '0';
-                    turn_finish                     <= '0';
+                    computer_end                    <= '0';
                 
 
                 WHEN s1 =>                      -- Request deal
                     request_deal                    <= '1';
-                    turn_finish                     <= '0';
+                    computer_end                    <= '0';
 
                 WHEN s2 =>                      -- Output computer is done                     
                     request_deal                    <= '0';
-                    turn_finish                     <= '0';
+                    computer_end                    <= '0';
 
                 WHEN s3 =>
                     request_deal                    <= '0';
-                    turn_finish                     <= '1';
+                    computer_end                    <= '1';
 
                 WHEN others =>
                     request_deal                    <= '0';
-                    turn_finish                     <= '0';
+                    computer_end                    <= '0';
 
             END CASE;
         

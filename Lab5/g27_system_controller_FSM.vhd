@@ -19,18 +19,19 @@ ENTITY g27_system_controller_FSM IS
 	(
 		reset 			: in std_logic;
 		clk 			: in std_logic;
-		deck_init		: in std_logic;
-		player_request 	: in std_logic;
-		hold 			: in std_logic;
-		player_bust		: in std_logic;
-		request_deal    : out std_logic;
-		enable_decision : out std_logic;
-		computer_turn 	: out std_logic
+		player_play 	: in std_logic;
+		player_end		: in std_logic;
+		computer_end	: in std_logic;
+		round_reset		: in std_logic;
+		deck_init   	: out std_logic;
+		hands_reset		: out std_logic; 
+		player_start 	: out std_logic;
+		computer_start 	: out std_logic
 	);
    END g27_system_controller_FSM;
 
 ARCHITECTURE architecture_g27_system_controller_FSM OF g27_system_controller_FSM IS 
-TYPE state_type is (s0, s1, s2, s3, s4);    -- State declaration
+TYPE state_type is (s0, s1, s2, s3);    -- State declaration
     SIGNAL state : state_type;          -- Init signal that uses the different states
     
 BEGIN 
@@ -43,75 +44,73 @@ BEGIN
 					
 					CASE state is
 					
-						WHEN s0 => -- Idle state, waiting for deck to init
-							IF (deck_init = '1') THEN
+						WHEN s0 => -- Init state init at the beginning of rounds
+							IF (player_play = '1') THEN
 								state <= s1;
 							ELSE
 								state <= s0;
 							END IF;
 						
-						WHEN s1 => -- Player's turn, waiting for player input
-							IF (player_request = '1') THEN
-								state <= s2;  -- Request a card
-							ELSIF (hold = '1') THEN
-								state <= s3;  -- Holds his hand
-							ELSIF (player_bust = '1') THEN
-								state <= s4;  -- Player busts, in case of clk issues
-							ELSE			  -- Wait for an input
-								state <= s1;
-							END IF;
-						
-						WHEN s2 =>	-- Player requests to draw a card
-							IF (player_bust = '1') THEN  -- Player busts
-								state <= s4;
+						WHEN s1 => -- Player's turn
+							IF (player_end = '1') THEN -- Player turn's end
+								state <= s2; 
 							ELSE
 								state <= s1;
 							END IF;
 
-						WHEN s3 => -- Player holds its hand
-							state <= s4;
+						WHEN s2 => -- Computer's turn
+							IF (computer_end = '1') THEN
+								state <= s3;
+							ELSE
+								state <= s2;
+							END IF;
 
-						WHEN s4 => -- Player ends it turn, goes back to idle state until new game
-							state <= s0;
+						WHEN s3 =>	-- Round ends, waiting for player input to reset round
+							IF (round_reset = '1') THEN  -- Player busts
+								state <= s0;
+							ELSE
+								state <= s3;
+							END IF;
 
 					END CASE;
 				END IF;
         END PROCESS;
 
-    output_process : PROCESS(state)
+    output_process : PROCESS(clk)
         BEGIN
 
             CASE state is
 
-					WHEN s0 =>                      -- Idle State        
-						request_deal    <= '0';          
-						computer_turn   <= '0';
-						enable_decision <= '0';
+					WHEN s0 =>                      -- Init State        
+						deck_init   	<= '1';
+						hands_reset		<= '1';
+						player_start 	<= '0';
+						computer_start 	<= '0';
 
-					WHEN s1 =>						-- Waiting for player input
-					 	request_deal    <= '0'; 
-						computer_turn   <= '0';
-                 	 	enable_decision <= '0';
+					WHEN s1 =>						-- Player's turn
+						deck_init   	<= '0';
+						hands_reset		<= '0';
+						player_start 	<= '1';
+						computer_start 	<= '0';
 					
-					WHEN s2 =>                      -- Player request deal    
-						request_deal    <= '1';                  
-						computer_turn   <= '0';
-						enable_decision <= '1';
+					WHEN s2 =>                      -- Computer's turn
+						deck_init   	<= '0';
+						hands_reset		<= '0';
+						player_start 	<= '0';
+						computer_start 	<= '1';
 
-					WHEN s3 =>						-- Player holds his hand
-					  	request_deal    <= '0'; 
-						computer_turn   <= '0';
-						enable_decision <= '0';
-			
-					WHEN s4 =>						-- Player ends his turn
-						request_deal    <= '0'; 
-						computer_turn   <= '1';
-						enable_decision <= '0';
+					WHEN s3 =>						-- Round ends
+						deck_init   	<= '0';
+						hands_reset		<= '0';
+						player_start 	<= '0';
+						computer_start <= '0';
+
 					
 					WHEN others =>
-						request_deal    <= '0'; 
-						computer_turn 	<= '0';
-						enable_decision <= '0';
+						deck_init   	<= '0';
+						hands_reset		<= '0';
+						player_start 	<= '0';
+						computer_start 	<= '0';
 					
             END CASE;
         

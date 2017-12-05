@@ -4,7 +4,7 @@
   </display_tree>
   <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
     <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
-    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2017/12/05 06:10:07  #0">
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2017/12/05 16:17:34  #0">
       <clock name="CLK" polarity="posedge" tap_mode="classic"/>
       <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
       <top_entity/>
@@ -16,31 +16,46 @@
           <wire name="CARD_TO_PLAY[3]" tap_mode="classic"/>
           <wire name="CARD_TO_PLAY[4]" tap_mode="classic"/>
           <wire name="CARD_TO_PLAY[5]" tap_mode="classic"/>
+          <wire name="COMPUTER_END" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[0]" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[1]" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[2]" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[3]" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[4]" tap_mode="classic"/>
           <wire name="COMPUTER_LP" tap_mode="classic"/>
-          <wire name="COMPUTER_TURN" tap_mode="classic"/>
-          <wire name="COMPUTER_TURN_END" tap_mode="classic"/>
+          <wire name="COMPUTER_START" tap_mode="classic"/>
           <wire name="COMPUTER_WINS[0]" tap_mode="classic"/>
           <wire name="COMPUTER_WINS[1]" tap_mode="classic"/>
           <wire name="DEALER_DEAL" tap_mode="classic"/>
+          <wire name="DECK_INIT" tap_mode="classic"/>
+          <wire name="EMPTY" tap_mode="classic"/>
           <wire name="ENABLE_DECISION" tap_mode="classic"/>
           <wire name="END_GAME" tap_mode="classic"/>
+          <wire name="FULL" tap_mode="classic"/>
+          <wire name="HANDS_RESET" tap_mode="classic"/>
+          <wire name="INIT" tap_mode="classic"/>
           <wire name="PLAY" tap_mode="classic"/>
           <wire name="PLAYER_DEAL" tap_mode="classic"/>
+          <wire name="PLAYER_END" tap_mode="classic"/>
           <wire name="PLAYER_HAND[0]" tap_mode="classic"/>
           <wire name="PLAYER_HAND[1]" tap_mode="classic"/>
           <wire name="PLAYER_HAND[2]" tap_mode="classic"/>
           <wire name="PLAYER_HAND[3]" tap_mode="classic"/>
           <wire name="PLAYER_HAND[4]" tap_mode="classic"/>
           <wire name="PLAYER_LP" tap_mode="classic"/>
+          <wire name="PLAYER_START" tap_mode="classic"/>
           <wire name="PLAYER_WINS[0]" tap_mode="classic"/>
           <wire name="PLAYER_WINS[1]" tap_mode="classic"/>
+          <wire name="PLAY_PULSE" tap_mode="classic"/>
+          <wire name="POP" tap_mode="classic"/>
           <wire name="RESET" tap_mode="classic"/>
+          <wire name="ROUND_RESET_PULSE" tap_mode="classic"/>
           <wire name="STOP" tap_mode="classic"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s0" tap_mode="probeonly"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s1" tap_mode="probeonly"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s2" tap_mode="probeonly"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s3" tap_mode="probeonly"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s4" tap_mode="probeonly"/>
         </trigger_input_vec>
         <data_input_vec>
           <wire name="CARD_TO_PLAY[0]" tap_mode="classic"/>
@@ -49,31 +64,46 @@
           <wire name="CARD_TO_PLAY[3]" tap_mode="classic"/>
           <wire name="CARD_TO_PLAY[4]" tap_mode="classic"/>
           <wire name="CARD_TO_PLAY[5]" tap_mode="classic"/>
+          <wire name="COMPUTER_END" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[0]" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[1]" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[2]" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[3]" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[4]" tap_mode="classic"/>
           <wire name="COMPUTER_LP" tap_mode="classic"/>
-          <wire name="COMPUTER_TURN" tap_mode="classic"/>
-          <wire name="COMPUTER_TURN_END" tap_mode="classic"/>
+          <wire name="COMPUTER_START" tap_mode="classic"/>
           <wire name="COMPUTER_WINS[0]" tap_mode="classic"/>
           <wire name="COMPUTER_WINS[1]" tap_mode="classic"/>
           <wire name="DEALER_DEAL" tap_mode="classic"/>
+          <wire name="DECK_INIT" tap_mode="classic"/>
+          <wire name="EMPTY" tap_mode="classic"/>
           <wire name="ENABLE_DECISION" tap_mode="classic"/>
           <wire name="END_GAME" tap_mode="classic"/>
+          <wire name="FULL" tap_mode="classic"/>
+          <wire name="HANDS_RESET" tap_mode="classic"/>
+          <wire name="INIT" tap_mode="classic"/>
           <wire name="PLAY" tap_mode="classic"/>
           <wire name="PLAYER_DEAL" tap_mode="classic"/>
+          <wire name="PLAYER_END" tap_mode="classic"/>
           <wire name="PLAYER_HAND[0]" tap_mode="classic"/>
           <wire name="PLAYER_HAND[1]" tap_mode="classic"/>
           <wire name="PLAYER_HAND[2]" tap_mode="classic"/>
           <wire name="PLAYER_HAND[3]" tap_mode="classic"/>
           <wire name="PLAYER_HAND[4]" tap_mode="classic"/>
           <wire name="PLAYER_LP" tap_mode="classic"/>
+          <wire name="PLAYER_START" tap_mode="classic"/>
           <wire name="PLAYER_WINS[0]" tap_mode="classic"/>
           <wire name="PLAYER_WINS[1]" tap_mode="classic"/>
+          <wire name="PLAY_PULSE" tap_mode="classic"/>
+          <wire name="POP" tap_mode="classic"/>
           <wire name="RESET" tap_mode="classic"/>
+          <wire name="ROUND_RESET_PULSE" tap_mode="classic"/>
           <wire name="STOP" tap_mode="classic"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s0" tap_mode="probeonly"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s1" tap_mode="probeonly"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s2" tap_mode="probeonly"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s3" tap_mode="probeonly"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s4" tap_mode="probeonly"/>
         </data_input_vec>
         <storage_qualifier_input_vec>
           <wire name="CARD_TO_PLAY[0]" tap_mode="classic"/>
@@ -82,167 +112,227 @@
           <wire name="CARD_TO_PLAY[3]" tap_mode="classic"/>
           <wire name="CARD_TO_PLAY[4]" tap_mode="classic"/>
           <wire name="CARD_TO_PLAY[5]" tap_mode="classic"/>
+          <wire name="COMPUTER_END" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[0]" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[1]" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[2]" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[3]" tap_mode="classic"/>
           <wire name="COMPUTER_HAND[4]" tap_mode="classic"/>
           <wire name="COMPUTER_LP" tap_mode="classic"/>
-          <wire name="COMPUTER_TURN" tap_mode="classic"/>
-          <wire name="COMPUTER_TURN_END" tap_mode="classic"/>
+          <wire name="COMPUTER_START" tap_mode="classic"/>
           <wire name="COMPUTER_WINS[0]" tap_mode="classic"/>
           <wire name="COMPUTER_WINS[1]" tap_mode="classic"/>
           <wire name="DEALER_DEAL" tap_mode="classic"/>
+          <wire name="DECK_INIT" tap_mode="classic"/>
+          <wire name="EMPTY" tap_mode="classic"/>
           <wire name="ENABLE_DECISION" tap_mode="classic"/>
           <wire name="END_GAME" tap_mode="classic"/>
+          <wire name="FULL" tap_mode="classic"/>
+          <wire name="HANDS_RESET" tap_mode="classic"/>
+          <wire name="INIT" tap_mode="classic"/>
           <wire name="PLAY" tap_mode="classic"/>
           <wire name="PLAYER_DEAL" tap_mode="classic"/>
+          <wire name="PLAYER_END" tap_mode="classic"/>
           <wire name="PLAYER_HAND[0]" tap_mode="classic"/>
           <wire name="PLAYER_HAND[1]" tap_mode="classic"/>
           <wire name="PLAYER_HAND[2]" tap_mode="classic"/>
           <wire name="PLAYER_HAND[3]" tap_mode="classic"/>
           <wire name="PLAYER_HAND[4]" tap_mode="classic"/>
           <wire name="PLAYER_LP" tap_mode="classic"/>
+          <wire name="PLAYER_START" tap_mode="classic"/>
           <wire name="PLAYER_WINS[0]" tap_mode="classic"/>
           <wire name="PLAYER_WINS[1]" tap_mode="classic"/>
+          <wire name="PLAY_PULSE" tap_mode="classic"/>
+          <wire name="POP" tap_mode="classic"/>
           <wire name="RESET" tap_mode="classic"/>
+          <wire name="ROUND_RESET_PULSE" tap_mode="classic"/>
           <wire name="STOP" tap_mode="classic"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s0" tap_mode="probeonly"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s1" tap_mode="probeonly"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s2" tap_mode="probeonly"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s3" tap_mode="probeonly"/>
+          <wire name="g27_player_controller_FSM:inst34|state.s4" tap_mode="probeonly"/>
         </storage_qualifier_input_vec>
       </signal_vec>
       <presentation>
         <unified_setup_data_view>
-          <node data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAY" storage_index="19" tap_mode="classic" trigger_index="19" type="input pin"/>
-          <node data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="STOP" storage_index="30" tap_mode="classic" trigger_index="30" type="input pin"/>
-          <node data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RESET" storage_index="29" tap_mode="classic" trigger_index="29" type="input pin"/>
-          <node data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_TURN" storage_index="12" tap_mode="classic" trigger_index="12" type="combinatorial"/>
-          <node data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_TURN_END" storage_index="13" tap_mode="classic" trigger_index="13" type="combinatorial"/>
-          <node data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="ENABLE_DECISION" storage_index="17" tap_mode="classic" trigger_index="17" type="combinatorial"/>
+          <node data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAY" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="24" tap_mode="classic" trigger_index="24" type="input pin"/>
+          <node data_index="36" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAY_PULSE" storage_index="36" tap_mode="classic" trigger_index="36" type="combinatorial"/>
+          <node data_index="40" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="STOP" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="40" tap_mode="classic" trigger_index="40" type="input pin"/>
+          <node data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="HANDS_RESET" storage_index="22" tap_mode="classic" trigger_index="22" type="combinatorial"/>
+          <node data_index="39" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="ROUND_RESET_PULSE" storage_index="39" tap_mode="classic" trigger_index="39" type="combinatorial"/>
+          <node data_index="38" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="RESET" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="38" tap_mode="classic" trigger_index="38" type="input pin"/>
+          <node data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DECK_INIT" storage_index="17" tap_mode="classic" trigger_index="17" type="combinatorial"/>
+          <node data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="INIT" storage_index="23" tap_mode="classic" trigger_index="23" type="output pin"/>
+          <node data_index="37" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="POP" storage_index="37" tap_mode="classic" trigger_index="37" type="output pin"/>
+          <node data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="EMPTY" storage_index="18" tap_mode="classic" trigger_index="18" type="output pin"/>
+          <node data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="FULL" storage_index="21" tap_mode="classic" trigger_index="21" type="output pin"/>
+          <node data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="ENABLE_DECISION" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="19" tap_mode="classic" trigger_index="19" type="combinatorial"/>
           <node name="CARD_TO_PLAY" order="msb_to_lsb" type="combinatorial">
-            <node data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[5]" storage_index="5" tap_mode="classic" trigger_index="5" type="combinatorial"/>
-            <node data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[4]" storage_index="4" tap_mode="classic" trigger_index="4" type="combinatorial"/>
-            <node data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[3]" storage_index="3" tap_mode="classic" trigger_index="3" type="combinatorial"/>
-            <node data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[2]" storage_index="2" tap_mode="classic" trigger_index="2" type="combinatorial"/>
-            <node data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[1]" storage_index="1" tap_mode="classic" trigger_index="1" type="combinatorial"/>
-            <node data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[0]" storage_index="0" tap_mode="classic" trigger_index="0" type="combinatorial"/>
+            <node data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="combinatorial"/>
+            <node data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" trigger_index="4" type="combinatorial"/>
+            <node data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" trigger_index="3" type="combinatorial"/>
+            <node data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="combinatorial"/>
+            <node data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="combinatorial"/>
+            <node data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" trigger_index="0" type="combinatorial"/>
           </node>
-          <node data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_DEAL" storage_index="20" tap_mode="classic" trigger_index="20" type="combinatorial"/>
+          <node data_index="33" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_START" storage_index="33" tap_mode="classic" trigger_index="33" type="combinatorial"/>
+          <node data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_END" storage_index="26" tap_mode="classic" trigger_index="26" type="combinatorial"/>
+          <node data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_DEAL" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="25" tap_mode="classic" trigger_index="25" type="combinatorial"/>
           <node name="PLAYER_HAND" order="msb_to_lsb" type="output pin">
-            <node data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[4]" storage_index="25" tap_mode="classic" trigger_index="25" type="output pin"/>
-            <node data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[3]" storage_index="24" tap_mode="classic" trigger_index="24" type="output pin"/>
-            <node data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[2]" storage_index="23" tap_mode="classic" trigger_index="23" type="output pin"/>
-            <node data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[1]" storage_index="22" tap_mode="classic" trigger_index="22" type="output pin"/>
-            <node data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[0]" storage_index="21" tap_mode="classic" trigger_index="21" type="output pin"/>
+            <node data_index="31" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="31" tap_mode="classic" trigger_index="31" type="output pin"/>
+            <node data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="30" tap_mode="classic" trigger_index="30" type="output pin"/>
+            <node data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="29" tap_mode="classic" trigger_index="29" type="output pin"/>
+            <node data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="28" tap_mode="classic" trigger_index="28" type="output pin"/>
+            <node data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="27" tap_mode="classic" trigger_index="27" type="output pin"/>
           </node>
-          <node data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_LP" storage_index="26" tap_mode="classic" trigger_index="26" type="combinatorial"/>
-          <node data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_DEAL" storage_index="16" tap_mode="classic" trigger_index="16" type="combinatorial"/>
+          <node data_index="32" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_LP" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="32" tap_mode="classic" trigger_index="32" type="combinatorial"/>
+          <node data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DEALER_DEAL" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="16" tap_mode="classic" trigger_index="16" type="combinatorial"/>
+          <node data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_START" storage_index="13" tap_mode="classic" trigger_index="13" type="combinatorial"/>
+          <node data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_END" storage_index="6" tap_mode="classic" trigger_index="6" type="combinatorial"/>
           <node name="COMPUTER_HAND" order="msb_to_lsb" type="output pin">
-            <node data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[4]" storage_index="10" tap_mode="classic" trigger_index="10" type="output pin"/>
-            <node data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[3]" storage_index="9" tap_mode="classic" trigger_index="9" type="output pin"/>
-            <node data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[2]" storage_index="8" tap_mode="classic" trigger_index="8" type="output pin"/>
-            <node data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[1]" storage_index="7" tap_mode="classic" trigger_index="7" type="output pin"/>
-            <node data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[0]" storage_index="6" tap_mode="classic" trigger_index="6" type="output pin"/>
+            <node data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="11" type="output pin"/>
+            <node data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="10" type="output pin"/>
+            <node data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="9" type="output pin"/>
+            <node data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="8" type="output pin"/>
+            <node data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" trigger_index="7" type="output pin"/>
           </node>
-          <node data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_LP" storage_index="11" tap_mode="classic" trigger_index="11" type="combinatorial"/>
+          <node data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_LP" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="classic" trigger_index="12" type="combinatorial"/>
           <node name="PLAYER_WINS" order="msb_to_lsb" type="output pin">
-            <node data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_WINS[1]" storage_index="28" tap_mode="classic" trigger_index="28" type="output pin"/>
-            <node data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_WINS[0]" storage_index="27" tap_mode="classic" trigger_index="27" type="output pin"/>
+            <node data_index="35" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_WINS[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="35" tap_mode="classic" trigger_index="35" type="output pin"/>
+            <node data_index="34" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_WINS[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="34" tap_mode="classic" trigger_index="34" type="output pin"/>
           </node>
           <node name="COMPUTER_WINS" order="msb_to_lsb" type="output pin">
-            <node data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_WINS[1]" storage_index="15" tap_mode="classic" trigger_index="15" type="output pin"/>
-            <node data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_WINS[0]" storage_index="14" tap_mode="classic" trigger_index="14" type="output pin"/>
+            <node data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_WINS[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="classic" trigger_index="15" type="output pin"/>
+            <node data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_WINS[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="classic" trigger_index="14" type="output pin"/>
           </node>
-          <node data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="END_GAME" storage_index="18" tap_mode="classic" trigger_index="18" type="combinatorial"/>
+          <node data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="END_GAME" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="20" tap_mode="classic" trigger_index="20" type="combinatorial"/>
+          <node data_index="41" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s0" storage_index="41" tap_mode="probeonly" trigger_index="41" type="register"/>
+          <node data_index="42" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s1" storage_index="42" tap_mode="probeonly" trigger_index="42" type="register"/>
+          <node data_index="43" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s2" storage_index="43" tap_mode="probeonly" trigger_index="43" type="register"/>
+          <node data_index="44" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s3" storage_index="44" tap_mode="probeonly" trigger_index="44" type="register"/>
+          <node data_index="45" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s4" storage_index="45" tap_mode="probeonly" trigger_index="45" type="register"/>
         </unified_setup_data_view>
         <data_view>
-          <net data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAY" storage_index="19" tap_mode="classic" trigger_index="19" type="input pin"/>
-          <net data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="STOP" storage_index="30" tap_mode="classic" trigger_index="30" type="input pin"/>
-          <net data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RESET" storage_index="29" tap_mode="classic" trigger_index="29" type="input pin"/>
-          <net data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_TURN" storage_index="12" tap_mode="classic" trigger_index="12" type="combinatorial"/>
-          <net data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_TURN_END" storage_index="13" tap_mode="classic" trigger_index="13" type="combinatorial"/>
-          <net data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="ENABLE_DECISION" storage_index="17" tap_mode="classic" trigger_index="17" type="combinatorial"/>
+          <net data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAY" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="24" tap_mode="classic" trigger_index="24" type="input pin"/>
+          <net data_index="36" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAY_PULSE" storage_index="36" tap_mode="classic" trigger_index="36" type="combinatorial"/>
+          <net data_index="40" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="STOP" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="40" tap_mode="classic" trigger_index="40" type="input pin"/>
+          <net data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="HANDS_RESET" storage_index="22" tap_mode="classic" trigger_index="22" type="combinatorial"/>
+          <net data_index="39" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="ROUND_RESET_PULSE" storage_index="39" tap_mode="classic" trigger_index="39" type="combinatorial"/>
+          <net data_index="38" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="RESET" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="38" tap_mode="classic" trigger_index="38" type="input pin"/>
+          <net data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DECK_INIT" storage_index="17" tap_mode="classic" trigger_index="17" type="combinatorial"/>
+          <net data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="INIT" storage_index="23" tap_mode="classic" trigger_index="23" type="output pin"/>
+          <net data_index="37" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="POP" storage_index="37" tap_mode="classic" trigger_index="37" type="output pin"/>
+          <net data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="EMPTY" storage_index="18" tap_mode="classic" trigger_index="18" type="output pin"/>
+          <net data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="FULL" storage_index="21" tap_mode="classic" trigger_index="21" type="output pin"/>
+          <net data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="ENABLE_DECISION" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="19" tap_mode="classic" trigger_index="19" type="combinatorial"/>
           <bus name="CARD_TO_PLAY" order="msb_to_lsb" type="combinatorial">
-            <net data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[5]" storage_index="5" tap_mode="classic" trigger_index="5" type="combinatorial"/>
-            <net data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[4]" storage_index="4" tap_mode="classic" trigger_index="4" type="combinatorial"/>
-            <net data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[3]" storage_index="3" tap_mode="classic" trigger_index="3" type="combinatorial"/>
-            <net data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[2]" storage_index="2" tap_mode="classic" trigger_index="2" type="combinatorial"/>
-            <net data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[1]" storage_index="1" tap_mode="classic" trigger_index="1" type="combinatorial"/>
-            <net data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[0]" storage_index="0" tap_mode="classic" trigger_index="0" type="combinatorial"/>
+            <net data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="combinatorial"/>
+            <net data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" trigger_index="4" type="combinatorial"/>
+            <net data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" trigger_index="3" type="combinatorial"/>
+            <net data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="combinatorial"/>
+            <net data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="combinatorial"/>
+            <net data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" trigger_index="0" type="combinatorial"/>
           </bus>
-          <net data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_DEAL" storage_index="20" tap_mode="classic" trigger_index="20" type="combinatorial"/>
+          <net data_index="33" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_START" storage_index="33" tap_mode="classic" trigger_index="33" type="combinatorial"/>
+          <net data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_END" storage_index="26" tap_mode="classic" trigger_index="26" type="combinatorial"/>
+          <net data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_DEAL" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="25" tap_mode="classic" trigger_index="25" type="combinatorial"/>
           <bus name="PLAYER_HAND" order="msb_to_lsb" type="output pin">
-            <net data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[4]" storage_index="25" tap_mode="classic" trigger_index="25" type="output pin"/>
-            <net data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[3]" storage_index="24" tap_mode="classic" trigger_index="24" type="output pin"/>
-            <net data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[2]" storage_index="23" tap_mode="classic" trigger_index="23" type="output pin"/>
-            <net data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[1]" storage_index="22" tap_mode="classic" trigger_index="22" type="output pin"/>
-            <net data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[0]" storage_index="21" tap_mode="classic" trigger_index="21" type="output pin"/>
+            <net data_index="31" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="31" tap_mode="classic" trigger_index="31" type="output pin"/>
+            <net data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="30" tap_mode="classic" trigger_index="30" type="output pin"/>
+            <net data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="29" tap_mode="classic" trigger_index="29" type="output pin"/>
+            <net data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="28" tap_mode="classic" trigger_index="28" type="output pin"/>
+            <net data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="27" tap_mode="classic" trigger_index="27" type="output pin"/>
           </bus>
-          <net data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_LP" storage_index="26" tap_mode="classic" trigger_index="26" type="combinatorial"/>
-          <net data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_DEAL" storage_index="16" tap_mode="classic" trigger_index="16" type="combinatorial"/>
+          <net data_index="32" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_LP" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="32" tap_mode="classic" trigger_index="32" type="combinatorial"/>
+          <net data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DEALER_DEAL" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="16" tap_mode="classic" trigger_index="16" type="combinatorial"/>
+          <net data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_START" storage_index="13" tap_mode="classic" trigger_index="13" type="combinatorial"/>
+          <net data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_END" storage_index="6" tap_mode="classic" trigger_index="6" type="combinatorial"/>
           <bus name="COMPUTER_HAND" order="msb_to_lsb" type="output pin">
-            <net data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[4]" storage_index="10" tap_mode="classic" trigger_index="10" type="output pin"/>
-            <net data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[3]" storage_index="9" tap_mode="classic" trigger_index="9" type="output pin"/>
-            <net data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[2]" storage_index="8" tap_mode="classic" trigger_index="8" type="output pin"/>
-            <net data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[1]" storage_index="7" tap_mode="classic" trigger_index="7" type="output pin"/>
-            <net data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[0]" storage_index="6" tap_mode="classic" trigger_index="6" type="output pin"/>
+            <net data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="11" type="output pin"/>
+            <net data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="10" type="output pin"/>
+            <net data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="9" type="output pin"/>
+            <net data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="8" type="output pin"/>
+            <net data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" trigger_index="7" type="output pin"/>
           </bus>
-          <net data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_LP" storage_index="11" tap_mode="classic" trigger_index="11" type="combinatorial"/>
+          <net data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_LP" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="classic" trigger_index="12" type="combinatorial"/>
           <bus name="PLAYER_WINS" order="msb_to_lsb" type="output pin">
-            <net data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_WINS[1]" storage_index="28" tap_mode="classic" trigger_index="28" type="output pin"/>
-            <net data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_WINS[0]" storage_index="27" tap_mode="classic" trigger_index="27" type="output pin"/>
+            <net data_index="35" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_WINS[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="35" tap_mode="classic" trigger_index="35" type="output pin"/>
+            <net data_index="34" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_WINS[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="34" tap_mode="classic" trigger_index="34" type="output pin"/>
           </bus>
           <bus name="COMPUTER_WINS" order="msb_to_lsb" type="output pin">
-            <net data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_WINS[1]" storage_index="15" tap_mode="classic" trigger_index="15" type="output pin"/>
-            <net data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_WINS[0]" storage_index="14" tap_mode="classic" trigger_index="14" type="output pin"/>
+            <net data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_WINS[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="classic" trigger_index="15" type="output pin"/>
+            <net data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_WINS[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="classic" trigger_index="14" type="output pin"/>
           </bus>
-          <net data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="END_GAME" storage_index="18" tap_mode="classic" trigger_index="18" type="combinatorial"/>
+          <net data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="END_GAME" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="20" tap_mode="classic" trigger_index="20" type="combinatorial"/>
+          <net data_index="41" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s0" storage_index="41" tap_mode="probeonly" trigger_index="41" type="register"/>
+          <net data_index="42" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s1" storage_index="42" tap_mode="probeonly" trigger_index="42" type="register"/>
+          <net data_index="43" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s2" storage_index="43" tap_mode="probeonly" trigger_index="43" type="register"/>
+          <net data_index="44" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s3" storage_index="44" tap_mode="probeonly" trigger_index="44" type="register"/>
+          <net data_index="45" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s4" storage_index="45" tap_mode="probeonly" trigger_index="45" type="register"/>
         </data_view>
         <setup_view>
-          <net data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAY" storage_index="19" tap_mode="classic" trigger_index="19" type="input pin"/>
-          <net data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="STOP" storage_index="30" tap_mode="classic" trigger_index="30" type="input pin"/>
-          <net data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="RESET" storage_index="29" tap_mode="classic" trigger_index="29" type="input pin"/>
-          <net data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_TURN" storage_index="12" tap_mode="classic" trigger_index="12" type="combinatorial"/>
-          <net data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_TURN_END" storage_index="13" tap_mode="classic" trigger_index="13" type="combinatorial"/>
-          <net data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="ENABLE_DECISION" storage_index="17" tap_mode="classic" trigger_index="17" type="combinatorial"/>
+          <net data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAY" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="24" tap_mode="classic" trigger_index="24" type="input pin"/>
+          <net data_index="36" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAY_PULSE" storage_index="36" tap_mode="classic" trigger_index="36" type="combinatorial"/>
+          <net data_index="40" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="STOP" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="40" tap_mode="classic" trigger_index="40" type="input pin"/>
+          <net data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="HANDS_RESET" storage_index="22" tap_mode="classic" trigger_index="22" type="combinatorial"/>
+          <net data_index="39" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="ROUND_RESET_PULSE" storage_index="39" tap_mode="classic" trigger_index="39" type="combinatorial"/>
+          <net data_index="38" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="RESET" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="38" tap_mode="classic" trigger_index="38" type="input pin"/>
+          <net data_index="17" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DECK_INIT" storage_index="17" tap_mode="classic" trigger_index="17" type="combinatorial"/>
+          <net data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="INIT" storage_index="23" tap_mode="classic" trigger_index="23" type="output pin"/>
+          <net data_index="37" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="POP" storage_index="37" tap_mode="classic" trigger_index="37" type="output pin"/>
+          <net data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="EMPTY" storage_index="18" tap_mode="classic" trigger_index="18" type="output pin"/>
+          <net data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="FULL" storage_index="21" tap_mode="classic" trigger_index="21" type="output pin"/>
+          <net data_index="19" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="ENABLE_DECISION" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="19" tap_mode="classic" trigger_index="19" type="combinatorial"/>
           <bus name="CARD_TO_PLAY" order="msb_to_lsb" type="combinatorial">
-            <net data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[5]" storage_index="5" tap_mode="classic" trigger_index="5" type="combinatorial"/>
-            <net data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[4]" storage_index="4" tap_mode="classic" trigger_index="4" type="combinatorial"/>
-            <net data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[3]" storage_index="3" tap_mode="classic" trigger_index="3" type="combinatorial"/>
-            <net data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[2]" storage_index="2" tap_mode="classic" trigger_index="2" type="combinatorial"/>
-            <net data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[1]" storage_index="1" tap_mode="classic" trigger_index="1" type="combinatorial"/>
-            <net data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="CARD_TO_PLAY[0]" storage_index="0" tap_mode="classic" trigger_index="0" type="combinatorial"/>
+            <net data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="combinatorial"/>
+            <net data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" trigger_index="4" type="combinatorial"/>
+            <net data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" trigger_index="3" type="combinatorial"/>
+            <net data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="combinatorial"/>
+            <net data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="combinatorial"/>
+            <net data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="CARD_TO_PLAY[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" trigger_index="0" type="combinatorial"/>
           </bus>
-          <net data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_DEAL" storage_index="20" tap_mode="classic" trigger_index="20" type="combinatorial"/>
+          <net data_index="33" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_START" storage_index="33" tap_mode="classic" trigger_index="33" type="combinatorial"/>
+          <net data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_END" storage_index="26" tap_mode="classic" trigger_index="26" type="combinatorial"/>
+          <net data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_DEAL" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="25" tap_mode="classic" trigger_index="25" type="combinatorial"/>
           <bus name="PLAYER_HAND" order="msb_to_lsb" type="output pin">
-            <net data_index="25" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[4]" storage_index="25" tap_mode="classic" trigger_index="25" type="output pin"/>
-            <net data_index="24" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[3]" storage_index="24" tap_mode="classic" trigger_index="24" type="output pin"/>
-            <net data_index="23" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[2]" storage_index="23" tap_mode="classic" trigger_index="23" type="output pin"/>
-            <net data_index="22" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[1]" storage_index="22" tap_mode="classic" trigger_index="22" type="output pin"/>
-            <net data_index="21" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_HAND[0]" storage_index="21" tap_mode="classic" trigger_index="21" type="output pin"/>
+            <net data_index="31" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="31" tap_mode="classic" trigger_index="31" type="output pin"/>
+            <net data_index="30" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="30" tap_mode="classic" trigger_index="30" type="output pin"/>
+            <net data_index="29" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="29" tap_mode="classic" trigger_index="29" type="output pin"/>
+            <net data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="28" tap_mode="classic" trigger_index="28" type="output pin"/>
+            <net data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_HAND[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="27" tap_mode="classic" trigger_index="27" type="output pin"/>
           </bus>
-          <net data_index="26" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_LP" storage_index="26" tap_mode="classic" trigger_index="26" type="combinatorial"/>
-          <net data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="DEALER_DEAL" storage_index="16" tap_mode="classic" trigger_index="16" type="combinatorial"/>
+          <net data_index="32" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_LP" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="32" tap_mode="classic" trigger_index="32" type="combinatorial"/>
+          <net data_index="16" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="DEALER_DEAL" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="16" tap_mode="classic" trigger_index="16" type="combinatorial"/>
+          <net data_index="13" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_START" storage_index="13" tap_mode="classic" trigger_index="13" type="combinatorial"/>
+          <net data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_END" storage_index="6" tap_mode="classic" trigger_index="6" type="combinatorial"/>
           <bus name="COMPUTER_HAND" order="msb_to_lsb" type="output pin">
-            <net data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[4]" storage_index="10" tap_mode="classic" trigger_index="10" type="output pin"/>
-            <net data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[3]" storage_index="9" tap_mode="classic" trigger_index="9" type="output pin"/>
-            <net data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[2]" storage_index="8" tap_mode="classic" trigger_index="8" type="output pin"/>
-            <net data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[1]" storage_index="7" tap_mode="classic" trigger_index="7" type="output pin"/>
-            <net data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_HAND[0]" storage_index="6" tap_mode="classic" trigger_index="6" type="output pin"/>
+            <net data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="11" type="output pin"/>
+            <net data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="10" type="output pin"/>
+            <net data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="9" type="output pin"/>
+            <net data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="8" type="output pin"/>
+            <net data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_HAND[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" trigger_index="7" type="output pin"/>
           </bus>
-          <net data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_LP" storage_index="11" tap_mode="classic" trigger_index="11" type="combinatorial"/>
+          <net data_index="12" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_LP" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="classic" trigger_index="12" type="combinatorial"/>
           <bus name="PLAYER_WINS" order="msb_to_lsb" type="output pin">
-            <net data_index="28" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_WINS[1]" storage_index="28" tap_mode="classic" trigger_index="28" type="output pin"/>
-            <net data_index="27" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="PLAYER_WINS[0]" storage_index="27" tap_mode="classic" trigger_index="27" type="output pin"/>
+            <net data_index="35" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_WINS[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="35" tap_mode="classic" trigger_index="35" type="output pin"/>
+            <net data_index="34" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="PLAYER_WINS[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="34" tap_mode="classic" trigger_index="34" type="output pin"/>
           </bus>
           <bus name="COMPUTER_WINS" order="msb_to_lsb" type="output pin">
-            <net data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_WINS[1]" storage_index="15" tap_mode="classic" trigger_index="15" type="output pin"/>
-            <net data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="COMPUTER_WINS[0]" storage_index="14" tap_mode="classic" trigger_index="14" type="output pin"/>
+            <net data_index="15" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_WINS[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="classic" trigger_index="15" type="output pin"/>
+            <net data_index="14" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="COMPUTER_WINS[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="classic" trigger_index="14" type="output pin"/>
           </bus>
-          <net data_index="18" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="END_GAME" storage_index="18" tap_mode="classic" trigger_index="18" type="combinatorial"/>
+          <net data_index="20" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="END_GAME" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="20" tap_mode="classic" trigger_index="20" type="combinatorial"/>
+          <net data_index="41" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s0" storage_index="41" tap_mode="probeonly" trigger_index="41" type="register"/>
+          <net data_index="42" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s1" storage_index="42" tap_mode="probeonly" trigger_index="42" type="register"/>
+          <net data_index="43" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s2" storage_index="43" tap_mode="probeonly" trigger_index="43" type="register"/>
+          <net data_index="44" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s3" storage_index="44" tap_mode="probeonly" trigger_index="44" type="register"/>
+          <net data_index="45" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" name="g27_player_controller_FSM:inst34|state.s4" storage_index="45" tap_mode="probeonly" trigger_index="45" type="register"/>
         </setup_view>
         <trigger_in_editor/>
         <trigger_out_editor/>
       </presentation>
-      <trigger CRC="3BE88816" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2017/12/05 06:10:07  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+      <trigger CRC="B81534D7" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2017/12/05 16:17:34  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
           <level enabled="yes" name="condition1" type="basic"><power_up enabled="yes">
@@ -250,8 +340,8 @@
           </level>
         </events>
         <storage_qualifier_events>
-          <transitional>1111111111111111111111111111111
-            <pwr_up_transitional>1111111111111111111111111111111</pwr_up_transitional>
+          <transitional>1111111111111111111111111111111111111111111111
+            <pwr_up_transitional>1111111111111111111111111111111111111111111111</pwr_up_transitional>
           </transitional>
           <storage_qualifier_level type="basic">
             <power_up>
@@ -270,7 +360,7 @@
           </storage_qualifier_level>
         </storage_qualifier_events>
         <log>
-          <data global_temp="1" name="log: 2017/12/05 06:10:07  #2"/>
+          <data global_temp="1" name="log: 2017/12/05 16:17:34  #2"/>
           <extradata/>
         </log>
       </trigger>
@@ -279,6 +369,8 @@
       <single attribute="active tab" value="1"/>
       <single attribute="data horizontal scroll position" value="0"/>
       <single attribute="data vertical scroll position" value="10"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="2"/>
       <single attribute="zoom level denominator" value="1"/>
       <single attribute="zoom level numerator" value="1"/>
       <single attribute="zoom offset denominator" value="1"/>
@@ -291,12 +383,12 @@
     <single attribute="active instance" value="0"/>
     <single attribute="config widget visible" value="1"/>
     <single attribute="data log widget visible" value="1"/>
-    <single attribute="hierarchy widget height" value="167"/>
+    <single attribute="hierarchy widget height" value="95"/>
     <single attribute="hierarchy widget visible" value="1"/>
     <single attribute="instance widget visible" value="1"/>
     <single attribute="jtag widget visible" value="1"/>
     <single attribute="sof manager visible" value="0"/>
-    <multi attribute="frame size" size="2" value="1676,885"/>
+    <multi attribute="frame size" size="2" value="1392,656"/>
     <multi attribute="jtag widget size" size="2" value="398,120"/>
   </global_info>
 </session>
