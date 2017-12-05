@@ -1,6 +1,6 @@
 Analysis & Synthesis report for lab5
-Mon Dec 04 19:08:56 2017
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Tue Dec 05 06:10:20 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -127,15 +127,18 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
 119. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst28|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component
 120. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst28|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
 121. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst28|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
-122. Parameter Settings for User Entity Instance: LPM_DFF:inst6
+122. Parameter Settings for User Entity Instance: LPM_DFF:inst12
 123. Parameter Settings for User Entity Instance: LPM_FF:inst9
 124. Parameter Settings for User Entity Instance: g27_RANDU:inst7|lpm_add_sub:adder_inst1
 125. Parameter Settings for User Entity Instance: g27_RANDU:inst7|lpm_add_sub:adder_inst2
-126. Parameter Settings for User Entity Instance: LPM_DFF:inst12
-127. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst27|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component
-128. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst27|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
-129. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst27|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
-130. Analysis & Synthesis Messages
+126. Parameter Settings for User Entity Instance: LPM_DFF:inst6
+127. Parameter Settings for User Entity Instance: LPM_DFF:inst25
+128. Parameter Settings for User Entity Instance: LPM_DFF:inst14
+129. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst27|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component
+130. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst27|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
+131. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst27|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
+132. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+133. Analysis & Synthesis Messages
 
 
 
@@ -158,24 +161,24 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                          ;
-+------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Dec 04 19:08:56 2017                ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
-; Revision Name                      ; lab5                                             ;
-; Top-level Entity Name              ; g27_21game                                       ;
-; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; N/A until Partition Merge                        ;
-;     Total combinational functions  ; N/A until Partition Merge                        ;
-;     Dedicated logic registers      ; N/A until Partition Merge                        ;
-; Total registers                    ; N/A until Partition Merge                        ;
-; Total pins                         ; N/A until Partition Merge                        ;
-; Total virtual pins                 ; N/A until Partition Merge                        ;
-; Total memory bits                  ; N/A until Partition Merge                        ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                        ;
-; Total PLLs                         ; N/A until Partition Merge                        ;
-+------------------------------------+--------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Tue Dec 05 06:10:20 2017               ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; lab5                                            ;
+; Top-level Entity Name              ; g27_21game                                      ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -263,43 +266,37 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                 ;
-+--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------+---------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                   ; IP Include File                                   ;
-+--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------+---------------------------------------------------+
-; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_stack52:inst5|lpm_counter0:counter                ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_counter0.vhd ;
-; Altera ; LPM_MUX      ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_stack52:inst5|lpm_mux0:inst27                     ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_mux0.vhd     ;
-; Altera ; LPM_MUX      ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_stack52:inst5|lpm_mux1:inst29                     ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_mux1.vhd     ;
-; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_stack52:inst5|lpm_compare1:inst125                ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_compare1.vhd ;
-; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_stack52:inst5|lpm_compare0:instcompare0           ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_compare0.vhd ;
-; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst26|lpm_counter1:inst2  ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_counter1.vhd ;
-; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst26|lpm_compare4:inst12 ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_compare4.vhd ;
-; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst26|lpm_compare2:inst15 ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_compare2.vhd ;
-; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst27|lpm_counter1:inst2  ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_counter1.vhd ;
-; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst27|lpm_compare4:inst12 ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_compare4.vhd ;
-; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst27|lpm_compare2:inst15 ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_compare2.vhd ;
-; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst28|lpm_counter1:inst2  ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_counter1.vhd ;
-; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst28|lpm_compare4:inst12 ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_compare4.vhd ;
-; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst28|lpm_compare2:inst15 ; P:/DSD/DSD-Labs-and-Project/Lab3/lpm_compare2.vhd ;
-+--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------+---------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                            ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                   ; IP Include File                                                                                              ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_stack52:inst5|lpm_counter0:counter                ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_counter0.vhd ;
+; Altera ; LPM_MUX      ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_stack52:inst5|lpm_mux0:inst27                     ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_mux0.vhd     ;
+; Altera ; LPM_MUX      ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_stack52:inst5|lpm_mux1:inst29                     ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_mux1.vhd     ;
+; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_stack52:inst5|lpm_compare1:inst125                ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare1.vhd ;
+; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_stack52:inst5|lpm_compare0:instcompare0           ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare0.vhd ;
+; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst26|lpm_counter1:inst2  ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_counter1.vhd ;
+; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst26|lpm_compare4:inst12 ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare4.vhd ;
+; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst26|lpm_compare2:inst15 ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare2.vhd ;
+; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst27|lpm_counter1:inst2  ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_counter1.vhd ;
+; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst27|lpm_compare4:inst12 ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare4.vhd ;
+; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst27|lpm_compare2:inst15 ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare2.vhd ;
+; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst28|lpm_counter1:inst2  ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_counter1.vhd ;
+; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst28|lpm_compare4:inst12 ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare4.vhd ;
+; Altera ; LPM_COMPARE  ; N/A     ; N/A          ; N/A          ; |g27_21game|g27_single_pulse_generator:inst28|lpm_compare2:inst15 ; E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab3/lpm_compare2.vhd ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -2092,20 +2089,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_DFF:inst6 ;
-+------------------------+------------+----------------------+
-; Parameter Name         ; Value      ; Type                 ;
-+------------------------+------------+----------------------+
-; LPM_WIDTH              ; 5          ; Signed Integer       ;
-; LPM_AVALUE             ; 0          ; Signed Integer       ;
-; LPM_SVALUE             ; 0          ; Untyped              ;
-; DEVICE_FAMILY          ; Cyclone II ; Untyped              ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY           ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY         ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE         ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE       ;
-+------------------------+------------+----------------------+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_DFF:inst12 ;
++------------------------+------------+-----------------------+
+; Parameter Name         ; Value      ; Type                  ;
++------------------------+------------+-----------------------+
+; LPM_WIDTH              ; 6          ; Signed Integer        ;
+; LPM_AVALUE             ; 0          ; Signed Integer        ;
+; LPM_SVALUE             ; 0          ; Untyped               ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped               ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY            ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY          ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE          ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE        ;
++------------------------+------------+-----------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2184,14 +2181,48 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_DFF:inst6 ;
++------------------------+------------+----------------------+
+; Parameter Name         ; Value      ; Type                 ;
++------------------------+------------+----------------------+
+; LPM_WIDTH              ; 6          ; Signed Integer       ;
+; LPM_AVALUE             ; 0          ; Signed Integer       ;
+; LPM_SVALUE             ; 0          ; Untyped              ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped              ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY           ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY         ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE         ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE       ;
++------------------------+------------+----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_DFF:inst12 ;
+; Parameter Settings for User Entity Instance: LPM_DFF:inst25 ;
 +------------------------+------------+-----------------------+
 ; Parameter Name         ; Value      ; Type                  ;
 +------------------------+------------+-----------------------+
-; LPM_WIDTH              ; 5          ; Signed Integer        ;
+; LPM_WIDTH              ; 2          ; Signed Integer        ;
 ; LPM_AVALUE             ; 0          ; Signed Integer        ;
-; LPM_SVALUE             ; 0          ; Untyped               ;
+; LPM_SVALUE             ; 0          ; Signed Integer        ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped               ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY            ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY          ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE          ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE        ;
++------------------------+------------+-----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_DFF:inst14 ;
++------------------------+------------+-----------------------+
+; Parameter Name         ; Value      ; Type                  ;
++------------------------+------------+-----------------------+
+; LPM_WIDTH              ; 2          ; Signed Integer        ;
+; LPM_AVALUE             ; 0          ; Signed Integer        ;
+; LPM_SVALUE             ; 0          ; Signed Integer        ;
 ; DEVICE_FAMILY          ; Cyclone II ; Untyped               ;
 ; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY            ;
 ; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY          ;
@@ -2276,50 +2307,110 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0                                                                                                       ;
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------------+
+; Parameter Name                                  ; Value                                                                                                              ; Type           ;
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------------+
+; lpm_type                                        ; sld_signaltap                                                                                                      ; String         ;
+; sld_node_info                                   ; 805334528                                                                                                          ; Untyped        ;
+; SLD_IP_VERSION                                  ; 6                                                                                                                  ; Signed Integer ;
+; SLD_IP_MINOR_VERSION                            ; 0                                                                                                                  ; Signed Integer ;
+; SLD_COMMON_IP_VERSION                           ; 0                                                                                                                  ; Signed Integer ;
+; sld_data_bits                                   ; 31                                                                                                                 ; Untyped        ;
+; sld_trigger_bits                                ; 31                                                                                                                 ; Untyped        ;
+; SLD_NODE_CRC_BITS                               ; 32                                                                                                                 ; Signed Integer ;
+; sld_node_crc_hiword                             ; 15336                                                                                                              ; Untyped        ;
+; sld_node_crc_loword                             ; 34838                                                                                                              ; Untyped        ;
+; SLD_INCREMENTAL_ROUTING                         ; 0                                                                                                                  ; Signed Integer ;
+; sld_sample_depth                                ; 128                                                                                                                ; Untyped        ;
+; sld_segment_size                                ; 128                                                                                                                ; Untyped        ;
+; SLD_RAM_BLOCK_TYPE                              ; AUTO                                                                                                               ; String         ;
+; sld_state_bits                                  ; 11                                                                                                                 ; Untyped        ;
+; sld_buffer_full_stop                            ; 1                                                                                                                  ; Untyped        ;
+; SLD_MEM_ADDRESS_BITS                            ; 7                                                                                                                  ; Signed Integer ;
+; SLD_DATA_BIT_CNTR_BITS                          ; 4                                                                                                                  ; Signed Integer ;
+; sld_trigger_level                               ; 1                                                                                                                  ; Untyped        ;
+; sld_trigger_in_enabled                          ; 0                                                                                                                  ; Untyped        ;
+; SLD_HPS_TRIGGER_IN_ENABLED                      ; 0                                                                                                                  ; Signed Integer ;
+; SLD_HPS_TRIGGER_OUT_ENABLED                     ; 0                                                                                                                  ; Signed Integer ;
+; SLD_HPS_EVENT_ENABLED                           ; 0                                                                                                                  ; Signed Integer ;
+; SLD_HPS_EVENT_ID                                ; 0                                                                                                                  ; Signed Integer ;
+; sld_advanced_trigger_entity                     ; basic,1,                                                                                                           ; Untyped        ;
+; sld_trigger_level_pipeline                      ; 1                                                                                                                  ; Untyped        ;
+; sld_enable_advanced_trigger                     ; 0                                                                                                                  ; Untyped        ;
+; SLD_ADVANCED_TRIGGER_1                          ; NONE                                                                                                               ; String         ;
+; SLD_ADVANCED_TRIGGER_2                          ; NONE                                                                                                               ; String         ;
+; SLD_ADVANCED_TRIGGER_3                          ; NONE                                                                                                               ; String         ;
+; SLD_ADVANCED_TRIGGER_4                          ; NONE                                                                                                               ; String         ;
+; SLD_ADVANCED_TRIGGER_5                          ; NONE                                                                                                               ; String         ;
+; SLD_ADVANCED_TRIGGER_6                          ; NONE                                                                                                               ; String         ;
+; SLD_ADVANCED_TRIGGER_7                          ; NONE                                                                                                               ; String         ;
+; SLD_ADVANCED_TRIGGER_8                          ; NONE                                                                                                               ; String         ;
+; SLD_ADVANCED_TRIGGER_9                          ; NONE                                                                                                               ; String         ;
+; SLD_ADVANCED_TRIGGER_10                         ; NONE                                                                                                               ; String         ;
+; sld_inversion_mask_length                       ; 114                                                                                                                ; Untyped        ;
+; sld_inversion_mask                              ; 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ; Untyped        ;
+; sld_power_up_trigger                            ; 0                                                                                                                  ; Untyped        ;
+; SLD_STATE_FLOW_MGR_ENTITY                       ; state_flow_mgr_entity.vhd                                                                                          ; String         ;
+; sld_state_flow_use_generated                    ; 0                                                                                                                  ; Untyped        ;
+; sld_current_resource_width                      ; 1                                                                                                                  ; Untyped        ;
+; sld_attribute_mem_mode                          ; OFF                                                                                                                ; Untyped        ;
+; SLD_STORAGE_QUALIFIER_BITS                      ; 1                                                                                                                  ; Signed Integer ;
+; SLD_STORAGE_QUALIFIER_GAP_RECORD                ; 0                                                                                                                  ; Signed Integer ;
+; SLD_STORAGE_QUALIFIER_MODE                      ; OFF                                                                                                                ; String         ;
+; SLD_STORAGE_QUALIFIER_ENABLE_ADVANCED_CONDITION ; 0                                                                                                                  ; Signed Integer ;
+; sld_storage_qualifier_inversion_mask_length     ; 0                                                                                                                  ; Untyped        ;
+; SLD_STORAGE_QUALIFIER_ADVANCED_CONDITION_ENTITY ; basic                                                                                                              ; String         ;
+; SLD_STORAGE_QUALIFIER_PIPELINE                  ; 0                                                                                                                  ; Signed Integer ;
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Dec 04 19:08:41 2017
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Dec 05 06:10:15 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 Warning (125092): Tcl Script File lpm_counter_player.qip not found
     Info (125063): set_global_assignment -name QIP_FILE lpm_counter_player.qip
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab3/lpm_counter1.vhd
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab3/lpm_counter1.vhd
     Info (12022): Found design unit 1: lpm_counter1-SYN
     Info (12023): Found entity 1: lpm_counter1
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab3/lpm_compare4.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab3/lpm_compare4.vhd
     Info (12022): Found design unit 1: lpm_compare4-SYN
     Info (12023): Found entity 1: lpm_compare4
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab3/lpm_compare2.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab3/lpm_compare2.vhd
     Info (12022): Found design unit 1: lpm_compare2-SYN
     Info (12023): Found entity 1: lpm_compare2
-Info (12021): Found 1 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab3/g27_single_pulse_generator.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab3/g27_single_pulse_generator.bdf
     Info (12023): Found entity 1: g27_single_pulse_generator
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab3/g27_7_segment_decoder.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab3/g27_7_segment_decoder.vhd
     Info (12022): Found design unit 1: g27_7_segment_decoder-architecture_7_segment_decoder
     Info (12023): Found entity 1: g27_7_segment_decoder
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab3/p_en.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab3/p_en.vhd
     Info (12022): Found design unit 1: p_enable-p_enable_arch
     Info (12023): Found entity 1: p_enable
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab3/lpm_mux1.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab3/lpm_mux1.vhd
     Info (12022): Found design unit 1: lpm_mux1-SYN
     Info (12023): Found entity 1: lpm_mux1
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab3/lpm_mux0.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab3/lpm_mux0.vhd
     Info (12022): Found design unit 1: lpm_mux0-SYN
     Info (12023): Found entity 1: lpm_mux0
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab3/lpm_counter0.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab3/lpm_counter0.vhd
     Info (12022): Found design unit 1: lpm_counter0-SYN
     Info (12023): Found entity 1: lpm_counter0
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab3/lpm_compare1.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab3/lpm_compare1.vhd
     Info (12022): Found design unit 1: lpm_compare1-SYN
     Info (12023): Found entity 1: lpm_compare1
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab3/lpm_compare0.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab3/lpm_compare0.vhd
     Info (12022): Found design unit 1: lpm_compare0-SYN
     Info (12023): Found entity 1: lpm_compare0
-Info (12021): Found 1 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab3/g27_stack52.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab3/g27_stack52.bdf
     Info (12023): Found entity 1: g27_stack52
 Info (12021): Found 2 design units, including 1 entities, in source file g27_system_controller_fsm.vhd
     Info (12022): Found design unit 1: g27_system_controller_FSM-architecture_g27_system_controller_FSM
@@ -2330,32 +2421,32 @@ Info (12021): Found 2 design units, including 1 entities, in source file g27_dec
 Info (12021): Found 2 design units, including 1 entities, in source file g27_value_suit_extract.vhd
     Info (12022): Found design unit 1: g27_value_suit_extract-architecture_value_suit_extract
     Info (12023): Found entity 1: g27_value_suit_extract
-Info (12021): Found 1 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/modulo 13/g27_modulo_13.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/modulo 13/g27_modulo_13.bdf
     Info (12023): Found entity 1: g27_Modulo_13
-Info (12021): Found 1 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/modulo 13/g27_adder.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/modulo 13/g27_adder.bdf
     Info (12023): Found entity 1: g27_adder
-Info (12021): Found 1 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/modulo 13/g27_8bit_adder.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/modulo 13/g27_8bit_adder.bdf
     Info (12023): Found entity 1: g27_8bit_adder
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab2/g27_randu.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab2/g27_randu.vhd
     Info (12022): Found design unit 1: g27_RANDU-architecture_RANDU
     Info (12023): Found entity 1: g27_RANDU
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab2/g27_pop_enable.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab2/g27_pop_enable.vhd
     Info (12022): Found design unit 1: g27_pop_enable-architecture_pop_enable
     Info (12023): Found entity 1: g27_pop_enable
 Warning (12019): Can't analyze file -- file ../Lab4/output_files/lpm_mux10.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file g27_computer_player_fsm.vhd
     Info (12022): Found design unit 1: g27_computer_player_FSM-architecture_computer_player_FSM
     Info (12023): Found entity 1: g27_computer_player_FSM
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab4/lpm_compare5.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab4/lpm_compare5.vhd
     Info (12022): Found design unit 1: lpm_compare5-SYN
     Info (12023): Found entity 1: lpm_compare5
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab4/lpm_add_sub0.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab4/lpm_add_sub0.vhd
     Info (12022): Found design unit 1: lpm_add_sub0-SYN
     Info (12023): Found entity 1: lpm_add_sub0
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab4/g27_rules.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab4/g27_rules.vhd
     Info (12022): Found design unit 1: g27_rules-architecture_rules
     Info (12023): Found entity 1: g27_rules
-Info (12021): Found 2 design units, including 1 entities, in source file /dsd/dsd-labs-and-project/lab4/g27_dealer.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /onedrive - mcgill university/undergrad/2017 fall/ecse 323/labs/dsd-labs-and-project/lab4/g27_dealer.vhd
     Info (12022): Found design unit 1: g27_dealer-architecture_dealer
     Info (12023): Found entity 1: g27_dealer
 Info (12021): Found 2 design units, including 1 entities, in source file g27_modulo.vhd
@@ -2369,10 +2460,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file rand_mo
     Info (12023): Found entity 1: rand_modulo_test
 Info (12021): Found 1 design units, including 1 entities, in source file g27_21game_backup.bdf
     Info (12023): Found entity 1: g27_21game_backup
+Info (12021): Found 1 design units, including 1 entities, in source file g27_decision_maker_fsm_schematic.bdf
+    Info (12023): Found entity 1: g27_decision_maker_FSM_schematic
 Info (12127): Elaborating entity "g27_21game" for the top level hierarchy
-Warning (275011): Block or symbol "g27_7_segment_decoder" of instance "inst19" overlaps another block or symbol
-Warning (275011): Block or symbol "g27_7_segment_decoder" of instance "inst20" overlaps another block or symbol
-Warning (275043): Pin "COMPUTER_HAND[4..0]" is missing source
 Warning (275009): Pin "HOLD" not connected
 Info (12128): Elaborating entity "g27_stack52" for hierarchy "g27_stack52:inst5"
 Warning (275004): Undeclared parameter DFF
@@ -3136,13 +3226,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mux_
 Info (12128): Elaborating entity "mux_koc" for hierarchy "g27_stack52:inst5|LPM_MUX:inst22|mux_koc:auto_generated"
 Info (12128): Elaborating entity "g27_dealer" for hierarchy "g27_dealer:inst8"
 Info (12128): Elaborating entity "g27_computer_player_FSM" for hierarchy "g27_computer_player_FSM:inst1"
-Warning (10492): VHDL Process Statement warning at g27_computer_player_FSM.vhd(95): signal "current_sum_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at g27_computer_player_FSM.vhd(81): inferring latch(es) for signal or variable "computer_sum", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "computer_sum[0]" at g27_computer_player_FSM.vhd(81)
-Info (10041): Inferred latch for "computer_sum[1]" at g27_computer_player_FSM.vhd(81)
-Info (10041): Inferred latch for "computer_sum[2]" at g27_computer_player_FSM.vhd(81)
-Info (10041): Inferred latch for "computer_sum[3]" at g27_computer_player_FSM.vhd(81)
-Info (10041): Inferred latch for "computer_sum[4]" at g27_computer_player_FSM.vhd(81)
 Info (12128): Elaborating entity "g27_system_controller_FSM" for hierarchy "g27_system_controller_FSM:inst10"
 Info (12128): Elaborating entity "g27_single_pulse_generator" for hierarchy "g27_single_pulse_generator:inst26"
 Info (12128): Elaborating entity "lpm_compare2" for hierarchy "g27_single_pulse_generator:inst26|lpm_compare2:inst15"
@@ -3175,19 +3258,17 @@ Info (12133): Instantiated megafunction "g27_single_pulse_generator:inst26|lpm_c
     Info (12134): Parameter "lpm_representation" = "UNSIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
     Info (12134): Parameter "lpm_width" = "26"
-Info (12128): Elaborating entity "LPM_DFF" for hierarchy "LPM_DFF:inst6"
-Info (12130): Elaborated megafunction instantiation "LPM_DFF:inst6"
-Info (12133): Instantiated megafunction "LPM_DFF:inst6" with the following parameter:
+Info (12128): Elaborating entity "g27_rules" for hierarchy "g27_rules:inst"
+Warning (10036): Verilog HDL or VHDL warning at g27_rules.vhd(41): object "suit" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at g27_rules.vhd(79): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "g27_Modulo_13" for hierarchy "g27_rules:inst|g27_Modulo_13:modulo_inst"
+Info (12128): Elaborating entity "g27_8bit_adder" for hierarchy "g27_rules:inst|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst1"
+Info (12128): Elaborating entity "g27_adder" for hierarchy "g27_rules:inst|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst1|g27_adder:inst7"
+Info (12128): Elaborating entity "LPM_DFF" for hierarchy "LPM_DFF:inst12"
+Info (12130): Elaborated megafunction instantiation "LPM_DFF:inst12"
+Info (12133): Instantiated megafunction "LPM_DFF:inst12" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
-    Info (12134): Parameter "LPM_WIDTH" = "5"
-Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_DFF:inst6|lpm_constant:ac"
-Info (12131): Elaborated megafunction instantiation "LPM_DFF:inst6|lpm_constant:ac", which is child of megafunction instantiation "LPM_DFF:inst6"
-Info (12128): Elaborating entity "g27_rules" for hierarchy "g27_rules:inst15"
-Warning (10036): Verilog HDL or VHDL warning at g27_rules.vhd(42): object "suit" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at g27_rules.vhd(80): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "g27_Modulo_13" for hierarchy "g27_rules:inst15|g27_Modulo_13:modulo_inst"
-Info (12128): Elaborating entity "g27_8bit_adder" for hierarchy "g27_rules:inst15|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst1"
-Info (12128): Elaborating entity "g27_adder" for hierarchy "g27_rules:inst15|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst1|g27_adder:inst7"
+    Info (12134): Parameter "LPM_WIDTH" = "6"
 Info (12128): Elaborating entity "g27_modulo" for hierarchy "g27_modulo:inst13"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst9"
 Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
@@ -3216,42 +3297,64 @@ Info (12133): Instantiated megafunction "g27_RANDU:inst7|lpm_add_sub:adder_inst2
     Info (12134): Parameter "LPM_TYPE" = "LPM_ADD_SUB"
 Info (12128): Elaborating entity "g27_7_segment_decoder" for hierarchy "g27_7_segment_decoder:inst20"
 Info (12128): Elaborating entity "g27_decision_maker_FSM" for hierarchy "g27_decision_maker_FSM:inst3"
-Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(95): signal "computer_legal_play" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(95): signal "player_legal_play" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(96): signal "player_hand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(97): signal "computer_hand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(99): signal "player_hand_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(99): signal "computer_hand_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(101): signal "player_hand_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(101): signal "computer_hand_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(105): signal "player_legal_play" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(108): signal "computer_legal_play" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(82): inferring latch(es) for signal or variable "p_wins", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(82): inferring latch(es) for signal or variable "c_wins", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(82): inferring latch(es) for signal or variable "player_hand_buffer", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(82): inferring latch(es) for signal or variable "computer_hand_buffer", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(82): inferring latch(es) for signal or variable "updated", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "updated" at g27_decision_maker_FSM.vhd(82)
-Info (10041): Inferred latch for "computer_hand_buffer[0]" at g27_decision_maker_FSM.vhd(82)
-Info (10041): Inferred latch for "computer_hand_buffer[1]" at g27_decision_maker_FSM.vhd(82)
-Info (10041): Inferred latch for "computer_hand_buffer[2]" at g27_decision_maker_FSM.vhd(82)
-Info (10041): Inferred latch for "computer_hand_buffer[3]" at g27_decision_maker_FSM.vhd(82)
-Info (10041): Inferred latch for "computer_hand_buffer[4]" at g27_decision_maker_FSM.vhd(82)
-Info (10041): Inferred latch for "player_hand_buffer[0]" at g27_decision_maker_FSM.vhd(82)
-Info (10041): Inferred latch for "player_hand_buffer[1]" at g27_decision_maker_FSM.vhd(82)
-Info (10041): Inferred latch for "player_hand_buffer[2]" at g27_decision_maker_FSM.vhd(82)
-Info (10041): Inferred latch for "player_hand_buffer[3]" at g27_decision_maker_FSM.vhd(82)
-Info (10041): Inferred latch for "player_hand_buffer[4]" at g27_decision_maker_FSM.vhd(82)
-Info (10041): Inferred latch for "computer_wins[0]" at g27_decision_maker_FSM.vhd(114)
-Info (10041): Inferred latch for "computer_wins[1]" at g27_decision_maker_FSM.vhd(114)
-Info (10041): Inferred latch for "player_wins[0]" at g27_decision_maker_FSM.vhd(114)
-Info (10041): Inferred latch for "player_wins[1]" at g27_decision_maker_FSM.vhd(114)
-Error (12002): Port "over_16" does not exist in macrofunction "inst10"
-Error (12002): Port "player_start" does not exist in macrofunction "inst10"
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 235 warnings
-    Error: Peak virtual memory: 571 megabytes
-    Error: Processing ended: Mon Dec 04 19:08:57 2017
-    Error: Elapsed time: 00:00:16
-    Error: Total CPU time (on all processors): 00:00:05
+Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(99): signal "player_wins_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(100): signal "computer_wins_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(137): signal "player_hand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(138): signal "computer_hand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(140): signal "player_hand_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(140): signal "computer_hand_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(142): signal "player_hand_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(142): signal "computer_hand_buffer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(95): inferring latch(es) for signal or variable "end_game_out", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(95): inferring latch(es) for signal or variable "player_hand_buffer", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at g27_decision_maker_FSM.vhd(95): inferring latch(es) for signal or variable "computer_hand_buffer", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "computer_hand_buffer[0]" at g27_decision_maker_FSM.vhd(95)
+Info (10041): Inferred latch for "computer_hand_buffer[1]" at g27_decision_maker_FSM.vhd(95)
+Info (10041): Inferred latch for "computer_hand_buffer[2]" at g27_decision_maker_FSM.vhd(95)
+Info (10041): Inferred latch for "computer_hand_buffer[3]" at g27_decision_maker_FSM.vhd(95)
+Info (10041): Inferred latch for "computer_hand_buffer[4]" at g27_decision_maker_FSM.vhd(95)
+Info (10041): Inferred latch for "player_hand_buffer[0]" at g27_decision_maker_FSM.vhd(95)
+Info (10041): Inferred latch for "player_hand_buffer[1]" at g27_decision_maker_FSM.vhd(95)
+Info (10041): Inferred latch for "player_hand_buffer[2]" at g27_decision_maker_FSM.vhd(95)
+Info (10041): Inferred latch for "player_hand_buffer[3]" at g27_decision_maker_FSM.vhd(95)
+Info (10041): Inferred latch for "player_hand_buffer[4]" at g27_decision_maker_FSM.vhd(95)
+Info (10041): Inferred latch for "end_game_out" at g27_decision_maker_FSM.vhd(95)
+Info (12128): Elaborating entity "LPM_DFF" for hierarchy "LPM_DFF:inst25"
+Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because neither the sconst or sset port is used
+Info (12130): Elaborated megafunction instantiation "LPM_DFF:inst25"
+Info (12133): Instantiated megafunction "LPM_DFF:inst25" with the following parameter:
+    Info (12134): Parameter "LPM_AVALUE" = "0"
+    Info (12134): Parameter "LPM_SVALUE" = "0"
+    Info (12134): Parameter "LPM_WIDTH" = "2"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "LPM_DFF:inst25|lpm_constant:ac"
+Info (12131): Elaborated megafunction instantiation "LPM_DFF:inst25|lpm_constant:ac", which is child of megafunction instantiation "LPM_DFF:inst25"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mp14.tdf
+    Info (12023): Found entity 1: altsyncram_mp14
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_aoc.tdf
+    Info (12023): Found entity 1: mux_aoc
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_rqf.tdf
+    Info (12023): Found entity 1: decode_rqf
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_rbi.tdf
+    Info (12023): Found entity 1: cntr_rbi
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_9cc.tdf
+    Info (12023): Found entity 1: cmpr_9cc
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_02j.tdf
+    Info (12023): Found entity 1: cntr_02j
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_sbi.tdf
+    Info (12023): Found entity 1: cntr_sbi
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_8cc.tdf
+    Info (12023): Found entity 1: cmpr_8cc
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_gui.tdf
+    Info (12023): Found entity 1: cntr_gui
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_5cc.tdf
+    Info (12023): Found entity 1: cmpr_5cc
+Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
+Error (265013): Can't open SignalTap II Logic Analyzer. Verify that the license file exists and is stored in the correct location. If you are using the Quartus II Web Edition software, you must turn on the TalkBack feature to use the SignalTap II Logic Analyzer.
+Error (12154): Can't elaborate inferred hierarchy "sld_hub:auto_hub"
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 228 warnings
+    Error: Peak virtual memory: 606 megabytes
+    Error: Processing ended: Tue Dec 05 06:10:20 2017
+    Error: Elapsed time: 00:00:05
+    Error: Total CPU time (on all processors): 00:00:06
 
 

@@ -16,12 +16,11 @@ ENTITY g27_rules IS
     PORT
     (
 	-- MSB used to store if an ace is 11 in current_sum, 1: if ace=11, 0 if ace=1, 5 bits used for current_sum
-      play_pile_top_card : in std_logic_vector (5 DOWNTO 0);
-    	card_to_play : in std_logic_vector (5 DOWNTO 0);
-		clk : in std_logic;
-      legal_play : out std_logic;
-		ace_11 : out std_logic;
-		sum_output : out std_logic_vector (4 DOWNTO 0)
+      	play_pile_top_card 	: in std_logic_vector (5 DOWNTO 0);
+    	card_to_play 		: in std_logic_vector (5 DOWNTO 0);
+		clk 				: in std_logic;
+     	legal_play 			: out std_logic;
+		sum_output 			: out std_logic_vector (5 DOWNTO 0) -- IF MSB is high, there is an ace, only consider 1 ace
     );
     END g27_rules;
 
@@ -42,7 +41,7 @@ ARCHITECTURE architecture_rules OF g27_rules IS
     SIGNAL suit : STD_LOGIC_VECTOR(3 DOWNTO 0);
     SIGNAL modulo_output : STD_LOGIC_VECTOR(3 DOWNTO 0);
     SIGNAL legal_play_signal : STD_LOGIC; -- used as buffer for legal_play port
-    SIGNAL ace_11_signal : STD_LOGIC;
+	SIGNAL ace_11_signal : STD_LOGIC;
 	 
     -- MODULO13 component
     COMPONENT g27_modulo_13
@@ -63,8 +62,8 @@ ARCHITECTURE architecture_rules OF g27_rules IS
 	 modulo_input <= ("00" & STD_LOGIC_VECTOR( UNSIGNED(card_to_play(3 DOWNTO 0)) - 1 ));
 	 
 	 -- Conversion of STD_LOGIC_VECTOR to UNSIGNED
-    face_value <= UNSIGNED(modulo_output) + 1;
-    current_sum <= UNSIGNED(play_pile_top_card(4 DOWNTO 0));
+    face_value  	<= UNSIGNED(modulo_output) + 1;
+	current_sum 	<= UNSIGNED(play_pile_top_card(4 DOWNTO 0));
 
     modulo_inst : g27_modulo_13
     PORT MAP
@@ -81,17 +80,19 @@ ARCHITECTURE architecture_rules OF g27_rules IS
 			-- If face_value >= 11, then make it 10
 			IF (face_value >= 11) then
 				face_value_buffer <= to_unsigned(10, 4);
-			ELSE
+			ELSIF (face_value = 1) then -- If it is an Ace, output a signal and set it as worst case scenario aka 11
+				face_value_buffer <= to_unsigned(11, 4);
+				ace_11_signal <= '1';
+			ELSE -- The normal cards take their face value
 				face_value_buffer <= face_value;
 			END IF;
 		
-			IF (play_pile_top_card(5) = '1') then
-				ace_11_signal <= '1';
-			END IF;
-		
 			-- If we bust but we have an ace in our hand, decrease hand by 10
-			IF (play_pile_top_card(5) = '1' and ((current_sum + face_value_buffer) > 21)) then
-				new_sum <= current_sum + face_value_buffer - 10;
+			IF (play_pile_top_card(5) = '1' and ((current_sum + face_value_buffer) > 21)) then 	-- If ace was in previous hand
+				new_sum <= current_sum + face_value_buffer - 10; -- If bust, change Ace value to 1
+				ace_11_signal <= '0';
+			ELSIF (ace_11_signal = '1' and ((current_sum + face_value_buffer) > 21)) then		-- If ace is new card
+				new_sum <= current_sum + face_value_buffer - 10; -- If bust, change Ace value to 1
 				ace_11_signal <= '0';
 			ELSE
 				new_sum <= current_sum + face_value_buffer;
@@ -107,7 +108,6 @@ ARCHITECTURE architecture_rules OF g27_rules IS
 	
 	-- Output legal_play_signal and ace_11
 	legal_play <= legal_play_signal;
-	ace_11 <= ace_11_signal;
-	sum_output <= std_logic_vector(new_sum);
+	sum_output <= ace_11_signal & std_logic_vector(new_sum);
 	
 END architecture_rules;

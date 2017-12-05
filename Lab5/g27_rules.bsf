@@ -54,16 +54,9 @@ applicable agreement for further details.
 	(port
 		(pt 264 48)
 		(output)
-		(text "ace_11" (rect 0 0 27 12)(font "Arial" ))
-		(text "ace_11" (rect 216 43 243 55)(font "Arial" ))
-		(line (pt 264 48)(pt 248 48)(line_width 1))
-	)
-	(port
-		(pt 264 64)
-		(output)
-		(text "sum_output[4..0]" (rect 0 0 68 12)(font "Arial" ))
-		(text "sum_output[4..0]" (rect 175 59 243 71)(font "Arial" ))
-		(line (pt 264 64)(pt 248 64)(line_width 3))
+		(text "sum_output[5..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "sum_output[5..0]" (rect 176 43 243 55)(font "Arial" ))
+		(line (pt 264 48)(pt 248 48)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 248 96)(line_width 1))

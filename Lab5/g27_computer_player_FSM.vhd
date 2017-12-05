@@ -17,20 +17,17 @@ use ieee.numeric_std.all;
 ENTITY g27_computer_player_FSM IS
     PORT
     (
-        current_sum                 : in  std_logic_vector (4 downto 0); -- sum will always be 32 or under 32 <= 2^5 = 32
-        turn	                    : in  std_logic;
-        new_hand                    : in  std_logic;
         clk                         : in  std_logic;
         reset                       : in  std_logic;
+        turn	                    : in  std_logic;
+        current_sum                 : in  std_logic_vector (4 downto 0); -- sum will always be 32 or under 32 <= 2^5 = 32
         request_deal                : out std_logic;
-        computer_sum                : out std_logic_vector (4 downto 0); -- sum will always be 32 or under 32 <= 2^5 = 32;
         turn_finish                 : out std_logic
     );
     END g27_computer_player_FSM;
 
 ARCHITECTURE architecture_computer_player_FSM OF g27_computer_player_FSM IS 
-TYPE state_type is (s0, s1, s2, s3, s4);    -- State declaration
-    SIGNAL current_sum_buffer       : unsigned (4 downto 0);
+TYPE state_type is (s0, s1, s2, s3);    -- State declaration
     SIGNAL state                    : state_type;          -- Init signal that uses the different states
     
 BEGIN 
@@ -53,21 +50,17 @@ BEGIN
                     END IF;
 
                     WHEN s1 =>        -- Sends a request_deal signal
-                        -- Add new card value to current computer sum
-                        current_sum_buffer <= unsigned(current_sum);
-
-                        IF (current_sum_buffer <= 16) THEN
+                        state       <= s2;
+                
+                    WHEN s2 =>        -- Compares value to 16
+                        IF (UNSIGNED(current_sum) <= 16) THEN
                             state       <= s1; -- continue drawing a card
                         ELSE
-                            state       <= s2; -- stop drawing cards and advance to s2
+                            state       <= s3; -- stop drawing cards and advance to s2
                         END IF;
-                
-                    WHEN s2 =>        -- remains in this state if new_hand isn't high
-                        IF (new_hand = '1') THEN
-                            state       <= s0; -- start new hand
-                        ELSE
-                            state       <= s2; -- wait for new_hand 
-                        END IF;
+
+                    WHEN s3 =>        -- Ends computer turn and go to idle state until new roun
+                        state        <= s0;
 
                     WHEN others =>
                         state <= s0;
@@ -86,22 +79,23 @@ BEGIN
                 WHEN s0 =>                      -- Idle state
                     request_deal                    <= '0';
                     turn_finish                     <= '0';
-                    computer_sum                    <= "00000";
                 
 
                 WHEN s1 =>                      -- Request deal
                     request_deal                    <= '1';
                     turn_finish                     <= '0';
-                    computer_sum                    <= std_logic_vector(current_sum_buffer); -- outputs new computer sum
 
                 WHEN s2 =>                      -- Output computer is done                     
+                    request_deal                    <= '0';
+                    turn_finish                     <= '0';
+
+                WHEN s3 =>
                     request_deal                    <= '0';
                     turn_finish                     <= '1';
 
                 WHEN others =>
                     request_deal                    <= '0';
                     turn_finish                     <= '0';
-                    computer_sum                    <= "00000";
 
             END CASE;
         

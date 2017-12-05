@@ -18,26 +18,36 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/01/2017 21:09:22"
+// Generated on "12/05/2017 05:04:01"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    rand_modulo_test
+// Verilog Self-Checking Test Bench (with test vectors) for design :    g27_decision_maker_FSM_schematic
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module rand_modulo_test_vlg_sample_tst(
+module g27_decision_maker_FSM_schematic_vlg_sample_tst(
 	CLK,
-	NUM,
+	COMPUTER_HAND,
+	COMPUTER_LP,
+	EN_DECISION,
+	PLAYER_H,
+	PLAYER_LP,
+	RESET,
 	sampler_tx
 );
 input  CLK;
-input [5:0] NUM;
+input [4:0] COMPUTER_HAND;
+input  COMPUTER_LP;
+input  EN_DECISION;
+input [4:0] PLAYER_H;
+input  PLAYER_LP;
+input  RESET;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(CLK or NUM)
+always @(CLK or COMPUTER_HAND or COMPUTER_LP or EN_DECISION or PLAYER_H or PLAYER_LP or RESET)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -56,33 +66,39 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module rand_modulo_test_vlg_check_tst (
-	PROB,
-	RANDFINAL,
+module g27_decision_maker_FSM_schematic_vlg_check_tst (
+	COMPUTER_W,
+	ENDGAME_OUT,
+	PLAYER_W,
 	sampler_rx
 );
-input [5:0] PROB;
-input [5:0] RANDFINAL;
+input [1:0] COMPUTER_W;
+input  ENDGAME_OUT;
+input [1:0] PLAYER_W;
 input sampler_rx;
 
-reg [5:0] PROB_expected;
-reg [5:0] RANDFINAL_expected;
+reg [1:0] COMPUTER_W_expected;
+reg  ENDGAME_OUT_expected;
+reg [1:0] PLAYER_W_expected;
 
-reg [5:0] PROB_prev;
-reg [5:0] RANDFINAL_prev;
+reg [1:0] COMPUTER_W_prev;
+reg  ENDGAME_OUT_prev;
+reg [1:0] PLAYER_W_prev;
 
-reg [5:0] PROB_expected_prev;
-reg [5:0] RANDFINAL_expected_prev;
+reg [1:0] COMPUTER_W_expected_prev;
+reg  ENDGAME_OUT_expected_prev;
+reg [1:0] PLAYER_W_expected_prev;
 
-reg [5:0] last_PROB_exp;
-reg [5:0] last_RANDFINAL_exp;
+reg [1:0] last_COMPUTER_W_exp;
+reg  last_ENDGAME_OUT_exp;
+reg [1:0] last_PLAYER_W_exp;
 
 reg trigger;
 
 integer i;
 integer nummismatches;
 
-reg [1:2] on_first_change ;
+reg [1:3] on_first_change ;
 
 
 initial
@@ -90,88 +106,56 @@ begin
 trigger = 0;
 i = 0;
 nummismatches = 0;
-on_first_change = 2'b1;
+on_first_change = 3'b1;
 end
 
 // update real /o prevs
 
 always @(trigger)
 begin
-	PROB_prev = PROB;
-	RANDFINAL_prev = RANDFINAL;
+	COMPUTER_W_prev = COMPUTER_W;
+	ENDGAME_OUT_prev = ENDGAME_OUT;
+	PLAYER_W_prev = PLAYER_W;
 end
 
 // update expected /o prevs
 
 always @(trigger)
 begin
-	PROB_expected_prev = PROB_expected;
-	RANDFINAL_expected_prev = RANDFINAL_expected;
+	COMPUTER_W_expected_prev = COMPUTER_W_expected;
+	ENDGAME_OUT_expected_prev = ENDGAME_OUT_expected;
+	PLAYER_W_expected_prev = PLAYER_W_expected;
 end
 
 
-// expected RANDFINAL[ 5 ]
+// expected PLAYER_W[ 1 ]
 initial
 begin
-	RANDFINAL_expected[5] = 1'bX;
+	PLAYER_W_expected[1] = 1'bX;
 end 
-// expected RANDFINAL[ 4 ]
+// expected PLAYER_W[ 0 ]
 initial
 begin
-	RANDFINAL_expected[4] = 1'bX;
+	PLAYER_W_expected[0] = 1'bX;
 end 
-// expected RANDFINAL[ 3 ]
+// expected COMPUTER_W[ 1 ]
 initial
 begin
-	RANDFINAL_expected[3] = 1'bX;
+	COMPUTER_W_expected[1] = 1'bX;
 end 
-// expected RANDFINAL[ 2 ]
+// expected COMPUTER_W[ 0 ]
 initial
 begin
-	RANDFINAL_expected[2] = 1'bX;
+	COMPUTER_W_expected[0] = 1'bX;
 end 
-// expected RANDFINAL[ 1 ]
+
+// expected ENDGAME_OUT
 initial
 begin
-	RANDFINAL_expected[1] = 1'bX;
-end 
-// expected RANDFINAL[ 0 ]
-initial
-begin
-	RANDFINAL_expected[0] = 1'bX;
-end 
-// expected PROB[ 5 ]
-initial
-begin
-	PROB_expected[5] = 1'bX;
-end 
-// expected PROB[ 4 ]
-initial
-begin
-	PROB_expected[4] = 1'bX;
-end 
-// expected PROB[ 3 ]
-initial
-begin
-	PROB_expected[3] = 1'bX;
-end 
-// expected PROB[ 2 ]
-initial
-begin
-	PROB_expected[2] = 1'bX;
-end 
-// expected PROB[ 1 ]
-initial
-begin
-	PROB_expected[1] = 1'bX;
-end 
-// expected PROB[ 0 ]
-initial
-begin
-	PROB_expected[0] = 1'bX;
+	ENDGAME_OUT_expected = 1'bX;
 end 
 // generate trigger
-always @(PROB_expected or PROB or RANDFINAL_expected or RANDFINAL)
+always @(COMPUTER_W_expected or COMPUTER_W or ENDGAME_OUT_expected or ENDGAME_OUT or PLAYER_W_expected or PLAYER_W)
 begin
 	trigger <= ~trigger;
 end
@@ -181,164 +165,73 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected PROB = %b | expected RANDFINAL = %b | ",PROB_expected_prev,RANDFINAL_expected_prev);
-	$display("| real PROB = %b | real RANDFINAL = %b | ",PROB_prev,RANDFINAL_prev);
+	$display("| expected COMPUTER_W = %b | expected ENDGAME_OUT = %b | expected PLAYER_W = %b | ",COMPUTER_W_expected_prev,ENDGAME_OUT_expected_prev,PLAYER_W_expected_prev);
+	$display("| real COMPUTER_W = %b | real ENDGAME_OUT = %b | real PLAYER_W = %b | ",COMPUTER_W_prev,ENDGAME_OUT_prev,PLAYER_W_prev);
 `endif
 	if (
-		( PROB_expected_prev[0] !== 1'bx ) && ( PROB_prev[0] !== PROB_expected_prev[0] )
-		&& ((PROB_expected_prev[0] !== last_PROB_exp[0]) ||
+		( COMPUTER_W_expected_prev[0] !== 1'bx ) && ( COMPUTER_W_prev[0] !== COMPUTER_W_expected_prev[0] )
+		&& ((COMPUTER_W_expected_prev[0] !== last_COMPUTER_W_exp[0]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port PROB[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", PROB_expected_prev);
-		$display ("     Real value = %b", PROB_prev);
+		$display ("ERROR! Vector Mismatch for output port COMPUTER_W[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", COMPUTER_W_expected_prev);
+		$display ("     Real value = %b", COMPUTER_W_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_PROB_exp[0] = PROB_expected_prev[0];
+		last_COMPUTER_W_exp[0] = COMPUTER_W_expected_prev[0];
 	end
 	if (
-		( PROB_expected_prev[1] !== 1'bx ) && ( PROB_prev[1] !== PROB_expected_prev[1] )
-		&& ((PROB_expected_prev[1] !== last_PROB_exp[1]) ||
+		( COMPUTER_W_expected_prev[1] !== 1'bx ) && ( COMPUTER_W_prev[1] !== COMPUTER_W_expected_prev[1] )
+		&& ((COMPUTER_W_expected_prev[1] !== last_COMPUTER_W_exp[1]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port PROB[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", PROB_expected_prev);
-		$display ("     Real value = %b", PROB_prev);
+		$display ("ERROR! Vector Mismatch for output port COMPUTER_W[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", COMPUTER_W_expected_prev);
+		$display ("     Real value = %b", COMPUTER_W_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_PROB_exp[1] = PROB_expected_prev[1];
+		last_COMPUTER_W_exp[1] = COMPUTER_W_expected_prev[1];
 	end
 	if (
-		( PROB_expected_prev[2] !== 1'bx ) && ( PROB_prev[2] !== PROB_expected_prev[2] )
-		&& ((PROB_expected_prev[2] !== last_PROB_exp[2]) ||
-			on_first_change[1])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port PROB[2] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", PROB_expected_prev);
-		$display ("     Real value = %b", PROB_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[1] = 1'b0;
-		last_PROB_exp[2] = PROB_expected_prev[2];
-	end
-	if (
-		( PROB_expected_prev[3] !== 1'bx ) && ( PROB_prev[3] !== PROB_expected_prev[3] )
-		&& ((PROB_expected_prev[3] !== last_PROB_exp[3]) ||
-			on_first_change[1])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port PROB[3] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", PROB_expected_prev);
-		$display ("     Real value = %b", PROB_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[1] = 1'b0;
-		last_PROB_exp[3] = PROB_expected_prev[3];
-	end
-	if (
-		( PROB_expected_prev[4] !== 1'bx ) && ( PROB_prev[4] !== PROB_expected_prev[4] )
-		&& ((PROB_expected_prev[4] !== last_PROB_exp[4]) ||
-			on_first_change[1])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port PROB[4] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", PROB_expected_prev);
-		$display ("     Real value = %b", PROB_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[1] = 1'b0;
-		last_PROB_exp[4] = PROB_expected_prev[4];
-	end
-	if (
-		( PROB_expected_prev[5] !== 1'bx ) && ( PROB_prev[5] !== PROB_expected_prev[5] )
-		&& ((PROB_expected_prev[5] !== last_PROB_exp[5]) ||
-			on_first_change[1])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port PROB[5] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", PROB_expected_prev);
-		$display ("     Real value = %b", PROB_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[1] = 1'b0;
-		last_PROB_exp[5] = PROB_expected_prev[5];
-	end
-	if (
-		( RANDFINAL_expected_prev[0] !== 1'bx ) && ( RANDFINAL_prev[0] !== RANDFINAL_expected_prev[0] )
-		&& ((RANDFINAL_expected_prev[0] !== last_RANDFINAL_exp[0]) ||
+		( ENDGAME_OUT_expected_prev !== 1'bx ) && ( ENDGAME_OUT_prev !== ENDGAME_OUT_expected_prev )
+		&& ((ENDGAME_OUT_expected_prev !== last_ENDGAME_OUT_exp) ||
 			on_first_change[2])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port RANDFINAL[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", RANDFINAL_expected_prev);
-		$display ("     Real value = %b", RANDFINAL_prev);
+		$display ("ERROR! Vector Mismatch for output port ENDGAME_OUT :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ENDGAME_OUT_expected_prev);
+		$display ("     Real value = %b", ENDGAME_OUT_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[2] = 1'b0;
-		last_RANDFINAL_exp[0] = RANDFINAL_expected_prev[0];
+		last_ENDGAME_OUT_exp = ENDGAME_OUT_expected_prev;
 	end
 	if (
-		( RANDFINAL_expected_prev[1] !== 1'bx ) && ( RANDFINAL_prev[1] !== RANDFINAL_expected_prev[1] )
-		&& ((RANDFINAL_expected_prev[1] !== last_RANDFINAL_exp[1]) ||
-			on_first_change[2])
+		( PLAYER_W_expected_prev[0] !== 1'bx ) && ( PLAYER_W_prev[0] !== PLAYER_W_expected_prev[0] )
+		&& ((PLAYER_W_expected_prev[0] !== last_PLAYER_W_exp[0]) ||
+			on_first_change[3])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port RANDFINAL[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", RANDFINAL_expected_prev);
-		$display ("     Real value = %b", RANDFINAL_prev);
+		$display ("ERROR! Vector Mismatch for output port PLAYER_W[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", PLAYER_W_expected_prev);
+		$display ("     Real value = %b", PLAYER_W_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_RANDFINAL_exp[1] = RANDFINAL_expected_prev[1];
+		on_first_change[3] = 1'b0;
+		last_PLAYER_W_exp[0] = PLAYER_W_expected_prev[0];
 	end
 	if (
-		( RANDFINAL_expected_prev[2] !== 1'bx ) && ( RANDFINAL_prev[2] !== RANDFINAL_expected_prev[2] )
-		&& ((RANDFINAL_expected_prev[2] !== last_RANDFINAL_exp[2]) ||
-			on_first_change[2])
+		( PLAYER_W_expected_prev[1] !== 1'bx ) && ( PLAYER_W_prev[1] !== PLAYER_W_expected_prev[1] )
+		&& ((PLAYER_W_expected_prev[1] !== last_PLAYER_W_exp[1]) ||
+			on_first_change[3])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port RANDFINAL[2] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", RANDFINAL_expected_prev);
-		$display ("     Real value = %b", RANDFINAL_prev);
+		$display ("ERROR! Vector Mismatch for output port PLAYER_W[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", PLAYER_W_expected_prev);
+		$display ("     Real value = %b", PLAYER_W_prev);
 		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_RANDFINAL_exp[2] = RANDFINAL_expected_prev[2];
-	end
-	if (
-		( RANDFINAL_expected_prev[3] !== 1'bx ) && ( RANDFINAL_prev[3] !== RANDFINAL_expected_prev[3] )
-		&& ((RANDFINAL_expected_prev[3] !== last_RANDFINAL_exp[3]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port RANDFINAL[3] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", RANDFINAL_expected_prev);
-		$display ("     Real value = %b", RANDFINAL_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_RANDFINAL_exp[3] = RANDFINAL_expected_prev[3];
-	end
-	if (
-		( RANDFINAL_expected_prev[4] !== 1'bx ) && ( RANDFINAL_prev[4] !== RANDFINAL_expected_prev[4] )
-		&& ((RANDFINAL_expected_prev[4] !== last_RANDFINAL_exp[4]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port RANDFINAL[4] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", RANDFINAL_expected_prev);
-		$display ("     Real value = %b", RANDFINAL_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_RANDFINAL_exp[4] = RANDFINAL_expected_prev[4];
-	end
-	if (
-		( RANDFINAL_expected_prev[5] !== 1'bx ) && ( RANDFINAL_prev[5] !== RANDFINAL_expected_prev[5] )
-		&& ((RANDFINAL_expected_prev[5] !== last_RANDFINAL_exp[5]) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port RANDFINAL[5] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", RANDFINAL_expected_prev);
-		$display ("     Real value = %b", RANDFINAL_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_RANDFINAL_exp[5] = RANDFINAL_expected_prev[5];
+		on_first_change[3] = 1'b0;
+		last_PLAYER_W_exp[1] = PLAYER_W_expected_prev[1];
 	end
 
 	trigger <= ~trigger;
@@ -356,97 +249,191 @@ $finish;
 end 
 endmodule
 
-module rand_modulo_test_vlg_vec_tst();
+module g27_decision_maker_FSM_schematic_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg CLK;
-reg [5:0] NUM;
+reg [4:0] COMPUTER_HAND;
+reg COMPUTER_LP;
+reg EN_DECISION;
+reg [4:0] PLAYER_H;
+reg PLAYER_LP;
+reg RESET;
 // wires                                               
-wire [5:0] PROB;
-wire [5:0] RANDFINAL;
+wire [1:0] COMPUTER_W;
+wire ENDGAME_OUT;
+wire [1:0] PLAYER_W;
 
 wire sampler;                             
 
 // assign statements (if any)                          
-rand_modulo_test i1 (
+g27_decision_maker_FSM_schematic i1 (
 // port map - connection between master ports and signals/registers   
 	.CLK(CLK),
-	.NUM(NUM),
-	.PROB(PROB),
-	.RANDFINAL(RANDFINAL)
+	.COMPUTER_HAND(COMPUTER_HAND),
+	.COMPUTER_LP(COMPUTER_LP),
+	.COMPUTER_W(COMPUTER_W),
+	.EN_DECISION(EN_DECISION),
+	.ENDGAME_OUT(ENDGAME_OUT),
+	.PLAYER_H(PLAYER_H),
+	.PLAYER_LP(PLAYER_LP),
+	.PLAYER_W(PLAYER_W),
+	.RESET(RESET)
 );
 
 // CLK
 always
 begin
 	CLK = 1'b0;
-	CLK = #10000 1'b1;
+	CLK = #5000 1'b1;
+	#5000;
+end 
+
+// RESET
+initial
+begin
+	RESET = 1'b0;
+	RESET = #240000 1'b1;
+	RESET = #40000 1'b0;
+end 
+
+// EN_DECISION
+always
+begin
+	EN_DECISION = 1'b0;
+	EN_DECISION = #10000 1'b1;
 	#10000;
 end 
-// NUM[ 5 ]
+// PLAYER_H[ 4 ]
 initial
 begin
-	NUM[5] = 1'b0;
-	NUM[5] = #640000 1'b1;
+	PLAYER_H[4] = 1'b1;
+	PLAYER_H[4] = #280000 1'b0;
+	PLAYER_H[4] = #20000 1'b1;
+	PLAYER_H[4] = #20000 1'b0;
+	PLAYER_H[4] = #20000 1'b1;
+	PLAYER_H[4] = #20000 1'b0;
+	PLAYER_H[4] = #20000 1'b1;
+	PLAYER_H[4] = #280000 1'b0;
 end 
-// NUM[ 4 ]
+// PLAYER_H[ 3 ]
 initial
 begin
-	NUM[4] = 1'b0;
-	NUM[4] = #320000 1'b1;
-	NUM[4] = #320000 1'b0;
-	NUM[4] = #320000 1'b1;
+	PLAYER_H[3] = 1'b0;
+	PLAYER_H[3] = #300000 1'b1;
+	PLAYER_H[3] = #20000 1'b0;
+	PLAYER_H[3] = #670000 1'b1;
 end 
-// NUM[ 3 ]
+// PLAYER_H[ 2 ]
+initial
+begin
+	PLAYER_H[2] = 1'b0;
+	PLAYER_H[2] = #160000 1'b1;
+	PLAYER_H[2] = #120000 1'b0;
+end 
+// PLAYER_H[ 1 ]
+initial
+begin
+	PLAYER_H[1] = 1'b0;
+	PLAYER_H[1] = #80000 1'b1;
+	PLAYER_H[1] = #80000 1'b0;
+	PLAYER_H[1] = #80000 1'b1;
+	PLAYER_H[1] = #40000 1'b0;
+	PLAYER_H[1] = #100000 1'b1;
+	PLAYER_H[1] = #280000 1'b0;
+end 
+// PLAYER_H[ 0 ]
 initial
 begin
 	repeat(3)
 	begin
-		NUM[3] = 1'b0;
-		NUM[3] = #160000 1'b1;
-		# 160000;
-	end
-	NUM[3] = 1'b0;
-end 
-// NUM[ 2 ]
-initial
-begin
-	repeat(6)
-	begin
-		NUM[2] = 1'b0;
-		NUM[2] = #80000 1'b1;
-		# 80000;
-	end
-	NUM[2] = 1'b0;
-end 
-// NUM[ 1 ]
-initial
-begin
-	repeat(12)
-	begin
-		NUM[1] = 1'b0;
-		NUM[1] = #40000 1'b1;
+		PLAYER_H[0] = 1'b0;
+		PLAYER_H[0] = #40000 1'b1;
 		# 40000;
 	end
-	NUM[1] = 1'b0;
+	PLAYER_H[0] = 1'b0;
+	PLAYER_H[0] = #60000 1'b1;
+	PLAYER_H[0] = #20000 1'b0;
+	PLAYER_H[0] = #20000 1'b1;
+	PLAYER_H[0] = #20000 1'b0;
 end 
-// NUM[ 0 ]
-always
+// COMPUTER_HAND[ 4 ]
+initial
 begin
-	NUM[0] = 1'b0;
-	NUM[0] = #20000 1'b1;
-	#20000;
+	COMPUTER_HAND[4] = 1'b1;
+	COMPUTER_HAND[4] = #120000 1'b0;
+	COMPUTER_HAND[4] = #80000 1'b1;
+	COMPUTER_HAND[4] = #40000 1'b0;
+	COMPUTER_HAND[4] = #100000 1'b1;
+	COMPUTER_HAND[4] = #20000 1'b0;
+	COMPUTER_HAND[4] = #20000 1'b1;
+	COMPUTER_HAND[4] = #290000 1'b0;
+end 
+// COMPUTER_HAND[ 3 ]
+initial
+begin
+	COMPUTER_HAND[3] = 1'b0;
+end 
+// COMPUTER_HAND[ 2 ]
+initial
+begin
+	COMPUTER_HAND[2] = 1'b0;
+	COMPUTER_HAND[2] = #200000 1'b1;
+	COMPUTER_HAND[2] = #40000 1'b0;
+	COMPUTER_HAND[2] = #100000 1'b1;
+	COMPUTER_HAND[2] = #20000 1'b0;
+end 
+// COMPUTER_HAND[ 1 ]
+initial
+begin
+	COMPUTER_HAND[1] = 1'b0;
+	COMPUTER_HAND[1] = #340000 1'b1;
+	COMPUTER_HAND[1] = #20000 1'b0;
+end 
+// COMPUTER_HAND[ 0 ]
+initial
+begin
+	COMPUTER_HAND[0] = 1'b1;
+	COMPUTER_HAND[0] = #120000 1'b0;
+	COMPUTER_HAND[0] = #80000 1'b1;
+	COMPUTER_HAND[0] = #40000 1'b0;
+	COMPUTER_HAND[0] = #100000 1'b1;
+	COMPUTER_HAND[0] = #20000 1'b0;
+	COMPUTER_HAND[0] = #20000 1'b1;
+	COMPUTER_HAND[0] = #290000 1'b0;
 end 
 
-rand_modulo_test_vlg_sample_tst tb_sample (
+// PLAYER_LP
+initial
+begin
+	PLAYER_LP = 1'b1;
+	PLAYER_LP = #300000 1'b0;
+	PLAYER_LP = #20000 1'b1;
+end 
+
+// COMPUTER_LP
+initial
+begin
+	COMPUTER_LP = 1'b1;
+	COMPUTER_LP = #340000 1'b0;
+	COMPUTER_LP = #20000 1'b1;
+end 
+
+g27_decision_maker_FSM_schematic_vlg_sample_tst tb_sample (
 	.CLK(CLK),
-	.NUM(NUM),
+	.COMPUTER_HAND(COMPUTER_HAND),
+	.COMPUTER_LP(COMPUTER_LP),
+	.EN_DECISION(EN_DECISION),
+	.PLAYER_H(PLAYER_H),
+	.PLAYER_LP(PLAYER_LP),
+	.RESET(RESET),
 	.sampler_tx(sampler)
 );
 
-rand_modulo_test_vlg_check_tst tb_out(
-	.PROB(PROB),
-	.RANDFINAL(RANDFINAL),
+g27_decision_maker_FSM_schematic_vlg_check_tst tb_out(
+	.COMPUTER_W(COMPUTER_W),
+	.ENDGAME_OUT(ENDGAME_OUT),
+	.PLAYER_W(PLAYER_W),
 	.sampler_rx(sampler)
 );
 endmodule
