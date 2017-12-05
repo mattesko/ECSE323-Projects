@@ -1,5 +1,5 @@
 Partition Merge report for lab5
-Tue Dec 05 16:18:27 2017
+Tue Dec 05 17:11:44 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -39,20 +39,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Partition Merge Summary                                                               ;
 +------------------------------------+--------------------------------------------------+
-; Partition Merge Status             ; Successful - Tue Dec 05 16:18:27 2017            ;
+; Partition Merge Status             ; Successful - Tue Dec 05 17:11:44 2017            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; lab5                                             ;
 ; Top-level Entity Name              ; g27_21game                                       ;
 ; Family                             ; Cyclone II                                       ;
-; Total logic elements               ; 3,642 / 18,752 ( 19 % )                          ;
-;     Total combinational functions  ; 2,777 / 18,752 ( 15 % )                          ;
-;     Dedicated logic registers      ; 1,328 / 18,752 ( 7 % )                           ;
-; Total registers                    ; 1328                                             ;
-; Total pins                         ; 72 / 315 ( 23 % )                                ;
+; Total logic elements               ; 3,416                                            ;
+;     Total combinational functions  ; 2,838                                            ;
+;     Dedicated logic registers      ; 1,345                                            ;
+; Total registers                    ; 1345                                             ;
+; Total pins                         ; 72                                               ;
 ; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 5,888 / 239,616 ( 2 % )                          ;
-; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                                   ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                    ;
+; Total memory bits                  ; 5,888                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Total PLLs                         ; 0                                                ;
 +------------------------------------+--------------------------------------------------+
 
 
@@ -61,209 +61,208 @@ applicable agreement for further details.
 +--------------------------------+----------------+-------------------+------------------------+--------------------------------+
 ; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
 +--------------------------------+----------------+-------------------+------------------------+--------------------------------+
-; Top                            ; User-created   ; Post-Fit          ; Post-Fit               ;                                ;
+; Top                            ; User-created   ; Source File       ; Post-Fit               ;                                ;
 ; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
 ; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
 ; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
 +--------------------------------+----------------+-------------------+------------------------+--------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                                   ;
-+-------------------------------------------+---------------+-----------+----------------+-------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
-; Name                                      ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                                                                                         ; Details ;
-+-------------------------------------------+---------------+-----------+----------------+-------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
-; CARD_TO_PLAY[0]                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[0]~17                                                 ; N/A     ;
-; CARD_TO_PLAY[0]                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[0]~17                                                 ; N/A     ;
-; CARD_TO_PLAY[1]                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[1]~34                                                 ; N/A     ;
-; CARD_TO_PLAY[1]                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[1]~34                                                 ; N/A     ;
-; CARD_TO_PLAY[2]                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[2]~51                                                 ; N/A     ;
-; CARD_TO_PLAY[2]                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[2]~51                                                 ; N/A     ;
-; CARD_TO_PLAY[3]                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[3]~68                                                 ; N/A     ;
-; CARD_TO_PLAY[3]                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[3]~68                                                 ; N/A     ;
-; CARD_TO_PLAY[4]                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[4]~85                                                 ; N/A     ;
-; CARD_TO_PLAY[4]                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[4]~85                                                 ; N/A     ;
-; CARD_TO_PLAY[5]                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[5]~102                                                ; N/A     ;
-; CARD_TO_PLAY[5]                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[5]~102                                                ; N/A     ;
-; CLK                                       ; pre-synthesis ; connected ; Top            ; post-fit          ; CLK                                                                                                                       ; N/A     ;
-; COMPUTER_END                              ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_computer_player_FSM:inst1|state.s3                                                                                    ; N/A     ;
-; COMPUTER_END                              ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_computer_player_FSM:inst1|state.s3                                                                                    ; N/A     ;
-; COMPUTER_HAND[0]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[0]                                                                                                    ; N/A     ;
-; COMPUTER_HAND[0]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[0]                                                                                                    ; N/A     ;
-; COMPUTER_HAND[1]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[1]                                                                                                    ; N/A     ;
-; COMPUTER_HAND[1]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[1]                                                                                                    ; N/A     ;
-; COMPUTER_HAND[2]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[2]                                                                                                    ; N/A     ;
-; COMPUTER_HAND[2]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[2]                                                                                                    ; N/A     ;
-; COMPUTER_HAND[3]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[3]                                                                                                    ; N/A     ;
-; COMPUTER_HAND[3]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[3]                                                                                                    ; N/A     ;
-; COMPUTER_HAND[4]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[4]                                                                                                    ; N/A     ;
-; COMPUTER_HAND[4]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[4]                                                                                                    ; N/A     ;
-; COMPUTER_LP                               ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_rules:inst15|legal_play_signal                                                                                        ; N/A     ;
-; COMPUTER_LP                               ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_rules:inst15|legal_play_signal                                                                                        ; N/A     ;
-; COMPUTER_START                            ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_system_controller_FSM:inst35|state.s2                                                                                 ; N/A     ;
-; COMPUTER_START                            ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_system_controller_FSM:inst35|state.s2                                                                                 ; N/A     ;
-; COMPUTER_WINS[0]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_decision_maker_FSM:inst3|Selector5~1                                                                                  ; N/A     ;
-; COMPUTER_WINS[0]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_decision_maker_FSM:inst3|Selector5~1                                                                                  ; N/A     ;
-; COMPUTER_WINS[1]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_decision_maker_FSM:inst3|Selector4~1                                                                                  ; N/A     ;
-; COMPUTER_WINS[1]                          ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_decision_maker_FSM:inst3|Selector4~1                                                                                  ; N/A     ;
-; DEALER_DEAL                               ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_computer_player_FSM:inst1|state.s1                                                                                    ; N/A     ;
-; DEALER_DEAL                               ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_computer_player_FSM:inst1|state.s1                                                                                    ; N/A     ;
-; DECK_INIT                                 ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_system_controller_FSM:inst35|state.s0~_wirecell                                                                       ; N/A     ;
-; DECK_INIT                                 ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_system_controller_FSM:inst35|state.s0~_wirecell                                                                       ; N/A     ;
-; EMPTY                                     ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_compare0:instcompare0|lpm_compare:LPM_COMPARE_component|cmpr_mmi:auto_generated|aneb_result_wire[0] ; N/A     ;
-; EMPTY                                     ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_compare0:instcompare0|lpm_compare:LPM_COMPARE_component|cmpr_mmi:auto_generated|aneb_result_wire[0] ; N/A     ;
-; ENABLE_DECISION                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|enable_decision                                                                          ; N/A     ;
-; ENABLE_DECISION                           ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|enable_decision                                                                          ; N/A     ;
-; END_GAME                                  ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_decision_maker_FSM:inst3|end_game_out                                                                                 ; N/A     ;
-; END_GAME                                  ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_decision_maker_FSM:inst3|end_game_out                                                                                 ; N/A     ;
-; FULL                                      ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_compare1:inst125|lpm_compare:LPM_COMPARE_component|cmpr_i7j:auto_generated|aneb_result_wire[0]      ; N/A     ;
-; FULL                                      ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|lpm_compare1:inst125|lpm_compare:LPM_COMPARE_component|cmpr_i7j:auto_generated|aneb_result_wire[0]      ; N/A     ;
-; HANDS_RESET                               ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_system_controller_FSM:inst35|state.s0~_wirecell                                                                       ; N/A     ;
-; HANDS_RESET                               ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_system_controller_FSM:inst35|state.s0~_wirecell                                                                       ; N/A     ;
-; INIT                                      ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|inst19~0                                                                                                ; N/A     ;
-; INIT                                      ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|inst19~0                                                                                                ; N/A     ;
-; PLAY                                      ; pre-synthesis ; connected ; Top            ; post-fit          ; PLAY                                                                                                                      ; N/A     ;
-; PLAY                                      ; pre-synthesis ; connected ; Top            ; post-fit          ; PLAY                                                                                                                      ; N/A     ;
-; PLAYER_DEAL                               ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|request_deal                                                                             ; N/A     ;
-; PLAYER_DEAL                               ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|request_deal                                                                             ; N/A     ;
-; PLAYER_END                                ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|player_end                                                                               ; N/A     ;
-; PLAYER_END                                ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|player_end                                                                               ; N/A     ;
-; PLAYER_HAND[0]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[0]                                                                                                    ; N/A     ;
-; PLAYER_HAND[0]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[0]                                                                                                    ; N/A     ;
-; PLAYER_HAND[1]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[1]                                                                                                    ; N/A     ;
-; PLAYER_HAND[1]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[1]                                                                                                    ; N/A     ;
-; PLAYER_HAND[2]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[2]                                                                                                    ; N/A     ;
-; PLAYER_HAND[2]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[2]                                                                                                    ; N/A     ;
-; PLAYER_HAND[3]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[3]                                                                                                    ; N/A     ;
-; PLAYER_HAND[3]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[3]                                                                                                    ; N/A     ;
-; PLAYER_HAND[4]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[4]                                                                                                    ; N/A     ;
-; PLAYER_HAND[4]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; lpm_dff:inst12|dffs[4]                                                                                                    ; N/A     ;
-; PLAYER_LP                                 ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_rules:inst15|legal_play_signal                                                                                        ; N/A     ;
-; PLAYER_LP                                 ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_rules:inst15|legal_play_signal                                                                                        ; N/A     ;
-; PLAYER_START                              ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_system_controller_FSM:inst35|state.s1                                                                                 ; N/A     ;
-; PLAYER_START                              ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_system_controller_FSM:inst35|state.s1                                                                                 ; N/A     ;
-; PLAYER_WINS[0]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND                                                                                                         ; N/A     ;
-; PLAYER_WINS[0]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND                                                                                                         ; N/A     ;
-; PLAYER_WINS[1]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND                                                                                                         ; N/A     ;
-; PLAYER_WINS[1]                            ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND                                                                                                         ; N/A     ;
-; PLAY_PULSE                                ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_single_pulse_generator:inst26|inst7                                                                                   ; N/A     ;
-; PLAY_PULSE                                ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_single_pulse_generator:inst26|inst7                                                                                   ; N/A     ;
-; POP                                       ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|inst123~0                                                                                               ; N/A     ;
-; POP                                       ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_stack52:inst5|inst123~0                                                                                               ; N/A     ;
-; RESET                                     ; pre-synthesis ; connected ; Top            ; post-fit          ; RESET                                                                                                                     ; N/A     ;
-; RESET                                     ; pre-synthesis ; connected ; Top            ; post-fit          ; RESET                                                                                                                     ; N/A     ;
-; ROUND_RESET_PULSE                         ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_single_pulse_generator:inst27|inst7                                                                                   ; N/A     ;
-; ROUND_RESET_PULSE                         ; pre-synthesis ; connected ; Top            ; post-fit          ; g27_single_pulse_generator:inst27|inst7                                                                                   ; N/A     ;
-; STOP                                      ; pre-synthesis ; connected ; Top            ; post-fit          ; STOP                                                                                                                      ; N/A     ;
-; STOP                                      ; pre-synthesis ; connected ; Top            ; post-fit          ; STOP                                                                                                                      ; N/A     ;
-; g27_player_controller_FSM:inst34|state.s0 ; post-fitting  ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|state.s0                                                                                 ; N/A     ;
-; g27_player_controller_FSM:inst34|state.s0 ; post-fitting  ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|state.s0                                                                                 ; N/A     ;
-; g27_player_controller_FSM:inst34|state.s1 ; post-fitting  ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|state.s1                                                                                 ; N/A     ;
-; g27_player_controller_FSM:inst34|state.s1 ; post-fitting  ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|state.s1                                                                                 ; N/A     ;
-; g27_player_controller_FSM:inst34|state.s2 ; post-fitting  ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|state.s2                                                                                 ; N/A     ;
-; g27_player_controller_FSM:inst34|state.s2 ; post-fitting  ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|state.s2                                                                                 ; N/A     ;
-; g27_player_controller_FSM:inst34|state.s3 ; post-fitting  ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|state.s3                                                                                 ; N/A     ;
-; g27_player_controller_FSM:inst34|state.s3 ; post-fitting  ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|state.s3                                                                                 ; N/A     ;
-; g27_player_controller_FSM:inst34|state.s4 ; post-fitting  ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|state.s4                                                                                 ; N/A     ;
-; g27_player_controller_FSM:inst34|state.s4 ; post-fitting  ; connected ; Top            ; post-fit          ; g27_player_controller_FSM:inst34|state.s4                                                                                 ; N/A     ;
-+-------------------------------------------+---------------+-----------+----------------+-------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                                             ;
++-------------------------------------------+---------------+-----------+----------------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Name                                      ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                                                                                                   ; Details ;
++-------------------------------------------+---------------+-----------+----------------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; CARD_TO_PLAY[0]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[0]~17                                                           ; N/A     ;
+; CARD_TO_PLAY[0]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[0]~17                                                           ; N/A     ;
+; CARD_TO_PLAY[1]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[1]~34                                                           ; N/A     ;
+; CARD_TO_PLAY[1]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[1]~34                                                           ; N/A     ;
+; CARD_TO_PLAY[2]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[2]~51                                                           ; N/A     ;
+; CARD_TO_PLAY[2]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[2]~51                                                           ; N/A     ;
+; CARD_TO_PLAY[3]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[3]~68                                                           ; N/A     ;
+; CARD_TO_PLAY[3]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[3]~68                                                           ; N/A     ;
+; CARD_TO_PLAY[4]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[4]~85                                                           ; N/A     ;
+; CARD_TO_PLAY[4]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[4]~85                                                           ; N/A     ;
+; CARD_TO_PLAY[5]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[5]~102                                                          ; N/A     ;
+; CARD_TO_PLAY[5]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated|result_node[5]~102                                                          ; N/A     ;
+; CLK                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; CLK                                                                                                                                 ; N/A     ;
+; COMPUTER_END                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_computer_player_FSM:inst1|state.s3                                                                                              ; N/A     ;
+; COMPUTER_END                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_computer_player_FSM:inst1|state.s3                                                                                              ; N/A     ;
+; COMPUTER_HAND[0]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst6|dffs[0]                                                                                                               ; N/A     ;
+; COMPUTER_HAND[0]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst6|dffs[0]                                                                                                               ; N/A     ;
+; COMPUTER_HAND[1]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst6|dffs[1]                                                                                                               ; N/A     ;
+; COMPUTER_HAND[1]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst6|dffs[1]                                                                                                               ; N/A     ;
+; COMPUTER_HAND[2]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst6|dffs[2]                                                                                                               ; N/A     ;
+; COMPUTER_HAND[2]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst6|dffs[2]                                                                                                               ; N/A     ;
+; COMPUTER_HAND[3]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst6|dffs[3]                                                                                                               ; N/A     ;
+; COMPUTER_HAND[3]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst6|dffs[3]                                                                                                               ; N/A     ;
+; COMPUTER_HAND[4]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst6|dffs[4]                                                                                                               ; N/A     ;
+; COMPUTER_HAND[4]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst6|dffs[4]                                                                                                               ; N/A     ;
+; COMPUTER_LP                               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_rules:inst15|legal_play_signal                                                                                                  ; N/A     ;
+; COMPUTER_LP                               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_rules:inst15|legal_play_signal                                                                                                  ; N/A     ;
+; COMPUTER_START                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_system_controller_FSM:inst35|state.s2                                                                                           ; N/A     ;
+; COMPUTER_START                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_system_controller_FSM:inst35|state.s2                                                                                           ; N/A     ;
+; COMPUTER_WINS[0]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_decision_maker_FSM:inst3|Selector5~1                                                                                            ; N/A     ;
+; COMPUTER_WINS[0]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_decision_maker_FSM:inst3|Selector5~1                                                                                            ; N/A     ;
+; COMPUTER_WINS[1]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_decision_maker_FSM:inst3|Selector4~1                                                                                            ; N/A     ;
+; COMPUTER_WINS[1]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_decision_maker_FSM:inst3|Selector4~1                                                                                            ; N/A     ;
+; DEALER_DEAL                               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_computer_player_FSM:inst1|state.s1                                                                                              ; N/A     ;
+; DEALER_DEAL                               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_computer_player_FSM:inst1|state.s1                                                                                              ; N/A     ;
+; DECK_INIT                                 ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_system_controller_FSM:inst35|state.s0~_wirecell                                                                                 ; N/A     ;
+; DECK_INIT                                 ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_system_controller_FSM:inst35|state.s0~_wirecell                                                                                 ; N/A     ;
+; EMPTY                                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_compare0:instcompare0|lpm_compare:LPM_COMPARE_component|cmpr_mmi:auto_generated|aneb_result_wire[0]~_wirecell ; N/A     ;
+; EMPTY                                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_compare0:instcompare0|lpm_compare:LPM_COMPARE_component|cmpr_mmi:auto_generated|aneb_result_wire[0]~_wirecell ; N/A     ;
+; ENABLE_DECISION                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s2                                                                                           ; N/A     ;
+; ENABLE_DECISION                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s2                                                                                           ; N/A     ;
+; END_GAME                                  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_decision_maker_FSM:inst3|end_game_out                                                                                           ; N/A     ;
+; END_GAME                                  ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_decision_maker_FSM:inst3|end_game_out                                                                                           ; N/A     ;
+; FULL                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_compare1:inst125|lpm_compare:LPM_COMPARE_component|cmpr_i7j:auto_generated|aneb_result_wire[0]~_wirecell      ; N/A     ;
+; FULL                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|lpm_compare1:inst125|lpm_compare:LPM_COMPARE_component|cmpr_i7j:auto_generated|aneb_result_wire[0]~_wirecell      ; N/A     ;
+; HANDS_RESET                               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_system_controller_FSM:inst35|state.s0~_wirecell                                                                                 ; N/A     ;
+; HANDS_RESET                               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_system_controller_FSM:inst35|state.s0~_wirecell                                                                                 ; N/A     ;
+; INIT                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|inst19~0                                                                                                          ; N/A     ;
+; INIT                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|inst19~0                                                                                                          ; N/A     ;
+; PLAY                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; PLAY                                                                                                                                ; N/A     ;
+; PLAY                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; PLAY                                                                                                                                ; N/A     ;
+; PLAYER_DEAL                               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s2                                                                                           ; N/A     ;
+; PLAYER_DEAL                               ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s2                                                                                           ; N/A     ;
+; PLAYER_END                                ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s4                                                                                           ; N/A     ;
+; PLAYER_END                                ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s4                                                                                           ; N/A     ;
+; PLAYER_HAND[0]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst12|dffs[0]                                                                                                              ; N/A     ;
+; PLAYER_HAND[0]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst12|dffs[0]                                                                                                              ; N/A     ;
+; PLAYER_HAND[1]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst12|dffs[1]                                                                                                              ; N/A     ;
+; PLAYER_HAND[1]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst12|dffs[1]                                                                                                              ; N/A     ;
+; PLAYER_HAND[2]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst12|dffs[2]                                                                                                              ; N/A     ;
+; PLAYER_HAND[2]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst12|dffs[2]                                                                                                              ; N/A     ;
+; PLAYER_HAND[3]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst12|dffs[3]                                                                                                              ; N/A     ;
+; PLAYER_HAND[3]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst12|dffs[3]                                                                                                              ; N/A     ;
+; PLAYER_HAND[4]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst12|dffs[4]                                                                                                              ; N/A     ;
+; PLAYER_HAND[4]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; lpm_dff:inst12|dffs[4]                                                                                                              ; N/A     ;
+; PLAYER_LP                                 ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_rules:inst|legal_play_signal                                                                                                    ; N/A     ;
+; PLAYER_LP                                 ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_rules:inst|legal_play_signal                                                                                                    ; N/A     ;
+; PLAYER_START                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_system_controller_FSM:inst35|state.s1                                                                                           ; N/A     ;
+; PLAYER_START                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_system_controller_FSM:inst35|state.s1                                                                                           ; N/A     ;
+; PLAYER_WINS[0]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_decision_maker_FSM:inst3|Selector3~1                                                                                            ; N/A     ;
+; PLAYER_WINS[0]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_decision_maker_FSM:inst3|Selector3~1                                                                                            ; N/A     ;
+; PLAYER_WINS[1]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_decision_maker_FSM:inst3|Selector2~2                                                                                            ; N/A     ;
+; PLAYER_WINS[1]                            ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_decision_maker_FSM:inst3|Selector2~2                                                                                            ; N/A     ;
+; PLAY_PULSE                                ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_single_pulse_generator:inst26|inst7                                                                                             ; N/A     ;
+; PLAY_PULSE                                ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_single_pulse_generator:inst26|inst7                                                                                             ; N/A     ;
+; POP                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|inst123~0                                                                                                         ; N/A     ;
+; POP                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_stack52:inst5|inst123~0                                                                                                         ; N/A     ;
+; RESET                                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; RESET                                                                                                                               ; N/A     ;
+; RESET                                     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; RESET                                                                                                                               ; N/A     ;
+; ROUND_RESET_PULSE                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_single_pulse_generator:inst27|inst7                                                                                             ; N/A     ;
+; ROUND_RESET_PULSE                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; g27_single_pulse_generator:inst27|inst7                                                                                             ; N/A     ;
+; STOP                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; STOP                                                                                                                                ; N/A     ;
+; STOP                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; STOP                                                                                                                                ; N/A     ;
+; g27_player_controller_FSM:inst34|state.s0 ; post-fitting  ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s0                                                                                           ; N/A     ;
+; g27_player_controller_FSM:inst34|state.s0 ; post-fitting  ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s0                                                                                           ; N/A     ;
+; g27_player_controller_FSM:inst34|state.s1 ; post-fitting  ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s1                                                                                           ; N/A     ;
+; g27_player_controller_FSM:inst34|state.s1 ; post-fitting  ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s1                                                                                           ; N/A     ;
+; g27_player_controller_FSM:inst34|state.s2 ; post-fitting  ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s2                                                                                           ; N/A     ;
+; g27_player_controller_FSM:inst34|state.s2 ; post-fitting  ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s2                                                                                           ; N/A     ;
+; g27_player_controller_FSM:inst34|state.s3 ; post-fitting  ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s3                                                                                           ; N/A     ;
+; g27_player_controller_FSM:inst34|state.s3 ; post-fitting  ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s3                                                                                           ; N/A     ;
+; g27_player_controller_FSM:inst34|state.s4 ; post-fitting  ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s4                                                                                           ; N/A     ;
+; g27_player_controller_FSM:inst34|state.s4 ; post-fitting  ; connected ; Top            ; post-synthesis    ; g27_player_controller_FSM:inst34|state.s4                                                                                           ; N/A     ;
++-------------------------------------------+---------------+-----------+----------------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Partition Merge Partition Statistics                                                                                                                          ;
-+---------------------------------------------+-----------------------+-----------------------+--------------------------------+--------------------------------+
-; Statistic                                   ; Top                   ; sld_hub:auto_hub      ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
-+---------------------------------------------+-----------------------+-----------------------+--------------------------------+--------------------------------+
-; Estimated Total logic elements              ; 2615 / 18752 ( 14 % ) ; 140 / 18752 ( < 1 % ) ; 902 / 18752 ( 5 % )            ; 0 / 18752 ( 0 % )              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Total combinational functions               ; 2308                  ; 116                   ; 353                            ; 0                              ;
-; Logic element usage by number of LUT inputs ;                       ;                       ;                                ;                                ;
-;     -- 4 input functions                    ; 1032                  ; 52                    ; 209                            ; 0                              ;
-;     -- 3 input functions                    ; 726                   ; 28                    ; 89                             ; 0                              ;
-;     -- <=2 input functions                  ; 550                   ; 36                    ; 55                             ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Logic elements by mode                      ;                       ;                       ;                                ;                                ;
-;     -- normal mode                          ; 1658                  ; 108                   ; 317                            ; 0                              ;
-;     -- arithmetic mode                      ; 650                   ; 8                     ; 36                             ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Total registers                             ; 478                   ; 86                    ; 764                            ; 0                              ;
-;     -- Dedicated logic registers            ; 478 / 18752 ( 3 % )   ; 86 / 18752 ( < 1 % )  ; 764 / 18752 ( 4 % )            ; 0 / 18752 ( 0 % )              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Virtual pins                                ; 0                     ; 0                     ; 0                              ; 0                              ;
-; I/O pins                                    ; 72                    ; 0                     ; 0                              ; 0                              ;
-; Embedded Multiplier 9-bit elements          ; 0 / 52 ( 0 % )        ; 0 / 52 ( 0 % )        ; 0 / 52 ( 0 % )                 ; 0 / 52 ( 0 % )                 ;
-; Total memory bits                           ; 0                     ; 0                     ; 5888                           ; 0                              ;
-; Total RAM block bits                        ; 0                     ; 0                     ; 9216                           ; 0                              ;
-; JTAG                                        ; 1 / 1 ( 100 % )       ; 0 / 1 ( 0 % )         ; 0 / 1 ( 0 % )                  ; 0 / 1 ( 0 % )                  ;
-; M4K                                         ; 0 / 52 ( 0 % )        ; 0 / 52 ( 0 % )        ; 2 / 52 ( 3 % )                 ; 0 / 52 ( 0 % )                 ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Connections                                 ;                       ;                       ;                                ;                                ;
-;     -- Input Connections                    ; 1                     ; 128                   ; 1110                           ; 0                              ;
-;     -- Registered Input Connections         ; 0                     ; 97                    ; 874                            ; 0                              ;
-;     -- Output Connections                   ; 1070                  ; 167                   ; 2                              ; 0                              ;
-;     -- Registered Output Connections        ; 48                    ; 166                   ; 0                              ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Internal Connections                        ;                       ;                       ;                                ;                                ;
-;     -- Total Connections                    ; 11132                 ; 806                   ; 4246                           ; 0                              ;
-;     -- Registered Connections               ; 2447                  ; 591                   ; 3088                           ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; External Connections                        ;                       ;                       ;                                ;                                ;
-;     -- Top                                  ; 0                     ; 119                   ; 952                            ; 0                              ;
-;     -- sld_hub:auto_hub                     ; 119                   ; 16                    ; 160                            ; 0                              ;
-;     -- sld_signaltap:auto_signaltap_0       ; 952                   ; 160                   ; 0                              ; 0                              ;
-;     -- hard_block:auto_generated_inst       ; 0                     ; 0                     ; 0                              ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Partition Interface                         ;                       ;                       ;                                ;                                ;
-;     -- Input Ports                          ; 11                    ; 19                    ; 149                            ; 0                              ;
-;     -- Output Ports                         ; 85                    ; 37                    ; 102                            ; 0                              ;
-;     -- Bidir Ports                          ; 0                     ; 0                     ; 0                              ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Registered Ports                            ;                       ;                       ;                                ;                                ;
-;     -- Registered Input Ports               ; 0                     ; 4                     ; 97                             ; 0                              ;
-;     -- Registered Output Ports              ; 0                     ; 26                    ; 93                             ; 0                              ;
-;                                             ;                       ;                       ;                                ;                                ;
-; Port Connectivity                           ;                       ;                       ;                                ;                                ;
-;     -- Input Ports driven by GND            ; 0                     ; 1                     ; 4                              ; 0                              ;
-;     -- Output Ports driven by GND           ; 0                     ; 1                     ; 0                              ; 0                              ;
-;     -- Input Ports driven by VCC            ; 0                     ; 0                     ; 0                              ; 0                              ;
-;     -- Output Ports driven by VCC           ; 0                     ; 0                     ; 0                              ; 0                              ;
-;     -- Input Ports with no Source           ; 0                     ; 1                     ; 35                             ; 0                              ;
-;     -- Output Ports with no Source          ; 0                     ; 0                     ; 0                              ; 0                              ;
-;     -- Input Ports with no Fanout           ; 0                     ; 2                     ; 40                             ; 0                              ;
-;     -- Output Ports with no Fanout          ; 0                     ; 15                    ; 93                             ; 0                              ;
-+---------------------------------------------+-----------------------+-----------------------+--------------------------------+--------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                     ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top   ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 2386  ; 142              ; 902                            ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Total combinational functions               ; 2367  ; 118              ; 353                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;       ;                  ;                                ;                                ;
+;     -- 4 input functions                    ; 1065  ; 52               ; 209                            ; 0                              ;
+;     -- 3 input functions                    ; 749   ; 30               ; 89                             ; 0                              ;
+;     -- <=2 input functions                  ; 553   ; 36               ; 55                             ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Logic elements by mode                      ;       ;                  ;                                ;                                ;
+;     -- normal mode                          ; 1713  ; 110              ; 317                            ; 0                              ;
+;     -- arithmetic mode                      ; 654   ; 8                ; 36                             ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Total registers                             ; 495   ; 86               ; 764                            ; 0                              ;
+;     -- Dedicated logic registers            ; 495   ; 86               ; 764                            ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Virtual pins                                ; 0     ; 0                ; 0                              ; 0                              ;
+; I/O pins                                    ; 72    ; 0                ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0     ; 0                ; 0                              ; 0                              ;
+; Total memory bits                           ; 0     ; 0                ; 5888                           ; 0                              ;
+; Total RAM block bits                        ; 0     ; 0                ; 0                              ; 0                              ;
+; JTAG                                        ; 1     ; 0                ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Connections                                 ;       ;                  ;                                ;                                ;
+;     -- Input Connections                    ; 1     ; 128              ; 1110                           ; 0                              ;
+;     -- Registered Input Connections         ; 0     ; 97               ; 874                            ; 0                              ;
+;     -- Output Connections                   ; 1070  ; 167              ; 2                              ; 0                              ;
+;     -- Registered Output Connections        ; 48    ; 166              ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Internal Connections                        ;       ;                  ;                                ;                                ;
+;     -- Total Connections                    ; 11078 ; 812              ; 4246                           ; 0                              ;
+;     -- Registered Connections               ; 2673  ; 592              ; 3088                           ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; External Connections                        ;       ;                  ;                                ;                                ;
+;     -- Top                                  ; 0     ; 119              ; 952                            ; 0                              ;
+;     -- sld_hub:auto_hub                     ; 119   ; 16               ; 160                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 952   ; 160              ; 0                              ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0     ; 0                ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Partition Interface                         ;       ;                  ;                                ;                                ;
+;     -- Input Ports                          ; 11    ; 19               ; 149                            ; 0                              ;
+;     -- Output Ports                         ; 85    ; 37               ; 102                            ; 0                              ;
+;     -- Bidir Ports                          ; 0     ; 0                ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Registered Ports                            ;       ;                  ;                                ;                                ;
+;     -- Registered Input Ports               ; 0     ; 4                ; 97                             ; 0                              ;
+;     -- Registered Output Ports              ; 0     ; 26               ; 93                             ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Port Connectivity                           ;       ;                  ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0     ; 1                ; 0                              ; 0                              ;
+;     -- Output Ports driven by GND           ; 0     ; 1                ; 0                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0     ; 1                ; 35                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0     ; 2                ; 40                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0     ; 15               ; 93                             ; 0                              ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
 Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
 
 
-+-----------------------------------------------------------------------+
-; Partition Merge Resource Usage Summary                                ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 3,642 / 18,752 ( 19 % ) ;
-;                                             ;                         ;
-; Total combinational functions               ; 2777                    ;
-; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 1293                    ;
-;     -- 3 input functions                    ; 843                     ;
-;     -- <=2 input functions                  ; 641                     ;
-;                                             ;                         ;
-; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 2083                    ;
-;     -- arithmetic mode                      ; 694                     ;
-;                                             ;                         ;
-; Total registers                             ; 1328                    ;
-;     -- Dedicated logic registers            ; 1328                    ;
-;     -- I/O registers                        ; 0                       ;
-;                                             ;                         ;
-; I/O pins                                    ; 72                      ;
-; Total memory bits                           ; 5888                    ;
-; Embedded Multiplier 9-bit elements          ; 0                       ;
-; Maximum fan-out node                        ; CLK                     ;
-; Maximum fan-out                             ; 515                     ;
-; Total fan-out                               ; 14755                   ;
-; Average fan-out                             ; 3.26                    ;
-+---------------------------------------------+-------------------------+
++-----------------------------------------------------+
+; Partition Merge Resource Usage Summary              ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 3,416 ;
+;                                             ;       ;
+; Total combinational functions               ; 2838  ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 1326  ;
+;     -- 3 input functions                    ; 868   ;
+;     -- <=2 input functions                  ; 644   ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 2140  ;
+;     -- arithmetic mode                      ; 698   ;
+;                                             ;       ;
+; Total registers                             ; 1345  ;
+;     -- Dedicated logic registers            ; 1345  ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 72    ;
+; Total memory bits                           ; 5888  ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 987   ;
+; Total fan-out                               ; 14707 ;
+; Average fan-out                             ; 3.42  ;
++---------------------------------------------+-------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -281,13 +280,15 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Partition Merge
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Dec 05 16:18:19 2017
+    Info: Processing started: Tue Dec 05 17:11:38 2017
 Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off lab5 -c lab5 --merge=on
 Warning (125092): Tcl Script File lpm_counter_player.qip not found
     Info (125063): set_global_assignment -name QIP_FILE lpm_counter_player.qip
 Warning (125092): Tcl Script File output_files/lpm_mux0.qip not found
     Info (125063): set_global_assignment -name QIP_FILE output_files/lpm_mux0.qip
-Info (35006): Using previously generated Fitter netlist for partition "Top"
+Warning (35010): Previously generated Fitter netlist for partition "Top" is older than current Synthesis netlist -- using the current Synthesis netlist instead to ensure that the latest source changes are included
+    Info (35011): Set the option to Ignore source file changes to force the Quartus II software to always use a previously generated Fitter netlist
+Info (35007): Using synthesis netlist for partition "Top"
 Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
 Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
 Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 93 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
@@ -296,15 +297,15 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "HOLD"
-Info (21057): Implemented 3798 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3571 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 65 output pins
-    Info (21061): Implemented 3669 logic cells
+    Info (21061): Implemented 3448 logic cells
     Info (21064): Implemented 46 RAM segments
-Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 551 megabytes
-    Info: Processing ended: Tue Dec 05 16:18:28 2017
-    Info: Elapsed time: 00:00:09
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 538 megabytes
+    Info: Processing ended: Tue Dec 05 17:11:44 2017
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab5
-Tue Dec 05 16:18:15 2017
+Tue Dec 05 17:11:33 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -13,138 +13,149 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis IP Cores Summary
   7. Partition Status Summary
-  8. Parameter Settings for User Entity Instance: g27_stack52:inst5|lpm_compare0:instcompare0|lpm_compare:LPM_COMPARE_component
-  9. Parameter Settings for User Entity Instance: g27_stack52:inst5|lpm_counter0:counter|lpm_counter:LPM_COUNTER_component
- 10. Parameter Settings for User Entity Instance: g27_stack52:inst5|lpm_compare1:inst125|lpm_compare:LPM_COMPARE_component
- 11. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst
- 12. Parameter Settings for User Entity Instance: g27_stack52:inst5|lpm_mux1:inst29|LPM_MUX:LPM_MUX_component
- 13. Parameter Settings for User Entity Instance: g27_stack52:inst5|lpm_mux0:inst27|LPM_MUX:LPM_MUX_component
- 14. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst2
- 15. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst11
- 16. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst3
- 17. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst18
- 18. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst6
- 19. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst5
- 20. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst4
- 21. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst20
- 22. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:mux4
- 23. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst30
- 24. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst24
- 25. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst23
- 26. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst28
- 27. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst16
- 28. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst25
- 29. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst32
- 30. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst31
- 31. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst34
- 32. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst33
- 33. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst37
- 34. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst35
- 35. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst38
- 36. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst36
- 37. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst40
- 38. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst39
- 39. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst42
- 40. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst41
- 41. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst44
- 42. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst43
- 43. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst46
- 44. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst45
- 45. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst48
- 46. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst47
- 47. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst50
- 48. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst49
- 49. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst52
- 50. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst51
- 51. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst54
- 52. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst53
- 53. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst56
- 54. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst55
- 55. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst58
- 56. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst57
- 57. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst60
- 58. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst59
- 59. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst63
- 60. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst61
- 61. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst64
- 62. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst62
- 63. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst67
- 64. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst65
- 65. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst68
- 66. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst66
- 67. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst118
- 68. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst116
- 69. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst117
- 70. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst115
- 71. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst114
- 72. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst112
- 73. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst113
- 74. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst111
- 75. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst110
- 76. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst108
- 77. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst109
- 78. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst107
- 79. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst106
- 80. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst104
- 81. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst105
- 82. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst103
- 83. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst102
- 84. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst101
- 85. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst100
- 86. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst98
- 87. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst99
- 88. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst97
- 89. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst96
- 90. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst94
- 91. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst95
- 92. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst93
- 93. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst92
- 94. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst90
- 95. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst91
- 96. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst89
- 97. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst88
- 98. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst86
- 99. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst87
-100. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst85
-101. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst84
-102. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst82
-103. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst83
-104. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst81
-105. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst80
-106. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst78
-107. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst79
-108. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst77
-109. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst76
-110. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst74
-111. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst75
-112. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst73
-113. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst72
-114. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst70
-115. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst71
-116. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst69
-117. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_MUX:inst22
-118. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst26|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component
-119. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst26|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
-120. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst26|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
-121. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst28|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component
-122. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst28|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
-123. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst28|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
-124. Parameter Settings for User Entity Instance: LPM_DFF:inst6
-125. Parameter Settings for User Entity Instance: LPM_DFF:inst12
-126. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst27|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component
-127. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst27|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
-128. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst27|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
-129. Parameter Settings for User Entity Instance: LPM_FF:inst9
-130. Parameter Settings for User Entity Instance: g27_RANDU:inst7|lpm_add_sub:adder_inst1
-131. Parameter Settings for User Entity Instance: g27_RANDU:inst7|lpm_add_sub:adder_inst2
-132. Parameter Settings for User Entity Instance: lpm_mux_deck_init:inst39|LPM_MUX:LPM_MUX_component
-133. Parameter Settings for User Entity Instance: LPM_DFF:inst25
-134. Parameter Settings for User Entity Instance: LPM_DFF:inst14
-135. Partition Dependent Files
-136. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
-137. SignalTap II Logic Analyzer Settings
-138. Elapsed Time Per Partition
-139. Analysis & Synthesis Messages
+  8. Dependent File Changes for Partition Top
+  9. Partition for Top-Level Resource Utilization by Entity
+ 10. State Machine - |g27_21game|g27_decision_maker_FSM:inst3|state
+ 11. State Machine - |g27_21game|g27_dealer:inst8|state
+ 12. State Machine - |g27_21game|g27_computer_player_FSM:inst1|state
+ 13. State Machine - |g27_21game|g27_player_controller_FSM:inst34|state
+ 14. State Machine - |g27_21game|g27_system_controller_FSM:inst35|state
+ 15. User-Specified and Inferred Latches
+ 16. Registers Removed During Synthesis
+ 17. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 18. Parameter Settings for User Entity Instance: g27_stack52:inst5|lpm_compare0:instcompare0|lpm_compare:LPM_COMPARE_component
+ 19. Parameter Settings for User Entity Instance: g27_stack52:inst5|lpm_counter0:counter|lpm_counter:LPM_COUNTER_component
+ 20. Parameter Settings for User Entity Instance: g27_stack52:inst5|lpm_compare1:inst125|lpm_compare:LPM_COMPARE_component
+ 21. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst
+ 22. Parameter Settings for User Entity Instance: g27_stack52:inst5|lpm_mux1:inst29|LPM_MUX:LPM_MUX_component
+ 23. Parameter Settings for User Entity Instance: g27_stack52:inst5|lpm_mux0:inst27|LPM_MUX:LPM_MUX_component
+ 24. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst2
+ 25. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst11
+ 26. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst3
+ 27. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst18
+ 28. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst6
+ 29. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst5
+ 30. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst4
+ 31. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst20
+ 32. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:mux4
+ 33. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst30
+ 34. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst24
+ 35. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst23
+ 36. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst28
+ 37. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst16
+ 38. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst25
+ 39. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst32
+ 40. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst31
+ 41. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst34
+ 42. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst33
+ 43. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst37
+ 44. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst35
+ 45. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst38
+ 46. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst36
+ 47. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst40
+ 48. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst39
+ 49. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst42
+ 50. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst41
+ 51. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst44
+ 52. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst43
+ 53. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst46
+ 54. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst45
+ 55. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst48
+ 56. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst47
+ 57. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst50
+ 58. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst49
+ 59. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst52
+ 60. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst51
+ 61. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst54
+ 62. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst53
+ 63. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst56
+ 64. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst55
+ 65. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst58
+ 66. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst57
+ 67. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst60
+ 68. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst59
+ 69. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst63
+ 70. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst61
+ 71. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst64
+ 72. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst62
+ 73. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst67
+ 74. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst65
+ 75. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst68
+ 76. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst66
+ 77. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst118
+ 78. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst116
+ 79. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst117
+ 80. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst115
+ 81. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst114
+ 82. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst112
+ 83. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst113
+ 84. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst111
+ 85. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst110
+ 86. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst108
+ 87. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst109
+ 88. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst107
+ 89. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst106
+ 90. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst104
+ 91. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst105
+ 92. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst103
+ 93. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst102
+ 94. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst101
+ 95. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst100
+ 96. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst98
+ 97. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst99
+ 98. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst97
+ 99. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst96
+100. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst94
+101. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst95
+102. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst93
+103. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst92
+104. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst90
+105. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst91
+106. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst89
+107. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst88
+108. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst86
+109. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst87
+110. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst85
+111. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst84
+112. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst82
+113. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst83
+114. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst81
+115. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst80
+116. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst78
+117. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst79
+118. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst77
+119. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst76
+120. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst74
+121. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst75
+122. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst73
+123. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst72
+124. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst70
+125. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_FF:inst71
+126. Parameter Settings for User Entity Instance: g27_stack52:inst5|BUSMUX:inst69
+127. Parameter Settings for User Entity Instance: g27_stack52:inst5|LPM_MUX:inst22
+128. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst26|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component
+129. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst26|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
+130. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst26|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
+131. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst28|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component
+132. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst28|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
+133. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst28|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
+134. Parameter Settings for User Entity Instance: LPM_DFF:inst12
+135. Parameter Settings for User Entity Instance: LPM_DFF:inst6
+136. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst27|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component
+137. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst27|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component
+138. Parameter Settings for User Entity Instance: g27_single_pulse_generator:inst27|lpm_compare4:inst12|lpm_compare:LPM_COMPARE_component
+139. Parameter Settings for User Entity Instance: LPM_FF:inst9
+140. Parameter Settings for User Entity Instance: g27_RANDU:inst7|lpm_add_sub:adder_inst1
+141. Parameter Settings for User Entity Instance: g27_RANDU:inst7|lpm_add_sub:adder_inst2
+142. Parameter Settings for User Entity Instance: lpm_mux_deck_init:inst39|LPM_MUX:LPM_MUX_component
+143. Parameter Settings for User Entity Instance: LPM_DFF:inst25
+144. Parameter Settings for User Entity Instance: LPM_DFF:inst14
+145. Parameter Settings for Inferred Entity Instance: g27_modulo:inst13|lpm_divide:Mod0
+146. Partition Dependent Files
+147. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+148. SignalTap II Logic Analyzer Settings
+149. Elapsed Time Per Partition
+150. Analysis & Synthesis Messages
 
 
 
@@ -170,7 +181,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 05 16:18:15 2017            ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 05 17:11:33 2017            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; lab5                                             ;
 ; Top-level Entity Name              ; g27_21game                                       ;
@@ -280,12 +291,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.27        ;
+; Average used               ; 1.33        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  26.9%      ;
+;     Processor 2            ;  33.3%      ;
 ;     Processors 3-8         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -420,10 +431,432 @@ applicable agreement for further details.
 +--------------------------------+-------------+-------------------------+
 ; Partition Name                 ; Synthesized ; Reason                  ;
 +--------------------------------+-------------+-------------------------+
-; Top                            ; no          ; No relevant changes     ;
-; sld_signaltap:auto_signaltap_0 ; yes         ; Dependent files changed ;
+; Top                            ; yes         ; Dependent files changed ;
+; sld_signaltap:auto_signaltap_0 ; no          ; No relevant changes     ;
 ; sld_hub:auto_hub               ; yes         ; Parameters changed      ;
 +--------------------------------+-------------+-------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Dependent File Changes for Partition Top                                                                                        ;
++-----------+----------------+-------------------+----------+----------------------------------+----------------------------------+
+; Hierarchy ; File Name      ; Relative Location ; Change   ; Old                              ; New                              ;
++-----------+----------------+-------------------+----------+----------------------------------+----------------------------------+
+; |         ; g27_21game.bdf ; Project Directory ; Checksum ; 05b2ecb1521af4f407b3836026e41972 ; 4318311b01cf690502377303730b3ea0 ;
++-----------+----------------+-------------------+----------+----------------------------------+----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition for Top-Level Resource Utilization by Entity                                                                                                                                                                                                                                                ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                         ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+--------------+
+; |g27_21game                                  ; 2383 (6)          ; 495 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game                                                                                                                 ; work         ;
+;    |g27_7_segment_decoder:inst18|            ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_7_segment_decoder:inst18                                                                                    ; work         ;
+;    |g27_7_segment_decoder:inst19|            ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_7_segment_decoder:inst19                                                                                    ; work         ;
+;    |g27_7_segment_decoder:inst20|            ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_7_segment_decoder:inst20                                                                                    ; work         ;
+;    |g27_7_segment_decoder:inst21|            ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_7_segment_decoder:inst21                                                                                    ; work         ;
+;    |g27_Modulo_13:inst22|                    ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_Modulo_13:inst22                                                                                            ; work         ;
+;       |g27_8bit_adder:inst1|                 ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_Modulo_13:inst22|g27_8bit_adder:inst1                                                                       ; work         ;
+;          |g27_adder:inst3|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_Modulo_13:inst22|g27_8bit_adder:inst1|g27_adder:inst3                                                       ; work         ;
+;          |g27_adder:inst6|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_Modulo_13:inst22|g27_8bit_adder:inst1|g27_adder:inst6                                                       ; work         ;
+;    |g27_Modulo_13:inst23|                    ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_Modulo_13:inst23                                                                                            ; work         ;
+;       |g27_8bit_adder:inst1|                 ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_Modulo_13:inst23|g27_8bit_adder:inst1                                                                       ; work         ;
+;          |g27_adder:inst3|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_Modulo_13:inst23|g27_8bit_adder:inst1|g27_adder:inst3                                                       ; work         ;
+;          |g27_adder:inst6|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_Modulo_13:inst23|g27_8bit_adder:inst1|g27_adder:inst6                                                       ; work         ;
+;    |g27_RANDU:inst7|                         ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_RANDU:inst7                                                                                                 ; work         ;
+;       |lpm_add_sub:adder_inst1|              ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_RANDU:inst7|lpm_add_sub:adder_inst1                                                                         ; work         ;
+;          |add_sub_ule:auto_generated|        ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_RANDU:inst7|lpm_add_sub:adder_inst1|add_sub_ule:auto_generated                                              ; work         ;
+;    |g27_computer_player_FSM:inst1|           ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_computer_player_FSM:inst1                                                                                   ; work         ;
+;    |g27_dealer:inst8|                        ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_dealer:inst8                                                                                                ; work         ;
+;    |g27_decision_maker_FSM:inst3|            ; 38 (38)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_decision_maker_FSM:inst3                                                                                    ; work         ;
+;    |g27_modulo:inst13|                       ; 1406 (0)          ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_modulo:inst13                                                                                               ; work         ;
+;       |lpm_divide:Mod0|                      ; 1406 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_modulo:inst13|lpm_divide:Mod0                                                                               ; work         ;
+;          |lpm_divide_qlo:auto_generated|     ; 1406 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_modulo:inst13|lpm_divide:Mod0|lpm_divide_qlo:auto_generated                                                 ; work         ;
+;             |abs_divider_4dg:divider|        ; 1406 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_modulo:inst13|lpm_divide:Mod0|lpm_divide_qlo:auto_generated|abs_divider_4dg:divider                         ; work         ;
+;                |alt_u_div_k5f:divider|       ; 1406 (1406)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_modulo:inst13|lpm_divide:Mod0|lpm_divide_qlo:auto_generated|abs_divider_4dg:divider|alt_u_div_k5f:divider   ; work         ;
+;    |g27_player_controller_FSM:inst34|        ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_player_controller_FSM:inst34                                                                                ; work         ;
+;    |g27_rules:inst15|                        ; 14 (14)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_rules:inst15                                                                                                ; work         ;
+;    |g27_rules:inst|                          ; 25 (19)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_rules:inst                                                                                                  ; work         ;
+;       |g27_Modulo_13:modulo_inst|            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_rules:inst|g27_Modulo_13:modulo_inst                                                                        ; work         ;
+;          |g27_8bit_adder:inst1|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_rules:inst|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst1                                                   ; work         ;
+;             |g27_adder:inst3|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_rules:inst|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst1|g27_adder:inst3                                   ; work         ;
+;             |g27_adder:inst5|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_rules:inst|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst1|g27_adder:inst5                                   ; work         ;
+;          |g27_8bit_adder:inst4|              ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_rules:inst|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst4                                                   ; work         ;
+;             |g27_adder:inst1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_rules:inst|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst4|g27_adder:inst1                                   ; work         ;
+;             |g27_adder:inst2|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_rules:inst|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst4|g27_adder:inst2                                   ; work         ;
+;             |g27_adder:inst3|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_rules:inst|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst4|g27_adder:inst3                                   ; work         ;
+;             |g27_adder:inst|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_rules:inst|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst4|g27_adder:inst                                    ; work         ;
+;    |g27_single_pulse_generator:inst26|       ; 39 (9)            ; 27 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst26                                                                               ; work         ;
+;       |lpm_compare2:inst15|                  ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst26|lpm_compare2:inst15                                                           ; work         ;
+;          |lpm_compare:LPM_COMPARE_component| ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst26|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component                         ; work         ;
+;             |cmpr_49j:auto_generated|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst26|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component|cmpr_49j:auto_generated ; work         ;
+;       |lpm_counter1:inst2|                   ; 26 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst26|lpm_counter1:inst2                                                            ; work         ;
+;          |lpm_counter:LPM_COUNTER_component| ; 26 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst26|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component                          ; work         ;
+;             |cntr_e4i:auto_generated|        ; 26 (26)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst26|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated  ; work         ;
+;    |g27_single_pulse_generator:inst27|       ; 39 (9)            ; 27 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst27                                                                               ; work         ;
+;       |lpm_compare2:inst15|                  ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst27|lpm_compare2:inst15                                                           ; work         ;
+;          |lpm_compare:LPM_COMPARE_component| ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst27|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component                         ; work         ;
+;             |cmpr_49j:auto_generated|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst27|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component|cmpr_49j:auto_generated ; work         ;
+;       |lpm_counter1:inst2|                   ; 26 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst27|lpm_counter1:inst2                                                            ; work         ;
+;          |lpm_counter:LPM_COUNTER_component| ; 26 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst27|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component                          ; work         ;
+;             |cntr_e4i:auto_generated|        ; 26 (26)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst27|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated  ; work         ;
+;    |g27_single_pulse_generator:inst28|       ; 39 (10)           ; 27 (1)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst28                                                                               ; work         ;
+;       |lpm_compare2:inst15|                  ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst28|lpm_compare2:inst15                                                           ; work         ;
+;          |lpm_compare:LPM_COMPARE_component| ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst28|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component                         ; work         ;
+;             |cmpr_49j:auto_generated|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst28|lpm_compare2:inst15|lpm_compare:LPM_COMPARE_component|cmpr_49j:auto_generated ; work         ;
+;       |lpm_counter1:inst2|                   ; 26 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst28|lpm_counter1:inst2                                                            ; work         ;
+;          |lpm_counter:LPM_COUNTER_component| ; 26 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst28|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component                          ; work         ;
+;             |cntr_e4i:auto_generated|        ; 26 (26)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_single_pulse_generator:inst28|lpm_counter1:inst2|lpm_counter:LPM_COUNTER_component|cntr_e4i:auto_generated  ; work         ;
+;    |g27_stack52:inst5|                       ; 653 (5)           ; 318 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5                                                                                               ; work         ;
+;       |busmux:inst101|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst101                                                                                ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst101|lpm_mux:$00000                                                                 ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst101|lpm_mux:$00000|mux_qmc:auto_generated                                          ; work         ;
+;       |busmux:inst103|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst103                                                                                ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst103|lpm_mux:$00000                                                                 ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst103|lpm_mux:$00000|mux_qmc:auto_generated                                          ; work         ;
+;       |busmux:inst104|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst104                                                                                ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst104|lpm_mux:$00000                                                                 ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst104|lpm_mux:$00000|mux_qmc:auto_generated                                          ; work         ;
+;       |busmux:inst107|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst107                                                                                ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst107|lpm_mux:$00000                                                                 ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst107|lpm_mux:$00000|mux_qmc:auto_generated                                          ; work         ;
+;       |busmux:inst108|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst108                                                                                ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst108|lpm_mux:$00000                                                                 ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst108|lpm_mux:$00000|mux_qmc:auto_generated                                          ; work         ;
+;       |busmux:inst111|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst111                                                                                ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst111|lpm_mux:$00000                                                                 ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst111|lpm_mux:$00000|mux_qmc:auto_generated                                          ; work         ;
+;       |busmux:inst112|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst112                                                                                ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst112|lpm_mux:$00000                                                                 ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst112|lpm_mux:$00000|mux_qmc:auto_generated                                          ; work         ;
+;       |busmux:inst115|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst115                                                                                ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst115|lpm_mux:$00000                                                                 ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst115|lpm_mux:$00000|mux_qmc:auto_generated                                          ; work         ;
+;       |busmux:inst116|                       ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst116                                                                                ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst116|lpm_mux:$00000                                                                 ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst116|lpm_mux:$00000|mux_qmc:auto_generated                                          ; work         ;
+;       |busmux:inst24|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst24                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst24|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst24|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst25|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst25                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst25|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst25|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst28|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst28                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst28|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst28|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst2|                         ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst2                                                                                  ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst2|lpm_mux:$00000                                                                   ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst2|lpm_mux:$00000|mux_qmc:auto_generated                                            ; work         ;
+;       |busmux:inst31|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst31                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst31|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst31|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst33|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst33                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst33|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst33|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst35|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst35                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst35|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst35|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst36|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst36                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst36|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst36|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst39|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst39                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst39|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst39|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst3|                         ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst3                                                                                  ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst3|lpm_mux:$00000                                                                   ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst3|lpm_mux:$00000|mux_qmc:auto_generated                                            ; work         ;
+;       |busmux:inst41|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst41                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst41|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst41|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst43|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst43                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst43|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst43|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst45|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst45                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst45|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst45|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst47|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst47                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst47|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst47|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst49|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst49                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst49|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst49|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst4|                         ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst4                                                                                  ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst4|lpm_mux:$00000                                                                   ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst4|lpm_mux:$00000|mux_qmc:auto_generated                                            ; work         ;
+;       |busmux:inst51|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst51                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst51|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst51|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst53|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst53                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst53|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst53|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst55|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst55                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst55|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst55|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst57|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst57                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst57|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst57|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst59|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst59                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst59|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst59|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst61|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst61                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst61|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst61|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst62|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst62                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst62|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst62|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst65|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst65                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst65|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst65|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst66|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst66                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst66|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst66|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst69|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst69                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst69|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst69|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst6|                         ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst6                                                                                  ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst6|lpm_mux:$00000                                                                   ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst6|lpm_mux:$00000|mux_qmc:auto_generated                                            ; work         ;
+;       |busmux:inst70|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst70                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst70|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst70|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst73|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst73                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst73|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst73|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst74|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst74                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst74|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst74|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst77|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst77                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst77|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst77|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst78|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst78                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst78|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst78|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst81|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst81                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst81|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst81|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst82|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst82                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst82|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst82|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst85|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst85                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst85|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst85|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst86|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst86                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst86|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst86|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst89|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst89                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst89|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst89|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst90|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst90                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst90|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst90|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst93|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst93                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst93|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst93|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst94|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst94                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst94|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst94|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst97|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst97                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst97|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst97|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:inst98|                        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst98                                                                                 ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst98|lpm_mux:$00000                                                                  ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:inst98|lpm_mux:$00000|mux_qmc:auto_generated                                           ; work         ;
+;       |busmux:mux4|                          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:mux4                                                                                   ; work         ;
+;          |lpm_mux:$00000|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:mux4|lpm_mux:$00000                                                                    ; work         ;
+;             |mux_qmc:auto_generated|         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|busmux:mux4|lpm_mux:$00000|mux_qmc:auto_generated                                             ; work         ;
+;       |lpm_compare0:instcompare0|            ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_compare0:instcompare0                                                                     ; work         ;
+;          |lpm_compare:LPM_COMPARE_component| ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_compare0:instcompare0|lpm_compare:LPM_COMPARE_component                                   ; work         ;
+;             |cmpr_mmi:auto_generated|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_compare0:instcompare0|lpm_compare:LPM_COMPARE_component|cmpr_mmi:auto_generated           ; work         ;
+;       |lpm_compare1:inst125|                 ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_compare1:inst125                                                                          ; work         ;
+;          |lpm_compare:LPM_COMPARE_component| ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_compare1:inst125|lpm_compare:LPM_COMPARE_component                                        ; work         ;
+;             |cmpr_i7j:auto_generated|        ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_compare1:inst125|lpm_compare:LPM_COMPARE_component|cmpr_i7j:auto_generated                ; work         ;
+;       |lpm_counter0:counter|                 ; 9 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_counter0:counter                                                                          ; work         ;
+;          |lpm_counter:LPM_COUNTER_component| ; 9 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_counter0:counter|lpm_counter:LPM_COUNTER_component                                        ; work         ;
+;             |cntr_b6j:auto_generated|        ; 9 (9)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_counter0:counter|lpm_counter:LPM_COUNTER_component|cntr_b6j:auto_generated                ; work         ;
+;       |lpm_ff:inst100|                       ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst100                                                                                ; work         ;
+;       |lpm_ff:inst102|                       ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst102                                                                                ; work         ;
+;       |lpm_ff:inst105|                       ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst105                                                                                ; work         ;
+;       |lpm_ff:inst106|                       ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst106                                                                                ; work         ;
+;       |lpm_ff:inst109|                       ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst109                                                                                ; work         ;
+;       |lpm_ff:inst110|                       ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst110                                                                                ; work         ;
+;       |lpm_ff:inst113|                       ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst113                                                                                ; work         ;
+;       |lpm_ff:inst114|                       ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst114                                                                                ; work         ;
+;       |lpm_ff:inst117|                       ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst117                                                                                ; work         ;
+;       |lpm_ff:inst118|                       ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst118                                                                                ; work         ;
+;       |lpm_ff:inst11|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst11                                                                                 ; work         ;
+;       |lpm_ff:inst16|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst16                                                                                 ; work         ;
+;       |lpm_ff:inst18|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst18                                                                                 ; work         ;
+;       |lpm_ff:inst20|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst20                                                                                 ; work         ;
+;       |lpm_ff:inst23|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst23                                                                                 ; work         ;
+;       |lpm_ff:inst30|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst30                                                                                 ; work         ;
+;       |lpm_ff:inst32|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst32                                                                                 ; work         ;
+;       |lpm_ff:inst34|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst34                                                                                 ; work         ;
+;       |lpm_ff:inst37|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst37                                                                                 ; work         ;
+;       |lpm_ff:inst38|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst38                                                                                 ; work         ;
+;       |lpm_ff:inst40|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst40                                                                                 ; work         ;
+;       |lpm_ff:inst42|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst42                                                                                 ; work         ;
+;       |lpm_ff:inst44|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst44                                                                                 ; work         ;
+;       |lpm_ff:inst46|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst46                                                                                 ; work         ;
+;       |lpm_ff:inst48|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst48                                                                                 ; work         ;
+;       |lpm_ff:inst50|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst50                                                                                 ; work         ;
+;       |lpm_ff:inst52|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst52                                                                                 ; work         ;
+;       |lpm_ff:inst54|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst54                                                                                 ; work         ;
+;       |lpm_ff:inst56|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst56                                                                                 ; work         ;
+;       |lpm_ff:inst58|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst58                                                                                 ; work         ;
+;       |lpm_ff:inst5|                         ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst5                                                                                  ; work         ;
+;       |lpm_ff:inst60|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst60                                                                                 ; work         ;
+;       |lpm_ff:inst63|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst63                                                                                 ; work         ;
+;       |lpm_ff:inst64|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst64                                                                                 ; work         ;
+;       |lpm_ff:inst67|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst67                                                                                 ; work         ;
+;       |lpm_ff:inst68|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst68                                                                                 ; work         ;
+;       |lpm_ff:inst71|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst71                                                                                 ; work         ;
+;       |lpm_ff:inst72|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst72                                                                                 ; work         ;
+;       |lpm_ff:inst75|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst75                                                                                 ; work         ;
+;       |lpm_ff:inst76|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst76                                                                                 ; work         ;
+;       |lpm_ff:inst79|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst79                                                                                 ; work         ;
+;       |lpm_ff:inst80|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst80                                                                                 ; work         ;
+;       |lpm_ff:inst83|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst83                                                                                 ; work         ;
+;       |lpm_ff:inst84|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst84                                                                                 ; work         ;
+;       |lpm_ff:inst87|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst87                                                                                 ; work         ;
+;       |lpm_ff:inst88|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst88                                                                                 ; work         ;
+;       |lpm_ff:inst91|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst91                                                                                 ; work         ;
+;       |lpm_ff:inst92|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst92                                                                                 ; work         ;
+;       |lpm_ff:inst95|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst95                                                                                 ; work         ;
+;       |lpm_ff:inst96|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst96                                                                                 ; work         ;
+;       |lpm_ff:inst99|                        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst99                                                                                 ; work         ;
+;       |lpm_ff:inst|                          ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_ff:inst                                                                                   ; work         ;
+;       |lpm_mux0:inst27|                      ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_mux0:inst27                                                                               ; work         ;
+;          |lpm_mux:LPM_MUX_component|         ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_mux0:inst27|lpm_mux:LPM_MUX_component                                                     ; work         ;
+;             |mux_83e:auto_generated|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_mux0:inst27|lpm_mux:LPM_MUX_component|mux_83e:auto_generated                              ; work         ;
+;       |lpm_mux1:inst29|                      ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_mux1:inst29                                                                               ; work         ;
+;          |lpm_mux:LPM_MUX_component|         ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_mux1:inst29|lpm_mux:LPM_MUX_component                                                     ; work         ;
+;             |mux_53e:auto_generated|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_mux1:inst29|lpm_mux:LPM_MUX_component|mux_53e:auto_generated                              ; work         ;
+;       |lpm_mux:inst22|                       ; 241 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_mux:inst22                                                                                ; work         ;
+;          |mux_koc:auto_generated|            ; 241 (241)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|lpm_mux:inst22|mux_koc:auto_generated                                                         ; work         ;
+;       |p_enable:inst13|                      ; 68 (68)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_stack52:inst5|p_enable:inst13                                                                               ; work         ;
+;    |g27_system_controller_FSM:inst35|        ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|g27_system_controller_FSM:inst35                                                                                ; work         ;
+;    |lpm_dff:inst12|                          ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|lpm_dff:inst12                                                                                                  ; work         ;
+;    |lpm_dff:inst14|                          ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|lpm_dff:inst14                                                                                                  ; work         ;
+;    |lpm_dff:inst25|                          ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|lpm_dff:inst25                                                                                                  ; work         ;
+;    |lpm_dff:inst6|                           ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|lpm_dff:inst6                                                                                                   ; work         ;
+;    |lpm_ff:inst9|                            ; 29 (29)           ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |g27_21game|lpm_ff:inst9                                                                                                    ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------+
+; State Machine - |g27_21game|g27_decision_maker_FSM:inst3|state             ;
++----------+----------+----------+----------+----------+----------+----------+
+; Name     ; state.s5 ; state.s4 ; state.s3 ; state.s2 ; state.s1 ; state.s0 ;
++----------+----------+----------+----------+----------+----------+----------+
+; state.s0 ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ;
+; state.s1 ; 0        ; 0        ; 0        ; 0        ; 1        ; 1        ;
+; state.s2 ; 0        ; 0        ; 0        ; 1        ; 0        ; 1        ;
+; state.s3 ; 0        ; 0        ; 1        ; 0        ; 0        ; 1        ;
+; state.s4 ; 0        ; 1        ; 0        ; 0        ; 0        ; 1        ;
+; state.s5 ; 1        ; 0        ; 0        ; 0        ; 0        ; 1        ;
++----------+----------+----------+----------+----------+----------+----------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------+
+; State Machine - |g27_21game|g27_dealer:inst8|state   ;
++----------+----------+----------+----------+----------+
+; Name     ; state.s3 ; state.s2 ; state.s1 ; state.s0 ;
++----------+----------+----------+----------+----------+
+; state.s0 ; 0        ; 0        ; 0        ; 0        ;
+; state.s1 ; 0        ; 0        ; 1        ; 1        ;
+; state.s2 ; 0        ; 1        ; 0        ; 1        ;
+; state.s3 ; 1        ; 0        ; 0        ; 1        ;
++----------+----------+----------+----------+----------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------+
+; State Machine - |g27_21game|g27_computer_player_FSM:inst1|state ;
++----------+----------+----------+----------+---------------------+
+; Name     ; state.s3 ; state.s2 ; state.s1 ; state.s0            ;
++----------+----------+----------+----------+---------------------+
+; state.s0 ; 0        ; 0        ; 0        ; 0                   ;
+; state.s1 ; 0        ; 0        ; 1        ; 1                   ;
+; state.s2 ; 0        ; 1        ; 0        ; 1                   ;
+; state.s3 ; 1        ; 0        ; 0        ; 1                   ;
++----------+----------+----------+----------+---------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------+
+; State Machine - |g27_21game|g27_player_controller_FSM:inst34|state ;
++----------+----------+----------+----------+----------+-------------+
+; Name     ; state.s4 ; state.s3 ; state.s2 ; state.s1 ; state.s0    ;
++----------+----------+----------+----------+----------+-------------+
+; state.s0 ; 0        ; 0        ; 0        ; 0        ; 0           ;
+; state.s1 ; 0        ; 0        ; 0        ; 1        ; 1           ;
+; state.s2 ; 0        ; 0        ; 1        ; 0        ; 1           ;
+; state.s3 ; 0        ; 1        ; 0        ; 0        ; 1           ;
+; state.s4 ; 1        ; 0        ; 0        ; 0        ; 1           ;
++----------+----------+----------+----------+----------+-------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------+
+; State Machine - |g27_21game|g27_system_controller_FSM:inst35|state ;
++----------+----------+----------+----------+------------------------+
+; Name     ; state.s3 ; state.s2 ; state.s1 ; state.s0               ;
++----------+----------+----------+----------+------------------------+
+; state.s0 ; 0        ; 0        ; 0        ; 0                      ;
+; state.s1 ; 0        ; 0        ; 1        ; 1                      ;
+; state.s2 ; 0        ; 1        ; 0        ; 1                      ;
+; state.s3 ; 1        ; 0        ; 0        ; 1                      ;
++----------+----------+----------+----------+------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                   ;
++------------------------------------------------------+---------------------------------------+------------------------+
+; Latch Name                                           ; Latch Enable Signal                   ; Free of Timing Hazards ;
++------------------------------------------------------+---------------------------------------+------------------------+
+; g27_decision_maker_FSM:inst3|computer_hand_buffer[4] ; g27_decision_maker_FSM:inst3|state.s4 ; yes                    ;
+; g27_decision_maker_FSM:inst3|player_hand_buffer[4]   ; g27_decision_maker_FSM:inst3|state.s4 ; yes                    ;
+; g27_decision_maker_FSM:inst3|computer_hand_buffer[3] ; g27_decision_maker_FSM:inst3|state.s4 ; yes                    ;
+; g27_decision_maker_FSM:inst3|player_hand_buffer[3]   ; g27_decision_maker_FSM:inst3|state.s4 ; yes                    ;
+; g27_decision_maker_FSM:inst3|computer_hand_buffer[2] ; g27_decision_maker_FSM:inst3|state.s4 ; yes                    ;
+; g27_decision_maker_FSM:inst3|player_hand_buffer[2]   ; g27_decision_maker_FSM:inst3|state.s4 ; yes                    ;
+; g27_decision_maker_FSM:inst3|player_hand_buffer[1]   ; g27_decision_maker_FSM:inst3|state.s4 ; yes                    ;
+; g27_decision_maker_FSM:inst3|computer_hand_buffer[1] ; g27_decision_maker_FSM:inst3|state.s4 ; yes                    ;
+; g27_decision_maker_FSM:inst3|player_hand_buffer[0]   ; g27_decision_maker_FSM:inst3|state.s4 ; yes                    ;
+; g27_decision_maker_FSM:inst3|computer_hand_buffer[0] ; g27_decision_maker_FSM:inst3|state.s4 ; yes                    ;
+; g27_decision_maker_FSM:inst3|end_game_out            ; g27_decision_maker_FSM:inst3|WideOr1  ; yes                    ;
+; Number of user-specified and inferred latches = 11   ;                                       ;                        ;
++------------------------------------------------------+---------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; lpm_ff:inst9|dffs[2]                  ; Stuck at GND due to stuck port data_in ;
+; lpm_ff:inst9|dffs[31]                 ; Lost fanout                            ;
+; Total Number of Removed Registers = 2 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |g27_21game|g27_rules:inst|new_sum[4]              ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |g27_21game|g27_rules:inst15|new_sum[1]            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |g27_21game|g27_rules:inst|face_value_buffer       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |g27_21game|g27_decision_maker_FSM:inst3|state     ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g27_21game|g27_decision_maker_FSM:inst3|Selector2 ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |g27_21game|g27_decision_maker_FSM:inst3|Selector5 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -2216,23 +2649,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_DFF:inst6 ;
-+------------------------+------------+----------------------+
-; Parameter Name         ; Value      ; Type                 ;
-+------------------------+------------+----------------------+
-; LPM_WIDTH              ; 6          ; Signed Integer       ;
-; LPM_AVALUE             ; 0          ; Signed Integer       ;
-; LPM_SVALUE             ; 0          ; Untyped              ;
-; DEVICE_FAMILY          ; Cyclone II ; Untyped              ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY           ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY         ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE         ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE       ;
-+------------------------+------------+----------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: LPM_DFF:inst12 ;
 +------------------------+------------+-----------------------+
@@ -2247,6 +2663,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE          ;
 ; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE        ;
 +------------------------+------------+-----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_DFF:inst6 ;
++------------------------+------------+----------------------+
+; Parameter Name         ; Value      ; Type                 ;
++------------------------+------------+----------------------+
+; LPM_WIDTH              ; 6          ; Signed Integer       ;
+; LPM_AVALUE             ; 0          ; Signed Integer       ;
+; LPM_SVALUE             ; 0          ; Untyped              ;
+; DEVICE_FAMILY          ; Cyclone II ; Untyped              ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY           ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY         ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE         ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE       ;
++------------------------+------------+----------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2453,6 +2886,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: g27_modulo:inst13|lpm_divide:Mod0 ;
++------------------------+----------------+------------------------------------------+
+; Parameter Name         ; Value          ; Type                                     ;
++------------------------+----------------+------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                  ;
+; LPM_WIDTHD             ; 32             ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                  ;
+; LPM_PIPELINE           ; 0              ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                  ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_qlo ; Untyped                                  ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                           ;
++------------------------+----------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------------------------------------------+
 ; Partition Dependent Files                                                                                         ;
 +-------------------------------------------------+--------------------+---------+----------------------------------+
@@ -2509,11 +2965,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; db/mux_83e.tdf                                  ; Project Directory  ; work    ; 3360f3452aaa4765eb83684dfe8cdfaf ;
 ; db/mux_koc.tdf                                  ; Project Directory  ; work    ; 69cff5447d7d5311f9b2106433bf56cd ;
 ; db/mux_qmc.tdf                                  ; Project Directory  ; work    ; 3733c38e27a1545ac9f2d0415b478a27 ;
-; g27_21game.bdf                                  ; Project Directory  ; work    ; 1a70018db32e7e22a8bd83f4a356a3c3 ;
+; g27_21game.bdf                                  ; Project Directory  ; work    ; 4318311b01cf690502377303730b3ea0 ;
 ; g27_computer_player_FSM.vhd                     ; Project Directory  ; work    ; 60e807c231a77afa5aea3463d592c1af ;
 ; g27_decision_maker_FSM.vhd                      ; Project Directory  ; work    ; 08268b17675dddd74eea838ea0dc16ea ;
 ; g27_modulo.vhd                                  ; Project Directory  ; work    ; fee11a5aabd2e883268569452990a848 ;
-; g27_player_controller_FSM.vhd                   ; Project Directory  ; work    ; 578d7b31083e9f7bf5afd469a97336b0 ;
+; g27_player_controller_FSM.vhd                   ; Project Directory  ; work    ; d42dd3fe47a0dfb35eca80ae4269c767 ;
 ; g27_system_controller_FSM.vhd                   ; Project Directory  ; work    ; 2a34cae55dcd3409e4bf6e87093b5d7d ;
 ; output_files/lpm_mux_deck_init.vhd              ; Project Directory  ; work    ; bdd450167610d979141fe78d935d6ea1 ;
 ; ../Modulo 13/g27_8bit_adder.bdf                 ; Project Directory  ; work    ; 9ed554db6425fa954114c6e079eed322 ;
@@ -2591,14 +3047,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
-+-----------------------------------------------+
-; Elapsed Time Per Partition                    ;
-+--------------------------------+--------------+
-; Partition Name                 ; Elapsed Time ;
-+--------------------------------+--------------+
-; sld_signaltap:auto_signaltap_0 ; 00:00:06     ;
-; sld_hub:auto_hub               ; 00:00:06     ;
-+--------------------------------+--------------+
++---------------------------------+
+; Elapsed Time Per Partition      ;
++------------------+--------------+
+; Partition Name   ; Elapsed Time ;
++------------------+--------------+
+; Top              ; 00:00:11     ;
+; sld_hub:auto_hub ; 00:00:11     ;
++------------------+--------------+
 
 
 +-------------------------------+
@@ -2607,7 +3063,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Dec 05 16:17:39 2017
+    Info: Processing started: Tue Dec 05 17:10:51 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 Warning (125092): Tcl Script File lpm_counter_player.qip not found
     Info (125063): set_global_assignment -name QIP_FILE lpm_counter_player.qip
@@ -3500,20 +3956,21 @@ Info (12133): Instantiated megafunction "g27_single_pulse_generator:inst26|lpm_c
     Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
     Info (12134): Parameter "lpm_width" = "26"
 Info (12128): Elaborating entity "g27_player_controller_FSM" for hierarchy "g27_player_controller_FSM:inst34"
+Warning (10492): VHDL Process Statement warning at g27_player_controller_FSM.vhd(85): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "g27_rules" for hierarchy "g27_rules:inst"
 Warning (10036): Verilog HDL or VHDL warning at g27_rules.vhd(41): object "suit" assigned a value but never read
 Warning (10492): VHDL Process Statement warning at g27_rules.vhd(79): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "g27_Modulo_13" for hierarchy "g27_rules:inst|g27_Modulo_13:modulo_inst"
 Info (12128): Elaborating entity "g27_8bit_adder" for hierarchy "g27_rules:inst|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst1"
 Info (12128): Elaborating entity "g27_adder" for hierarchy "g27_rules:inst|g27_Modulo_13:modulo_inst|g27_8bit_adder:inst1|g27_adder:inst7"
-Info (12128): Elaborating entity "g27_dealer" for hierarchy "g27_dealer:inst8"
-Info (12128): Elaborating entity "g27_computer_player_FSM" for hierarchy "g27_computer_player_FSM:inst1"
-Warning (10492): VHDL Process Statement warning at g27_computer_player_FSM.vhd(77): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Info (12128): Elaborating entity "LPM_DFF" for hierarchy "LPM_DFF:inst6"
-Info (12130): Elaborated megafunction instantiation "LPM_DFF:inst6"
-Info (12133): Instantiated megafunction "LPM_DFF:inst6" with the following parameter:
+Info (12128): Elaborating entity "LPM_DFF" for hierarchy "LPM_DFF:inst12"
+Info (12130): Elaborated megafunction instantiation "LPM_DFF:inst12"
+Info (12133): Instantiated megafunction "LPM_DFF:inst12" with the following parameter:
     Info (12134): Parameter "LPM_AVALUE" = "0"
     Info (12134): Parameter "LPM_WIDTH" = "6"
+Info (12128): Elaborating entity "g27_computer_player_FSM" for hierarchy "g27_computer_player_FSM:inst1"
+Warning (10492): VHDL Process Statement warning at g27_computer_player_FSM.vhd(77): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "g27_dealer" for hierarchy "g27_dealer:inst8"
 Info (12128): Elaborating entity "g27_modulo" for hierarchy "g27_modulo:inst13"
 Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst9"
 Warning (287001): Assertion warning: Ignored LPM_SVALUE parameter because the sset port is not used
@@ -3609,54 +4066,79 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_5cc
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
 Info (12206): 2 design partitions require synthesis
-    Info (12211): Partition "sld_signaltap:auto_signaltap_0" requires synthesis because there were changes to its dependent source files
+    Info (12211): Partition "Top" requires synthesis because there were changes to its dependent source files
     Info (12217): Partition "sld_hub:auto_hub" requires synthesis because there were changes made to the parameters on the partition's root instance
 Info (12207): 1 design partition does not require synthesis
-    Info (12229): Partition "Top" does not require synthesis because there were no relevant design changes
+    Info (12229): Partition "sld_signaltap:auto_signaltap_0" does not require synthesis because there were no relevant design changes
 Info (281037): Using 4 processors to synthesize 2 partitions in parallel
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Dec 05 16:18:07 2017
-Info: Command: quartus_map --parallel=1 --helper=1 --partition=sld_signaltap:auto_signaltap_0 lab5 -c lab5
-Info (281019): Starting Logic Optimization and Technology Mapping for Partition sld_signaltap:auto_signaltap_0
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (18057): The assignment to disallow NOT gate push-back on register "sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|trigger_out_mode_ff" is ignored
-Info (21057): Implemented 1206 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 149 input pins
-    Info (21059): Implemented 102 output pins
-    Info (21061): Implemented 909 logic cells
-    Info (21064): Implemented 46 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 476 megabytes
-    Info: Processing ended: Tue Dec 05 16:18:13 2017
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing started: Tue Dec 05 17:11:21 2017
+Info: Command: quartus_map --parallel=1 --helper=0 --partition=Top lab5 -c lab5
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "g27_modulo:inst13|Mod0"
+Info (12130): Elaborated megafunction instantiation "g27_modulo:inst13|lpm_divide:Mod0"
+Info (12133): Instantiated megafunction "g27_modulo:inst13|lpm_divide:Mod0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "32"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_qlo.tdf
+    Info (12023): Found entity 1: lpm_divide_qlo
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_4dg.tdf
+    Info (12023): Found entity 1: abs_divider_4dg
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_k5f.tdf
+    Info (12023): Found entity 1: alt_u_div_k5f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info (12023): Found entity 1: add_sub_lkc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info (12023): Found entity 1: add_sub_mkc
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_0s9.tdf
+    Info (12023): Found entity 1: lpm_abs_0s9
+Info (281020): Starting Logic Optimization and Technology Mapping for Top Partition
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "COMPUTER1_SEGMENTS[6]" is stuck at GND
+    Warning (13410): Pin "COMPUTER1_SEGMENTS[1]" is stuck at GND
+    Warning (13410): Pin "COMPUTER1_SEGMENTS[0]" is stuck at GND
+    Warning (13410): Pin "PLAYER1_SEGMENTS[6]" is stuck at GND
+    Warning (13410): Pin "PLAYER1_SEGMENTS[1]" is stuck at GND
+    Warning (13410): Pin "PLAYER1_SEGMENTS[0]" is stuck at GND
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (21057): Implemented 2502 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 84 output pins
+    Info (21061): Implemented 2410 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 523 megabytes
+    Info: Processing ended: Tue Dec 05 17:11:31 2017
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:09
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Dec 05 16:18:07 2017
+    Info: Processing started: Tue Dec 05 17:11:21 2017
 Info: Command: quartus_map --parallel=1 --helper=2 --partition=sld_hub:auto_hub lab5 -c lab5
 Info (281019): Starting Logic Optimization and Technology Mapping for Partition sld_hub:auto_hub
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
-Info (21057): Implemented 199 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 201 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 37 output pins
-    Info (21061): Implemented 143 logic cells
+    Info (21061): Implemented 145 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 476 megabytes
-    Info: Processing ended: Tue Dec 05 16:18:12 2017
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Tue Dec 05 17:11:24 2017
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 Info (281038): Finished parallel synthesis of all partitions
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 234 warnings
-    Info: Peak virtual memory: 605 megabytes
-    Info: Processing ended: Tue Dec 05 16:18:16 2017
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:00:13
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 241 warnings
+    Info: Peak virtual memory: 613 megabytes
+    Info: Processing ended: Tue Dec 05 17:11:34 2017
+    Info: Elapsed time: 00:00:43
+    Info: Total CPU time (on all processors): 00:00:20
 
 

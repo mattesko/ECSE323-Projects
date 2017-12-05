@@ -1,5 +1,5 @@
 Flow report for lab5
-Tue Dec 05 16:19:18 2017
+Tue Dec 05 17:12:33 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Tue Dec 05 16:19:18 2017            ;
+; Flow Status                        ; Successful - Tue Dec 05 17:12:33 2017            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; lab5                                             ;
 ; Top-level Entity Name              ; g27_21game                                       ;
 ; Family                             ; Cyclone II                                       ;
 ; Device                             ; EP2C20F484C7                                     ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 3,594 / 18,752 ( 19 % )                          ;
-;     Total combinational functions  ; 2,779 / 18,752 ( 15 % )                          ;
-;     Dedicated logic registers      ; 1,328 / 18,752 ( 7 % )                           ;
-; Total registers                    ; 1328                                             ;
+; Total logic elements               ; 3,650 / 18,752 ( 19 % )                          ;
+;     Total combinational functions  ; 2,841 / 18,752 ( 15 % )                          ;
+;     Dedicated logic registers      ; 1,345 / 18,752 ( 7 % )                           ;
+; Total registers                    ; 1345                                             ;
 ; Total pins                         ; 72 / 315 ( 23 % )                                ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 5,888 / 239,616 ( 2 % )                          ;
@@ -138,7 +138,19 @@ applicable agreement for further details.
 ; Assembler                 ; 00:00:07     ; 1.0                     ; 453 MB              ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 498 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 435 MB              ; 00:00:01                           ;
-; Total                     ; 00:02:33     ; --                      ; --                  ; 00:01:00                           ;
+; Analysis & Synthesis      ; 00:00:42     ; 1.3                     ; 605 MB              ; 00:00:19                           ;
+; Partition Merge           ; 00:00:06     ; 1.0                     ; 538 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:15     ; 1.4                     ; 1228 MB             ; 00:00:12                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 468 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 498 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 435 MB              ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:41     ; 1.3                     ; 613 MB              ; 00:00:19                           ;
+; Partition Merge           ; 00:00:06     ; 1.0                     ; 538 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:15     ; 1.4                     ; 1228 MB             ; 00:00:11                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 460 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 506 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 435 MB              ; 00:00:02                           ;
+; Total                     ; 00:05:24     ; --                      ; --                  ; 00:02:17                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -158,6 +170,18 @@ applicable agreement for further details.
 ; Assembler                 ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
+; Partition Merge           ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; 156TR4060-07     ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -165,6 +189,18 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
+quartus_fit --read_settings_files=off --write_settings_files=off lab5 -c lab5
+quartus_asm --read_settings_files=off --write_settings_files=off lab5 -c lab5
+quartus_sta lab5 -c lab5
+quartus_eda --read_settings_files=off --write_settings_files=off lab5 -c lab5
+quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
+quartus_cdb --read_settings_files=off --write_settings_files=off lab5 -c lab5 --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off lab5 -c lab5
+quartus_asm --read_settings_files=off --write_settings_files=off lab5 -c lab5
+quartus_sta lab5 -c lab5
+quartus_eda --read_settings_files=off --write_settings_files=off lab5 -c lab5
+quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
+quartus_cdb --read_settings_files=off --write_settings_files=off lab5 -c lab5 --merge=on
 quartus_fit --read_settings_files=off --write_settings_files=off lab5 -c lab5
 quartus_asm --read_settings_files=off --write_settings_files=off lab5 -c lab5
 quartus_sta lab5 -c lab5
