@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C20F484C7
-set_global_assignment -name TOP_LEVEL_ENTITY g27_21game
+set_global_assignment -name TOP_LEVEL_ENTITY g27_decision_maker_FSM_schematic
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:20:15  DECEMBER 01, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -137,7 +137,6 @@ set_global_assignment -name BDF_FILE g27_decision_maker_FSM_schematic.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE decision_maker_schematic.vwf
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
 set_global_assignment -name VECTOR_WAVEFORM_FILE decision_maker_schematic1.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/OneDrive - McGill University/Undergrad/2017 Fall/ECSE 323/Labs/DSD-Labs-and-Project/Lab5/decision_maker_schematic.vwf"
 set_location_assignment PIN_T21 -to PLAY
 set_location_assignment PIN_T22 -to STOP
 set_global_assignment -name SIGNALTAP_FILE output_files/stp2.stp
@@ -177,7 +176,6 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16]
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to COMPUTER_WINS[0] -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to COMPUTER_WINS[1] -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to DEALER_DEAL -section_id auto_signaltap_0
-set_location_assignment PIN_R21 -to ACE_SELECT
 set_global_assignment -name QIP_FILE output_files/lpm_mux0.qip
 set_global_assignment -name QIP_FILE output_files/lpm_mux_deck_init.qip
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to COMPUTER_END -section_id auto_signaltap_0
@@ -245,9 +243,6 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -t
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to ROUND_RESET_PULSE -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to STOP -section_id auto_signaltap_0
 set_global_assignment -name VHDL_FILE g27_player_controller_FSM.vhd
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to "g27_player_controller_FSM:inst34|state.s0" -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to "g27_player_controller_FSM:inst34|state.s1" -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to "g27_player_controller_FSM:inst34|state.s2" -section_id auto_signaltap_0
@@ -264,5 +259,14 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=00
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=159" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=13527" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=47125" -section_id auto_signaltap_0
-set_global_assignment -name SLD_FILE "P:/DSD/DSD-Labs-and-Project/Lab5/output_files/stp1_auto_stripped.stp"
+set_location_assignment PIN_R21 -to ROUND_RESET
+set_global_assignment -name BDF_FILE g27_player_controller_schematic.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE player_controller_schematic.vwf
+set_global_assignment -name BDF_FILE g27_system_controller_schematic.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE system_controller_schematic.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "P:/DSD/DSD-Labs-and-Project/Lab5/decision_maker_schematic.vwf"
+set_global_assignment -name SLD_FILE "P:/DSD/DSD-Labs-and-Project/Lab5/output_files/stp1_auto_stripped.stp"

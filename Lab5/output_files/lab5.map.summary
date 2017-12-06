@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Tue Dec 05 17:11:33 2017
+Analysis & Synthesis Status : Successful - Tue Dec 05 18:51:14 2017
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : lab5
-Top-level Entity Name : g27_21game
+Top-level Entity Name : g27_decision_maker_FSM_schematic
 Family : Cyclone II
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge
